@@ -2,7 +2,7 @@
 
 **A curated directory for [REA — Reverse Engineer Anything](https://github.com/morluto/rea): projects, integrations, learning resources and evidence-backed case studies.**
 
-[Browse the website](https://awesomerea.pages.dev) · [Suggest a project](https://github.com/kaixinbaba/awesome-rea/issues/new?template=1-project.yml) · [Correct a listing](https://github.com/kaixinbaba/awesome-rea/issues/new?template=2-correction.yml)
+[Browse the website](https://awesomerea.com) · [Suggest a project](https://github.com/kaixinbaba/awesome-rea/issues/new?template=1-project.yml) · [Correct a listing](https://github.com/kaixinbaba/awesome-rea/issues/new?template=2-correction.yml)
 
 REA connects coding agents to software-analysis tools through a CLI and MCP server. This list helps you find useful work around it **without confusing a narrow investigation, a plugin, and a complete software replacement**.
 
@@ -156,7 +156,7 @@ Already comfortable with Git? Send a focused PR following [CONTRIBUTING.md](CONT
 
 - [Correct or request removal of a listing](https://github.com/kaixinbaba/awesome-rea/issues/new?template=2-correction.yml)
 - [Report a website problem](https://github.com/kaixinbaba/awesome-rea/issues/new?template=3-website.yml)
-- [Read the curation method](https://awesomerea.pages.dev/method/)
+- [Read the curation method](https://awesomerea.com/method/)
 
 ## Maintain the website
 

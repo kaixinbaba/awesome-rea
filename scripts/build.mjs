@@ -2,7 +2,7 @@ import { writeFile, mkdir, cp, rm } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { loadProjects, categories, kinds, populatedCategories, repository, issueLinks } from './catalog.mjs';
 
-const site = new URL(process.env.SITE_URL || 'https://awesomerea.pages.dev');
+const site = new URL(process.env.SITE_URL || 'https://awesomerea.com');
 if (site.protocol !== 'https:' || site.pathname !== '/' || site.search || site.hash || site.username || site.password) throw new Error('SITE_URL must be an HTTPS origin');
 const origin = site.origin;
 const projects = await loadProjects();

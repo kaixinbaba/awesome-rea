@@ -55,7 +55,7 @@ npm run dev
 # In another terminal:
 npm run test:browser
 # Against the deployed site:
-TEST_URL=https://awesomerea.pages.dev TEST_OUTPUT=test-results/production npm run test:browser
+TEST_URL=https://awesomerea.com TEST_OUTPUT=test-results/production npm run test:browser
 ```
 
 The suite checks Chromium/WebKit, 320–1440px layouts, each purpose/type combination, search/reset, entry-anchor recovery, Issue links, clipboard paths, no-JavaScript rendering, 404 and automated accessibility. This is not physical-device or full accessibility certification. Reports and screenshots remain local under ignored `test-results/`.
@@ -71,6 +71,8 @@ npx wrangler@4.135.0 pages deploy dist --project-name awesomerea --branch main
 
 Authenticate with an account allowed to deploy to that project. Upload **only `dist/`**, never the repository, private notes, environment files or test artifacts. Do not add a `--force` flag.
 
-The default site origin is `https://awesomerea.pages.dev`. Set `SITE_URL=https://your-domain.example` before building to change canonical, Open Graph and sitemap origins. Custom DNS and certificate activation must finish before redirecting the old hostname. A build setting alone does not bind a domain. Verify deployed files, response headers, real page behavior and any hostname redirects after publishing.
+The production domain and default site origin are `https://awesomerea.com`. Its apex CNAME points to `awesomerea.pages.dev`; Cloudflare Pages owns the custom-domain binding and HTTPS certificate. Set `SITE_URL=https://your-domain.example` before building to override canonical, Open Graph and sitemap origins. A build setting alone does not bind a domain. Verify deployed files, response headers, real page behavior and any hostname redirects after publishing.
+
+The old `awesomerea.pages.dev` hostname redirects permanently (301) to `https://awesomerea.com`, preserving paths and query strings while excluding preview subdomains. This is an account-level Cloudflare Bulk Redirect: list `awesome_rea_primary_domain`, rule `Awesome REA primary domain`. It is configured in Cloudflare, not the deployment files; preserve it when moving accounts. Do not replace it with a catch-all Pages `_redirects` rule, which would also affect the custom domain.
 
 The static application sets no cookies, stores no queries and makes no analytics requests. Cloudflare still processes delivery/security request metadata; GitHub Issues and external links are governed by their destination services.

@@ -11,7 +11,7 @@ body:
     id: entry
     attributes:
       label: Entry name or URL / 条目名称或链接
-      placeholder: https://awesomerea.pages.dev/#project-id
+      placeholder: https://awesomerea.com/#project-id
     validations:
       required: true
   - type: dropdown
