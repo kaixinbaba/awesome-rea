@@ -46,6 +46,10 @@ async function fixture(browser,{origin='https://awesomerea.com',seed,signal,stor
  const page=await context.newPage();return {context,page,traffic,origin};
 }
 const choice=(value,at=Date.now())=>({version:1,choice:value,at});
+async function assertFits(f,label){
+ const layout=await f.page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,overflow:[...document.querySelectorAll('*')].filter(x=>{const r=x.getBoundingClientRect();return r.width>0&&r.right>innerWidth+.1;}).slice(0,12).map(x=>{const r=x.getBoundingClientRect(),s=getComputedStyle(x);return {tag:x.tagName,id:x.id,className:x.className,right:r.right,width:r.width,minWidth:s.minWidth,whiteSpace:s.whiteSpace};})}));
+ assert(layout.scrollWidth<=layout.width,`${label}: ${JSON.stringify(layout)}`);
+}
 for(const [engine,launcher]of [['chromium',chromium],['webkit',webkit]]){
  const browser=await launcher.launch({headless:true});
  try{
@@ -55,7 +59,7 @@ for(const [engine,launcher]of [['chromium',chromium],['webkit',webkit]]){
    await f.page.goto(f.origin+path+'?q=private-search#private-fragment',{waitUntil:'networkidle',referer:'https://search.example/private?email=private'});
    assert.equal(f.traffic.tags,0);assert.equal(f.traffic.collect.length,0);
    assert(await f.page.locator('#analytics-consent').isVisible());
-   assert(await f.page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+   await assertFits(f,`${engine}/${locale}/initial-consent`);
    const a11y=await new AxeBuilder({page:f.page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();assert.deepEqual(a11y.violations.map(v=>v.id),[]);
    await f.page.screenshot({path:`${out}/${engine}-${locale}-consent.png`});
    await Promise.all([f.page.waitForResponse(r=>r.url().includes('/g/collect')),f.page.locator('#analytics-accept').click()]);
@@ -89,7 +93,7 @@ for(const [engine,launcher]of [['chromium',chromium],['webkit',webkit]]){
    const f=await fixture(browser,{...options,width:320});await f.page.goto(f.origin+'/',{waitUntil:'networkidle'});
    assert.equal(f.traffic.tags,0,name);assert.equal(f.traffic.collect.length,0,name);assert.equal(await f.page.evaluate(id=>window['ga-disable-'+id],ID),true);
    await f.page.locator('#analytics-settings').click();assert(await f.page.locator('#analytics-consent').isVisible());
-   assert(await f.page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+   await assertFits(f,`${engine}/${name}/settings-consent`);
    if(options.signal)assert(await f.page.locator('#analytics-accept').isDisabled());
    assert.deepEqual(f.traffic.unexpected,[]);results.push({engine,case:name,mockPageviews:0});await f.context.close();
   }
