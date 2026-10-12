@@ -1,5 +1,7 @@
 # Contributing to Awesome REA
 
+**English** · [简体中文](CONTRIBUTING.zh-CN.md)
+
 **Recommend open-source reverse-engineering projects, independent reimplementations and compatibility tools. REA usage is not required. English or Chinese is welcome（欢迎中文投稿）.**
 
 ## Submit an Issue
@@ -30,8 +32,8 @@ Flag original assets, commercial dependencies, third-party notices, paid model s
 1. Edit [`src/projects.json`](src/projects.json), not generated HTML. Keep an existing entry's `id` stable so website anchors continue to work.
 2. Use the separate purpose, type and project-relationship fields; choose `Independent reimplementation` or `Compatibility project` when appropriate. REA-specific labels are optional and require evidence. Copy the shape of a comparable entry and read the [field reference](docs/development.md#catalog-fields).
 3. Set `checked` to the date you actually reviewed the evidence. Do not refresh dates merely because a build ran.
-4. Write original, concise descriptions. Do not copy a third-party README wholesale. Preserve scope and uncertainty.
-5. Run `npm ci`, `npm run readme`, then `npm test`. Commit the data and regenerated README together. Do not manually change the README's generated catalog section.
+4. Write original, concise descriptions. Do not copy a third-party README wholesale. Preserve scope and uncertainty. Add or update every display field in `src/locales/projects.zh-CN.json`; keep the same ID, rights boundaries and maturity. Review the translation whenever the source changes, then update that entry's `sourceHash` using `sourceHash(project)` from `scripts/i18n.mjs`. Do not refresh a hash without reviewing the translation.
+5. Run `npm ci`, `npm run readme`, then `npm test`. Commit the data, translations and both regenerated READMEs together. Do not manually change either README's generated catalog section. Missing or stale translations fail validation.
 6. Explain your source review and any untested claims in the PR. UI changes also need [browser checks](docs/development.md#browser-checks).
 
 By contributing original material, you agree to license it under this repository's MIT license. Third-party works keep their own rights; do not submit material you cannot license.

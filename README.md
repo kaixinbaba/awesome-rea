@@ -1,5 +1,7 @@
 # Awesome REA
 
+**English** · [简体中文](README.zh-CN.md)
+
 Open-source reverse-engineering projects, reimplementations and compatible alternatives, plus [REA](https://github.com/morluto/rea) tools and resources. **REA usage is not required.**
 
 [Website](https://awesomerea.com) · [Suggest a project](https://github.com/kaixinbaba/awesome-rea/issues/new?template=1-project.yml) · [Contributing](CONTRIBUTING.md)
@@ -9,7 +11,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 ## Directory
 
 <!-- catalog:start -->
-<!-- Generated from src/projects.json by npm run readme. -->
+<!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
 36 projects & resources · 6 categories
 

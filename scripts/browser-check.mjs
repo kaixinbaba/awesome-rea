@@ -3,16 +3,23 @@ import AxeBuilder from '@axe-core/playwright';
 import assert from 'node:assert/strict';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { loadProjects, populatedCategories, kinds, issueLinks } from './catalog.mjs';
+import { locales, loadLocale, localePath } from './i18n.mjs';
 const catalog = await loadProjects();
 const total = catalog.length;
 const purposes = ['all', ...populatedCategories(catalog).map(([key])=>key)];
 const types = ['all', ...Object.keys(kinds).filter(key=>catalog.some(p=>p.kind===key))];
-const base=process.env.TEST_URL||'http://127.0.0.1:4387';
+const base=(process.env.TEST_URL||'http://127.0.0.1:4387').replace(/\/$/,'');
 const targetOrigin=new URL(base).origin;
 const out=process.env.TEST_OUTPUT||'test-results/local';
 await mkdir(out,{recursive:true});
 const report={base,startedAt:new Date().toISOString(),contexts:[],errors:[]};
-for(const [name,engine,widths] of [['chromium',chromium,[1440,768,390,320]],['webkit',webkit,[1440,390]]]){
+for(const locale of Object.keys(locales)) {
+ const {t, lang, projects: translated}=await loadLocale(locale,catalog);
+ const home=base+localePath(locale);
+ const other=Object.keys(locales).find(code=>code!==locale);
+ const localeOut=`${out}/${locale}`;
+ await mkdir(localeOut,{recursive:true});
+ for(const [name,engine,widths] of [['chromium',chromium,[1440,768,390,320]],['webkit',webkit,[1440,390]]]){
  const browser=await engine.launch({headless:true});
  try {
   for(const width of widths){
@@ -23,19 +30,28 @@ for(const [name,engine,widths] of [['chromium',chromium,[1440,768,390,320]],['we
    page.on('console',msg=>{if(msg.type()==='error')errors.push(msg.text());});
    page.on('request',req=>requests.push(req.url()));
    page.on('requestfailed',req=>errors.push(`${req.url()}: ${req.failure()?.errorText}`));
-   const response=await page.goto(base,{waitUntil:'networkidle'});
+   const response=await page.goto(home,{waitUntil:'networkidle'});
    assert.equal(response.status(),200);
    assert.equal(await page.locator('.project-card:visible').count(),total);
    assert.equal(await page.locator('h1').count(),1);
+   assert.equal(await page.locator('html').getAttribute('lang'),lang);
+   assert.equal(await page.locator('h1').innerText(),t('hero.title1')+'\n'+t('hero.title2'));
+   assert.equal(await page.locator('[data-language][aria-current="page"]').getAttribute('data-language'),locale);
+   for(const entry of translated) {
+    const card=page.locator('#'+entry.id);
+    assert.equal(await card.locator('.summary').textContent(),entry.summary);
+    assert.equal(await card.locator('.evidence-label').textContent(),t(`relationship.${entry.relationship}`));
+    assert((await card.locator('.evidence-body').textContent()).includes(entry.limitation));
+   }
    assert.equal(await page.locator('meta[name="robots"][content="noindex"]').count(),0);
    assert(await page.locator('link[rel="canonical"]').getAttribute('href'));
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`Overflow at ${name} ${width}`);
    await page.keyboard.press(name === 'webkit' ? 'Alt+Tab' : 'Tab');
-   assert.equal(await page.evaluate(()=>document.activeElement?.textContent),'Skip to content');
+   assert.equal(await page.evaluate(()=>document.activeElement?.textContent),t('nav.skip'));
    await page.evaluate(()=>document.activeElement.blur());
    if(name==='chromium'&&(width===1440||width===390)){
-    await page.screenshot({path:`${out}/home-${width}.png`,fullPage:true});
-    await page.screenshot({path:`${out}/first-screen-${width}.png`});
+    await page.screenshot({path:`${localeOut}/home-${width}.png`,fullPage:true});
+    await page.screenshot({path:`${localeOut}/first-screen-${width}.png`});
    }
    for(const purpose of purposes){
     await page.locator(`[data-filter="${purpose}"]`).click();
@@ -45,7 +61,7 @@ for(const [name,engine,widths] of [['chromium',chromium,[1440,768,390,320]],['we
      const actual=await page.locator('.project-card:visible').evaluateAll(nodes=>nodes.map(n=>n.id));
      assert.deepEqual(actual,expected,`${purpose} + ${type}`);
      assert.equal(await page.locator('#empty-results').isVisible(),expected.length===0);
-     assert.equal(await page.locator('#result-count').textContent(),`Showing ${expected.length} of ${total} entries`);
+     assert.equal(await page.locator('#result-count').textContent(),t('directory.count',{visible:expected.length,total}));
     }
     assert.equal(await page.locator('[data-filter][aria-pressed="true"]').count(),1);
    }
@@ -54,9 +70,16 @@ for(const [name,engine,widths] of [['chromium',chromium,[1440,768,390,320]],['we
    await page.locator('#search').fill('NOTION');
    assert.equal(await page.locator('.project-card:visible').count(),1);
    assert(await page.locator('#notion').isVisible());
+   if(locale==='zh-CN') {
+    for(const [word,id] of [['剪贴板','notion'],['图元','cadcraft']]) {
+     await page.locator('#search').fill(word);
+     assert.deepEqual(await page.locator('.project-card:visible').evaluateAll(nodes=>nodes.map(n=>n.id)),[id]);
+    }
+   }
    await page.locator('#search').fill('unfindable <script>alert(1)</script>');
    assert.equal(await page.locator('.project-card:visible').count(),0);
    assert(await page.locator('#empty-results').isVisible());
+   assert.equal(await page.locator('#empty-results h3').textContent(),t('directory.emptyTitle'));
    await page.locator('#reset-search').click();
    assert.equal(await page.locator('.project-card:visible').count(),total);
    assert.equal(await page.locator('#kind-filter').inputValue(),'all');
@@ -74,7 +97,7 @@ for(const [name,engine,widths] of [['chromium',chromium,[1440,768,390,320]],['we
    await page.locator('#dx-ball summary').click();
    assert(await page.locator('#dx-ball .evidence-body').isVisible());
    const a11y=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
-   await writeFile(`${out}/axe-${name}-${width}.json`,JSON.stringify(a11y.violations,null,2));
+   await writeFile(`${localeOut}/axe-${name}-${width}.json`,JSON.stringify(a11y.violations,null,2));
    assert.equal(a11y.violations.length,0,JSON.stringify(a11y.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))));
    assert.equal(requests.filter(url=>new URL(url).origin!==targetOrigin).length,0,'Unexpected third-party network requests');
    assert.equal((await context.cookies()).length,0);
@@ -83,32 +106,54 @@ for(const [name,engine,widths] of [['chromium',chromium,[1440,768,390,320]],['we
     await context.grantPermissions(['clipboard-read','clipboard-write']);
     await page.locator('#copy-command').click();
     assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),'npx rea-agents setup');
+    assert.equal(await page.locator('#copy-status').textContent(),t('setup.success'));
     await page.evaluate(()=>{navigator.clipboard.writeText=()=>Promise.reject(new Error('denied'));});
     await page.locator('#copy-command').click();
-    await page.waitForFunction(()=>document.querySelector('#copy-status').textContent.includes('Clipboard unavailable'));
+    await page.waitForFunction(expected=>document.querySelector('#copy-status').textContent===expected,t('setup.failure'));
    }
-   await page.goto(base+'/method/',{waitUntil:'networkidle'});
+   await page.goto(base+localePath(locale,'method/'),{waitUntil:'networkidle'});
    for(const link of Object.values(issueLinks)) assert(await page.locator(`a[href="${link}"]`).count()>0);
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
    const methodA11y=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
    assert.equal(methodA11y.violations.length,0,JSON.stringify(methodA11y.violations.map(v=>v.id)));
+   await page.goto(base+localePath(locale,'method/')+'?language-check=1#inclusion',{waitUntil:'networkidle'});
+   await page.locator(`[data-language="${other}"]`).click();
+   await page.waitForURL(base+localePath(other,'method/')+'?language-check=1#inclusion');
+   assert.equal(await page.locator('html').getAttribute('lang'),locales[other].lang);
+   await page.goto(home+'?language-check=1#photocraft',{waitUntil:'networkidle'});
+   await page.locator(`[data-language="${other}"]`).click();
+   await page.waitForURL(base+localePath(other)+'?language-check=1#photocraft');
+   assert(await page.locator('#photocraft').isVisible());
+   await page.locator(`[data-language="${locale}"]`).click();
+   await page.waitForURL(home+'?language-check=1#photocraft');
+   assert.equal(await page.locator('html').getAttribute('lang'),lang);
+   assert.equal(await page.locator('.project-card:visible').count(),total);
+   assert.equal((await context.cookies()).length,0);
+   assert.equal(await page.evaluate(()=>localStorage.length),0);
+   assert.equal(requests.filter(url=>new URL(url).origin!==targetOrigin).length,0);
    assert.equal(errors.length,0,errors.join('\n'));
-   report.contexts.push({engine:name,width,cards:total,purposeTypeCombinations:purposes.length*types.length,issueLinks:3,search:true,emptyReset:true,hashRecovery:true,details:true,axeViolations:0,thirdPartyRequests:0,errors});
+   report.contexts.push({locale,engine:name,width,languageRoundTrip:true,cards:total,purposeTypeCombinations:purposes.length*types.length,issueLinks:3,search:true,emptyReset:true,hashRecovery:true,details:true,axeViolations:0,thirdPartyRequests:0,errors});
    await context.close();
   }
   const nojs=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});
   const p=await nojs.newPage();
-  await p.goto(base);
+  await p.goto(home);
   assert.equal(await p.locator('.project-card:visible').count(),total);
   assert.equal(await p.locator('.directory-tools:visible').count(),0);
   await p.locator('#notion summary').click();
   assert(await p.locator('#notion .evidence-body').isVisible());
-  assert.equal((await p.goto(base+'/missing-page-for-test')).status(),404);
+  await p.locator(`[data-language="${other}"]`).click();
+  assert.equal(await p.locator('html').getAttribute('lang'),locales[other].lang);
+  assert.equal(await p.locator('.project-card:visible').count(),total);
+  assert.equal((await p.goto(home+'missing-page-for-test')).status(),404);
+  assert.equal(await p.locator('html').getAttribute('lang'),lang);
+  assert.equal(await p.locator('h1').innerText(),t('notFound.title1')+'\n'+t('notFound.title2'));
   assert.equal(await p.locator('meta[name="robots"]').getAttribute('content'),'noindex');
-  report.contexts.push({engine:name,javascript:false,cards:total,details:true,notFound:404});
+  report.contexts.push({locale,engine:name,javascript:false,languageSwitch:true,cards:total,details:true,notFound:404});
   await nojs.close();
  } finally {await browser.close();}
+ }
 }
 report.completedAt=new Date().toISOString();
 await writeFile(`${out}/verification.json`,JSON.stringify(report,null,2));
-console.log(`PASS: ${report.contexts.length} browser contexts; Chromium + WebKit, 320–1440px, filters/search, clipboard, no-JS, 404, zero axe violations`);
+console.log(`PASS: ${report.contexts.length} browser contexts; both locales, Chromium + WebKit, 320–1440px, filters/search, clipboard, language switching, no-JS, localized 404, zero axe violations`);

@@ -1,6 +1,8 @@
 # Development and deployment
 
-**One JSON catalog generates the README directory and a static website. Scope: open-source reverse engineering, independent reimplementations and compatibility projects; REA usage is optional. No backend is needed.**
+**English** · [简体中文](development.zh-CN.md)
+
+**One JSON catalog with reviewed translations generates both README directories and a static bilingual website. Scope: open-source reverse engineering, independent reimplementations and compatibility projects; REA usage is optional. No backend is needed.**
 
 ## Local development
 
@@ -17,9 +19,12 @@ Preview at `http://127.0.0.1:4387`. Build output is in `dist/`; it is not commit
 
 | Path | Purpose |
 | --- | --- |
-| `src/projects.json` | The only catalog data source |
+| `src/projects.json` | Canonical English catalog; shared IDs, URLs, taxonomy and source-review dates |
+| `src/locales/en.json`, `src/locales/zh-CN.json` | Complete UI, metadata, accessibility, dynamic-message and taxonomy translations |
+| `src/locales/projects.zh-CN.json` | Chinese project display fields, keyed by the same IDs; no separate URLs or classifications |
+| `scripts/i18n.mjs` | Locale registry, strict coverage / placeholder checks and translation freshness hashes |
 | `scripts/catalog.mjs` | Taxonomy and data validation |
-| `scripts/readme.mjs` | Generate/check only the README catalog block |
+| `scripts/readme.mjs` | Generate/check both README catalog blocks |
 | `scripts/build.mjs` | Generate HTML, sitemap, robots and security headers |
 | `public/` | First-party CSS, JavaScript, favicon and social image |
 | `.github/ISSUE_TEMPLATE/` | Suggestion, correction/removal and website-bug forms |
@@ -46,7 +51,19 @@ Preview at `http://127.0.0.1:4387`. Build output is in `dist/`; it is not commit
 
 Purpose, output type, project relationship and maturity are independent. REA usage is not an inclusion requirement; early/alpha projects may be listed with accurate limitations. Empty purpose groups are hidden. Search covers visible card text and evidence details; purpose and type filters combine. Entries remain readable without JavaScript.
 
-Run `npm run readme` after data changes. `npm test` fails if the committed README no longer matches the JSON. Only the catalog block between its marker comments is generated; the surrounding README can be edited normally.
+Run `npm run readme` after data or translation changes. `npm test` fails if either README is stale. Only the catalog blocks between marker comments are generated; surrounding prose can be edited normally.
+
+## Internationalization
+
+English keeps `/` and `/method/`; Simplified Chinese uses `/zh/` and `/zh/method/`. Each has a localized 404 page, social image, self-canonical URL, reciprocal `hreflang` and locale-specific structured data. The sitemap lists four indexable pages; 404 pages remain `noindex`. No server, runtime translation service or language negotiation is needed. Plain links switch the corresponding page even without JavaScript; with JavaScript they also preserve query strings and anchors. Filters reset on navigation. No cookies, saved language preference or automatic redirects are used.
+
+Every UI key and project display field is required in both languages; there is no silent English fallback. Brands, technical identifiers, commands and SPDX identifiers retain their original spelling. Translations never change project IDs, URLs, taxonomy or review dates. Changing an English source record invalidates its translation hash: review the Chinese wording first, then calculate `sourceHash(project)` exported by `scripts/i18n.mjs` and set that entry's `sourceHash`. This detects stale translations but does not certify their factual accuracy. Example for one reviewed entry:
+
+```sh
+node --input-type=module -e "import {loadProjects} from './scripts/catalog.mjs'; import {sourceHash} from './scripts/i18n.mjs'; console.log(sourceHash((await loadProjects()).find(p => p.id === 'photocraft')))"
+```
+
+To add a language, register its paths and metadata in `scripts/i18n.mjs`, provide complete UI/project translations plus its README, and extend validation/browser coverage. Regenerate social images with `node scripts/social-image.mjs` after changing their messages; these are local HTML screenshots, not model-generated images. Cloudflare Pages should use the nearest `404.html` for unknown paths (`/zh/404.html` under `/zh/`); verify actual 404 status and language at deployment rather than adding a wildcard 200 rewrite.
 
 ## Browser checks
 
@@ -59,7 +76,7 @@ npm run test:browser
 TEST_URL=https://awesomerea.com TEST_OUTPUT=test-results/production npm run test:browser
 ```
 
-The suite checks Chromium/WebKit, 320–1440px layouts, each purpose/type combination, search/reset, entry-anchor recovery, Issue links, clipboard paths, no-JavaScript rendering, 404 and automated accessibility. This is not physical-device or full accessibility certification. Reports and screenshots remain local under ignored `test-results/`.
+The suite checks both languages in Chromium/WebKit, 320–1440px layouts, each purpose/type combination, Chinese search, reset, entry-anchor recovery, reciprocal language navigation, Issue links, clipboard paths, no-JavaScript rendering, localized 404s and automated accessibility. This is not physical-device or full accessibility certification. Reports and screenshots remain local under ignored `test-results/`.
 
 ## Deployment
 

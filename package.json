@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "readme": "node scripts/readme.mjs --write",
-    "check": "node scripts/readme.mjs && node scripts/check.mjs && node --test scripts/catalog.test.mjs",
+    "check": "node scripts/readme.mjs && node scripts/check.mjs && node --test scripts/catalog.test.mjs scripts/i18n.test.mjs",
     "test": "npm run build && npm run check",
     "test:browser": "node scripts/browser-check.mjs",
     "dev": "node scripts/serve.mjs"

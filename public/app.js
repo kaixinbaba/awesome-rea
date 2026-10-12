@@ -17,7 +17,7 @@ function render() {
     if (matches) visible++;
   });
   filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === category)));
-  count.textContent = `Showing ${visible} of ${cards.length} ${cards.length === 1 ? 'entry' : 'entries'}`;
+  count.textContent = count.dataset.template.replace('{visible}', String(visible)).replace('{total}', String(cards.length));
   empty.hidden = visible !== 0;
 }
 search.addEventListener('input', render);
@@ -43,9 +43,9 @@ if (navigator.clipboard?.writeText && window.isSecureContext) {
   copy.addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText('npx rea-agents setup');
-      feedback.textContent = 'Copied. Review setup changes before approving.';
+      feedback.textContent = feedback.dataset.success;
     } catch {
-      feedback.textContent = 'Clipboard unavailable. Select and copy the command above.';
+      feedback.textContent = feedback.dataset.failure;
     }
   });
 }

@@ -11,7 +11,7 @@ const server=createServer(async (req,res)=>{
     let file=resolve(root,`.${path}`);
     if (!file.startsWith(root+sep) && file!==root) {res.writeHead(403).end();return;}
     let status=200;
-    try {if ((await stat(file)).isDirectory()) file=resolve(file,'index.html');await stat(file);} catch {file=resolve(root,'404.html');status=404;}
+    try {if ((await stat(file)).isDirectory()) file=resolve(file,'index.html');await stat(file);} catch {file=resolve(root,path.startsWith('/zh/')?'zh/404.html':'404.html');status=404;}
     const data=await readFile(file);
     res.writeHead(status,{...Object.fromEntries(headers),'Content-Type':types[extname(file)]||'application/octet-stream','Cache-Control':'no-store'});
     res.end(req.method==='HEAD'?undefined:data);
