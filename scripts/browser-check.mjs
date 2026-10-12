@@ -53,13 +53,13 @@ for(const locale of Object.keys(locales)) {
     const rect=selector=>{const r=document.querySelector(selector).getBoundingClientRect();return {top:r.top,bottom:r.bottom,height:r.height};};
     const metadata=['.category-label','.entry-kind','.target','.status','.card-bottom','.results-line','.review-date','.hero-note','.filters button','.filters button span','.terminal-bar','.flow-row div>span','.terminal-bottom'];
     const small=metadata.flatMap(selector=>[...document.querySelectorAll(selector)].filter(el=>el.getBoundingClientRect().width>0&&parseFloat(getComputedStyle(el).fontSize)<11).map(el=>({selector,size:getComputedStyle(el).fontSize})));
-    return {small,search:rect('.search-wrap'),select:rect('#kind-filter'),directory:rect('#directory'),heading:rect('.section-heading h2'),date:rect('.section-heading>.review-date')};
+    return {small,search:rect('.search-wrap'),select:rect('#kind-filter'),directory:rect('#directory'),heading:rect('.section-heading h2'),date:rect('.section-heading>.review-date'),hero:rect('.hero'),title:rect('.hero h1')};
    });
    assert.deepEqual(visual.small,[],`Small metadata at ${locale} ${name} ${width}`);
    assert.equal(visual.search.height,46);
    assert.equal(visual.select.height,46);
    if(width>=768) assert(Math.abs(visual.search.top-visual.select.top)<=1,'Desktop toolbar alignment');
-   if(width===1440) assert(visual.search.bottom<=950,'Search must fit in the first desktop screen');
+   if(width===1440) assert(visual.search.bottom<=950,`Search must fit in the first desktop screen: ${locale}/${name} ${JSON.stringify(visual)}`);
    if(width===390) assert(visual.directory.top<(locale==='en'?1081:1041),'Mobile directory must start earlier');
    if(width<=620) assert(visual.date.top>=visual.heading.bottom,'Mobile review date must not squeeze the heading');
    await page.keyboard.press(name === 'webkit' ? 'Alt+Tab' : 'Tab');
