@@ -1,6 +1,6 @@
 # Development and deployment
 
-**One JSON catalog generates the README directory and a static website. No server, database, runtime dependency or submission service is needed.**
+**One JSON catalog generates the README directory and a static website. Scope: open-source reverse engineering, independent reimplementations and compatibility projects; REA usage is optional. No backend is needed.**
 
 ## Local development
 
@@ -33,9 +33,9 @@ Preview at `http://127.0.0.1:4387`. Build output is in `dist/`; it is not commit
 | `name`, `url` | Display name and current canonical project/page URL |
 | `category` | Purpose: `dev-tools`, `games`, `apps`, `hardware`, `integrations`, or `learning` |
 | `kind` | Type: `tool`, `reconstruction`, `interoperability`, `integration`, `analysis`, or `resource` |
-| `relationship` | One of the six human-readable values in `scripts/catalog.mjs` |
+| `relationship` | Project provenance label from `scripts/catalog.mjs`; independent reimplementations and compatibility projects need no REA connection. Use a REA-specific label only when supported. |
 | `summary`, `target` | Website description and target/platform context |
-| `listSummary` | Optional one-sentence README description, at most 160 characters; falls back to `summary`. Keep the REA scope accurate. |
+| `listSummary` | Optional one-sentence README description, at most 160 characters; falls back to `summary`. Preserve the actual scope and maturity. |
 | `evidence`, `evidenceScope` | Primary HTTPS source and the exact scope it supports; prefer a full commit-pinned URL |
 | `status`, `limitation` | Author-reported maturity and important missing features, dependencies or evidence limits |
 | `license`, `licenseUrl` | Scoped license label and primary license notice; `null` is allowed for a reading-only case study/resource, not unlicensed software |
@@ -44,7 +44,7 @@ Preview at `http://127.0.0.1:4387`. Build output is in `dist/`; it is not commit
 | `checked` | Actual source-review date in `YYYY-MM-DD`; never set to a future date |
 | `initial`, `tag`, `tone` | Small display mark, specific subtitle and one of `mint`, `peach`, `lavender`, `sand` |
 
-Purpose, output type, REA relationship and maturity are independent. Empty purpose groups are hidden. Search covers visible card text and evidence details; purpose and type filters combine. Entries remain readable without JavaScript.
+Purpose, output type, project relationship and maturity are independent. REA usage is not an inclusion requirement; early/alpha projects may be listed with accurate limitations. Empty purpose groups are hidden. Search covers visible card text and evidence details; purpose and type filters combine. Entries remain readable without JavaScript.
 
 Run `npm run readme` after data changes. `npm test` fails if the committed README no longer matches the JSON. Only the catalog block between its marker comments is generated; the surrounding README can be edited normally.
 

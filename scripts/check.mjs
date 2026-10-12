@@ -40,6 +40,11 @@ for(const url of Object.values(issueLinks)) {
 }
 assert(!html.includes('mailto:'), 'Use repository contribution forms');
 assert(!method.includes('Three different REA connections'));
+assert(html.includes('REA usage is optional.') && method.includes('REA usage is optional, not a requirement.'));
+assert(!html.includes('zero complete REA-built') && !method.includes('explicit evidence of REA\'s contribution'));
+const suggestionForm = await readFile('.github/ISSUE_TEMPLATE/1-project.yml','utf8');
+assert(suggestionForm.includes('Independent reimplementation') && suggestionForm.includes('Compatibility project'));
+assert(!suggestionForm.includes('with a verifiable REA connection'));
 const structured=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);
 assert.equal(structured.numberOfItems,data.length);
 assert.equal(structured.itemListElement.length,data.length);

@@ -19,7 +19,7 @@ body:
     attributes:
       label: Requested change / 修改类型
       options:
-        - Incorrect REA relationship or scope
+        - Incorrect project relationship or scope
         - License or rights concern
         - Status or limitation update
         - Broken link or moved project

@@ -1,11 +1,12 @@
-name: Suggest a REA project
-description: Recommend a project, integration, tutorial or case study with a verifiable REA connection.
+name: Suggest a reverse-engineering project
+description: Recommend an open-source reconstruction, compatibility project, tool or resource. REA usage is not required.
 title: '[Project]: '
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for helping Awesome REA grow! English or Chinese is welcome（可用中文填写）.
+        REA usage is optional. Independent reimplementations, compatibility projects and early/alpha work are welcome with honest evidence and limits.
         No code or installation is needed. Maintainers review every submission; an Issue does not automatically publish or run anything.
         Please search existing entries and Issues first. This is a public form: never paste secrets, private binaries or proprietary investigation data.
   - type: input
@@ -53,9 +54,11 @@ body:
   - type: dropdown
     id: relationship
     attributes:
-      label: Relationship to REA / 与 REA 的关系
-      description: Having a REA script is not proof that the whole project was built with REA.
+      label: Project relationship / 项目关系
+      description: REA usage is not required. REA-specific claims still need evidence; a helper script does not establish whole-project provenance.
       options:
+        - Independent reimplementation
+        - Compatibility project
         - Author documents REA use
         - REA maintainer case study
         - REA tooling present
@@ -68,8 +71,8 @@ body:
     id: evidence
     attributes:
       label: Primary evidence / 一手证据
-      description: Link a README section, source file, commit, author writeup or official showcase. Quote the relevant passage and explain the exact scope. A third-party directory alone is insufficient.
-      placeholder: 'URL + relevant passage + what REA actually contributed (or what the integration provides). A commit-pinned link is ideal.'
+      description: Link a README section, source file, commit, author writeup or official showcase proving the stated reverse-engineering, reimplementation or compatibility scope. A third-party directory alone is insufficient.
+      placeholder: 'URL + relevant passage + exact scope. Add REA evidence only if claiming REA involvement. A commit-pinned link is ideal.'
     validations:
       required: true
   - type: textarea
@@ -101,7 +104,7 @@ body:
       options:
         - label: I searched the directory and open Issues for duplicates.
           required: true
-        - label: The linked evidence supports the stated REA connection; I am not claiming whole-project provenance from a helper script.
+        - label: The linked evidence supports the stated project scope; any REA claim is limited to what its source proves.
           required: true
         - label: I have not included secrets, private data, proprietary binaries or content I am not authorized to share.
           required: true

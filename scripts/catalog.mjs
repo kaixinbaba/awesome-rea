@@ -13,7 +13,7 @@ export const kinds = {
   tool: 'Analysis tool', reconstruction: 'Reconstruction', interoperability: 'Interoperability',
   integration: 'Integration / packaging', analysis: 'Case study', resource: 'Learning resource',
 };
-export const relationships = ['Upstream REA project', 'Author documents REA use', 'REA maintainer case study', 'REA tooling present', 'REA integration / packaging', 'REA learning resource'];
+export const relationships = ['Independent reimplementation', 'Compatibility project', 'Upstream REA project', 'Author documents REA use', 'REA maintainer case study', 'REA tooling present', 'REA integration / packaging', 'REA learning resource'];
 export const repository = 'https://github.com/kaixinbaba/awesome-rea';
 export const issueLinks = {
   suggest: `${repository}/issues/new?template=1-project.yml`,
@@ -35,7 +35,7 @@ export function validateProjects(projects) {
     assert(/^[a-z][a-z0-9-]*$/.test(p.id) && !ids.has(p.id), `Invalid/duplicate ID: ${p.id}`); ids.add(p.id);
     assert(Object.hasOwn(categories, p.category), `${p.id}: unknown category`);
     assert(Object.hasOwn(kinds, p.kind), `${p.id}: unknown kind`);
-    assert(relationships.includes(p.relationship), `${p.id}: unknown REA relationship`);
+    assert(relationships.includes(p.relationship), `${p.id}: unknown project relationship`);
     assert(['mint','peach','lavender','sand'].includes(p.tone), `${p.id}: invalid tone`);
     assert(/^\d{4}-\d{2}-\d{2}$/.test(p.checked) && new Date(p.checked).toISOString().slice(0,10) === p.checked, `${p.id}: invalid date`);
     assert(p.checked <= new Date().toISOString().slice(0,10), `${p.id}: future source-review date`);

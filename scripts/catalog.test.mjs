@@ -8,7 +8,16 @@ const changed = modify => { const copy = structuredClone(projects); modify(copy)
 test('purpose and output type stay independent; empty groups stay hidden', () => {
   assert.equal(projects.find(p => p.id === 'openbattlefield2').category, 'games');
   assert.equal(projects.find(p => p.id === 'openbattlefield2').relationship, 'REA tooling present');
-  assert(!populatedCategories(projects).some(([key]) => key === 'apps'));
+  assert(!populatedCategories(projects.filter(p => p.category !== 'apps')).some(([key]) => key === 'apps'));
+});
+test('independent reimplementations and compatibility projects do not need REA provenance', () => {
+  for (const relationship of ['Independent reimplementation', 'Compatibility project']) {
+    const independent = changed(p => {
+      p[0].relationship = relationship;
+      p[0].evidenceScope = 'The author documents an independent implementation of a public file format.';
+    });
+    assert.doesNotThrow(() => validateProjects(independent));
+  }
 });
 for (const [name, mutate] of [
   ['duplicate IDs', p => p[1].id = p[0].id],

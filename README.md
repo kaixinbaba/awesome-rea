@@ -1,6 +1,6 @@
 # Awesome REA
 
-A curated list of projects, plugins and learning resources around [REA — Reverse Engineer Anything](https://github.com/morluto/rea).
+Open-source reverse-engineering projects, reimplementations and compatible alternatives, plus [REA](https://github.com/morluto/rea) tools and resources. **REA usage is not required.**
 
 [Website](https://awesomerea.com) · [Suggest a project](https://github.com/kaixinbaba/awesome-rea/issues/new?template=1-project.yml) · [Contributing](CONTRIBUTING.md)
 
