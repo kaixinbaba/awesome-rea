@@ -2,6 +2,7 @@
   {
     "id": "dx-ball",
     "name": "DX-Ball",
+    "listSummary": "In-progress DX-Ball reconstruction using REA and Ghidra; original game files required.",
     "initial": "DX",
     "category": "games",
     "kind": "reconstruction",
@@ -24,6 +25,7 @@
   {
     "id": "vsl-dsp",
     "name": "VSL-DSP",
+    "listSummary": "AudioBox VSL research and Linux tools, with REA contributing focused DSP findings.",
     "initial": "VSL",
     "category": "hardware",
     "kind": "interoperability",
@@ -47,6 +49,7 @@
   {
     "id": "notion",
     "name": "Notion clipboard bridge",
+    "listSummary": "REA case study of Notion's clipboard pipeline, not a replacement app.",
     "initial": "N↗",
     "category": "learning",
     "kind": "analysis",
@@ -67,6 +70,7 @@
   {
     "id": "th04",
     "name": "TH04 bullet-ring reconstruction",
+    "listSummary": "Focused REA study of TH04's bullet-ring behavior within a broader reconstruction.",
     "initial": "04",
     "category": "games",
     "kind": "reconstruction",
@@ -89,6 +93,7 @@
   {
     "id": "openbattlefield2",
     "name": "OpenBattlefield2",
+    "listSummary": "Incomplete Refractor 2 reimplementation with REA investigation tooling; original game required.",
     "initial": "BF2",
     "category": "games",
     "kind": "reconstruction",
@@ -111,6 +116,7 @@
   {
     "id": "gunzrs",
     "name": "GunZRs",
+    "listSummary": "Rust game port with a separate REA investigation framework; original assets required.",
     "initial": "GZ",
     "category": "games",
     "kind": "reconstruction",
@@ -131,6 +137,7 @@
   {
     "id": "netcat",
     "name": "OpenBSD netcat study",
+    "listSummary": "Static REA and Ghidra analysis of an OpenBSD netcat binary.",
     "initial": "nc_",
     "category": "dev-tools",
     "kind": "analysis",
@@ -151,6 +158,7 @@
   {
     "id": "aegis",
     "name": "Aegis authenticator study",
+    "listSummary": "REA case study tracing code generation in the existing Aegis Android app.",
     "initial": "30s",
     "category": "learning",
     "kind": "analysis",
@@ -171,6 +179,7 @@
   {
     "id": "ctf",
     "name": "DownUnderCTF flag checker",
+    "listSummary": "REA walkthrough of a DownUnderCTF reverse-engineering challenge.",
     "initial": "CTF",
     "category": "learning",
     "kind": "analysis",
@@ -191,6 +200,7 @@
   {
     "id": "rea",
     "name": "REA — Reverse Engineer Anything",
+    "listSummary": "Upstream CLI and MCP toolkit for agent-assisted software analysis.",
     "initial": "REA",
     "category": "dev-tools",
     "kind": "tool",
@@ -211,6 +221,7 @@
   {
     "id": "dsh-mcp-rea",
     "name": "dsh-mcp-rea",
+    "listSummary": "Community MCP bridge exposing a smaller selection of REA tools.",
     "initial": "MCP",
     "category": "integrations",
     "kind": "integration",
@@ -231,6 +242,7 @@
   {
     "id": "rea-investigate",
     "name": "REA Investigator",
+    "listSummary": "Agent skill for planning, tracing, verifying and reporting REA investigations.",
     "initial": "INV",
     "category": "integrations",
     "kind": "integration",
@@ -251,6 +263,7 @@
   {
     "id": "rea-jev",
     "name": "rea-jev",
+    "listSummary": "REA plugin with Jev-based evidence checks; external model calls and fail-open hooks.",
     "initial": "JEV",
     "category": "integrations",
     "kind": "integration",
@@ -271,6 +284,7 @@
   {
     "id": "homebrew-rea-agents",
     "name": "rea-agents Homebrew formula",
+    "listSummary": "Community Homebrew formula for the upstream rea-agents package.",
     "initial": "BREW",
     "category": "integrations",
     "kind": "integration",
@@ -291,6 +305,7 @@
   {
     "id": "rea-playbook",
     "name": "rea-playbook",
+    "listSummary": "Hands-on Electron lab with REA exercises and a separate offline demo.",
     "initial": "LAB",
     "category": "learning",
     "kind": "resource",
@@ -311,6 +326,7 @@
   {
     "id": "rea-lab",
     "name": "rea-lab",
+    "listSummary": "Windows/Ghidra setup, practice challenges and ongoing REA evaluation work.",
     "initial": "WIN",
     "category": "learning",
     "kind": "resource",
@@ -333,6 +349,7 @@
   {
     "id": "rea-french-guide",
     "name": "REA French community guide",
+    "listSummary": "Unofficial French guide to REA concepts, setup and investigation workflows.",
     "initial": "FR",
     "category": "learning",
     "kind": "resource",
@@ -353,6 +370,7 @@
   {
     "id": "awesome-ai-reverse",
     "name": "Awesome AI Reverse Engineering",
+    "listSummary": "AI reverse-engineering tool list featuring REA, in Chinese and English.",
     "initial": "AI",
     "category": "learning",
     "kind": "resource",
@@ -373,6 +391,7 @@
   {
     "id": "awesome-reverse-engineering",
     "name": "Awesome Reverse Engineering",
+    "listSummary": "Broad reverse-engineering tool and learning list from REA's maintainer.",
     "initial": "RE",
     "category": "learning",
     "kind": "resource",

@@ -1,21 +1,18 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
-import { loadProjects, kinds, populatedCategories } from './catalog.mjs';
+import { loadProjects, populatedCategories } from './catalog.mjs';
 const start = '<!-- catalog:start -->', end = '<!-- catalog:end -->';
 const md = value => String(value).replace(/[\\`*_{}\[\]<>|]/g, '\\$&');
 const link = (url, label) => `[${md(label)}](<${url}>)`;
 export function renderCatalog(projects) {
   const groups = populatedCategories(projects);
-  const checked = projects.map(p => p.checked).sort().at(-1);
-  const lines = ['<!-- Generated from src/projects.json by npm run readme. -->', '', `**${projects.length} entries · ${groups.length} populated purpose groups · latest source review: ${checked}**`, ''];
+  const lines = ['<!-- Generated from src/projects.json by npm run readme. -->', '', `${projects.length} projects & resources · ${groups.length} categories`, ''];
   for (const [key, title] of groups) {
     lines.push(`### ${title}`, '');
     for (const p of projects.filter(p => p.category === key)) {
-      lines.push(`- **${link(p.url, p.name)}** — ${md(p.summary)}`,
-        `  - **Type:** ${md(kinds[p.kind])}. **Status:** ${md(p.status)}. **License:** ${p.licenseUrl ? link(p.licenseUrl, p.license) : md(p.license)}.`,
-        `  - **REA:** ${md(p.relationship)} — ${link(p.evidence, 'primary evidence')} (checked ${p.checked}). ${md(p.evidenceScope)}`,
-        `  - **Limits:** ${md(p.limitation)}${p.licenseNote ? ' ' + md(p.licenseNote) : ''}${p.secondary ? ' ' + link(p.secondary, p.secondaryLabel) + '.' : ''}`, '');
+      lines.push(`- ${link(p.url, p.name)} — ${md(p.listSummary ?? p.summary)}`);
     }
+    lines.push('');
   }
   return lines.join('\n').trimEnd();
 }

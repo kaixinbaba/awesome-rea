@@ -23,6 +23,10 @@ for (const [name, mutate] of [
   ['private source', p => p[0].evidence = 'https://localhost/private'],
   ['malformed source URL', p => p[0].evidence = 'https://example.com/" onclick='],
   ['control character', p => p[0].summary = 'first\nsecond'],
+  ['empty list description', p => p[0].listSummary = ' '],
+  ['non-string list description', p => p[0].listSummary = null],
+  ['multiline list description', p => p[0].listSummary = 'first\nsecond'],
+  ['overlong list description', p => p[0].listSummary = 'x'.repeat(161)],
   ['missing limitation', p => p[0].limitation = ''],
   ['missing software license', p => p[0].licenseUrl = null],
   ['future check date', p => p[0].checked = '2999-01-01'],
@@ -30,20 +34,34 @@ for (const [name, mutate] of [
   ['unlabeled supporting link', p => { p[0].secondary = 'https://example.com/'; p[0].secondaryLabel = ''; }],
 ]) test(`rejects ${name}`, () => assert.throws(() => validateProjects(changed(mutate))));
 
-test('README generation is deterministic, source-linked and preserves surrounding prose', () => {
+test('README generation is deterministic, project-linked and preserves surrounding prose', () => {
   const original = 'Before\n<!-- catalog:start -->\nstale\n<!-- catalog:end -->\nAfter\n';
   const result = updateReadme(original, projects);
   assert(result.startsWith('Before\n') && result.endsWith('\nAfter\n'));
   assert.equal(updateReadme(result, projects), result);
   const plain = result.replace(/\\([\\`*_{}\[\]<>|])/g, '$1');
-  for (const p of projects) { assert(result.includes(p.evidence)); assert(plain.includes(p.limitation)); }
-  assert.notEqual(updateReadme(result, changed(p => p[0].summary += ' Updated.')), result);
+  for (const p of projects) { assert(result.includes(p.url)); assert(plain.includes(p.listSummary ?? p.summary)); }
+  assert.equal(result.split('\n').filter(line => line.startsWith('- ')).length, projects.length);
+  assert.equal(result.split('\n').filter(line => line.startsWith('### ')).length, populatedCategories(projects).length);
+  assert(!/^[ \t]+- /m.test(result));
+  assert(!result.includes('**Type:**') && !result.includes('**Limits:**'));
+  assert.notEqual(updateReadme(result, changed(p => p[0].listSummary += ' Updated.')), result);
   assert.throws(() => updateReadme('no markers', projects));
   assert.throws(() => updateReadme(original + '<!-- catalog:start -->', projects));
 });
-test('README escapes Markdown syntax in contributed descriptions', () => {
-  const rendered = renderCatalog(changed(p => p[0].summary = '[injected](https://example.com) <script> **bold**'));
-  assert(!rendered.includes('[injected](https://example.com)'));
-  assert(!rendered.includes('<script>'));
-  assert(rendered.includes('\\[injected\\]'));
+test('README falls back to the full summary when no short description is provided', () => {
+  const withoutShort = changed(p => { delete p[0].listSummary; });
+  validateProjects(withoutShort);
+  assert(renderCatalog(withoutShort).includes(withoutShort[0].summary));
+});
+test('README escapes Markdown syntax in both short and fallback descriptions', () => {
+  for (const field of ['listSummary', 'summary']) {
+    const rendered = renderCatalog(changed(p => {
+      delete p[0].listSummary;
+      p[0][field] = '[injected](https://example.com) <script> **bold**';
+    }));
+    assert(!rendered.includes('[injected](https://example.com)'));
+    assert(!rendered.includes('<script>'));
+    assert(rendered.includes('\\[injected\\]'));
+  }
 });

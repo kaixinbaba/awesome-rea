@@ -28,6 +28,10 @@ export function validateProjects(projects) {
       assert(typeof p[key] === 'string' && p[key].trim(), `${p.id || 'entry'}: missing ${key}`);
       assert(!/[\u0000-\u001f\u007f]/u.test(p[key]), `${p.id}: control character in ${key}`);
     }
+    if (Object.hasOwn(p, 'listSummary')) {
+      assert(typeof p.listSummary === 'string' && p.listSummary.trim() && p.listSummary.length <= 160, `${p.id}: listSummary must be 1–160 characters`);
+      assert(!/[\u0000-\u001f\u007f]/u.test(p.listSummary), `${p.id}: control character in listSummary`);
+    }
     assert(/^[a-z][a-z0-9-]*$/.test(p.id) && !ids.has(p.id), `Invalid/duplicate ID: ${p.id}`); ids.add(p.id);
     assert(Object.hasOwn(categories, p.category), `${p.id}: unknown category`);
     assert(Object.hasOwn(kinds, p.kind), `${p.id}: unknown kind`);

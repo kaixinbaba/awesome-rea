@@ -34,7 +34,8 @@ Preview at `http://127.0.0.1:4387`. Build output is in `dist/`; it is not commit
 | `category` | Purpose: `dev-tools`, `games`, `apps`, `hardware`, `integrations`, or `learning` |
 | `kind` | Type: `tool`, `reconstruction`, `interoperability`, `integration`, `analysis`, or `resource` |
 | `relationship` | One of the six human-readable values in `scripts/catalog.mjs` |
-| `summary`, `target` | Concise original description and target/platform context |
+| `summary`, `target` | Website description and target/platform context |
+| `listSummary` | Optional one-sentence README description, at most 160 characters; falls back to `summary`. Keep the REA scope accurate. |
 | `evidence`, `evidenceScope` | Primary HTTPS source and the exact scope it supports; prefer a full commit-pinned URL |
 | `status`, `limitation` | Author-reported maturity and important missing features, dependencies or evidence limits |
 | `license`, `licenseUrl` | Scoped license label and primary license notice; `null` is allowed for a reading-only case study/resource, not unlicensed software |
