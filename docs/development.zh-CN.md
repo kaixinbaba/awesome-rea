@@ -69,7 +69,7 @@ node --input-type=module -e "import {loadProjects} from './scripts/catalog.mjs';
 
 增加语言时，在 `scripts/i18n.mjs` 注册路径与元数据，补齐全部界面、项目译文和 README，并扩充校验及浏览器覆盖。分享图文案改变后运行 `node scripts/social-image.mjs`；图片由本地 HTML 截图生成，不调用生图模型。
 
-Cloudflare Pages 应使用距离未知路径最近的 `404.html`（中文子目录使用 `/zh/404.html`）。部署时必须实际验证状态码和语言，不要添加将未知页面重写为 200 的通配规则。
+2026-10-12 已在生产验证：Cloudflare Pages 对未知路径返回最近的 `404.html`，包括 `/zh/` 下的多级未知路径，均为真实 404 状态及对应语言页面。每次部署后仍需复查，不要添加将未知页面重写为 200 的通配规则。
 
 ## 浏览器检查
 

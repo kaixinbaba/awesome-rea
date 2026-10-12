@@ -63,7 +63,7 @@ Every UI key and project display field is required in both languages; there is n
 node --input-type=module -e "import {loadProjects} from './scripts/catalog.mjs'; import {sourceHash} from './scripts/i18n.mjs'; console.log(sourceHash((await loadProjects()).find(p => p.id === 'photocraft')))"
 ```
 
-To add a language, register its paths and metadata in `scripts/i18n.mjs`, provide complete UI/project translations plus its README, and extend validation/browser coverage. Regenerate social images with `node scripts/social-image.mjs` after changing their messages; these are local HTML screenshots, not model-generated images. Cloudflare Pages should use the nearest `404.html` for unknown paths (`/zh/404.html` under `/zh/`); verify actual 404 status and language at deployment rather than adding a wildcard 200 rewrite.
+To add a language, register its paths and metadata in `scripts/i18n.mjs`, provide complete UI/project translations plus its README, and extend validation/browser coverage. Regenerate social images with `node scripts/social-image.mjs` after changing their messages; these are local HTML screenshots, not model-generated images. Production verified on 2026-10-12: Cloudflare Pages serves the nearest `404.html` for unknown paths, including nested Chinese paths under `/zh/`, with a real 404 status and the matching language. Recheck this after deployment rather than adding a wildcard 200 rewrite.
 
 ## Browser checks
 

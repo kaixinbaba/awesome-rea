@@ -143,6 +143,8 @@ for(const locale of Object.keys(locales)) {
   await p.locator('#notion summary').click();
   assert(await p.locator('#notion .evidence-body').isVisible());
   await p.locator(`[data-language="${other}"]`).click();
+  // A navigation can commit before its streamed catalog has finished parsing.
+  await p.waitForURL(base+localePath(other),{waitUntil:'load'});
   assert.equal(await p.locator('html').getAttribute('lang'),locales[other].lang);
   assert.equal(await p.locator('.project-card:visible').count(),total);
   assert.equal((await p.goto(home+'missing-page-for-test')).status(),404);
