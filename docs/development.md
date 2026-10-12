@@ -81,7 +81,7 @@ The suite checks both languages in Chromium/WebKit, 320–1440px layouts, each p
 
 ## Deployment
 
-**Push `main` to release.** GitHub Actions validates/builds the commit, runs mock-only analytics and local browser checks, transfers the tested `dist/` artifact to the release job, then automatically publishes to the existing Cloudflare Pages project `awesomerea`. Pull requests run checks only, without publishing credentials. Production releases are serialized so an older run cannot overwrite a newer one.
+**Push `main` to release.** GitHub Actions validates/builds the commit, runs mock-only analytics and local browser checks, transfers the tested `dist/` artifact to the release job, then automatically publishes to the existing Cloudflare Pages project `awesomerea`. Pull requests run checks only, without publishing credentials. Production releases are serialized so an older run cannot overwrite a newer one. Browser checks use the digest-pinned official Playwright image; update its version alongside the Playwright lockfile to keep browser binaries and fonts reproducible.
 
 After committing the reviewed changes:
 

@@ -87,7 +87,7 @@ TEST_URL=https://awesomerea.com TEST_OUTPUT=test-results/production npm run test
 
 ## 部署
 
-**`push main` 自动上线。** GitHub Actions 校验并构建该提交，运行完全 mock 的统计测试和本地浏览器回归，将验收通过的 `dist/` 交给发布任务，自动部署到既有项目 `awesomerea`。PR 只检查，不取得发布凭据；生产发布串行执行，防止旧任务覆盖新版本。
+**`push main` 自动上线。** GitHub Actions 校验并构建该提交，运行完全 mock 的统计测试和本地浏览器回归，将验收通过的 `dist/` 交给发布任务，自动部署到既有项目 `awesomerea`。PR 只检查，不取得发布凭据；生产发布串行执行，防止旧任务覆盖新版本。浏览器检查使用固定摘要的官方 Playwright 镜像；升级 Playwright 锁文件时同步镜像版本，保证浏览器及字体环境可复现。
 
 提交已核对的改动后执行：
 
