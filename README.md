@@ -11,7 +11,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json by npm run readme. -->
 
-19 projects & resources · 5 categories
+36 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -24,10 +24,30 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [TH04 bullet-ring reconstruction](<https://github.com/N0zoM1z0/th04>) — Focused REA study of TH04's bullet-ring behavior within a broader reconstruction.
 - [OpenBattlefield2](<https://github.com/Moxnatiy/OpenBattlefield2>) — Incomplete Refractor 2 reimplementation with REA investigation tooling; original game required.
 - [GunZRs](<https://github.com/OpenRsG/GunZRs>) — Rust game port with a separate REA investigation framework; original assets required.
+- [OpenRCT2](<https://github.com/OpenRCT2/OpenRCT2>) — RollerCoaster Tycoon 2 engine reimplementation; original game files required.
+- [OpenMW](<https://github.com/OpenMW/openmw>) — Morrowind engine and editor reimplementation; original game data required, mod compatibility varies.
+- [OpenTTD](<https://github.com/OpenTTD/OpenTTD>) — Transport Tycoon Deluxe-style simulation with optional free graphics, sound and music.
+- [ScummVM](<https://github.com/scummvm/scummvm>) — Replacement engines for supported classic adventures and RPGs; original game data usually required.
+
+### Desktop & productivity apps
+
+- [PhotoCraft](<https://github.com/storytold/photocraft>) — Early-alpha Photoshop-style image editor in Rust; not yet a professional drop-in replacement.
+- [VectorCraft](<https://github.com/storytold/vectorcraft>) — Alpha-stage Illustrator-style vector illustration in Rust.
+- [FilmCraft](<https://github.com/storytold/filmcraft>) — Alpha-stage Premiere-style video editing, color and sound in Rust.
+- [LightCraft](<https://github.com/storytold/lightcraft>) — Alpha-stage Lightroom-style photo library and RAW development in Rust.
+- [PdfCraft](<https://github.com/storytold/pdfcraft>) — Alpha-stage Acrobat-style PDF viewing, organization, annotation and forms.
+- [EffectCraft](<https://github.com/storytold/effectcraft>) — Alpha-stage After Effects-style motion graphics and compositing in Rust.
+- [DesignCraft](<https://github.com/storytold/designcraft>) — Pre-alpha InDesign-style page layout and publishing in Rust.
+- [WordCraft](<https://github.com/storytold/wordcraft>) — Alpha-stage Word-style word processing and document layout in Rust.
+- [DeckCraft](<https://github.com/storytold/deckcraft>) — Alpha-stage PowerPoint-style slide editing and presentations in Rust.
+- [CADCraft](<https://github.com/storytold/cadcraft>) — Pre-alpha AutoCAD-style drafting in Rust; unsupported entities can be lost on save.
+- [GridCraft](<https://github.com/storytold/gridcraft>) — Alpha-stage Excel-style spreadsheets, formulas and charts in Rust.
+- [Wine](<https://github.com/wine-mirror/wine>) — Windows API compatibility layer for Unix-like systems; application compatibility varies.
 
 ### Audio, hardware & drivers
 
 - [VSL-DSP](<https://github.com/grisuno/VSL-DSP>) — AudioBox VSL research and Linux tools, with REA contributing focused DSP findings.
+- [SoundCraft](<https://github.com/storytold/soundcraft>) — Pre-alpha Pro Tools-style audio recording, editing and mixing in Rust.
 
 ### REA plugins, integrations & packaging
 
