@@ -1,14 +1,17 @@
-name: Check catalog and website
+name: Check and deploy website
 on:
   push:
     branches: [main]
   pull_request:
 permissions:
   contents: read
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -19,3 +22,57 @@ jobs:
           cache: npm
       - run: npm ci --ignore-scripts
       - run: npm test
+      - run: npx playwright install --with-deps chromium webkit
+      - run: npm run test:analytics
+      - name: Check local browser behavior
+        shell: bash
+        run: |
+          set -euo pipefail
+          node scripts/serve.mjs > "$RUNNER_TEMP/preview.log" 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid" 2>/dev/null || true' EXIT
+          ready=false
+          for attempt in {1..40}; do
+            if curl --fail --silent http://127.0.0.1:4387/ > /dev/null; then
+              ready=true
+              break
+            fi
+            sleep 0.25
+          done
+          "$ready"
+          npm run test:browser
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        with:
+          name: website-${{ github.sha }}
+          path: dist/
+          if-no-files-found: error
+          retention-days: 7
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@v4
+        with:
+          name: website-${{ github.sha }}
+          path: dist/
+      - name: Install pinned release CLI without credentials
+        run: npx --yes wrangler@4.135.0 --version
+      - name: Publish tested main artifact
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: npx --yes wrangler@4.135.0 pages deploy dist --project-name awesomerea --branch main --commit-hash "$GITHUB_SHA" --commit-message "Deploy main $GITHUB_SHA" --commit-dirty=false
+      - name: Verify production commit and public bytes
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: node scripts/deployment-check.mjs

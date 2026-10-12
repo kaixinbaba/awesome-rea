@@ -28,7 +28,8 @@ npm run dev
 | `scripts/build.mjs` | 生成页面、站点地图、爬虫规则及安全响应头 |
 | `public/` | 自有 CSS、JavaScript、站点图标及双语分享图 |
 | `.github/ISSUE_TEMPLATE/` | 推荐、纠错／移除和网站问题表单 |
-| `.github/workflows/check.yml` | 只读检查，不持有部署凭据 |
+| `.github/workflows/check.yml` | PR 只读检查；`main` 验收产物自动发布到 Pages |
+| `scripts/deployment-check.mjs` | 核对生产提交、公开文件、安全头、双语 404 和域名跳转 |
 
 ## 目录字段
 
@@ -57,7 +58,7 @@ npm run dev
 
 英文路径保留 `/`、`/method/`；简体中文使用 `/zh/`、`/zh/method/`。每种语言均有本地化 404、分享图、自指 canonical、双向 `hreflang` 和对应语言的结构化数据。站点地图包含四个可索引页面，404 标记为 `noindex`。
 
-语言切换使用普通链接，无 JavaScript 也能进入对应页面；启用 JavaScript 时还会保留查询参数和锚点。跳转后筛选条件重置。不记录语言偏好、不写 Cookie、不自动按浏览器语言跳转，也不调用在线翻译服务。
+语言切换使用普通链接，无 JavaScript 也能进入对应页面；启用 JavaScript 时还会保留查询参数和锚点。跳转后筛选条件重置。语言切换不记录语言偏好、不写 Cookie、不自动按浏览器语言跳转，也不调用在线翻译服务。可选统计许可独立处理，见[统计接入](ANALYTICS.md)。
 
 所有界面键和项目展示字段必须提供完整译文，不静默回退到英文。品牌名、技术标识、命令及 SPDX 许可标识保留原样。翻译不修改项目 ID、来源链接、分类或核对日期。
 
@@ -82,18 +83,23 @@ npm run test:browser
 TEST_URL=https://awesomerea.com TEST_OUTPUT=test-results/production npm run test:browser
 ```
 
-检查中英文在 Chromium/WebKit 下的 320–1440px 布局、全部用途／类型组合、中文搜索与重置、锚点恢复、双向语言跳转、Issue 链接、复制成功／失败、无 JavaScript、双语 404 和自动无障碍规则。不等于实体设备测试或全面无障碍认证。报告与截图仅存于被忽略的 `test-results/`。
+检查中英文在 Chromium/WebKit 下的 320–1440px 布局、全部用途／类型组合、中文搜索与重置、锚点恢复、双向语言跳转、Issue 链接、复制成功／失败、无 JavaScript、双语 404 和自动无障碍规则。业务回归预置拒绝统计，不发送 Google 流量；另用 `npm run test:analytics` 检查完全 mock 的许可、撤回、隐私信号、存储和预览隔离。不等于实体设备测试或全面无障碍认证。报告与截图仅存于被忽略的 `test-results/`。
 
 ## 部署
 
-Cloudflare Pages 项目为 `awesomerea`，采用**手动部署**，不绑定 Git 自动发布。CI 只校验，不持有发布密钥。README 合并后，直到维护者部署同一提交，网站可能暂时落后。
+**`push main` 自动上线。** GitHub Actions 校验并构建该提交，运行完全 mock 的统计测试和本地浏览器回归，将验收通过的 `dist/` 交给发布任务，自动部署到既有项目 `awesomerea`。PR 只检查，不取得发布凭据；生产发布串行执行，防止旧任务覆盖新版本。
+
+提交已核对的改动后执行：
 
 ```sh
-npm test
-npx wrangler@4.135.0 pages deploy dist --project-name awesomerea --branch main
+git push origin main
 ```
 
-使用有权部署该项目的账号。**只上传 `dist/`**，不要上传仓库、私有记录、环境文件或测试产物，不加 `--force`。
+等待 [Check and deploy website 流水线](https://github.com/kaixinbaba/awesome-rea/actions/workflows/check.yml) 成功。最后一步核对 Cloudflare 生产提交等于该次流水线 SHA、公开文件逐字节匹配验收产物，并复查安全头、双语 404 与旧域 301。仅 push 成功或上传成功不等于验收完成。回滚也通过经核对的 `main` 撤销提交发布。
+
+仓库配置：Actions Secret `CLOUDFLARE_API_TOKEN`（专用、限定本账号的 Pages Edit 凭据）及 Variable `CLOUDFLARE_ACCOUNT_ID`。真实凭据不得写入 Git、文档、本地报告或聊天。首次专用凭据于 2027-10-13 到期，需提前在 Cloudflare 续建并替换 Actions Secret；检查任务不会取得该凭据。
+
+既有 Pages 项目仍显示 Direct Upload，因为 Cloudflare 不允许将其原地改成原生 Git 集成；GitHub Actions 提供 `push main` 自动发布，无需重建项目或迁域名。Wrangler 4.135.0 仅是 CI 内部发布步骤，**不再作为本机常规上线命令**。只发布 `dist/`，不上传仓库、私有记录、环境文件或测试产物，不加 `--force`。
 
 生产域名及默认来源为 `https://awesomerea.com`，根域 CNAME 指向 `awesomerea.pages.dev`，域名绑定和 HTTPS 证书由 Cloudflare Pages 管理。构建前可设置 `SITE_URL=https://your-domain.example` 覆盖 canonical、Open Graph 和站点地图来源；构建变量不会自动绑定域名。发布后检查实际文件、响应头、页面行为及域名跳转。
 
@@ -101,4 +107,4 @@ npx wrangler@4.135.0 pages deploy dist --project-name awesomerea --branch main
 
 `awesomerea.com` 的 Cloudflare 实际用户监测（RUM）已关闭，以免注入统计脚本。绑定新域名时需复查；浏览器测试会拒绝意外第三方请求。
 
-静态应用不设置 Cookie、不保存搜索词、不请求统计服务。Cloudflare 仍可能处理传输／安全请求元数据；GitHub Issue 和外链适用其目标服务规则。
+搜索词和语言偏好不保存、不上传。只有访客在 `https://awesomerea.com` 明确允许后才加载可选 GA4；默认／拒绝、浏览器隐私信号、本地及预览环境均不发送统计。许可在本地保存至多 180 天，可通过页脚设置撤回。CSP 在原有第一方限制外仅放行所需 Google 标签与接收域。GSC 域名验证及 sitemap 提交独立于浏览器统计；资源 ID、隐私规则和实际验收状态见[统计接入](ANALYTICS.md)。Cloudflare 仍可能处理传输／安全请求元数据；Google、GitHub Issue 和外链适用其目标服务规则。

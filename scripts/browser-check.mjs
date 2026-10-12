@@ -10,6 +10,7 @@ const purposes = ['all', ...populatedCategories(catalog).map(([key])=>key)];
 const types = ['all', ...Object.keys(kinds).filter(key=>catalog.some(p=>p.kind===key))];
 const base=(process.env.TEST_URL||'http://127.0.0.1:4387').replace(/\/$/,'');
 const targetOrigin=new URL(base).origin;
+const consentKey='awesomerea.analytics-consent.v1';
 const out=process.env.TEST_OUTPUT||'test-results/local';
 await mkdir(out,{recursive:true});
 const report={base,startedAt:new Date().toISOString(),contexts:[],errors:[]};
@@ -24,6 +25,8 @@ for(const locale of Object.keys(locales)) {
  try {
   for(const width of widths){
    const context=await browser.newContext({viewport:{width,height:950},reducedMotion:'reduce'});
+   // Business/visual regressions decline analytics; never send test traffic to Google.
+   await context.addInitScript(key=>{try{localStorage.setItem(key,JSON.stringify({version:1,choice:'rejected',at:Date.now()}));}catch{}},consentKey);
    const page=await context.newPage();
    const errors=[];const requests=[];
    page.on('pageerror',e=>errors.push(e.message));
@@ -46,6 +49,19 @@ for(const locale of Object.keys(locales)) {
    assert.equal(await page.locator('meta[name="robots"][content="noindex"]').count(),0);
    assert(await page.locator('link[rel="canonical"]').getAttribute('href'));
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`Overflow at ${name} ${width}`);
+   const visual=await page.evaluate(()=>{
+    const rect=selector=>{const r=document.querySelector(selector).getBoundingClientRect();return {top:r.top,bottom:r.bottom,height:r.height};};
+    const metadata=['.category-label','.entry-kind','.target','.status','.card-bottom','.results-line','.review-date','.hero-note','.filters button','.filters button span','.terminal-bar','.flow-row div>span','.terminal-bottom'];
+    const small=metadata.flatMap(selector=>[...document.querySelectorAll(selector)].filter(el=>el.getBoundingClientRect().width>0&&parseFloat(getComputedStyle(el).fontSize)<11).map(el=>({selector,size:getComputedStyle(el).fontSize})));
+    return {small,search:rect('.search-wrap'),select:rect('#kind-filter'),directory:rect('#directory'),heading:rect('.section-heading h2'),date:rect('.section-heading>.review-date')};
+   });
+   assert.deepEqual(visual.small,[],`Small metadata at ${locale} ${name} ${width}`);
+   assert.equal(visual.search.height,46);
+   assert.equal(visual.select.height,46);
+   if(width>=768) assert(Math.abs(visual.search.top-visual.select.top)<=1,'Desktop toolbar alignment');
+   if(width===1440) assert(visual.search.bottom<=950,'Search must fit in the first desktop screen');
+   if(width===390) assert(visual.directory.top<(locale==='en'?1081:1041),'Mobile directory must start earlier');
+   if(width<=620) assert(visual.date.top>=visual.heading.bottom,'Mobile review date must not squeeze the heading');
    await page.keyboard.press(name === 'webkit' ? 'Alt+Tab' : 'Tab');
    assert.equal(await page.evaluate(()=>document.activeElement?.textContent),t('nav.skip'));
    await page.evaluate(()=>document.activeElement.blur());
@@ -101,7 +117,7 @@ for(const locale of Object.keys(locales)) {
    assert.equal(a11y.violations.length,0,JSON.stringify(a11y.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))));
    assert.equal(requests.filter(url=>new URL(url).origin!==targetOrigin).length,0,'Unexpected third-party network requests');
    assert.equal((await context.cookies()).length,0);
-   assert.equal(await page.evaluate(()=>localStorage.length),0);
+   assert.deepEqual(await page.evaluate(()=>Object.keys(localStorage)),[consentKey]);
    if(name==='chromium'&&width===1440){
     await context.grantPermissions(['clipboard-read','clipboard-write']);
     await page.locator('#copy-command').click();
@@ -129,10 +145,10 @@ for(const locale of Object.keys(locales)) {
    assert.equal(await page.locator('html').getAttribute('lang'),lang);
    assert.equal(await page.locator('.project-card:visible').count(),total);
    assert.equal((await context.cookies()).length,0);
-   assert.equal(await page.evaluate(()=>localStorage.length),0);
+   assert.deepEqual(await page.evaluate(()=>Object.keys(localStorage)),[consentKey]);
    assert.equal(requests.filter(url=>new URL(url).origin!==targetOrigin).length,0);
    assert.equal(errors.length,0,errors.join('\n'));
-   report.contexts.push({locale,engine:name,width,languageRoundTrip:true,cards:total,purposeTypeCombinations:purposes.length*types.length,issueLinks:3,search:true,emptyReset:true,hashRecovery:true,details:true,axeViolations:0,thirdPartyRequests:0,errors});
+   report.contexts.push({locale,engine:name,width,visual,languageRoundTrip:true,cards:total,purposeTypeCombinations:purposes.length*types.length,issueLinks:3,search:true,emptyReset:true,hashRecovery:true,details:true,axeViolations:0,thirdPartyRequests:0,errors});
    await context.close();
   }
   const nojs=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});

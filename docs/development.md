@@ -28,7 +28,8 @@ Preview at `http://127.0.0.1:4387`. Build output is in `dist/`; it is not commit
 | `scripts/build.mjs` | Generate HTML, sitemap, robots and security headers |
 | `public/` | First-party CSS, JavaScript, favicon and social image |
 | `.github/ISSUE_TEMPLATE/` | Suggestion, correction/removal and website-bug forms |
-| `.github/workflows/check.yml` | Read-only validation; no deployment credentials |
+| `.github/workflows/check.yml` | Read-only checks for PRs; tested `main` artifacts automatically deploy to Pages |
+| `scripts/deployment-check.mjs` | Verify the production commit, public bytes, security headers, localized 404s and redirect |
 
 ## Catalog fields
 
@@ -55,7 +56,7 @@ Run `npm run readme` after data or translation changes. `npm test` fails if eith
 
 ## Internationalization
 
-English keeps `/` and `/method/`; Simplified Chinese uses `/zh/` and `/zh/method/`. Each has a localized 404 page, social image, self-canonical URL, reciprocal `hreflang` and locale-specific structured data. The sitemap lists four indexable pages; 404 pages remain `noindex`. No server, runtime translation service or language negotiation is needed. Plain links switch the corresponding page even without JavaScript; with JavaScript they also preserve query strings and anchors. Filters reset on navigation. No cookies, saved language preference or automatic redirects are used.
+English keeps `/` and `/method/`; Simplified Chinese uses `/zh/` and `/zh/method/`. Each has a localized 404 page, social image, self-canonical URL, reciprocal `hreflang` and locale-specific structured data. The sitemap lists four indexable pages; 404 pages remain `noindex`. No server, runtime translation service or language negotiation is needed. Plain links switch the corresponding page even without JavaScript; with JavaScript they also preserve query strings and anchors. Filters reset on navigation. Language navigation uses no cookies, saved language preference or automatic redirects. Optional analytics consent is separate; see [Analytics](ANALYTICS.md).
 
 Every UI key and project display field is required in both languages; there is no silent English fallback. Brands, technical identifiers, commands and SPDX identifiers retain their original spelling. Translations never change project IDs, URLs, taxonomy or review dates. Changing an English source record invalidates its translation hash: review the Chinese wording first, then calculate `sourceHash(project)` exported by `scripts/i18n.mjs` and set that entry's `sourceHash`. This detects stale translations but does not certify their factual accuracy. Example for one reviewed entry:
 
@@ -76,18 +77,23 @@ npm run test:browser
 TEST_URL=https://awesomerea.com TEST_OUTPUT=test-results/production npm run test:browser
 ```
 
-The suite checks both languages in Chromium/WebKit, 320–1440px layouts, each purpose/type combination, Chinese search, reset, entry-anchor recovery, reciprocal language navigation, Issue links, clipboard paths, no-JavaScript rendering, localized 404s and automated accessibility. This is not physical-device or full accessibility certification. Reports and screenshots remain local under ignored `test-results/`.
+The suite checks both languages in Chromium/WebKit, 320–1440px layouts, each purpose/type combination, Chinese search, reset, entry-anchor recovery, reciprocal language navigation, Issue links, clipboard paths, no-JavaScript rendering, localized 404s and automated accessibility. It seeds declined analytics consent so these regressions never send Google traffic. Run `npm run test:analytics` for the separate mock-only consent, withdrawal, privacy-signal, storage and preview-isolation tests. This is not physical-device or full accessibility certification. Reports and screenshots remain local under ignored `test-results/`.
 
 ## Deployment
 
-Cloudflare Pages project: `awesomerea`. Deployment is **manual**, not Git-integrated. CI validates changes but has no publishing secrets. A merged README and the deployed website can briefly differ until the maintainer publishes the same reviewed commit.
+**Push `main` to release.** GitHub Actions validates/builds the commit, runs mock-only analytics and local browser checks, transfers the tested `dist/` artifact to the release job, then automatically publishes to the existing Cloudflare Pages project `awesomerea`. Pull requests run checks only, without publishing credentials. Production releases are serialized so an older run cannot overwrite a newer one.
+
+After committing the reviewed changes:
 
 ```sh
-npm test
-npx wrangler@4.135.0 pages deploy dist --project-name awesomerea --branch main
+git push origin main
 ```
 
-Authenticate with an account allowed to deploy to that project. Upload **only `dist/`**, never the repository, private notes, environment files or test artifacts. Do not add a `--force` flag.
+Wait for the [Check and deploy website workflow](https://github.com/kaixinbaba/awesome-rea/actions/workflows/check.yml) to succeed. The final step verifies the Cloudflare production commit matches the workflow SHA, all public files match the tested artifact, and security headers, bilingual 404s and the old-host 301 remain correct. A push or upload alone is not release acceptance. Revert through a reviewed `main` commit to roll back.
+
+Repository configuration: Actions secret `CLOUDFLARE_API_TOKEN` (dedicated account-scoped Pages Edit credential) and variable `CLOUDFLARE_ACCOUNT_ID`. Never store credential values in Git, documentation, local reports or chat. The initial dedicated token expires on 2027-10-13; renew in Cloudflare and replace the Actions secret before expiry. Validation jobs never receive the token.
+
+The Pages project retains Direct Upload mode because Cloudflare cannot convert that existing project to native Git integration. GitHub Actions supplies the Git-triggered release; no new Pages project or domain migration is needed. Wrangler 4.135.0 is an internal CI step, **not the normal local release command**. Publish only `dist/`, never the repository, private notes, environment files or test artifacts. Do not add a `--force` flag.
 
 The production domain and default site origin are `https://awesomerea.com`. Its apex CNAME points to `awesomerea.pages.dev`; Cloudflare Pages owns the custom-domain binding and HTTPS certificate. Set `SITE_URL=https://your-domain.example` before building to override canonical, Open Graph and sitemap origins. A build setting alone does not bind a domain. Verify deployed files, response headers, real page behavior and any hostname redirects after publishing.
 
@@ -95,4 +101,4 @@ The old `awesomerea.pages.dev` hostname redirects permanently (301) to `https://
 
 Cloudflare Real User Measurements (RUM) is explicitly disabled for `awesomerea.com` to prevent its default analytics-beacon injection. Recheck this setting when attaching a new domain; the browser suite rejects unexpected third-party requests.
 
-The static application sets no cookies, stores no queries and makes no analytics requests. Cloudflare still processes delivery/security request metadata; GitHub Issues and external links are governed by their destination services.
+Search queries and language preferences are not stored or transmitted. Optional GA4 loads only after explicit consent on `https://awesomerea.com`; declined/default visits, privacy signals, local and preview origins send no analytics. Consent is stored for up to 180 days, and footer settings allow withdrawal. CSP permits only the required Google tag and collection origins in addition to existing first-party assets. GSC domain verification and sitemap submission are separate from browser analytics. See [Analytics](ANALYTICS.md) for resource IDs, privacy rules and actual verification status. Cloudflare still processes delivery/security request metadata; Google, GitHub Issues and external links are governed by their destination services.

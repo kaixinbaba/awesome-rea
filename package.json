@@ -9,6 +9,7 @@
     "check": "node scripts/readme.mjs && node scripts/check.mjs && node --test scripts/catalog.test.mjs scripts/i18n.test.mjs",
     "test": "npm run build && npm run check",
     "test:browser": "node scripts/browser-check.mjs",
+    "test:analytics": "node scripts/analytics-check.mjs",
     "dev": "node scripts/serve.mjs"
   },
   "engines": {

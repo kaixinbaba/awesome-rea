@@ -42,7 +42,7 @@ By contributing original material, you agree to license it under this repository
 
 An Issue is a proposal, not a listing. Maintainers review primary evidence, license scope, duplicates, labels and limits, then merge a focused change. Automated checks catch structural errors and stale generated content, **not factual truth**. They do not install or execute submitted projects.
 
-The README updates when the reviewed change is merged. The website is generated from the same data and is published by the maintainer's manual deployment process; it is not automatically deployed from Issues or unreviewed PRs. There may be a short delay between a merge and the website update.
+The README updates when the reviewed change is merged. Pushing the reviewed commit to `main` automatically validates, builds and publishes the website through GitHub Actions. Issues and unreviewed PRs do not deploy. The website updates after the release workflow succeeds; see [Development and deployment](docs/development.md#deployment).
 
 ## Corrections and sensitive requests
 
