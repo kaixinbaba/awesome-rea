@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Upstream REA support
+    url: https://github.com/morluto/rea/issues
+    about: For bugs in REA itself, use the upstream project's issue tracker.
+  - name: Contribution guide / 投稿指南
+    url: https://github.com/kaixinbaba/awesome-rea/blob/main/CONTRIBUTING.md
+    about: Read the evidence, licensing and review rules before suggesting an entry.

@@ -1,0 +1,40 @@
+name: Website bug
+description: Report a broken page, search/filter problem, accessibility issue or display bug.
+title: '[Website]: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or Chinese is welcome（可用中文填写）. For an inaccurate project listing, please use the correction form instead.
+        This public form is for Awesome REA, not upstream REA support. Do not paste credentials, cookies or private logs. Report sensitive security findings through the maintainer's public GitHub profile contact.
+  - type: input
+    id: url
+    attributes:
+      label: Affected page URL / 页面链接
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      placeholder: 'Open page → choose a category → enter a search term → ...'
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior / 预期与实际结果
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device / 浏览器与设备
+      placeholder: Browser name/version, operating system, approximate screen size
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Optional screenshot or details / 可选截图或补充
+      description: Remove personal or sensitive information first.

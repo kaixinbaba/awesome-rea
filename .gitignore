@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.pi/
+.pi-wechat-files/
+.wrangler/
+test-results/
+playwright-report/
+.env
+.env.*
+.DS_Store
+# Private local delivery records; never publish them with the source.
+docs/launch-2026-10-12.md
+docs/domain-shortlist-2026-10-12.txt

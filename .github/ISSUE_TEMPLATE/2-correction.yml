@@ -1,0 +1,51 @@
+name: Correct or remove a listing
+description: Fix an inaccurate claim, broken link, license note, duplicate or removal concern.
+title: '[Correction]: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or Chinese is welcome（可用中文填写）. A focused correction is valuable even if you cannot write code.
+        Issues are public. Do not disclose private evidence or personal information. For sensitive requests, use the maintainer's public GitHub profile contact instead.
+  - type: input
+    id: entry
+    attributes:
+      label: Entry name or URL / 条目名称或链接
+      placeholder: https://awesomerea.pages.dev/#project-id
+    validations:
+      required: true
+  - type: dropdown
+    id: change
+    attributes:
+      label: Requested change / 修改类型
+      options:
+        - Incorrect REA relationship or scope
+        - License or rights concern
+        - Status or limitation update
+        - Broken link or moved project
+        - Wrong category or duplicate
+        - Removal request
+        - Other correction
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should change, and why? / 修改内容与原因
+      description: Identify the exact claim or link, then propose the corrected wording or explain the removal request.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting public source / 公开依据
+      description: Link the primary source, commit or license notice. If no public evidence can be shared, explain that without posting private material.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Your relationship to the project / 关联说明
+      placeholder: Maintainer, rights holder, user, or no affiliation
+    validations:
+      required: true

@@ -1,0 +1,107 @@
+name: Suggest a REA project
+description: Recommend a project, integration, tutorial or case study with a verifiable REA connection.
+title: '[Project]: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping Awesome REA grow! English or Chinese is welcome（可用中文填写）.
+        No code or installation is needed. Maintainers review every submission; an Issue does not automatically publish or run anything.
+        Please search existing entries and Issues first. This is a public form: never paste secrets, private binaries or proprietary investigation data.
+  - type: input
+    id: project
+    attributes:
+      label: Project name and URL / 项目名称及链接
+      placeholder: Name — https://github.com/owner/project
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What does it do? / 解决什么问题
+      description: One or two concrete sentences. Who is it useful for? Avoid promotional claims.
+    validations:
+      required: true
+  - type: dropdown
+    id: purpose
+    attributes:
+      label: Main purpose / 主要用途
+      options:
+        - Developer & security tools
+        - Games & game engines
+        - Desktop & productivity apps
+        - Audio, hardware & drivers
+        - REA plugins, integrations & packaging
+        - Tutorials, case studies & resources
+        - Unsure — please help classify
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Project type / 成果类型
+      options:
+        - Analysis tool
+        - Reconstruction
+        - Interoperability
+        - Integration / packaging
+        - Case study
+        - Learning resource
+        - Unsure — please help classify
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Relationship to REA / 与 REA 的关系
+      description: Having a REA script is not proof that the whole project was built with REA.
+      options:
+        - Author documents REA use
+        - REA maintainer case study
+        - REA tooling present
+        - REA integration / packaging
+        - REA learning resource
+        - Unsure — please help verify
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary evidence / 一手证据
+      description: Link a README section, source file, commit, author writeup or official showcase. Quote the relevant passage and explain the exact scope. A third-party directory alone is insufficient.
+      placeholder: 'URL + relevant passage + what REA actually contributed (or what the integration provides). A commit-pinned link is ideal.'
+    validations:
+      required: true
+  - type: textarea
+    id: license
+    attributes:
+      label: License and rights / 许可证及权利边界
+      description: Give the license name and direct source link. Mention separate asset, binary or documentation terms. If no license is published, say so rather than guessing.
+      placeholder: 'MIT — https://github.com/owner/project/blob/COMMIT/LICENSE. Original assets are not included / have separate terms.'
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Current status and limitations / 当前状态及限制
+      description: What works, what is unfinished, and what still needs original software, assets, hardware, credentials or a paid service? Separate author claims from anything you personally tested.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Your relationship to the project / 关联说明
+      placeholder: Maintainer, contributor, user, or no affiliation
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting / 提交前确认
+      options:
+        - label: I searched the directory and open Issues for duplicates.
+          required: true
+        - label: The linked evidence supports the stated REA connection; I am not claiming whole-project provenance from a helper script.
+          required: true
+        - label: I have not included secrets, private data, proprietary binaries or content I am not authorized to share.
+          required: true

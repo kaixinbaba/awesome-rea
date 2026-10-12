@@ -1,0 +1,21 @@
+{
+  "name": "awesome-rea",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "readme": "node scripts/readme.mjs --write",
+    "check": "node scripts/readme.mjs && node scripts/check.mjs && node --test scripts/catalog.test.mjs",
+    "test": "npm run build && npm run check",
+    "test:browser": "node scripts/browser-check.mjs",
+    "dev": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "1.63.0"
+  }
+}
