@@ -75,4 +75,6 @@ The production domain and default site origin are `https://awesomerea.com`. Its 
 
 The old `awesomerea.pages.dev` hostname redirects permanently (301) to `https://awesomerea.com`, preserving paths and query strings while excluding preview subdomains. This is an account-level Cloudflare Bulk Redirect: list `awesome_rea_primary_domain`, rule `Awesome REA primary domain`. It is configured in Cloudflare, not the deployment files; preserve it when moving accounts. Do not replace it with a catch-all Pages `_redirects` rule, which would also affect the custom domain.
 
+Cloudflare Real User Measurements (RUM) is explicitly disabled for `awesomerea.com` to prevent its default analytics-beacon injection. Recheck this setting when attaching a new domain; the browser suite rejects unexpected third-party requests.
+
 The static application sets no cookies, stores no queries and makes no analytics requests. Cloudflare still processes delivery/security request metadata; GitHub Issues and external links are governed by their destination services.
