@@ -17,6 +17,13 @@ async function files(dir, prefix = '') {
 }
 const manifest = new Map(await Promise.all((await files('dist')).map(async name => [name, sha256(await readFile(`dist/${name}`))])));
 assert(manifest.has('index.html') && manifest.has('zh/404.html'), 'Expected bilingual build artifact');
+// Check the exact cache-busting URLs visitors load, not just the bare file URLs.
+const homepage = await readFile('dist/index.html', 'utf8');
+for (const name of ['styles.css', 'locale.js', 'analytics.js', 'app.js']) {
+  const hash = manifest.get(name);
+  assert(hash && homepage.includes(`"/${name}?v=${hash.slice(0, 12)}"`), `Missing versioned asset: ${name}`);
+  manifest.set(`${name}?v=${hash.slice(0, 12)}`, hash);
+}
 
 async function check() {
   let deployment;

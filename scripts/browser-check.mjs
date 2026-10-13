@@ -1,7 +1,8 @@
 import { chromium, webkit } from 'playwright';
 import AxeBuilder from '@axe-core/playwright';
 import assert from 'node:assert/strict';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { createServer } from 'node:http';
 import { loadProjects, populatedCategories, kinds, issueLinks } from './catalog.mjs';
 import { locales, loadLocale, localePath } from './i18n.mjs';
 import { loadCovers } from './covers.mjs';
@@ -210,8 +211,52 @@ for(const locale of Object.keys(locales)) {
    report.contexts.push({locale,engine:name,width:390,coverFailure:true,layoutStable:true,search:true,thirdPartyRequests:0});
    await failed.close();
   }
+  await checkWarmCache(browser, name, locale, localeOut);
  } finally {await browser.close();}
  }
+}
+// Use native HTTP caching, not Playwright routes (routing disables the cache).
+async function checkWarmCache(browser, engine, locale, output) {
+ const html = await readFile(`dist${localePath(locale)}index.html`, 'utf8');
+ const css = await readFile('dist/styles.css', 'utf8');
+ const oldCss = css.replace(/\/\* Locally hosted README previews;[\s\S]*?(?=\/\* Optional analytics:)/, '');
+ assert.notEqual(oldCss, css, 'Legacy fixture must omit the cover rules');
+ let upgraded = false; const cssRequests = [];
+ const server = createServer(async (req, res) => {
+  try {
+   const url = new URL(req.url, 'http://localhost'); const path = url.pathname;
+   const isPage = path === '/legacy' || path === localePath(locale);
+   if (path === '/styles.css') cssRequests.push(req.url);
+   const bytes = isPage ? (upgraded ? html : html.replace(/\?v=[a-f0-9]{12}/g, '')) : path === '/styles.css' && !upgraded ? oldCss : await readFile('dist' + path);
+   const type = isPage ? 'text/html' : path.endsWith('.css') ? 'text/css' : path.endsWith('.js') ? 'text/javascript' : path.endsWith('.webp') ? 'image/webp' : 'image/svg+xml';
+   res.writeHead(200, {'Content-Type': type, 'Cache-Control': isPage ? 'no-store' : 'public, max-age=14400, must-revalidate'}).end(bytes);
+  } catch { res.writeHead(404).end(); }
+ });
+ await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+ const fixture = `http://127.0.0.1:${server.address().port}`;
+ const context = await browser.newContext({viewport: {width: 1440, height: 950}});
+ try {
+  const page = await context.newPage(); const requests = []; page.on('request', req => requests.push(req.url()));
+  await page.goto(fixture + '/legacy', {waitUntil: 'networkidle'});
+  assert(await page.locator('#dx-ball .cover-symbol svg').evaluate(el => el.getBoundingClientRect().width > 100));
+  await page.goto(fixture + '/legacy?return=1', {waitUntil: 'networkidle'});
+  assert.deepEqual(cssRequests, ['/styles.css'], 'Must really reuse the browser HTTP cache');
+  upgraded = true;
+  await page.goto(fixture + localePath(locale), {waitUntil: 'networkidle'});
+  const stylesheet = await page.locator('link[rel="stylesheet"]').getAttribute('href');
+  assert.match(stylesheet, /^\/styles\.css\?v=[a-f0-9]{12}$/, 'Upgrade must bypass the native cached legacy URL');
+  assert.deepEqual(cssRequests, ['/styles.css', stylesheet]);
+  assert.equal(await page.locator('#dx-ball .cover-symbol svg').evaluate(el => getComputedStyle(el).width), '36px');
+  assert(await page.locator('#dx-ball .cover-symbol svg').evaluate(el => el.getBoundingClientRect().width < 50), 'Rendered rotated icon must remain small');
+  assert.equal(await page.locator('#dx-ball .cover-fallback').evaluate(el => getComputedStyle(el).opacity), '0');
+  await page.locator('#dx-ball .cover-image').scrollIntoViewIfNeeded();
+  await page.waitForFunction(() => document.querySelector('#dx-ball .cover-image').naturalWidth > 0);
+  await page.locator('#dx-ball .cover-image').evaluate(image => image.decode());
+  await page.locator('#search').fill('DX-Ball'); assert.equal(await page.locator('.project-card:visible').count(), 1);
+  assert.equal(requests.filter(url => new URL(url).origin !== fixture).length, 0);
+  await page.screenshot({path: `${output}/warm-cache-upgrade.png`});
+  report.contexts.push({locale, engine, warmCacheUpgrade: true, nativeHttpCache: true, legacyCssBypassed: true, cards: total, thirdPartyRequests: 0});
+ } finally { await context.close(); server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); }
 }
 report.completedAt=new Date().toISOString();
 await writeFile(`${out}/verification.json`,JSON.stringify(report,null,2));

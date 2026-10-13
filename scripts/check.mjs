@@ -32,6 +32,12 @@ for (const locale of Object.keys(locales)) {
    const target = 'dist' + local + (local.endsWith('/') ? 'index.html' : '');
    assert((await stat(target)).isFile(), `Missing internal asset: ${target}`);
   }
+  // Content-derived URLs protect returning visitors with still-fresh old assets.
+  for (const name of ['styles.css', 'locale.js', 'analytics.js', ...(page === '' ? ['app.js'] : [])]) {
+   const hash = createHash('sha256').update(await readFile(`dist/${name}`)).digest('hex').slice(0, 12);
+   assert(html.includes(`"/${name}?v=${hash}"`), `${file}: stale-cache-safe ${name} reference required`);
+   assert(!html.includes(`"/${name}"`), `${file}: unversioned ${name} reference`);
+  }
   assert.equal(html.includes('content="noindex"'), page === '404.html');
   if (page === '') {
    assert.equal((html.match(/class="project-card"/g) || []).length, projects.length);
