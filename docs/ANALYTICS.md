@@ -6,15 +6,15 @@
 
 ## 资源
 
-| 项目 | 本站对象 |
-| --- | --- |
-| 正式 origin | `https://awesomerea.com` |
-| GA 账号 | `kaixinbaba1002`，`369571703` |
-| GA4 属性 | `awesomerea.com`，`558521378`，Standard，Asia/Shanghai，USD |
-| Web 数据流 | `awesomerea`，`16113204294`，URL 已核对为正式裸域 |
-| Measurement ID | `G-KFLGGK81K8` |
-| GSC | `sc-domain:awesomerea.com`，当前账号 `siteOwner` |
-| Sitemap | `https://awesomerea.com/sitemap.xml`，四个双语首页／方法页 URL |
+| 项目             | 本站对象                                                    |
+| -------------- | ------------------------------------------------------- |
+| 正式 origin      | `https://awesomerea.com`                                |
+| GA 账号          | `kaixinbaba1002`，`369571703`                            |
+| GA4 属性         | `awesomerea.com`，`558521378`，Standard，Asia/Shanghai，USD |
+| Web 数据流        | `awesomerea`，`16113204294`，URL 已核对为正式裸域                 |
+| Measurement ID | `G-KFLGGK81K8`                                          |
+| GSC            | `sc-domain:awesomerea.com`，当前账号 `siteOwner`             |
+| Sitemap        | `https://awesomerea.com/sitemap.xml`，四个双语首页／方法页 URL     |
 
 后台资源在操作过程中出现后按 ID 查重并复用；没有再次创建同名对象。数据流 URL 从 `www` 修正为正式裸域，增强型衡量已关闭，Google signals 未启用；无额外关联广告账号、GSC 产品关联或 Measurement Protocol Secret。
 
@@ -54,7 +54,7 @@ npm run test:analytics
 - 两条 Chrome `ERR_ABORTED` 均通过同一个 Request 对象匹配到已收到的 204，并与后台入账吻合；未全局忽略错误。
 - 本地内容／生成产物和 43 项测试通过；32 个 mock-only 统计场景通过、真实 Google 请求为 0；本地和生产各 16 个业务浏览器上下文通过，JS 场景首页／方法页 axe 自动检查零违规。
 - 生产 15 个公开产物与 dist 逐字节相同，另验真实双语 404 与原域名 301，共 18 项。CSP 仍无 unsafe-inline／unsafe-eval，其他安全头保持。
-- 首次统计验收快照：https://d03d5ba6.awesomerea.pages.dev ，正式入口为 https://awesomerea.com 。该历史快照明确标记 commit-dirty，基线 HEAD 不等于新提交。
+- 首次统计验收快照：<https://d03d5ba6.awesomerea.pages.dev> ，正式入口为 <https://awesomerea.com> 。该历史快照明确标记 commit-dirty，基线 HEAD 不等于新提交。
 - 常规发布现统一为 `push main` → GitHub Actions 验证／构建／自动发布；流水线核对生产 SHA 和公开文件。发布规则见[开发与部署](development.zh-CN.md)，最新运行见 [GitHub Actions](https://github.com/kaixinbaba/awesome-rea/actions/workflows/check.yml)。不再以本机上传但源码未推送作为完整交付。
 
 本轮必要回执位于 `/Users/xunjunjie/.local/state/awesome-rea-analytics-20261012-01a12faf/`；浏览器报告位于本仓库忽略的 `test-results/analytics-20261012-*`。这些本地证据不随 `dist/` 上传。
