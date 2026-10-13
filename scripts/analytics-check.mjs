@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import { chromium, webkit } from 'playwright';
 import AxeBuilder from '@axe-core/playwright';
 import { readFile, mkdir, writeFile } from 'node:fs/promises';
+import { loadProjects } from './catalog.mjs';
+const projectCount=(await loadProjects()).length;
 const ID='G-KFLGGK81K8', KEY='awesomerea.analytics-consent.v1', DAY=86400000;
 const out=process.env.ANALYTICS_OUTPUT||'test-results/analytics-local';
 await mkdir(out,{recursive:true});
@@ -123,7 +125,7 @@ for(const [engine,launcher]of [['chromium',chromium],['webkit',webkit]]){
    results.push({engine,case:'live-consent-expiry',mockPageviews:1});await f.context.close();
   }
   {
-   const f=await fixture(browser,{javascript:false});await f.page.goto(f.origin+'/');assert.equal(await f.page.locator('.project-card:visible').count(),36);
+   const f=await fixture(browser,{javascript:false});await f.page.goto(f.origin+'/');assert.equal(await f.page.locator('.project-card:visible').count(),projectCount);
    assert.equal(await f.page.locator('#analytics-consent').isVisible(),false);assert.equal(f.traffic.tags,0);results.push({engine,case:'no-JS',mockPageviews:0});await f.context.close();
   }
  }finally{await browser.close();}
