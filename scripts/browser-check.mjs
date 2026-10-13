@@ -4,7 +4,9 @@ import assert from 'node:assert/strict';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { loadProjects, populatedCategories, kinds, issueLinks } from './catalog.mjs';
 import { locales, loadLocale, localePath } from './i18n.mjs';
+import { loadCovers } from './covers.mjs';
 const catalog = await loadProjects();
+const covers = await loadCovers(catalog);
 const total = catalog.length;
 const purposes = ['all', ...populatedCategories(catalog).map(([key])=>key)];
 const types = ['all', ...Object.keys(kinds).filter(key=>catalog.some(p=>p.kind===key))];
@@ -45,6 +47,15 @@ for(const locale of Object.keys(locales)) {
     assert.equal(await card.locator('.summary').textContent(),entry.summary);
     assert.equal(await card.locator('.evidence-label').textContent(),t(`relationship.${entry.relationship}`));
     assert((await card.locator('.evidence-body').textContent()).includes(entry.limitation));
+    const image = card.locator('.cover-image');
+    assert.equal(await image.count(), covers[entry.id] ? 1 : 0);
+    assert.equal(await card.locator('.cover-fallback').count(), 1);
+    if (covers[entry.id]) {
+     assert.equal(await image.getAttribute('src'), covers[entry.id].src);
+     assert.equal(await image.getAttribute('loading'), 'lazy');
+     assert.equal(await image.getAttribute('alt'), t('card.coverAlt', { name: entry.name }));
+     assert.equal(await card.locator('.cover-source').getAttribute('href'), covers[entry.id].readme);
+    }
    }
    assert.equal(await page.locator('meta[name="robots"][content="noindex"]').count(),0);
    assert(await page.locator('link[rel="canonical"]').getAttribute('href'));
@@ -66,8 +77,14 @@ for(const locale of Object.keys(locales)) {
    assert.equal(await page.evaluate(()=>document.activeElement?.textContent),t('nav.skip'));
    await page.evaluate(()=>document.activeElement.blur());
    if(name==='chromium'&&(width===1440||width===390)){
+    // Load offscreen previews for visual evidence, then restore the shipping lazy behavior.
+    await page.locator('.cover-image').evaluateAll(images=>images.forEach(image=>{image.loading='eager';}));
+    await page.waitForFunction(()=>[...document.querySelectorAll('.cover-image')].every(image=>image.complete&&image.naturalWidth>0));
+    assert.equal(await page.locator('.project-cover.image-missing').count(),0);
+    await page.locator('.cover-image').evaluateAll(images=>Promise.all(images.map(image=>image.decode())));
     await page.screenshot({path:`${localeOut}/home-${width}.png`,fullPage:true});
     await page.screenshot({path:`${localeOut}/first-screen-${width}.png`});
+    await page.locator('.cover-image').evaluateAll(images=>images.forEach(image=>{image.loading='lazy';}));
    }
    for(const purpose of purposes){
     await page.locator(`[data-filter="${purpose}"]`).click();
@@ -156,6 +173,9 @@ for(const locale of Object.keys(locales)) {
   await p.goto(home);
   assert.equal(await p.locator('.project-card:visible').count(),total);
   assert.equal(await p.locator('.directory-tools:visible').count(),0);
+  assert.equal(await p.locator('.cover-image').count(),Object.keys(covers).length);
+  await p.locator('#dx-ball .cover-image').scrollIntoViewIfNeeded();
+  await p.waitForFunction(()=>document.querySelector('#dx-ball .cover-image').naturalWidth>0);
   await p.locator('#notion summary').click();
   assert(await p.locator('#notion .evidence-body').isVisible());
   await p.locator(`[data-language="${other}"]`).click();
@@ -169,6 +189,27 @@ for(const locale of Object.keys(locales)) {
   assert.equal(await p.locator('meta[name="robots"]').getAttribute('content'),'noindex');
   report.contexts.push({locale,engine:name,javascript:false,languageSwitch:true,cards:total,details:true,notFound:404});
   await nojs.close();
+  if(name==='chromium') {
+   const failed=await browser.newContext({viewport:{width:390,height:950},reducedMotion:'reduce'});
+   await failed.addInitScript(key=>localStorage.setItem(key,JSON.stringify({version:1,choice:'rejected',at:Date.now()})),consentKey);
+   let release;const gate=new Promise(resolve=>{release=resolve;});
+   await failed.route(base+covers['dx-ball'].src,async route=>{await gate;await route.fulfill({status:404,body:''});});
+   const fallbackPage=await failed.newPage();const requests=[];
+   fallbackPage.on('request',request=>requests.push(request.url()));
+   await fallbackPage.goto(home,{waitUntil:'domcontentloaded'});
+   const area=fallbackPage.locator('#dx-ball .project-cover');
+   await area.scrollIntoViewIfNeeded();const before=await area.boundingBox();release();
+   await fallbackPage.waitForFunction(()=>document.querySelector('#dx-ball .project-cover').classList.contains('image-missing'));
+   assert.equal(await fallbackPage.locator('#dx-ball .cover-image').isVisible(),false);
+   assert(await fallbackPage.locator('#dx-ball .cover-fallback').isVisible());
+   const after=await area.boundingBox();assert(Math.abs(before.height-after.height)<1,'Failed image must not collapse its card');
+   await fallbackPage.locator('#search').fill('DX-Ball 1.07');
+   assert.deepEqual(await fallbackPage.locator('.project-card:visible').evaluateAll(nodes=>nodes.map(node=>node.id)),['dx-ball']);
+   assert.equal(requests.filter(url=>new URL(url).origin!==targetOrigin).length,0);
+   await fallbackPage.screenshot({path:`${localeOut}/cover-fallback.png`,fullPage:false});
+   report.contexts.push({locale,engine:name,width:390,coverFailure:true,layoutStable:true,search:true,thirdPartyRequests:0});
+   await failed.close();
+  }
  } finally {await browser.close();}
  }
 }

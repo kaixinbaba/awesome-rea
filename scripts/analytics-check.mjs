@@ -4,7 +4,10 @@ import { chromium, webkit } from 'playwright';
 import AxeBuilder from '@axe-core/playwright';
 import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { loadProjects } from './catalog.mjs';
-const projectCount=(await loadProjects()).length;
+import { loadCovers } from './covers.mjs';
+const projects=await loadProjects();
+const projectCount=projects.length;
+const coverPaths=Object.values(await loadCovers(projects)).map(cover=>cover.src);
 const ID='G-KFLGGK81K8', KEY='awesomerea.analytics-consent.v1', DAY=86400000;
 const out=process.env.ANALYTICS_OUTPUT||'test-results/analytics-local';
 await mkdir(out,{recursive:true});
@@ -33,9 +36,9 @@ async function fixture(browser,{origin='https://awesomerea.com',seed,signal,stor
  await context.route('**/*',async route=>{
   const url=new URL(route.request().url());
   if(url.origin===origin){
-   const path=decodeURIComponent(url.pathname);const allowed=['/','/zh/','/method/','/zh/method/','/styles.css','/analytics.js','/locale.js','/app.js','/favicon.svg'];
+   const path=decodeURIComponent(url.pathname);const allowed=['/','/zh/','/method/','/zh/method/','/styles.css','/analytics.js','/locale.js','/app.js','/favicon.svg',...coverPaths];
    const file=allowed.includes(path)?(path.endsWith('/')?path+'index.html':path):(path.startsWith('/zh/')?'/zh/404.html':'/404.html');
-   const type=file.endsWith('.css')?'text/css':file.endsWith('.js')?'text/javascript':file.endsWith('.svg')?'image/svg+xml':'text/html';
+   const type=file.endsWith('.css')?'text/css':file.endsWith('.js')?'text/javascript':file.endsWith('.svg')?'image/svg+xml':file.endsWith('.webp')?'image/webp':'text/html';
    await route.fulfill({status:allowed.includes(path)?200:404,headers:{...headers,'Content-Type':type},body:await readFile('dist'+file)});
   }else if(url.hostname==='www.googletagmanager.com'&&url.pathname==='/gtag/js'){
    traffic.tags++;assert.equal(url.searchParams.get('id'),ID);

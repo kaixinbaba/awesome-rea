@@ -1,0 +1,194 @@
+{
+  "dx-ball": {
+    "src": "/covers/dx-ball-f46679548123.webp",
+    "width": 960,
+    "height": 701,
+    "source": "https://raw.githubusercontent.com/N0zoM1z0/dx-ball/ebe3c26fa2e446306057cf5111de119ed44ca184/resources/dxball-title.png",
+    "readme": "https://github.com/N0zoM1z0/dx-ball/blob/ebe3c26fa2e446306057cf5111de119ed44ca184/README.md",
+    "checked": "2026-10-13"
+  },
+  "th04": {
+    "src": "/covers/th04-0810876a5184.webp",
+    "width": 960,
+    "height": 532,
+    "source": "https://raw.githubusercontent.com/N0zoM1z0/th04/5eb20beff3ac32de1278326e4195e6809632a4ce/resources/title-screen.png",
+    "readme": "https://github.com/N0zoM1z0/th04/blob/5eb20beff3ac32de1278326e4195e6809632a4ce/README.md",
+    "checked": "2026-10-13"
+  },
+  "openbattlefield2": {
+    "src": "/covers/openbattlefield2-a60d6ee4fbf3.webp",
+    "width": 960,
+    "height": 720,
+    "source": "https://raw.githubusercontent.com/Moxnatiy/OpenBattlefield2/a7ee9aff9b1537dc9c87e77aab32deed753daf9c/docs/screenshots/menu-main.png",
+    "readme": "https://github.com/Moxnatiy/OpenBattlefield2/blob/a7ee9aff9b1537dc9c87e77aab32deed753daf9c/README.md",
+    "checked": "2026-10-13"
+  },
+  "gunzrs": {
+    "src": "/covers/gunzrs-e18a512a6023.webp",
+    "width": 800,
+    "height": 450,
+    "source": "https://raw.githubusercontent.com/OpenRsG/GunZRs/c6690d112ff9dc5ae5bc96d9ae16d3111af6ec8a/docs/media/demo.webp",
+    "readme": "https://github.com/OpenRsG/GunZRs/blob/c6690d112ff9dc5ae5bc96d9ae16d3111af6ec8a/README.md",
+    "checked": "2026-10-13"
+  },
+  "netcat": {
+    "src": "/covers/netcat-ccb18d556ed6.webp",
+    "width": 960,
+    "height": 282,
+    "source": "https://raw.githubusercontent.com/NullLabTests/OpenBSD_netcat_REA/cc1870d34e83bad0b8a6ca2489f6fa177efa6a2a/assets/rea-pipeline.png",
+    "readme": "https://github.com/NullLabTests/OpenBSD_netcat_REA/blob/cc1870d34e83bad0b8a6ca2489f6fa177efa6a2a/README.md",
+    "checked": "2026-10-13"
+  },
+  "rea": {
+    "src": "/covers/rea-0e10fae94c4e.webp",
+    "width": 960,
+    "height": 546,
+    "source": "https://raw.githubusercontent.com/morluto/rea/ee50ed121e38cc6e1a2ff0dc8b789f15f71c5402/docs/assets/rea-hopper-analysis.png",
+    "readme": "https://github.com/morluto/rea/blob/ee50ed121e38cc6e1a2ff0dc8b789f15f71c5402/README.md",
+    "checked": "2026-10-13"
+  },
+  "rea-investigate": {
+    "src": "/covers/rea-investigate-cf20cc3e109c.webp",
+    "width": 960,
+    "height": 383,
+    "source": "https://raw.githubusercontent.com/Devaretanmay/rea-investigate/28eccff25123c597a55944c1b0d8c555d665b7b0/assets/banner.jpg",
+    "readme": "https://github.com/Devaretanmay/rea-investigate/blob/28eccff25123c597a55944c1b0d8c555d665b7b0/README.md",
+    "checked": "2026-10-13"
+  },
+  "rea-playbook": {
+    "src": "/covers/rea-playbook-563c6561f3cc.webp",
+    "width": 920,
+    "height": 520,
+    "source": "https://raw.githubusercontent.com/jinshi666888/rea-playbook/0ad65a85139025f32402be13ed64c8003e39b00a/docs/assets/demo.gif",
+    "readme": "https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md",
+    "checked": "2026-10-13"
+  },
+  "awesome-reverse-engineering": {
+    "src": "/covers/awesome-reverse-engineering-ef3d74c26008.webp",
+    "width": 960,
+    "height": 480,
+    "source": "https://raw.githubusercontent.com/morluto/awesome-reverse-engineering/771759da0560a96382c3b8a36113a02051928ebd/.github/rea-social-preview.png",
+    "readme": "https://github.com/morluto/awesome-reverse-engineering/blob/771759da0560a96382c3b8a36113a02051928ebd/README.md",
+    "checked": "2026-10-13"
+  },
+  "photocraft": {
+    "src": "/covers/photocraft-71e1576a604c.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/storytold/photocraft/da3da0942c14c1159f40c652afcf33584332c733/docs/images/photocraft-demo.jpg",
+    "readme": "https://github.com/storytold/photocraft/blob/da3da0942c14c1159f40c652afcf33584332c733/README.md",
+    "checked": "2026-10-13"
+  },
+  "vectorcraft": {
+    "src": "/covers/vectorcraft-4814a78db8fd.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/storytold/vectorcraft/96a783e716728d3412ac0c1e7d813a2b44aa14a5/docs/images/shot-1-neon.png",
+    "readme": "https://github.com/storytold/vectorcraft/blob/96a783e716728d3412ac0c1e7d813a2b44aa14a5/README.md",
+    "checked": "2026-10-13"
+  },
+  "filmcraft": {
+    "src": "/covers/filmcraft-856c1177ade7.webp",
+    "width": 960,
+    "height": 514,
+    "source": "https://raw.githubusercontent.com/storytold/filmcraft/78fe0102bd0bbe9e55070a4fb4a3924faa545d02/docs/images/filmcraft-hero.png",
+    "readme": "https://github.com/storytold/filmcraft/blob/78fe0102bd0bbe9e55070a4fb4a3924faa545d02/README.md",
+    "checked": "2026-10-13"
+  },
+  "lightcraft": {
+    "src": "/covers/lightcraft-b08f8647809e.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/storytold/lightcraft/76b5377868d912db69a777bda253a5b1b96b22bd/docs/images/hero-tetons.jpg",
+    "readme": "https://github.com/storytold/lightcraft/blob/76b5377868d912db69a777bda253a5b1b96b22bd/README.md",
+    "checked": "2026-10-13"
+  },
+  "pdfcraft": {
+    "src": "/covers/pdfcraft-65916698a0cd.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/storytold/pdfcraft/7d419a6c73d2a5fd19198d6fb212a4c4e6da2a4e/docs/images/pdfcraft-viewer.png",
+    "readme": "https://github.com/storytold/pdfcraft/blob/7d419a6c73d2a5fd19198d6fb212a4c4e6da2a4e/README.md",
+    "checked": "2026-10-13"
+  },
+  "effectcraft": {
+    "src": "/covers/effectcraft-6a51c43cd578.webp",
+    "width": 960,
+    "height": 583,
+    "source": "https://raw.githubusercontent.com/storytold/effectcraft/24f98a0242a8d1af6a8aa306561af00303a6292c/docs/images/effectcraft-hero.png",
+    "readme": "https://github.com/storytold/effectcraft/blob/24f98a0242a8d1af6a8aa306561af00303a6292c/README.md",
+    "checked": "2026-10-13"
+  },
+  "designcraft": {
+    "src": "/covers/designcraft-b3cefc0b5886.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/storytold/designcraft/835edae6594f10892142eda9c64141471a009d4c/docs/images/ui-spread.png",
+    "readme": "https://github.com/storytold/designcraft/blob/835edae6594f10892142eda9c64141471a009d4c/README.md",
+    "checked": "2026-10-13"
+  },
+  "wordcraft": {
+    "src": "/covers/wordcraft-bbf734cb498f.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/storytold/wordcraft/4611afba16bcd33be46cf1a7a2dce4310c7001a9/docs/images/hero.png",
+    "readme": "https://github.com/storytold/wordcraft/blob/4611afba16bcd33be46cf1a7a2dce4310c7001a9/README.md",
+    "checked": "2026-10-13"
+  },
+  "soundcraft": {
+    "src": "/covers/soundcraft-658396475816.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/storytold/soundcraft/acb08ff5f00d654a5303194ad04dad799c68a9fb/docs/images/edit.png",
+    "readme": "https://github.com/storytold/soundcraft/blob/acb08ff5f00d654a5303194ad04dad799c68a9fb/README.md",
+    "checked": "2026-10-13"
+  },
+  "deckcraft": {
+    "src": "/covers/deckcraft-6b369556f2f2.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/storytold/deckcraft/be14248577b92059eb2b8c0c9460cceffbc1f01d/docs/images/editor.png",
+    "readme": "https://github.com/storytold/deckcraft/blob/be14248577b92059eb2b8c0c9460cceffbc1f01d/README.md",
+    "checked": "2026-10-13"
+  },
+  "cadcraft": {
+    "src": "/covers/cadcraft-cb8a9a8d8bc4.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/storytold/cadcraft/890f7f1c6fefdc6bd3b42fc60c3d6a4dd4a583d1/docs/images/ui-apartment.png",
+    "readme": "https://github.com/storytold/cadcraft/blob/890f7f1c6fefdc6bd3b42fc60c3d6a4dd4a583d1/README.md",
+    "checked": "2026-10-13"
+  },
+  "gridcraft": {
+    "src": "/covers/gridcraft-00b2aac7c82f.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/storytold/gridcraft/3926d21aa9a79d272b9f71ae60d67d7d7e5bd2c2/docs/images/hero-sales.png",
+    "readme": "https://github.com/storytold/gridcraft/blob/3926d21aa9a79d272b9f71ae60d67d7d7e5bd2c2/README.md",
+    "checked": "2026-10-13"
+  },
+  "openrct2": {
+    "src": "/covers/openrct2-11a265811077.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://github.com/user-attachments/assets/fa893cc8-1484-4751-94be-4ead00a6c8f9",
+    "readme": "https://github.com/OpenRCT2/OpenRCT2/blob/44de4bf07ee70a4cd668d23919529e095211c857/readme.md",
+    "checked": "2026-10-13"
+  },
+  "paper-rs": {
+    "src": "/covers/paper-rs-3bc9dfe6949f.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/michaelshimeles/paper-rs/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/docs/screenshots/app_demo.png",
+    "readme": "https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md",
+    "checked": "2026-10-13"
+  },
+  "openghub": {
+    "src": "/covers/openghub-a592b201f453.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/Slyvan25/OpenGHub/55822ca9e739c85e596217c110cc971b11386fba/docs/screenshots/devices.png",
+    "readme": "https://github.com/Slyvan25/OpenGHub/blob/55822ca9e739c85e596217c110cc971b11386fba/README.md",
+    "checked": "2026-10-13"
+  }
+}

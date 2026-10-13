@@ -36,6 +36,8 @@ Flag original assets, commercial dependencies, third-party notices, paid model s
 5. Run `npm ci`, `npm run readme`, then `npm test`. Commit the data, translations and both regenerated READMEs together. Do not manually change either README's generated catalog section. Missing or stale translations fail validation.
 6. Explain your source review and any untested claims in the PR. UI changes also need [browser checks](docs/development.md#browser-checks).
 
+Optional card covers are reviewed README headers or screenshots, not badges or small logos. Follow the [preview field reference](docs/development.md#readme-card-previews), include local optimized images and source attribution, and submit only images you have the right to display. Missing images use a fallback; builds never crawl upstream sources. A software license does not automatically license every image or game asset.
+
 By contributing original material, you agree to license it under this repository's MIT license. Third-party works keep their own rights; do not submit material you cannot license.
 
 ## Review and publication

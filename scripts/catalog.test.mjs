@@ -2,7 +2,9 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { loadProjects, validateProjects, populatedCategories } from './catalog.mjs';
 import { renderCatalog, updateReadme } from './readme.mjs';
+import { loadCovers, validateCovers } from './covers.mjs';
 const projects = await loadProjects();
+const covers = await loadCovers(projects);
 const changed = modify => { const copy = structuredClone(projects); modify(copy); return copy; };
 
 test('purpose and output type stay independent; empty groups stay hidden', () => {
@@ -58,6 +60,25 @@ test('README generation is deterministic, project-linked and preserves surroundi
   assert.throws(() => updateReadme('no markers', projects));
   assert.throws(() => updateReadme(original + '<!-- catalog:start -->', projects));
 });
+test('covers are optional, local, attributed and validated against their actual files', () => {
+  assert(covers['dx-ball'], 'The requested DX-Ball README cover must be present');
+  assert.doesNotThrow(() => validateCovers({}, projects));
+  assert.doesNotThrow(() => validateCovers(covers, projects));
+});
+for (const [name, mutate] of [
+  ['unknown project', c => c['unknown-project'] = c['dx-ball']],
+  ['remote image path', c => c['dx-ball'].src = 'https://example.com/track.webp'],
+  ['path traversal', c => c['dx-ball'].src = '/covers/../private.webp'],
+  ['invalid dimensions', c => c['dx-ball'].width = 0],
+  ['unpinned provenance', c => c['dx-ball'].readme = 'https://github.com/N0zoM1z0/dx-ball/blob/main/README.md'],
+  ['credential-bearing image source', c => c['dx-ball'].source = 'https://secret@raw.githubusercontent.com/image.png'],
+  ['temporary signed image URL', c => c['dx-ball'].source += '?signature=temporary'],
+  ['future cover review', c => c['dx-ball'].checked = '2999-01-01'],
+]) test(`cover rejects ${name}`, () => {
+  const copy = structuredClone(covers); mutate(copy);
+  assert.throws(() => validateCovers(copy, projects));
+});
+
 test('README falls back to the full summary when no short description is provided', () => {
   const withoutShort = changed(p => { delete p[0].listSummary; });
   validateProjects(withoutShort);

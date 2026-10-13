@@ -5,6 +5,12 @@ const kind = document.querySelector('#kind-filter');
 const filters = [...document.querySelectorAll('[data-filter]')];
 const count = document.querySelector('#result-count');
 const empty = document.querySelector('#empty-results');
+// Keep the reserved cover area and useful card content when an image is unavailable.
+for (const image of document.querySelectorAll('.cover-image')) {
+  const showFallback = () => image.closest('.project-cover').classList.add('image-missing');
+  image.addEventListener('error', showFallback);
+  if (image.complete && !image.naturalWidth) showFallback();
+}
 let category = 'all';
 const haystacks = cards.map(card => card.textContent.normalize('NFKC').toLowerCase());
 

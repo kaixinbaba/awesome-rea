@@ -3,7 +3,9 @@ import { readFile, stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { loadProjects, issueLinks, populatedCategories, kinds } from './catalog.mjs';
 import { locales, loadLocale, localePath, displayFields } from './i18n.mjs';
+import { loadCovers } from './covers.mjs';
 const data = await loadProjects();
+const covers = await loadCovers(data);
 const origin = new URL(process.env.SITE_URL || 'https://awesomerea.com').origin;
 const headers = await readFile('dist/_headers', 'utf8');
 const esc = value => value.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -33,7 +35,14 @@ for (const locale of Object.keys(locales)) {
   assert.equal(html.includes('content="noindex"'), page === '404.html');
   if (page === '') {
    assert.equal((html.match(/class="project-card"/g) || []).length, projects.length);
+   assert.equal((html.match(/class="cover-image"/g) || []).length, Object.keys(covers).length);
+   assert.equal((html.match(/class="cover-fallback"/g) || []).length, projects.length);
    for (const p of projects) {
+    if (covers[p.id]) {
+     const c = covers[p.id];
+     assert(html.includes(`src="${c.src}" width="${c.width}" height="${c.height}" alt="${esc(t('card.coverAlt', { name: p.name }))}" loading="lazy" decoding="async"`));
+     assert(html.includes(`href="${c.readme}"`), `${p.id}: image source credit missing`);
+    }
     assert(html.includes(`id="${p.id}" class="project-card" data-category="${p.category}" data-kind="${p.kind}"`));
     assert(html.includes(p.evidence), `${p.id}: primary evidence missing`);
     for (const key of displayFields.filter(k => k !== 'listSummary' && Object.hasOwn(p, k))) assert(html.includes(esc(p[key])), `${locale}/${p.id}: missing ${key}`);

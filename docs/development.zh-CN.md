@@ -24,6 +24,8 @@ npm run dev
 | `src/locales/projects.zh-CN.json` | 按相同 ID 组织的中文展示字段，不另存链接或分类 |
 | `scripts/i18n.mjs` | 语言注册、完整性／占位符检查与译文过期检测 |
 | `scripts/catalog.mjs` | 分类与数据校验 |
+| `src/project-covers.json`、`scripts/covers.mjs` | 按项目 ID 组织的可选 README 预览图，校验来源、本地资源和大小 |
+| `public/covers/` | 优化后的静态 WebP 预览图与 `NOTICE.txt` 中的第三方来源声明 |
 | `scripts/readme.mjs` | 生成和检查两份 README 的目录区块 |
 | `scripts/build.mjs` | 生成页面、站点地图、爬虫规则及安全响应头 |
 | `public/` | 自有 CSS、JavaScript、站点图标及双语分享图 |
@@ -54,6 +56,20 @@ npm run dev
 
 数据或译文变更后运行 `npm run readme`。两份 README 中任一目录未同步，`npm test` 都会失败。只生成注释标记之间的目录，外围文字可直接编辑。
 
+## README 卡片预览图
+
+经核对后选用 README 中第一张合适的头图或截图，不把徽章、小 Logo 或任意图库图片当封面。没有图片的项目使用装饰性占位图；图片加载失败仍保留卡片尺寸和正文。中英共用图片，替代文本和来源标签分别翻译。图片由本站延迟加载，不请求上游图床；构建不联网抓图。
+
+| `src/project-covers.json` 字段 | 含义 |
+| --- | --- |
+| 项目 ID 键 | 已有稳定目录 ID，不另建项目记录 |
+| `src` | `/covers/ID-CONTENTHASH.webp`，取本地文件 SHA-256 的前 12 位 |
+| `width`、`height` | 实际图片尺寸，最大 960 × 720；静态 WebP，单张不超过 250 KB |
+| `readme`、`source` | 固定提交的 README 来源及原始 HTTPS 图片地址，不保留临时签名参数 |
+| `checked` | 实际核对图片及上下文的日期 |
+
+增加封面时，阅读原 README 及适用图片权利说明，缩小但不拉伸或裁掉重要内容，移除元数据，动画只取静态帧；同时补齐映射与 `public/covers/NOTICE.txt` 来源声明。图片保留第三方权利，不通过本目录 MIT 许可再授权，也不能证明软件可用。执行 `npm test`、`npm run test:analytics` 和浏览器检查。校验会拒绝未知 ID、不安全路径、尺寸／哈希不匹配及孤立资源。仅修改封面映射不会改变 README 目录或项目翻译哈希。
+
 ## 国际化
 
 英文路径保留 `/`、`/method/`；简体中文使用 `/zh/`、`/zh/method/`。每种语言均有本地化 404、分享图、自指 canonical、双向 `hreflang` 和对应语言的结构化数据。站点地图包含四个可索引页面，404 标记为 `noindex`。
@@ -83,7 +99,7 @@ npm run test:browser
 TEST_URL=https://awesomerea.com TEST_OUTPUT=test-results/production npm run test:browser
 ```
 
-检查中英文在 Chromium/WebKit 下的 320–1440px 布局、全部用途／类型组合、中文搜索与重置、锚点恢复、双向语言跳转、Issue 链接、复制成功／失败、无 JavaScript、双语 404 和自动无障碍规则。业务回归预置拒绝统计，不发送 Google 流量；另用 `npm run test:analytics` 检查完全 mock 的许可、撤回、隐私信号、存储和预览隔离。不等于实体设备测试或全面无障碍认证。报告与截图仅存于被忽略的 `test-results/`。
+检查中英文在 Chromium/WebKit 下的 320–1440px 布局、全部用途／类型组合、中文搜索与重置、锚点恢复、双向语言跳转、Issue 链接、复制成功／失败、封面加载与来源、图片失败时的布局回退、无 JavaScript、双语 404 和自动无障碍规则。业务回归预置拒绝统计，不发送 Google 流量；另用 `npm run test:analytics` 检查完全 mock 的许可、撤回、隐私信号、存储和预览隔离。不等于实体设备测试或全面无障碍认证。报告与截图仅存于被忽略的 `test-results/`。
 
 ## 部署
 

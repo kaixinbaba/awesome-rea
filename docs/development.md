@@ -24,6 +24,8 @@ Preview at `http://127.0.0.1:4387`. Build output is in `dist/`; it is not commit
 | `src/locales/projects.zh-CN.json` | Chinese project display fields, keyed by the same IDs; no separate URLs or classifications |
 | `scripts/i18n.mjs` | Locale registry, strict coverage / placeholder checks and translation freshness hashes |
 | `scripts/catalog.mjs` | Taxonomy and data validation |
+| `src/project-covers.json`, `scripts/covers.mjs` | Optional reviewed README previews keyed by project ID; provenance, local asset and size checks |
+| `public/covers/` | Optimized static WebP previews and third-party attribution in `NOTICE.txt` |
 | `scripts/readme.mjs` | Generate/check both README catalog blocks |
 | `scripts/build.mjs` | Generate HTML, sitemap, robots and security headers |
 | `public/` | First-party CSS, JavaScript, favicon and social image |
@@ -54,6 +56,20 @@ Purpose, output type, project relationship and maturity are independent. REA usa
 
 Run `npm run readme` after data or translation changes. `npm test` fails if either README is stale. Only the catalog blocks between marker comments are generated; surrounding prose can be edited normally.
 
+## README card previews
+
+Cards use the first suitable README header or screenshot after review, not badges, small logos or arbitrary gallery images. Covers are optional: missing entries get a decorative fallback; failed requests preserve the card layout and text. Both languages share the same image and translated alternative text/source labels. Images load lazily from this site's origin, never from an upstream image host. Builds do not fetch or crawl.
+
+| `src/project-covers.json` field | Meaning |
+| --- | --- |
+| Project ID key | Existing stable catalog ID; no separate project record |
+| `src` | `/covers/ID-CONTENTHASH.webp`; first 12 SHA-256 digits of the local file |
+| `width`, `height` | Actual image dimensions; at most 960 × 720; static WebP, at most 250 KB |
+| `readme`, `source` | Commit-pinned README attribution and original HTTPS image URL, without temporary signed parameters |
+| `checked` | Date the image and its context were reviewed |
+
+For a new cover, review the original README and applicable image rights, resize without distorting/cropping meaningful content, strip metadata, save a still frame for animations, and add the map record plus source attribution in `public/covers/NOTICE.txt`. Previews retain third-party rights; they are not relicensed under this directory's MIT license or proof of working software. Run `npm test`, `npm run test:analytics` and browser checks. The validator rejects unknown IDs, unsafe paths, mismatched dimensions/hashes and orphan assets. README catalogs and project translation hashes do not change when only the cover map changes.
+
 ## Internationalization
 
 English keeps `/` and `/method/`; Simplified Chinese uses `/zh/` and `/zh/method/`. Each has a localized 404 page, social image, self-canonical URL, reciprocal `hreflang` and locale-specific structured data. The sitemap lists four indexable pages; 404 pages remain `noindex`. No server, runtime translation service or language negotiation is needed. Plain links switch the corresponding page even without JavaScript; with JavaScript they also preserve query strings and anchors. Filters reset on navigation. Language navigation uses no cookies, saved language preference or automatic redirects. Optional analytics consent is separate; see [Analytics](ANALYTICS.md).
@@ -77,7 +93,7 @@ npm run test:browser
 TEST_URL=https://awesomerea.com TEST_OUTPUT=test-results/production npm run test:browser
 ```
 
-The suite checks both languages in Chromium/WebKit, 320–1440px layouts, each purpose/type combination, Chinese search, reset, entry-anchor recovery, reciprocal language navigation, Issue links, clipboard paths, no-JavaScript rendering, localized 404s and automated accessibility. It seeds declined analytics consent so these regressions never send Google traffic. Run `npm run test:analytics` for the separate mock-only consent, withdrawal, privacy-signal, storage and preview-isolation tests. This is not physical-device or full accessibility certification. Reports and screenshots remain local under ignored `test-results/`.
+The suite checks both languages in Chromium/WebKit, 320–1440px layouts, each purpose/type combination, Chinese search, reset, entry-anchor recovery, reciprocal language navigation, Issue links, clipboard paths, cover loading/provenance, failed-image layout fallback, no-JavaScript rendering, localized 404s and automated accessibility. It seeds declined analytics consent so these regressions never send Google traffic. Run `npm run test:analytics` for the separate mock-only consent, withdrawal, privacy-signal, storage and preview-isolation tests. This is not physical-device or full accessibility certification. Reports and screenshots remain local under ignored `test-results/`.
 
 ## Deployment
 
