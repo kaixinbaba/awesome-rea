@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-36 个项目与资源 · 6 个分类
+41 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -30,6 +30,9 @@
 - [OpenMW](<https://github.com/OpenMW/openmw>) — Morrowind 引擎与编辑器重实现，需要原游戏数据，模组兼容性各异。
 - [OpenTTD](<https://github.com/OpenTTD/OpenTTD>) — Transport Tycoon Deluxe 式运输经营模拟，可选用免费图像、音效与音乐素材。
 - [ScummVM](<https://github.com/scummvm/scummvm>) — 为受支持的经典冒险与角色扮演游戏提供替代引擎，通常需要原游戏数据。
+- [free-heroes4 (openh4)](<https://github.com/tallowmere/free-heroes4>) — 未完成的英雄无敌 IV 引擎及检查工具，需要原版 GOG 游戏数据。
+- [Rook](<https://github.com/AsyncFinn/rook>) — 早期 Rust Roblox 引擎重实现，支持本地场景与 Luau 脚本；不是 Roblox 服务器客户端。
+- [rct3++](<https://github.com/tomast1337/rct3pp>) — 早期过山车大亨 3 格式工具与查看器，需要原游戏，尚非完整可玩引擎。
 
 ### 桌面与效率应用
 
@@ -45,11 +48,13 @@
 - [CADCraft](<https://github.com/storytold/cadcraft>) — 测试前期的 Rust CAD 绘图应用，面向 AutoCAD 式流程；保存可能丢失不支持的图元。
 - [GridCraft](<https://github.com/storytold/gridcraft>) — 测试版 Rust 电子表格应用，面向 Excel 式表格、公式和图表工作流程。
 - [Wine](<https://github.com/wine-mirror/wine>) — 面向类 Unix 系统的 Windows API 兼容层，应用兼容性各异。
+- [paper-rs](<https://github.com/michaelshimeles/paper-rs>) — 原生 Rust 的 Paper 式画布应用，记录了 REA 研究过程；渲染和平台支持仍有缺口。
 
 ### 音频、硬件与驱动
 
 - [VSL-DSP](<https://github.com/grisuno/VSL-DSP>) — AudioBox VSL 研究及 Linux 工具；REA 参与了特定 DSP 分析。
 - [SoundCraft](<https://github.com/storytold/soundcraft>) — 测试前期的 Rust 音频录制、编辑和混音应用，面向 Pro Tools 式工作流程。
+- [OpenGHub](<https://github.com/Slyvan25/OpenGHub>) — 基于 HID++ 研究的 Linux G HUB 式外设管理器；设备支持和固件更新路径需谨慎核对。
 
 ### REA 插件、集成与安装分发
 

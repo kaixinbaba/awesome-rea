@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-36 projects & resources · 6 categories
+41 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -30,6 +30,9 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [OpenMW](<https://github.com/OpenMW/openmw>) — Morrowind engine and editor reimplementation; original game data required, mod compatibility varies.
 - [OpenTTD](<https://github.com/OpenTTD/OpenTTD>) — Transport Tycoon Deluxe-style simulation with optional free graphics, sound and music.
 - [ScummVM](<https://github.com/scummvm/scummvm>) — Replacement engines for supported classic adventures and RPGs; original game data usually required.
+- [free-heroes4 (openh4)](<https://github.com/tallowmere/free-heroes4>) — Unfinished Heroes of Might and Magic IV engine and inspection tools; original GOG game data required.
+- [Rook](<https://github.com/AsyncFinn/rook>) — Early Rust Roblox-engine reimplementation for local places and Luau scripts; not a Roblox server client.
+- [rct3++](<https://github.com/tomast1337/rct3pp>) — Early RollerCoaster Tycoon 3 format tools and viewer; original game required, not a complete playable engine.
 
 ### Desktop & productivity apps
 
@@ -45,11 +48,13 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [CADCraft](<https://github.com/storytold/cadcraft>) — Pre-alpha AutoCAD-style drafting in Rust; unsupported entities can be lost on save.
 - [GridCraft](<https://github.com/storytold/gridcraft>) — Alpha-stage Excel-style spreadsheets, formulas and charts in Rust.
 - [Wine](<https://github.com/wine-mirror/wine>) — Windows API compatibility layer for Unix-like systems; application compatibility varies.
+- [paper-rs](<https://github.com/michaelshimeles/paper-rs>) — Native Rust canvas modeled on Paper, with documented REA research; rendering and platform gaps remain.
 
 ### Audio, hardware & drivers
 
 - [VSL-DSP](<https://github.com/grisuno/VSL-DSP>) — AudioBox VSL research and Linux tools, with REA contributing focused DSP findings.
 - [SoundCraft](<https://github.com/storytold/soundcraft>) — Pre-alpha Pro Tools-style audio recording, editing and mixing in Rust.
+- [OpenGHub](<https://github.com/Slyvan25/OpenGHub>) — Linux G HUB-style peripheral manager using HID++ research; device support and firmware paths need care.
 
 ### REA plugins, integrations & packaging
 
