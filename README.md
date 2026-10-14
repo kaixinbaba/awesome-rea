@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-41 projects & resources · 6 categories
+46 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -33,6 +33,10 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [free-heroes4 (openh4)](<https://github.com/tallowmere/free-heroes4>) — Unfinished Heroes of Might and Magic IV engine and inspection tools; original GOG game data required.
 - [Rook](<https://github.com/AsyncFinn/rook>) — Early Rust Roblox-engine reimplementation for local places and Luau scripts; not a Roblox server client.
 - [rct3++](<https://github.com/tomast1337/rct3pp>) — Early RollerCoaster Tycoon 3 format tools and viewer; original game required, not a complete playable engine.
+- [OpenRealm](<https://github.com/corepunch/open-realm>) — Quake-style engine for Blizzard-era data with Warcraft III as the main playable target; original MPQ assets required.
+- [Jazz² Resurrection](<https://github.com/deathkiller/jazz2-native>) — C++ reimplementation of Jazz Jackrabbit 2 with wide platform ports; original game files required.
+- [Ruffle](<https://github.com/ruffle-rs/ruffle>) — Adobe Flash Player emulator in Rust for desktop and the web; ActionScript support still has gaps.
+- [nv-rs](<https://github.com/slaterain/nv-rs>) — From-scratch Fallout: New Vegas reimplementation in Rust/Bevy; original Data folder required.
 
 ### Desktop & productivity apps
 
@@ -43,6 +47,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [PdfCraft](<https://github.com/storytold/pdfcraft>) — Alpha-stage Acrobat-style PDF viewing, organization, annotation and forms.
 - [EffectCraft](<https://github.com/storytold/effectcraft>) — Alpha-stage After Effects-style motion graphics and compositing in Rust.
 - [DesignCraft](<https://github.com/storytold/designcraft>) — Pre-alpha InDesign-style page layout and publishing in Rust.
+- [FigCraft](<https://github.com/storytold/figcraft>) — Early-alpha clean-room Figma-style interface design in Rust; not a drop-in Figma replacement.
 - [WordCraft](<https://github.com/storytold/wordcraft>) — Alpha-stage Word-style word processing and document layout in Rust.
 - [DeckCraft](<https://github.com/storytold/deckcraft>) — Alpha-stage PowerPoint-style slide editing and presentations in Rust.
 - [CADCraft](<https://github.com/storytold/cadcraft>) — Pre-alpha AutoCAD-style drafting in Rust; unsupported entities can be lost on save.
