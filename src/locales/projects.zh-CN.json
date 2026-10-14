@@ -530,5 +530,70 @@
     "license": "GPL-3.0-or-later + 第三方许可声明",
     "licenseNote": "未包含原游戏数据，代码许可也不覆盖这些数据。内置第三方库与可选下载的 GNU Unifont 分别适用自身声明和许可。",
     "secondaryLabel": "源码中的查看器范围"
+  },
+  "openrealm": {
+    "name": "OpenRealm",
+    "tag": "独立游戏引擎",
+    "target": "魔兽争霸 III · 探索性 WoW / 星际争霸 II · C",
+    "summary": "面向暴雪时代游戏数据的开源类 Quake 引擎与兼容项目，以魔兽争霸 III 为桌面与 iPad 上的主要可玩目标。",
+    "listSummary": "面向暴雪时代数据的类 Quake 引擎，以魔兽争霸 III 为主要可玩目标；需要原版 MPQ 资源。",
+    "evidenceScope": "上游 README 介绍面向暴雪时代数据的开源类 Quake 引擎，将魔兽争霸 III 列为主要可玩目标，并列出探索性的 WoW/SC2 工作；声明不包含零售游戏数据且与暴雪无关。本站不声称 REA 参与该项目。",
+    "status": "活跃开发；以 WC3 为主路径",
+    "limitation": "原版魔兽争霸 III / WoW / 星际争霸 II 资源需由用户自行提供，项目不附带。WoW 与星际争霸 II 目标仍为探索性。投稿者仅审阅公开 README/许可；我们未独立测试构建或游玩。",
+    "license": "MIT",
+    "sourceHash": "081bcdbee4cca924889a78e8458feae6a6125369f2f925685a7b7e5e4f2c47a8"
+  },
+  "figcraft": {
+    "name": "FigCraft",
+    "tag": "应用重实现",
+    "target": "Figma 式界面设计 · Rust / WebAssembly",
+    "summary": "纯 Rust 的净室 Figma 式界面设计应用，支持画板、自动布局、组件、矢量网络、样式、变量与原型，覆盖桌面与 WebAssembly。",
+    "listSummary": "早期测试版的净室 Figma 式界面设计（Rust），尚不能直接替代 Figma。",
+    "evidenceScope": "上游 README 声明基于公开文档与可观察行为的净室实现，不含专有代码、文件格式、图标或图像；介绍离线优先的 .figcraft 文件与早期测试版对等程度。本站不声称 REA 参与该项目。",
+    "status": "早期测试版；部分替代",
+    "limitation": "作者估计对等度仍不完整；多人/云功能为预览，.fig 导入仅为尽力而为。并非 Figma 的直接替代品。品牌标识与附带字体/素材另有条款。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "license": "MIT 或 Apache-2.0（代码）",
+    "licenseNote": "作者允许在 MIT 和 Apache-2.0 中任选其一。品牌标识另有条款；附带字体与素材保留各自许可（见 ATTRIBUTION.md）。",
+    "secondaryLabel": "附带素材归属说明",
+    "sourceHash": "86bf5069cb8919844d5f1387673845a8a76f4ed5362a6d2ee1b725e8deb4ddfe"
+  },
+  "jazz2-native": {
+    "name": "Jazz² Resurrection",
+    "tag": "独立游戏引擎",
+    "target": "Jazz Jackrabbit 2 · C++",
+    "summary": "1998 年 Jazz Jackrabbit 2 的开源重实现，以 C++ 完全重写，支持多平台移植及部分 JJ2+/MLLE。",
+    "listSummary": "Jazz Jackrabbit 2 的 C++ 重实现，支持广泛平台移植；需要原游戏文件。",
+    "evidenceScope": "上游 README 将 Jazz² Resurrection 描述为 Jazz Jackrabbit 2 的重实现，并说明本仓库包含完全重写的 C++ 游戏；记录原版素材要求与平台矩阵。本站不声称 REA 参与该项目。",
+    "status": "成熟；持续维护",
+    "limitation": "不包含原版 Jazz Jackrabbit 2 素材，需放入 Source/ 目录。部分主机移植为实验性或未在真机验证。使用大量修改的 nCine。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "license": "GPL-3.0",
+    "sourceHash": "920f9585a5c2e3eeaa05db889885d3391edcd7279170b099630ed170489e4dce"
+  },
+  "ruffle": {
+    "name": "Ruffle",
+    "tag": "兼容项目",
+    "target": "Adobe Flash / SWF · Rust / WebAssembly",
+    "summary": "用 Rust 编写的 Adobe Flash Player 模拟器，面向桌面与基于 WebAssembly 的网页，旨在让 Flash/SWF 内容在 Adobe 停服后仍可播放。",
+    "listSummary": "用 Rust 编写的 Adobe Flash Player 模拟器，支持桌面与网页；ActionScript 支持仍有缺口。",
+    "evidenceScope": "上游 README 将 Ruffle 描述为用 Rust 编写、同时面向桌面与 WebAssembly 网页的 Adobe Flash Player 模拟器。项目状态说明 ActionScript 1/2/3 支持较强但尚未完成。本站不声称 REA 参与该项目。",
+    "status": "成熟；持续维护",
+    "limitation": "相对历史 Flash Player 尚未功能完备，ActionScript 仍有缺口。问题请向上游反馈。投稿者仅审阅公开 README/许可；我们未独立测试内容兼容性。",
+    "license": "Apache-2.0 或 MIT",
+    "licenseNote": "第三方声明见 LICENSE.md。",
+    "sourceHash": "947f3d62b13c9a3406e3f6c792cade495f3abd4be1983dc53ca72ed3685d87f9"
+  },
+  "nv-rs": {
+    "name": "nv-rs",
+    "tag": "独立游戏引擎",
+    "target": "辐射：新维加斯 · Rust / Bevy",
+    "summary": "用 Rust 与 Bevy 从零重实现辐射：新维加斯，读取用户自有的 Data 目录，并将引擎行为向 1:1 游玩推进。",
+    "listSummary": "用 Rust/Bevy 从零重实现辐射：新维加斯；需要原版 Data 目录。",
+    "evidenceScope": "上游 README 介绍从零重实现辐射：新维加斯，说明行为、规则、常量与公式来自在 Ghidra 中阅读的 FalloutNV.exe，并声明项目不包含游戏文件。本站不声称 REA 参与该项目。",
+    "status": "实验性；部分路线可玩",
+    "limitation": "并非完整战役；不支持原版存档与 NVSE DLL；以 Windows 为测试平台。不包含原版辐射：新维加斯素材/可执行文件。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "license": "MIT 或 Apache-2.0",
+    "licenseNote": "作者允许在 MIT 和 Apache-2.0 中任选其一。原游戏素材边界见 LEGAL.md。",
+    "secondaryLabel": "法律 / 素材边界说明",
+    "sourceHash": "b748bd3bfcf4ca8a1a164fad90d28452d0c4ff3ea7f0c0637b695bc722c34083"
   }
 }

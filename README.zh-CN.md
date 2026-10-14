@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-41 个项目与资源 · 6 个分类
+46 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -33,6 +33,10 @@
 - [free-heroes4 (openh4)](<https://github.com/tallowmere/free-heroes4>) — 未完成的英雄无敌 IV 引擎及检查工具，需要原版 GOG 游戏数据。
 - [Rook](<https://github.com/AsyncFinn/rook>) — 早期 Rust Roblox 引擎重实现，支持本地场景与 Luau 脚本；不是 Roblox 服务器客户端。
 - [rct3++](<https://github.com/tomast1337/rct3pp>) — 早期过山车大亨 3 格式工具与查看器，需要原游戏，尚非完整可玩引擎。
+- [OpenRealm](<https://github.com/corepunch/open-realm>) — 面向暴雪时代数据的类 Quake 引擎，以魔兽争霸 III 为主要可玩目标；需要原版 MPQ 资源。
+- [Jazz² Resurrection](<https://github.com/deathkiller/jazz2-native>) — Jazz Jackrabbit 2 的 C++ 重实现，支持广泛平台移植；需要原游戏文件。
+- [Ruffle](<https://github.com/ruffle-rs/ruffle>) — 用 Rust 编写的 Adobe Flash Player 模拟器，支持桌面与网页；ActionScript 支持仍有缺口。
+- [nv-rs](<https://github.com/slaterain/nv-rs>) — 用 Rust/Bevy 从零重实现辐射：新维加斯；需要原版 Data 目录。
 
 ### 桌面与效率应用
 
@@ -43,6 +47,7 @@
 - [PdfCraft](<https://github.com/storytold/pdfcraft>) — 测试版 PDF 工具，面向 Acrobat 式阅读、整理、批注和表单工作流程。
 - [EffectCraft](<https://github.com/storytold/effectcraft>) — 测试版 Rust 动态图形与合成工具，面向 After Effects 式工作流程。
 - [DesignCraft](<https://github.com/storytold/designcraft>) — 测试前期的 Rust 排版与出版应用，面向 InDesign 式工作流程。
+- [FigCraft](<https://github.com/storytold/figcraft>) — 早期测试版的净室 Figma 式界面设计（Rust），尚不能直接替代 Figma。
 - [WordCraft](<https://github.com/storytold/wordcraft>) — 测试版 Rust 文字处理与文档排版应用，面向 Word 式工作流程。
 - [DeckCraft](<https://github.com/storytold/deckcraft>) — 测试版 Rust 幻灯片编辑与演示应用，面向 PowerPoint 式工作流程。
 - [CADCraft](<https://github.com/storytold/cadcraft>) — 测试前期的 Rust CAD 绘图应用，面向 AutoCAD 式流程；保存可能丢失不支持的图元。
