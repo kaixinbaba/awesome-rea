@@ -595,5 +595,67 @@
     "licenseNote": "作者允许在 MIT 和 Apache-2.0 中任选其一。原游戏素材边界见 LEGAL.md。",
     "secondaryLabel": "法律 / 素材边界说明",
     "sourceHash": "b748bd3bfcf4ca8a1a164fad90d28452d0c4ff3ea7f0c0637b695bc722c34083"
+  },
+  "openra": {
+    "sourceHash": "ef492a933a96546f805637018cd7bddb790431f48854a635700a13d73851c28f",
+    "name": "OpenRA",
+    "tag": "独立游戏引擎",
+    "target": "命令与征服：红色警戒 · 泰伯利亚黎明 · 沙丘 2000 · C# / SDL / OpenGL",
+    "summary": "面向早期 Westwood 经典作品的自由/开源即时战略引擎，在主流桌面平台提供红色警戒、泰伯利亚黎明与沙丘 2000 的重制模组。",
+    "listSummary": "自由 Westwood RTS 引擎，含红色警戒、泰伯利亚黎明与沙丘 2000 模组；并非 EA 官方重制。",
+    "evidenceScope": "上游 README 描述支持早期 Westwood 经典的自由/开源 RTS 引擎，并分发红色警戒、泰伯利亚黎明与沙丘 2000 模组；声明 EA 未背书亦不支持该产品。本站不声称 REA 参与该项目。",
+    "status": "成熟；持续维护",
+    "limitation": "原版 Westwood/EA 素材与商标仍归权利方所有；OpenRA 提供引擎与社区内容，并非获许可的商业重制。长期引擎常见大量开放议题。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "license": "GPL-3.0-or-later"
+  },
+  "openxcom": {
+    "sourceHash": "080280112b9aa9ff91372f046ce56122922762ffeccb717ee9e439c08d9c793b",
+    "name": "OpenXcom",
+    "tag": "独立游戏引擎",
+    "target": "X-COM：未知敌人 · 深海恐怖 · C++ / SDL",
+    "summary": "MicroProse《UFO：未知敌人》（X-COM：UFO Defense）与《X-COM：深海恐怖》的开源克隆，以 C++/SDL 编写，并拥有庞大模组生态。",
+    "listSummary": "X-COM：UFO Defense 与深海恐怖的开源克隆；需要未改装的原版资源。",
+    "evidenceScope": "上游 README 将 OpenXcom 描述为以 C++/SDL 编写的 UFO：未知敌人与深海恐怖开源 GPL 克隆；安装要求原版 X-COM 资源，并警告勿使用改装资源包。本站不声称 REA 参与该项目。",
+    "status": "成熟；持续维护",
+    "limitation": "不包含原版 X-COM 素材，需由用户自行提供。兼容性依赖未改装资源文件。附带的 SDL_gfx 衍生代码按 README 为 LGPL（经作者许可）。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "license": "GPL-3.0",
+    "licenseNote": "附带的 SDL_gfx 衍生代码按 README 为 LGPL（经作者许可）。"
+  },
+  "openloco": {
+    "sourceHash": "2063a37656bc9c850be8e9c0856c8b3bdb4a8eb8e26180469176cf88726fa0d6",
+    "name": "OpenLoco",
+    "tag": "独立游戏引擎",
+    "target": "Chris Sawyer's Locomotion · C++",
+    "summary": "Chris Sawyer's Locomotion 的开源重实现，目标类似 OpenTTD/OpenRCT2 般改进游戏，使用玩家自有的原版素材。",
+    "listSummary": "Chris Sawyer's Locomotion 的 C++ 重实现；需要原游戏素材。",
+    "evidenceScope": "上游 README 描述对 Chris Sawyer's Locomotion 的开源重实现，并说明截至 2025 年 12 月已用 C++ 完成游戏重实现；注明原作为基于 RCT2 衍生引擎的 x86 汇编，且与 OpenRCT2 不共享代码库。本站不声称 REA 参与该项目。",
+    "status": "持续维护；据作者称 C++ 重实现已完成",
+    "limitation": "不包含原版 Chris Sawyer’s Locomotion 素材（需 Steam/GOG 购买）。多人与更高地图/载具上限有待新存档格式；在 NSF 之前仍受 CSL SV5/SC5 存档限制。macOS 构建未签名。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "license": "MIT"
+  },
+  "openblack": {
+    "sourceHash": "968c43ced3c75e5c72447287965f43e6a0cba4fb110573cc65369c7cc18df2e5",
+    "name": "openblack",
+    "tag": "独立游戏引擎",
+    "target": "黑与白（2001）· C++ / OpenGL / Vulkan",
+    "summary": "Lionhead《黑与白》（2001）的开源重实现，采用现代 C++ 与 OpenGL/Vulkan，使用从零售安装包/补丁提取的原版素材。",
+    "listSummary": "《黑与白》（2001）的现代 C++ 重实现；需要原游戏素材，不重新分发。",
+    "evidenceScope": "上游 readme 将 openblack 描述为以现代 C++ 与 OpenGL/Vulkan 对《黑与白》（2001）的开源重实现，并声明仍需原游戏素材。仓库主题包含 reverse-engineering；素材提取文档覆盖原安装中的 Audio/Data/Scripts。本站不声称 REA 参与该项目。",
+    "status": "活跃开发；桌面夜间构建",
+    "limitation": "原版《黑与白》素材仍受版权保护且不包含。Android/iOS 及部分交叉编译目标为实验性。可玩完整度取决于原版素材与持续引擎工作。投稿者仅审阅公开 readme/许可；我们未独立测试。",
+    "license": "GPL-3.0"
+  },
+  "daggerfall-unity": {
+    "sourceHash": "fe3d3ef95c97ca32e6fbd302ea6950c78a72ff274bfec474cd4b8f5ebbe95ef7",
+    "name": "Daggerfall Unity",
+    "tag": "独立游戏引擎",
+    "target": "上古卷轴 II：匕首雨 · Unity / C#",
+    "summary": "在 Unity 引擎中开源重现《上古卷轴 II：匕首雨》，使用免费 DOS 版匕首雨素材提供贴图、模型与音频，并加入现代渲染、体验改进与模组支持。",
+    "listSummary": "在 Unity 中重现《上古卷轴 II：匕首雨》；需要免费 DOS 版匕首雨素材。",
+    "evidenceScope": "上游 README 将 Daggerfall Unity 描述为在 Unity 引擎中对匕首雨的开源重现，并声明运行需要免费的 DOS 版匕首雨素材；记录无需模拟即可跨平台游玩及社区模组生态。本站不声称 REA 参与该项目。",
+    "status": "成熟；持续维护",
+    "limitation": "不重新分发原版匕首雨素材；用户需自行提供 DOS 版数据。Unity 引擎运行时受 Unity 自身构建条款约束。可选模组可能提高系统要求或降低稳定性。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "license": "MIT",
+    "licenseNote": "Unity 引擎运行时受 Unity 自身构建条款约束。"
   }
 }
