@@ -51,7 +51,7 @@ async function check() {
     assert.equal(sha256(Buffer.from(await r.arrayBuffer())), hash, `Production bytes differ: ${path}`);
     if (path === '/') {
       const csp = r.headers.get('content-security-policy');
-      assert(csp?.includes('https://www.googletagmanager.com') && csp.includes('https://www.google-analytics.com'), 'Required analytics CSP');
+      assert(csp?.includes('https://www.googletagmanager.com') && csp.includes('https://www.google-analytics.com') && csp.includes('https://www.clarity.ms') && csp.includes('https://*.clarity.ms'), 'Required analytics CSP');
       assert(!csp.includes('unsafe-'), 'Unsafe CSP');
       assert.equal(r.headers.get('x-frame-options'), 'DENY');
     }
