@@ -49,6 +49,9 @@ async function fixture(browser,{origin='https://awesomerea.com',seed,signal,stor
   }else if(url.hostname==='www.clarity.ms'||url.hostname==='scripts.clarity.ms'||url.hostname.endsWith('.clarity.ms')||url.hostname==='c.bing.com'){
    // Production-gated Clarity loader is expected on the mocked production origin; never hit the real network.
    await route.abort();
+  }else if(url.hostname==='analytics.murdoku.fans'){
+   // Production-gated Umami loader is expected on the mocked production origin; never hit the real network.
+   await route.abort();
   }else {traffic.unexpected.push(url.origin+url.pathname);await route.abort();}
  });
  const page=await context.newPage();return {context,page,traffic,origin};

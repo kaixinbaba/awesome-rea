@@ -14,6 +14,7 @@
 | Web 数据流 | `awesomerea`，`16113204294`，URL 已核对为正式裸域 |
 | Measurement ID | `G-KFLGGK81K8` |
 | Microsoft Clarity | project `yy4tlvmg63`，生产 origin 全局 head 注入；本地／预览不加载 |
+| Umami | website id `47d78379-0c7b-4149-b17e-9535a292bdb8`，`https://analytics.murdoku.fans/script.js`，生产 origin 全局 head 注入；本地／预览不加载 |
 | GSC | `sc-domain:awesomerea.com`，当前账号 `siteOwner` |
 | Sitemap | `https://awesomerea.com/sitemap.xml`，四个双语首页／方法页 URL |
 
@@ -23,6 +24,7 @@
 
 - 默认不加载 Google 标签、不发送无 Cookie ping；仅正式 origin、有效明确同意且无 DNT/GPC 隐私信号时启用。
 - Microsoft Clarity（`yy4tlvmg63`）在正式 origin 的全局 head 注入官方 loader；本地与预览 origin 跳过。CSP 额外放行 `clarity.ms`／`c.bing.com`，仍禁止 `unsafe-inline`／`unsafe-eval`（loader 使用 sha256）。
+- Umami（`47d78379-0c7b-4149-b17e-9535a292bdb8`）在正式 origin 的全局 head 注入 `https://analytics.murdoku.fans/script.js`；本地与预览 origin 跳过。CSP 额外放行 `analytics.murdoku.fans`（script-src／connect-src），仍禁止 `unsafe-inline`／`unsafe-eval`（loader 使用 sha256）。
 - 仅主动上报每个文档一次 `page_view`。GA4 可能生成 `first_visit`、`session_start` 等基础会话事件；不启用增强型点击、滚动、下载、表单或站内搜索采集。
 - 页面 URL 去除 query/hash；未知路径映射到本语言 404，避免路径带入个人标识。外部 referrer 仅保留 origin；同站仅保留已知公开页面路径。
 - 不传搜索词、业务用户 ID、项目筛选值或广告归因参数。设备与基础会话信息仍由 GA4 处理，不称为匿名、无 Cookie 统计。
