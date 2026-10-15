@@ -46,6 +46,9 @@ async function fixture(browser,{origin='https://awesomerea.com',seed,signal,stor
    if(blocked)await route.abort('blockedbyclient');else await route.fulfill({contentType:'text/javascript',body:mockTag});
   }else if(url.hostname==='www.google-analytics.com'&&url.pathname==='/g/collect'){
    traffic.collect.push(JSON.parse(route.request().postData()));await route.fulfill({status:204});
+  }else if(url.hostname==='www.clarity.ms'||url.hostname==='scripts.clarity.ms'||url.hostname.endsWith('.clarity.ms')||url.hostname==='c.bing.com'){
+   // Production-gated Clarity loader is expected on the mocked production origin; never hit the real network.
+   await route.abort();
   }else {traffic.unexpected.push(url.origin+url.pathname);await route.abort();}
  });
  const page=await context.newPage();return {context,page,traffic,origin};
