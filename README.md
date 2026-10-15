@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-46 projects & resources · 6 categories
+51 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -37,6 +37,11 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [Jazz² Resurrection](<https://github.com/deathkiller/jazz2-native>) — C++ reimplementation of Jazz Jackrabbit 2 with wide platform ports; original game files required.
 - [Ruffle](<https://github.com/ruffle-rs/ruffle>) — Adobe Flash Player emulator in Rust for desktop and the web; ActionScript support still has gaps.
 - [nv-rs](<https://github.com/slaterain/nv-rs>) — From-scratch Fallout: New Vegas reimplementation in Rust/Bevy; original Data folder required.
+- [OpenRA](<https://github.com/OpenRA/OpenRA>) — Libre Westwood RTS engine with Red Alert, Tiberian Dawn and Dune 2000 mods; not an EA remaster.
+- [OpenXcom](<https://github.com/OpenXcom/OpenXcom>) — Open-source clone of X-COM: UFO Defense and Terror From the Deep; vanilla original resources required.
+- [OpenLoco](<https://github.com/OpenLoco/OpenLoco>) — C++ reimplementation of Chris Sawyer's Locomotion; original game assets required.
+- [openblack](<https://github.com/openblack/openblack>) — Modern C++ reimplementation of Black & White (2001); original game assets required, not redistributed.
+- [Daggerfall Unity](<https://github.com/Interkarma/daggerfall-unity>) — Unity recreation of The Elder Scrolls II: Daggerfall; free DOS Daggerfall assets required.
 
 ### Desktop & productivity apps
 

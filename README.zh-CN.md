@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-46 个项目与资源 · 6 个分类
+51 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -37,6 +37,11 @@
 - [Jazz² Resurrection](<https://github.com/deathkiller/jazz2-native>) — Jazz Jackrabbit 2 的 C++ 重实现，支持广泛平台移植；需要原游戏文件。
 - [Ruffle](<https://github.com/ruffle-rs/ruffle>) — 用 Rust 编写的 Adobe Flash Player 模拟器，支持桌面与网页；ActionScript 支持仍有缺口。
 - [nv-rs](<https://github.com/slaterain/nv-rs>) — 用 Rust/Bevy 从零重实现辐射：新维加斯；需要原版 Data 目录。
+- [OpenRA](<https://github.com/OpenRA/OpenRA>) — 自由 Westwood RTS 引擎，含红色警戒、泰伯利亚黎明与沙丘 2000 模组；并非 EA 官方重制。
+- [OpenXcom](<https://github.com/OpenXcom/OpenXcom>) — X-COM：UFO Defense 与深海恐怖的开源克隆；需要未改装的原版资源。
+- [OpenLoco](<https://github.com/OpenLoco/OpenLoco>) — Chris Sawyer's Locomotion 的 C++ 重实现；需要原游戏素材。
+- [openblack](<https://github.com/openblack/openblack>) — 《黑与白》（2001）的现代 C++ 重实现；需要原游戏素材，不重新分发。
+- [Daggerfall Unity](<https://github.com/Interkarma/daggerfall-unity>) — 在 Unity 中重现《上古卷轴 II：匕首雨》；需要免费 DOS 版匕首雨素材。
 
 ### 桌面与效率应用
 
