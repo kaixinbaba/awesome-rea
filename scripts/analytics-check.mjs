@@ -52,6 +52,9 @@ async function fixture(browser,{origin='https://awesomerea.com',seed,signal,stor
   }else if(url.hostname==='analytics.murdoku.fans'){
    // Production-gated Umami loader is expected on the mocked production origin; never hit the real network.
    await route.abort();
+  }else if(url.hostname==='fazier.com'&&url.pathname.includes('/public/badges/launch_badges.svg')){
+   // Footer Fazier launch badge SVG; mock locally so analytics checks never hit the real network.
+   await route.fulfill({contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="120" height="24"/>'});
   }else {traffic.unexpected.push(url.origin+url.pathname);await route.abort();}
  });
  const page=await context.newPage();return {context,page,traffic,origin};
