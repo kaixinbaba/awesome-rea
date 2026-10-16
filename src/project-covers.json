@@ -533,12 +533,12 @@
   },
   "corsixth": {
     "sourceType": "generated",
-    "src": "/covers/corsixth-24f1f1e0ceae.webp",
+    "src": "/covers/corsixth-3bfe6771dd20.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Cover for CorsixTH Theme Hospital remake: cheerful cartoon hospital ward pastel beds nurses trolley plants sunny windows, warm friendly illustration style, NO TEXT no logos no watermarks, 16:9.",
+    "prompt": "Cover for CorsixTH Theme Hospital remake: cheerful cartoon hospital ward with pastel beds, friendly nurse trolley, potted plants, sunny windows, warm friendly illustration, hospital management game mood, ABSOLUTELY NO cars NO crash NO stadium NO racing, NO TEXT no logos no watermarks, 16:9 landscape.",
     "model": "gpt-image-1",
-    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "generatedAt": "2026-10-16T06:47:08.053Z",
     "checked": "2026-10-16"
   }
 }
