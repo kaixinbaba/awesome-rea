@@ -145,3 +145,6 @@ https://raw.githubusercontent.com/captbaritone/webamp/master/packages/webamp-dem
 
 Generated editorial previews (2026-10-16)
 These are original abstract SVGs rendered to WebP for catalog cards when no suitable upstream README image was available. They are not screenshots of third-party software and contain no trademarks.
+
+GPT project-fitting covers (2026-10-16)
+Replaced abstract local-svg-editorial previews with GPT-generated images matched to each project's subject. Original art, no trademarks/logos/watermarks. Model: gpt-image-1.
