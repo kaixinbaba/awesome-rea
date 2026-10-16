@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-51 个项目与资源 · 6 个分类
+61 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -42,6 +42,14 @@
 - [OpenLoco](<https://github.com/OpenLoco/OpenLoco>) — Chris Sawyer's Locomotion 的 C++ 重实现；需要原游戏素材。
 - [openblack](<https://github.com/openblack/openblack>) — 《黑与白》（2001）的现代 C++ 重实现；需要原游戏素材，不重新分发。
 - [Daggerfall Unity](<https://github.com/Interkarma/daggerfall-unity>) — 在 Unity 中重现《上古卷轴 II：匕首雨》；需要免费 DOS 版匕首雨素材。
+- [PvZ-Portable](<https://github.com/wszqkzqk/PvZ-Portable>) — 跨平台《植物大战僵尸》GOTY 重实现；需要原版 GOTY 素材。
+- [dethrace](<https://github.com/dethrace-labs/dethrace>) — 借助符号驱动逆向重建《Carmageddon》（1997）引擎；需要原游戏数据。
+- [Metaforce](<https://github.com/AxioDL/metaforce>) — 基于匹配反编译的《密特罗德 究极》引擎重实现；当前构建不可用。
+- [OpenLara](<https://github.com/XProger/OpenLara>) — 经典《古墓丽影》开源引擎；需要原游戏数据。
+- [OpenGOAL](<https://github.com/open-goal/jak-project>) — 《杰克与达克斯特》GOAL 反编译与原生 x86-64 PC 移植；需要 PS2 零售盘。
+- [SiegeFX](<https://github.com/codingncaffeine/SiegeFX>) — C#/.NET 洁净室重实现《地下城围攻》（2002）；需要原版 .dsres 数据。
+- [legend-of-legaia-re](<https://github.com/AndrewAltimit/legend-of-legaia-re>) — PSX《乐克乐克传说》逆向与 Rust 移植；自备光盘，不含索尼素材。
+- [CorsixTH](<https://github.com/CorsixTH/CorsixTH>) — 《主题医院》（1997）重实现，支持现代系统与高清；需要原版素材。
 
 ### 桌面与效率应用
 
@@ -59,12 +67,14 @@
 - [GridCraft](<https://github.com/storytold/gridcraft>) — 测试版 Rust 电子表格应用，面向 Excel 式表格、公式和图表工作流程。
 - [Wine](<https://github.com/wine-mirror/wine>) — 面向类 Unix 系统的 Windows API 兼容层，应用兼容性各异。
 - [paper-rs](<https://github.com/michaelshimeles/paper-rs>) — 原生 Rust 的 Paper 式画布应用，记录了 REA 研究过程；渲染和平台支持仍有缺口。
+- [open-claude-ui](<https://github.com/Caho1/open-claude-ui>) — 高保真 Claude 桌面 UI 的 React 重实现；作者记录了 REA 辅助分析。
 
 ### 音频、硬件与驱动
 
 - [VSL-DSP](<https://github.com/grisuno/VSL-DSP>) — AudioBox VSL 研究及 Linux 工具；REA 参与了特定 DSP 分析。
 - [SoundCraft](<https://github.com/storytold/soundcraft>) — 测试前期的 Rust 音频录制、编辑和混音应用，面向 Pro Tools 式工作流程。
 - [OpenGHub](<https://github.com/Slyvan25/OpenGHub>) — 基于 HID++ 研究的 Linux G HUB 式外设管理器；设备支持和固件更新路径需谨慎核对。
+- [Webamp](<https://github.com/captbaritone/webamp>) — 带经典皮肤支持的 HTML5/JavaScript Winamp 2 重实现；代码 MIT。
 
 ### REA 插件、集成与安装分发
 
