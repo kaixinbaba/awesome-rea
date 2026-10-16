@@ -45,3 +45,7 @@ body.analytics-open{padding-bottom:160px}.analytics-consent{position:fixed;z-ind
 @media(max-width:620px){.detail-header h1{font-size:36px}.detail-panel{padding:18px}.detail-summary{font-size:15px}}
 
 .detail-blurb{font-size:15px;line-height:1.75;color:#455348;margin:0 0 22px;text-wrap:pretty}
+
+.cover-source-static{background:#1d3026;color:#e8f0e6;border-color:#1d302618;font-weight:600}
+.detail-cover .cover-source-static{padding:7px 12px;font-size:12px}
+
