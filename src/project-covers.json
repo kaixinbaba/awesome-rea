@@ -190,5 +190,355 @@
     "source": "https://raw.githubusercontent.com/Slyvan25/OpenGHub/55822ca9e739c85e596217c110cc971b11386fba/docs/screenshots/devices.png",
     "readme": "https://github.com/Slyvan25/OpenGHub/blob/55822ca9e739c85e596217c110cc971b11386fba/README.md",
     "checked": "2026-10-13"
+  },
+  "figcraft": {
+    "src": "/covers/figcraft-92fe5b8e6222.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/storytold/figcraft/79a0e58a3c960dbbe74e38d7482cea16e37b826c/docs/images/shot-1-hero.png",
+    "readme": "https://github.com/storytold/figcraft/blob/79a0e58a3c960dbbe74e38d7482cea16e37b826c/README.md",
+    "checked": "2026-10-16"
+  },
+  "openrealm": {
+    "src": "/covers/openrealm-deb778b698ab.webp",
+    "width": 959,
+    "height": 720,
+    "source": "https://raw.githubusercontent.com/corepunch/open-realm/46fa03323622f0ff22c169580a4f65375817a1d1/docs/images/screenshot1.jpg",
+    "readme": "https://github.com/corepunch/open-realm/blob/46fa03323622f0ff22c169580a4f65375817a1d1/README.md",
+    "checked": "2026-10-16"
+  },
+  "jazz2-native": {
+    "src": "/covers/jazz2-native-c9c4a02f33ff.webp",
+    "width": 766,
+    "height": 470,
+    "source": "https://raw.githubusercontent.com/deathkiller/jazz2/master/Docs/Screen2.gif",
+    "readme": "https://github.com/deathkiller/jazz2-native/blob/9ae6812546d672231d8e27dc1313f19454de67d1/README.md",
+    "checked": "2026-10-16"
+  },
+  "openloco": {
+    "src": "/covers/openloco-862e50aa3c59.webp",
+    "width": 960,
+    "height": 412,
+    "source": "https://user-images.githubusercontent.com/604665/55420349-1a2aea00-5577-11e9-87da-78fe5cdb09e1.png",
+    "readme": "https://github.com/OpenLoco/OpenLoco/blob/6d7f5b1bfb4abd5ae2f1a2ade628a2b0d46f861e/README.md",
+    "checked": "2026-10-16"
+  },
+  "metaforce": {
+    "src": "/covers/metaforce-fd3849d9933b.webp",
+    "width": 960,
+    "height": 529,
+    "source": "https://raw.githubusercontent.com/AxioDL/metaforce/de8fc69bd7f345d6cf5f0c8fc2798295e22522d3/assets/metaforce-screen1.png",
+    "readme": "https://github.com/AxioDL/metaforce/blob/de8fc69bd7f345d6cf5f0c8fc2798295e22522d3/README.md",
+    "checked": "2026-10-16"
+  },
+  "opengol": {
+    "src": "/covers/opengol-8599939507a2.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/open-goal/jak-project/fd1976dcc83e48445e05bad05192d87001ddd15e/docs/img/promosmall1.png",
+    "readme": "https://github.com/open-goal/jak-project/blob/fd1976dcc83e48445e05bad05192d87001ddd15e/README.md",
+    "checked": "2026-10-16"
+  },
+  "siegefx": {
+    "src": "/covers/siegefx-bcc5813dce3d.webp",
+    "width": 960,
+    "height": 524,
+    "source": "https://raw.githubusercontent.com/codingncaffeine/SiegeFX/0ab34e94f64ec4e1d7a3cb45c3d11e340cfd3c71/siegeFX_logo.png",
+    "readme": "https://github.com/codingncaffeine/SiegeFX/blob/0ab34e94f64ec4e1d7a3cb45c3d11e340cfd3c71/README.md",
+    "checked": "2026-10-16"
+  },
+  "openblack": {
+    "src": "/covers/openblack-838a10b5e5ba.webp",
+    "width": 800,
+    "height": 600,
+    "source": "https://user-images.githubusercontent.com/32263167/184559293-56cfc6a7-a7da-4876-8fce-434ba8827eae.png",
+    "readme": "https://github.com/openblack/openblack/blob/a243c6b2fbd251b5d54c1b5f09f59ded9b3b4c81/README.md",
+    "checked": "2026-10-16"
+  },
+  "pvz-portable": {
+    "src": "/covers/pvz-portable-ec4e4b74d1e6.webp",
+    "width": 650,
+    "height": 450,
+    "source": "https://raw.githubusercontent.com/wszqkzqk/PvZ-Portable/04e3fdc935b2a250891d083ffe4ac82dd774e058/icon-readme.png",
+    "readme": "https://github.com/wszqkzqk/PvZ-Portable/blob/04e3fdc935b2a250891d083ffe4ac82dd774e058/README.md",
+    "checked": "2026-10-16"
+  },
+  "webamp": {
+    "src": "/covers/webamp-8424dcf1cca6.webp",
+    "width": 960,
+    "height": 629,
+    "source": "https://raw.githubusercontent.com/captbaritone/webamp/master/packages/webamp-demo/images/preview.png",
+    "readme": "https://github.com/captbaritone/webamp/blob/19e3195a998c08fc08e002eaccbac7803ed9902b/README.md",
+    "checked": "2026-10-16"
+  },
+  "vsl-dsp": {
+    "sourceType": "generated",
+    "src": "/covers/vsl-dsp-02ca14d52427.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source hardware project about PreSonus AudioBox VSL · Linux. Motif: speaker cones and waveform ribbons. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "notion": {
+    "sourceType": "generated",
+    "src": "/covers/notion-5cdeaf402a76.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source learning project about Notion Desktop · Electron. Motif: open notebook pages and annotated arrows. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "aegis": {
+    "sourceType": "generated",
+    "src": "/covers/aegis-1d612c949c59.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source learning project about Aegis Authenticator · Android APK. Motif: open notebook pages and annotated arrows. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "ctf": {
+    "sourceType": "generated",
+    "src": "/covers/ctf-17c339cdd512.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source learning project about DownUnderCTF challenge · Native binary. Motif: open notebook pages and annotated arrows. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "dsh-mcp-rea": {
+    "sourceType": "generated",
+    "src": "/covers/dsh-mcp-rea-499b4b722ed4.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source integrations project about DeepSeek Harness / MCP hosts · JavaScript. Motif: linked nodes and package silhouettes. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "rea-jev": {
+    "sourceType": "generated",
+    "src": "/covers/rea-jev-2dd4bb6e4a46.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source integrations project about Claude Code plugin · REA / Jev. Motif: linked nodes and package silhouettes. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "homebrew-rea-agents": {
+    "sourceType": "generated",
+    "src": "/covers/homebrew-rea-agents-b21f6b826dc6.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source integrations project about Homebrew · REA installation. Motif: linked nodes and package silhouettes. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "rea-lab": {
+    "sourceType": "generated",
+    "src": "/covers/rea-lab-4459de36a814.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source learning project about Windows / Ghidra · English & Spanish. Motif: open notebook pages and annotated arrows. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "rea-french-guide": {
+    "sourceType": "generated",
+    "src": "/covers/rea-french-guide-87a0645c5536.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source learning project about REA concepts & workflows · French. Motif: open notebook pages and annotated arrows. Palette mint. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "awesome-ai-reverse": {
+    "sourceType": "generated",
+    "src": "/covers/awesome-ai-reverse-bdccce9d2846.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source learning project about AI-assisted reverse engineering · Chinese & English. Motif: open notebook pages and annotated arrows. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "openmw": {
+    "sourceType": "generated",
+    "src": "/covers/openmw-3ef66cf961df.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Morrowind engine & Construction Set. Motif: soft geometric game-world horizon without characters or logos. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "openttd": {
+    "sourceType": "generated",
+    "src": "/covers/openttd-19acc8387625.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Transport Tycoon Deluxe-style simulation. Motif: soft geometric game-world horizon without characters or logos. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "scummvm": {
+    "sourceType": "generated",
+    "src": "/covers/scummvm-08bfcb70f35f.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Classic adventure and RPG game engines. Motif: soft geometric game-world horizon without characters or logos. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "wine": {
+    "sourceType": "generated",
+    "src": "/covers/wine-a7058e45e0e8.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source apps project about Windows APIs on Unix-like systems. Motif: calm desktop window frames and document planes. Palette mint. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "free-heroes4": {
+    "sourceType": "generated",
+    "src": "/covers/free-heroes4-b0037db4879c.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Heroes of Might and Magic IV · C++23 / SDL3. Motif: soft geometric game-world horizon without characters or logos. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "rook": {
+    "sourceType": "generated",
+    "src": "/covers/rook-1f2f5a14d0a8.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Roblox place formats and Luau · Rust / wgpu. Motif: soft geometric game-world horizon without characters or logos. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "rct3pp": {
+    "sourceType": "generated",
+    "src": "/covers/rct3pp-8e71d1401d64.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about RollerCoaster Tycoon 3 Complete Edition · C++26. Motif: soft geometric game-world horizon without characters or logos. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "ruffle": {
+    "sourceType": "generated",
+    "src": "/covers/ruffle-66a9d3bdf22b.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Adobe Flash / SWF · Rust / WebAssembly. Motif: soft geometric game-world horizon without characters or logos. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "nv-rs": {
+    "sourceType": "generated",
+    "src": "/covers/nv-rs-676bb652d505.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Fallout: New Vegas · Rust / Bevy. Motif: soft geometric game-world horizon without characters or logos. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "openra": {
+    "sourceType": "generated",
+    "src": "/covers/openra-179ff229531d.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Command & Conquer: Red Alert · Tiberian Dawn · Dune 2000 · C# / SDL / OpenGL. Motif: soft geometric game-world horizon without characters or logos. Palette mint. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "openxcom": {
+    "sourceType": "generated",
+    "src": "/covers/openxcom-b56d7c0bb69b.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about X-COM: UFO Defense · Terror From the Deep · C++ / SDL. Motif: soft geometric game-world horizon without characters or logos. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "daggerfall-unity": {
+    "sourceType": "generated",
+    "src": "/covers/daggerfall-unity-c3e646d5004d.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about The Elder Scrolls II: Daggerfall · Unity / C#. Motif: soft geometric game-world horizon without characters or logos. Palette mint. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "open-claude-ui": {
+    "sourceType": "generated",
+    "src": "/covers/open-claude-ui-794319dfd2cb.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source apps project about Anthropic Claude desktop UI · React / TypeScript. Motif: calm desktop window frames and document planes. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "dethrace": {
+    "sourceType": "generated",
+    "src": "/covers/dethrace-66469d388765.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Carmageddon (1997) · C / SDL2. Motif: soft geometric game-world horizon without characters or logos. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "openlara": {
+    "sourceType": "generated",
+    "src": "/covers/openlara-d8e00520cbfb.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Classic Tomb Raider · C/C++ / WebGL. Motif: soft geometric game-world horizon without characters or logos. Palette mint. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "legend-of-legaia-re": {
+    "sourceType": "generated",
+    "src": "/covers/legend-of-legaia-re-2e5e2f6851e7.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Legend of Legaia (USA SCUS-94254) · Rust / wgpu / SDL3. Motif: soft geometric game-world horizon without characters or logos. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
+  },
+  "corsixth": {
+    "sourceType": "generated",
+    "src": "/covers/corsixth-b406a86b5662.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Theme Hospital (1997) · Lua / C++. Motif: soft geometric game-world horizon without characters or logos. Palette mint. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-10-16T05:35:21.758Z",
+    "checked": "2026-10-16"
   }
 }
