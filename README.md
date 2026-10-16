@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-51 projects & resources · 6 categories
+61 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -42,6 +42,14 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [OpenLoco](<https://github.com/OpenLoco/OpenLoco>) — C++ reimplementation of Chris Sawyer's Locomotion; original game assets required.
 - [openblack](<https://github.com/openblack/openblack>) — Modern C++ reimplementation of Black & White (2001); original game assets required, not redistributed.
 - [Daggerfall Unity](<https://github.com/Interkarma/daggerfall-unity>) — Unity recreation of The Elder Scrolls II: Daggerfall; free DOS Daggerfall assets required.
+- [PvZ-Portable](<https://github.com/wszqkzqk/PvZ-Portable>) — Cross-platform Plants vs. Zombies GOTY reimplementation; original GOTY assets required.
+- [dethrace](<https://github.com/dethrace-labs/dethrace>) — Carmageddon (1997) engine rebuild via symbol-driven RE; original game data required.
+- [Metaforce](<https://github.com/AxioDL/metaforce>) — Metroid Prime engine reimplementation on matching decomp; builds currently unavailable.
+- [OpenLara](<https://github.com/XProger/OpenLara>) — Classic Tomb Raider open-source engine; original game data required.
+- [OpenGOAL](<https://github.com/open-goal/jak-project>) — Jak & Daxter GOAL decompile and native x86-64 PC ports; PS2 retail disc required.
+- [SiegeFX](<https://github.com/codingncaffeine/SiegeFX>) — Clean-room Dungeon Siege (2002) reimplementation in C#/.NET; original .dsres data required.
+- [legend-of-legaia-re](<https://github.com/AndrewAltimit/legend-of-legaia-re>) — PSX Legend of Legaia reverse engineering and Rust port; BYO disc, no Sony assets.
+- [CorsixTH](<https://github.com/CorsixTH/CorsixTH>) — Theme Hospital (1997) reimplementation with modern OS/HD support; original assets required.
 
 ### Desktop & productivity apps
 
@@ -59,12 +67,14 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [GridCraft](<https://github.com/storytold/gridcraft>) — Alpha-stage Excel-style spreadsheets, formulas and charts in Rust.
 - [Wine](<https://github.com/wine-mirror/wine>) — Windows API compatibility layer for Unix-like systems; application compatibility varies.
 - [paper-rs](<https://github.com/michaelshimeles/paper-rs>) — Native Rust canvas modeled on Paper, with documented REA research; rendering and platform gaps remain.
+- [open-claude-ui](<https://github.com/Caho1/open-claude-ui>) — High-fidelity Claude desktop UI reconstruction in React; author documents REA-assisted analysis.
 
 ### Audio, hardware & drivers
 
 - [VSL-DSP](<https://github.com/grisuno/VSL-DSP>) — AudioBox VSL research and Linux tools, with REA contributing focused DSP findings.
 - [SoundCraft](<https://github.com/storytold/soundcraft>) — Pre-alpha Pro Tools-style audio recording, editing and mixing in Rust.
 - [OpenGHub](<https://github.com/Slyvan25/OpenGHub>) — Linux G HUB-style peripheral manager using HID++ research; device support and firmware paths need care.
+- [Webamp](<https://github.com/captbaritone/webamp>) — HTML5/JavaScript Winamp 2 reimplementation with classic skin support; MIT code.
 
 ### REA plugins, integrations & packaging
 
