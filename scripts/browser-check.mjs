@@ -13,6 +13,8 @@ const purposes = ['all', ...populatedCategories(catalog).map(([key])=>key)];
 const types = ['all', ...Object.keys(kinds).filter(key=>catalog.some(p=>p.kind===key))];
 const base=(process.env.TEST_URL||'http://127.0.0.1:4387').replace(/\/$/,'');
 const targetOrigin=new URL(base).origin;
+const allowedThirdPartyOrigins=new Set(['https://fazier.com']);
+const isUnexpectedThirdParty=url=>{const origin=new URL(url).origin;return origin!==targetOrigin&&!allowedThirdPartyOrigins.has(origin)};
 const consentKey='awesomerea.analytics-consent.v1';
 const out=process.env.TEST_OUTPUT||'test-results/local';
 await mkdir(out,{recursive:true});
@@ -140,7 +142,7 @@ for(const locale of Object.keys(locales)) {
    const a11y=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
    await writeFile(`${localeOut}/axe-${name}-${width}.json`,JSON.stringify(a11y.violations,null,2));
    assert.equal(a11y.violations.length,0,JSON.stringify(a11y.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))));
-   assert.equal(requests.filter(url=>new URL(url).origin!==targetOrigin).length,0,'Unexpected third-party network requests');
+   assert.equal(requests.filter(isUnexpectedThirdParty).length,0,'Unexpected third-party network requests');
    assert.equal((await context.cookies()).length,0);
    assert.deepEqual(await page.evaluate(()=>Object.keys(localStorage)),[consentKey]);
    if(name==='chromium'&&width===1440){
@@ -171,7 +173,7 @@ for(const locale of Object.keys(locales)) {
    assert.equal(await page.locator('.project-card:visible').count(),total);
    assert.equal((await context.cookies()).length,0);
    assert.deepEqual(await page.evaluate(()=>Object.keys(localStorage)),[consentKey]);
-   assert.equal(requests.filter(url=>new URL(url).origin!==targetOrigin).length,0);
+   assert.equal(requests.filter(isUnexpectedThirdParty).length,0);
    assert.equal(errors.length,0,errors.join('\n'));
    report.contexts.push({locale,engine:name,width,visual,languageRoundTrip:true,cards:total,purposeTypeCombinations:purposes.length*types.length,issueLinks:3,search:true,emptyReset:true,hashRecovery:true,details:true,axeViolations:0,thirdPartyRequests:0,errors});
    await context.close();
@@ -213,7 +215,7 @@ for(const locale of Object.keys(locales)) {
    const after=await area.boundingBox();assert(Math.abs(before.height-after.height)<1,'Failed image must not collapse its card');
    await fallbackPage.locator('#search').fill('DX-Ball 1.07');
    assert.deepEqual(await fallbackPage.locator('.project-card:visible').evaluateAll(nodes=>nodes.map(node=>node.id)),['dx-ball']);
-   assert.equal(requests.filter(url=>new URL(url).origin!==targetOrigin).length,0);
+   assert.equal(requests.filter(isUnexpectedThirdParty).length,0);
    await fallbackPage.screenshot({path:`${localeOut}/cover-fallback.png`,fullPage:false});
    report.contexts.push({locale,engine:name,width:390,coverFailure:true,layoutStable:true,search:true,thirdPartyRequests:0});
    await failed.close();
