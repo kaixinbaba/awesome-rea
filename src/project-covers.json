@@ -293,12 +293,12 @@
   },
   "aegis": {
     "sourceType": "generated",
-    "src": "/covers/aegis-5efb003f09a9.webp",
+    "src": "/covers/aegis-d863bb85e17b.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Cover for Aegis security/analysis tool: dark shield silhouette protecting glowing circuit lattice teal amber accents, serious technical art, NO TEXT no logos, 16:9.",
+    "prompt": "Cover for Aegis reverse-engineering / security analysis toolkit: dramatic dark navy scene with a geometric shield morphing into glowing teal circuit traces and amber sparks, high contrast detailed original art, NOT a flat color field, rich texture shadows highlights, NO TEXT no logos no watermarks, 16:9.",
     "model": "gpt-image-1",
-    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "generatedAt": "2026-10-16T06:31:43.681Z",
     "checked": "2026-10-16"
   },
   "ctf": {
