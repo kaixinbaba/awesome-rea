@@ -5,7 +5,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { createServer } from 'node:http';
 import { loadProjects, populatedCategories, kinds, issueLinks } from './catalog.mjs';
 import { locales, loadLocale, localePath } from './i18n.mjs';
-import { loadCovers } from './covers.mjs';
+import { loadCovers, isGeneratedCover } from './covers.mjs';
 const catalog = await loadProjects();
 const covers = await loadCovers(catalog);
 const total = catalog.length;
@@ -52,10 +52,17 @@ for(const locale of Object.keys(locales)) {
     assert.equal(await image.count(), covers[entry.id] ? 1 : 0);
     assert.equal(await card.locator('.cover-fallback').count(), 1);
     if (covers[entry.id]) {
-     assert.equal(await image.getAttribute('src'), covers[entry.id].src);
+     const cover = covers[entry.id];
+     assert.equal(await image.getAttribute('src'), cover.src);
      assert.equal(await image.getAttribute('loading'), 'lazy');
-     assert.equal(await image.getAttribute('alt'), t('card.coverAlt', { name: entry.name }));
-     assert.equal(await card.locator('.cover-source').getAttribute('href'), covers[entry.id].readme);
+     const expectedAlt = isGeneratedCover(cover) ? t('card.coverAltGenerated', { name: entry.name }) : t('card.coverAlt', { name: entry.name });
+     assert.equal(await image.getAttribute('alt'), expectedAlt);
+     if (isGeneratedCover(cover)) {
+      assert.equal(await card.locator('.cover-source').getAttribute('href'), null);
+      assert.equal(await card.locator('.cover-source').textContent(), t('card.coverGenerated'));
+     } else {
+      assert.equal(await card.locator('.cover-source').getAttribute('href'), cover.readme);
+     }
     }
    }
    assert.equal(await page.locator('meta[name="robots"][content="noindex"]').count(),0);

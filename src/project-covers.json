@@ -190,5 +190,355 @@
     "source": "https://raw.githubusercontent.com/Slyvan25/OpenGHub/55822ca9e739c85e596217c110cc971b11386fba/docs/screenshots/devices.png",
     "readme": "https://github.com/Slyvan25/OpenGHub/blob/55822ca9e739c85e596217c110cc971b11386fba/README.md",
     "checked": "2026-10-13"
+  },
+  "figcraft": {
+    "src": "/covers/figcraft-92fe5b8e6222.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/storytold/figcraft/79a0e58a3c960dbbe74e38d7482cea16e37b826c/docs/images/shot-1-hero.png",
+    "readme": "https://github.com/storytold/figcraft/blob/79a0e58a3c960dbbe74e38d7482cea16e37b826c/README.md",
+    "checked": "2026-10-16"
+  },
+  "openrealm": {
+    "src": "/covers/openrealm-deb778b698ab.webp",
+    "width": 959,
+    "height": 720,
+    "source": "https://raw.githubusercontent.com/corepunch/open-realm/46fa03323622f0ff22c169580a4f65375817a1d1/docs/images/screenshot1.jpg",
+    "readme": "https://github.com/corepunch/open-realm/blob/46fa03323622f0ff22c169580a4f65375817a1d1/README.md",
+    "checked": "2026-10-16"
+  },
+  "jazz2-native": {
+    "src": "/covers/jazz2-native-c9c4a02f33ff.webp",
+    "width": 766,
+    "height": 470,
+    "source": "https://raw.githubusercontent.com/deathkiller/jazz2/master/Docs/Screen2.gif",
+    "readme": "https://github.com/deathkiller/jazz2-native/blob/9ae6812546d672231d8e27dc1313f19454de67d1/README.md",
+    "checked": "2026-10-16"
+  },
+  "openloco": {
+    "src": "/covers/openloco-862e50aa3c59.webp",
+    "width": 960,
+    "height": 412,
+    "source": "https://user-images.githubusercontent.com/604665/55420349-1a2aea00-5577-11e9-87da-78fe5cdb09e1.png",
+    "readme": "https://github.com/OpenLoco/OpenLoco/blob/6d7f5b1bfb4abd5ae2f1a2ade628a2b0d46f861e/README.md",
+    "checked": "2026-10-16"
+  },
+  "metaforce": {
+    "src": "/covers/metaforce-fd3849d9933b.webp",
+    "width": 960,
+    "height": 529,
+    "source": "https://raw.githubusercontent.com/AxioDL/metaforce/de8fc69bd7f345d6cf5f0c8fc2798295e22522d3/assets/metaforce-screen1.png",
+    "readme": "https://github.com/AxioDL/metaforce/blob/de8fc69bd7f345d6cf5f0c8fc2798295e22522d3/README.md",
+    "checked": "2026-10-16"
+  },
+  "opengol": {
+    "src": "/covers/opengol-8599939507a2.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/open-goal/jak-project/fd1976dcc83e48445e05bad05192d87001ddd15e/docs/img/promosmall1.png",
+    "readme": "https://github.com/open-goal/jak-project/blob/fd1976dcc83e48445e05bad05192d87001ddd15e/README.md",
+    "checked": "2026-10-16"
+  },
+  "siegefx": {
+    "src": "/covers/siegefx-bcc5813dce3d.webp",
+    "width": 960,
+    "height": 524,
+    "source": "https://raw.githubusercontent.com/codingncaffeine/SiegeFX/0ab34e94f64ec4e1d7a3cb45c3d11e340cfd3c71/siegeFX_logo.png",
+    "readme": "https://github.com/codingncaffeine/SiegeFX/blob/0ab34e94f64ec4e1d7a3cb45c3d11e340cfd3c71/README.md",
+    "checked": "2026-10-16"
+  },
+  "openblack": {
+    "src": "/covers/openblack-838a10b5e5ba.webp",
+    "width": 800,
+    "height": 600,
+    "source": "https://user-images.githubusercontent.com/32263167/184559293-56cfc6a7-a7da-4876-8fce-434ba8827eae.png",
+    "readme": "https://github.com/openblack/openblack/blob/a243c6b2fbd251b5d54c1b5f09f59ded9b3b4c81/README.md",
+    "checked": "2026-10-16"
+  },
+  "pvz-portable": {
+    "src": "/covers/pvz-portable-ec4e4b74d1e6.webp",
+    "width": 650,
+    "height": 450,
+    "source": "https://raw.githubusercontent.com/wszqkzqk/PvZ-Portable/04e3fdc935b2a250891d083ffe4ac82dd774e058/icon-readme.png",
+    "readme": "https://github.com/wszqkzqk/PvZ-Portable/blob/04e3fdc935b2a250891d083ffe4ac82dd774e058/README.md",
+    "checked": "2026-10-16"
+  },
+  "webamp": {
+    "src": "/covers/webamp-8424dcf1cca6.webp",
+    "width": 960,
+    "height": 629,
+    "source": "https://raw.githubusercontent.com/captbaritone/webamp/master/packages/webamp-demo/images/preview.png",
+    "readme": "https://github.com/captbaritone/webamp/blob/19e3195a998c08fc08e002eaccbac7803ed9902b/README.md",
+    "checked": "2026-10-16"
+  },
+  "vsl-dsp": {
+    "sourceType": "generated",
+    "src": "/covers/vsl-dsp-6d5023dbf6fa.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for PreSonus AudioBox VSL Linux DSP tooling: warm studio desk with speaker cones waveform ribbons peach copper tones, tasteful product-mood art, NO TEXT no logos no watermarks, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "notion": {
+    "sourceType": "generated",
+    "src": "/covers/notion-065219e775ec.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Notion-related reverse-engineering notes: clean minimal workspace floating soft paper cards muted lavender cream, calm editorial illustration, NO TEXT no logos no watermarks, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "aegis": {
+    "sourceType": "generated",
+    "src": "/covers/aegis-d863bb85e17b.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Aegis reverse-engineering / security analysis toolkit: dramatic dark navy scene with a geometric shield morphing into glowing teal circuit traces and amber sparks, high contrast detailed original art, NOT a flat color field, rich texture shadows highlights, NO TEXT no logos no watermarks, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:31:43.681Z",
+    "checked": "2026-10-16"
+  },
+  "ctf": {
+    "sourceType": "generated",
+    "src": "/covers/ctf-58e3bc99e1fb.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for CTF reverse-engineering challenges: neon hex dumps lock glyphs puzzle fragments on dark grid, cyber competition mood, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "dsh-mcp-rea": {
+    "sourceType": "generated",
+    "src": "/covers/dsh-mcp-rea-6bc330f4c089.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for dsh-mcp-rea MCP reverse-engineering bridge: linked protocol nodes packages flowing data ribbons indigo mint, modern integrations art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "rea-jev": {
+    "sourceType": "generated",
+    "src": "/covers/rea-jev-e5135d29e135.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for rea-jev Java/JVM reverse-engineering notes: abstract bytecode ribbons classfile glyphs cool blue slate, scholarly tech art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "homebrew-rea-agents": {
+    "sourceType": "generated",
+    "src": "/covers/homebrew-rea-agents-f8c8f1e43e60.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for homebrew REA agents toolkit: workshop bench tiny autonomous agent silhouettes tools warm wood teal LEDs, playful makerspace art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "rea-lab": {
+    "sourceType": "generated",
+    "src": "/covers/rea-lab-e3f9eea7bfc9.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for REA lab sandbox: clean lab bench oscilloscope glow solder smoke soft mint lighting, experimental workshop art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "rea-french-guide": {
+    "sourceType": "generated",
+    "src": "/covers/rea-french-guide-284592c128d6.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for French-language reverse-engineering guide: open annotated notebook Paris rooftop soft light cream navy accents, learning editorial art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "awesome-ai-reverse": {
+    "sourceType": "generated",
+    "src": "/covers/awesome-ai-reverse-d66818f4ed4d.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for awesome AI reverse-engineering list: neural lattice dissolving into disassembly glyphs violet cyan, research mood art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "openmw": {
+    "sourceType": "generated",
+    "src": "/covers/openmw-72f55fd948a0.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for OpenMW open-source Morrowind engine: misty fantasy landscape ancient ruins soft aurora over hills painterly, original mood art, NO TEXT no logos no watermarks, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "openttd": {
+    "sourceType": "generated",
+    "src": "/covers/openttd-581560880294.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for OpenTTD transport tycoon: isometric colorful trains buses cities sunny day cheerful miniature world, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "scummvm": {
+    "sourceType": "generated",
+    "src": "/covers/scummvm-8a828152d3d5.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for ScummVM adventure engine: classic point-and-click stage curtains warm theater glow pixel-adjacent props, nostalgic original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "wine": {
+    "sourceType": "generated",
+    "src": "/covers/wine-3e733999bac5.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Wine Windows compatibility layer: elegant glass of wine morphing into window frames soft burgundy gold, clever metaphor art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "free-heroes4": {
+    "sourceType": "generated",
+    "src": "/covers/free-heroes4-0c8c143fb330.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for free Heroes of Might and Magic IV research: fantasy battlefield castles banners dusk gold purple, epic strategy mood, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "rook": {
+    "sourceType": "generated",
+    "src": "/covers/rook-3ba89fd748a8.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Rook chess engine research: dramatic chessboard king rook pieces dramatic side light deep wood teal, elegant strategy art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "rct3pp": {
+    "sourceType": "generated",
+    "src": "/covers/rct3pp-7d073ba3fb76.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for rct3++ roller coaster research: theme park panorama looping coaster pastel stalls golden hour, cheerful original art, NO TEXT no logos no watermarks, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "ruffle": {
+    "sourceType": "generated",
+    "src": "/covers/ruffle-038747d3c014.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Ruffle Flash SWF emulator: retro browser chrome with glowing play triangle dissolving into copper teal circuitry WASM nodes, NO Adobe logo no text, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "nv-rs": {
+    "sourceType": "generated",
+    "src": "/covers/nv-rs-fd93ed66638b.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for nv-rs Fallout New Vegas style Rust engine: post-apocalyptic desert highway neon casino glow dusk, dusty orange electric blue, original mood art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "openra": {
+    "sourceType": "generated",
+    "src": "/covers/openra-5a9950663b17.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for OpenRA RTS engine: dusty dusk isometric battlefield tanks and infantry silhouettes among ruins, muted olive amber, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "openxcom": {
+    "sourceType": "generated",
+    "src": "/covers/openxcom-dace30953ea3.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for OpenXcom UFO defense clone: night city skyline alien craft searchlight soldier silhouettes on rooftop, cold blue CRT glow accents, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "daggerfall-unity": {
+    "sourceType": "generated",
+    "src": "/covers/daggerfall-unity-967be038e643.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Daggerfall Unity classic RPG remake: misty medieval fantasy town walls and towers under cold moonlight, shadowy alley glow of tavern windows, painterly original art, NO TEXT no logos no watermarks, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "open-claude-ui": {
+    "sourceType": "generated",
+    "src": "/covers/open-claude-ui-4711470f8239.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for open-claude-ui chat client: sleek dark IDE-like interface with floating chat bubbles soft purple cyan accents abstract AI neural shimmer background, modern UI product art, NO TEXT no logos no brand marks, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "dethrace": {
+    "sourceType": "generated",
+    "src": "/covers/dethrace-dfc9277c1fe3.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Dethrace Carmageddon-style racing remake: twisted wreckage of colorful cars mid-crash on dusty arena track under harsh sun, chrome debris sparks, chaotic energetic original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "openlara": {
+    "sourceType": "generated",
+    "src": "/covers/openlara-bb502a8813d0.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for OpenLara Tomb Raider classic engine: sunlit ancient temple corridor with stone statues torchlight and explorers silhouette, warm sandstone teal shadows, adventurous original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "legend-of-legaia-re": {
+    "sourceType": "generated",
+    "src": "/covers/legend-of-legaia-re-d72d3e7fc186.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Legend of Legaia remake research: lush fantasy jungle ruins glowing crystal flora two warriors silhouettes on vine bridge misty mountains, vibrant green purple gold, original JRPG mood art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:30:39.758Z",
+    "checked": "2026-10-16"
+  },
+  "corsixth": {
+    "sourceType": "generated",
+    "src": "/covers/corsixth-3bfe6771dd20.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for CorsixTH Theme Hospital remake: cheerful cartoon hospital ward with pastel beds, friendly nurse trolley, potted plants, sunny windows, warm friendly illustration, hospital management game mood, ABSOLUTELY NO cars NO crash NO stadium NO racing, NO TEXT no logos no watermarks, 16:9 landscape.",
+    "model": "gpt-image-1",
+    "generatedAt": "2026-10-16T06:47:08.053Z",
+    "checked": "2026-10-16"
   }
 }

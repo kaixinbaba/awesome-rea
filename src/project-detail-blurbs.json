@@ -1,0 +1,307 @@
+{
+  "dx-ball": {
+    "en": "From a classic brick-breaker to readable C/C++. Follow a reconstruction workflow that compares recovered functions against the original executable. The project README describes Codex using REA with Ghidra to inspect and recover functions. The official REA showcase demonstrates the sound-pan calculation. Original game files are required. A matching function is not proof of whole-game equivalence; we have not built or played this project.",
+    "zh-CN": "将经典打砖块游戏重建为可读的 C/C++，通过对照原始可执行文件，逐项比较恢复的函数。项目 README 描述了 Codex 使用 REA 和 Ghidra 检查并恢复函数的流程。REA 官方案例展示了声像计算的分析。需要原游戏文件。单个函数匹配不能证明整个游戏等价；我们没有构建或试玩此项目。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "vsl-dsp": {
+    "en": "An open-source hardware project with Linux device detection and DSP parameter tools. REA findings inform a specific part of its vendor-protocol research. The README credits LazyOwn's REA integration and Ghidra for recent vendor-library and DSP findings, not the entire pre-existing driver project. Not a verified replacement for Universal Control. The README identifies hardware fault injection as remaining work for bulk I/O. We have not tested a device.",
+    "zh-CN": "提供 Linux 设备检测及 DSP 参数工具的开源硬件项目。REA 的发现支持了其中一部分厂商协议研究。README 将近期厂商库及 DSP 分析归功于 LazyOwn 的 REA 集成与 Ghidra，而非将整个既有驱动项目归因于 REA。尚未验证可替代 Universal Control。README 将用于批量 I/O 的硬件故障注入列为待完成工作。我们没有实测设备。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "notion": {
+    "en": "Trace a copy operation from the page through preload scripts and IPC to the system clipboard, then examine how rich block data stays connected. The official case study shows REA findings for Notion's tab preload, followed by reading the wrappers and receiver in the packaged application. This is not an open-source Notion replacement. No standalone alternative repository is linked by the case study; it is a focused investigation, not a complete app rebuild.",
+    "zh-CN": "跟踪复制操作如何从页面经过预加载脚本和 IPC 到达系统剪贴板，并分析富文本内容块数据如何保持关联。官方案例展示了 REA 对 Notion 标签页预加载脚本的分析，随后阅读了应用安装包中的封装与接收端代码。这不是开源 Notion 替代品。案例未链接独立替代应用仓库；它是针对特定问题的调查，而非完整应用重建。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "th04": {
+    "en": "See how a ring of bullets turns toward the player. A documented REA inspection connects 16-bit instructions with a readable angle calculation. REA's official showcase verifies a focused bullet-ring inspection. The linked repository is a broader game reconstruction; the evidence does not attribute that whole project to REA. Full-game validation has separate open work. The repository requires your own legal game copy; its source license does not cover original game assets.",
+    "zh-CN": "研究环形弹幕如何转向玩家。有记录的 REA 分析将 16 位指令与可读的角度计算联系起来。REA 官方案例证实的是局部环形弹幕分析。关联仓库属于更大范围的游戏重实现，现有证据不能将整个项目归因于 REA。完整游戏验证仍有其他未完成工作。仓库要求自行持有合法游戏副本，其源码许可不涵盖原游戏素材。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "openbattlefield2": {
+    "en": "An in-progress reimplementation of the Refractor 2 engine. Its repository includes a REA helper for investigating user-supplied game binaries. tools/rea.sh explicitly invokes rea-agents with Ghidra and per-binary snapshots. Tooling presence does not establish that REA produced every engine subsystem. Requires your own Battlefield 2 installation. The checked README lists missing firing, vehicle control and sound. Not a complete free replacement for the game.",
+    "zh-CN": "进行中的 Refractor 2 引擎重实现。仓库内置 REA 辅助脚本，用于调查用户自行提供的游戏二进制文件。tools/rea.sh 明确调用 rea-agents 和 Ghidra，并为各二进制文件保存快照。工具存在不能证明 REA 生成了所有引擎子系统。需要自行安装 Battlefield 2。所核对的 README 列出射击、载具控制和声音等缺失项，不是游戏的完整免费替代品。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "gunzrs": {
+    "en": "A Rust game port that reads assets from the user's Steam installation, with a separate REA and Ghidra investigation framework in the repository. The README documents a target-independent REA framework. It also says game formats were recovered from data files; this does not prove the entire port was made with REA. Requires your own game installation. We have not run it or checked retail feature parity. Included research tools are not an endorsement of every project claim.",
+    "zh-CN": "从用户的 Steam 安装目录读取素材的 Rust 游戏移植，仓库另附独立的 REA 和 Ghidra 调查框架。README 介绍了不绑定具体目标的 REA 框架，同时说明游戏格式从数据文件中恢复。这不能证明整个移植由 REA 完成。需要自行安装原游戏。我们没有运行或验证其与商业版本的功能等价性；收录研究工具不代表认可项目的每项声明。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "netcat": {
+    "en": "An author-published static investigation of a Linux netcat binary, with REA evidence files, Ghidra findings and cross-checks against standard binary tools. The repository names REA 6.2.0 and Ghidra 12.1.4 and links its raw analysis artifacts. Its reported findings are static, not a runtime test. The target is already open source. This is a research write-up, not a new netcat implementation or proof that a binary is safe.",
+    "zh-CN": "作者发布的 Linux netcat 二进制静态调查，附有 REA 证据文件、Ghidra 分析及标准二进制工具的交叉核对。仓库注明 REA 6.2.0 和 Ghidra 12.1.4，并链接原始分析产物。报告结论来自静态分析，不是运行时测试。目标本身已经开源。这是一份研究记录，不是新的 netcat 实现，也不能证明二进制文件安全。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "aegis": {
+    "en": "Follow the methods behind a six-digit login code in a released APK, and see how the time-step rule explains why the code changes every 30 seconds. The official REA showcase traces code-generation methods in an Aegis release APK. It is an explanation of an existing open-source application. Not a new authenticator, credential-recovery tool or account bypass. The study does not claim to recover another person's login codes.",
+    "zh-CN": "追踪已发布 APK 中六位登录验证码背后的方法，理解时间步长规则如何使验证码每 30 秒变化一次。REA 官方案例追踪了 Aegis 发布版 APK 的验证码生成方法。这是在解释一个既有开源应用。不是新的身份验证器、凭据恢复工具或账号绕过手段。该研究没有声称能恢复他人的登录验证码。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "ctf": {
+    "en": "A competition-style reverse-engineering example: follow checking functions, translate their constraints into equations and check a solution. REA's official showcase documents a DownUnderCTF flag-checker investigation and reports checking the solved result with the challenge program. An educational challenge, not a commercial-software alternative. We reviewed the published account and did not rerun the challenge.",
+    "zh-CN": "竞赛式逆向分析示例：追踪校验函数，将约束转换为方程并核验解答。REA 官方案例记录了对 DownUnderCTF 答案校验器的调查，并报告使用赛题程序检查了解出的结果。这是教学赛题，不是商业软件替代品。我们阅读了公开记录，没有重新运行赛题。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "rea": {
+    "en": "The upstream toolkit connecting coding agents to binary, application and runtime investigations through MCP and a command-line interface. The upstream README documents rea-agents setup, supported targets, analysis providers and evidence-carrying workflows. This is the original project, not an unofficial mirror. Provider and platform requirements vary. Local analysis does not mean the coding agent's model provider receives no data. Check current upstream requirements.",
+    "zh-CN": "通过 MCP 和命令行，将编程智能体接入二进制、应用及运行时调查的上游工具集。上游 README 说明了 rea-agents 配置、支持的目标、分析引擎和附带证据的工作流程。这是原始项目，不是非官方镜像。分析引擎与平台要求各不相同。本地分析不等于编程智能体的模型服务商不会收到数据，请核对当前上游要求。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "dsh-mcp-rea": {
+    "en": "A thin MCP bridge exposing a curated REA tool selection plus a CLI escape hatch for hosts that cannot filter a large tool catalog. The README documents the REA CLI invocation, selected MCP tools and local bundle integration. It is an adapter around REA, not a replacement analysis engine. Requires REA and any necessary provider. The README warns its PATH fallback uses a shell; review the explicit REA_ENTRY mode. We did not execute or security-audit it.",
+    "zh-CN": "轻量 MCP 桥接，提供精选 REA 工具及直接调用命令行的通道，适合无法筛选大型工具目录的宿主。README 说明了 REA 命令行调用、选取的 MCP 工具及本地打包集成。它是 REA 适配器，不是替代分析引擎。需要 REA 及必要的分析引擎。README 提醒 PATH 回退方式会使用 Shell；请检查显式 REA_ENTRY 模式。我们没有运行或安全审计它。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "rea-investigate": {
+    "en": "An agent skill that organizes REA investigations into planning, tracing, verification and reporting, with a local evidence ledger. The README explicitly identifies the upstream REA CLI as its analysis instrument and documents modality routing and evidence-hash checks. A structured workflow is not a guarantee that an agent's conclusions are correct. Claimed tests and agent compatibility are author-reported, not independently reproduced here.",
+    "zh-CN": "将 REA 调查组织为规划、追踪、验证和报告步骤的智能体技能，附有本地证据台账。README 明确使用上游 REA 命令行作为分析工具，并说明按目标类型选择分析路径及证据哈希校验。结构化流程不保证智能体结论正确。测试和智能体兼容性声明来自作者报告，我们未独立复现。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "rea-jev": {
+    "en": "A community plugin pairing REA's MCP server with Jev-based routing, tool-call checks and evidence tracking around an agent investigation. The README documents the bundled REA MCP configuration, investigation skill, hooks and version pin. This is an independently authored integration. Hooks fail open on provider failure. Jev may send excerpts to an external model service and incur charges; thresholds are not a security boundary. We did not install it.",
+    "zh-CN": "社区插件，将 REA 的 MCP 服务与基于 Jev 的路由、工具调用检查和证据追踪结合，用于智能体调查。README 说明了内置 REA MCP 配置、调查技能、钩子及固定版本。这是独立作者维护的集成。服务商调用失败时，钩子会放行。Jev 可能将片段发送到外部模型服务并产生费用；阈值不是安全边界。我们没有安装此插件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "homebrew-rea-agents": {
+    "en": "A community-maintained Homebrew formula for the rea-agents package, hosted in moonfruit's broader tap. Formula/rea-agents.rb points to the upstream REA homepage and npm package. Only this formula is listed, not every package in the tap. Not an official REA distribution. Inspect the pinned formula and download provenance before installing; formula and packaged software have separate licenses.",
+    "zh-CN": "由社区维护、托管在 moonfruit 软件源中的 rea-agents Homebrew 安装配方。Formula/rea-agents.rb 指向上游 REA 首页及 npm 软件包。此处仅收录该配方，不代表收录整个软件源中的全部软件。不是官方 REA 发行渠道。安装前应检查固定版本配方与下载来源；配方和所安装软件分别适用各自许可。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "rea-playbook": {
+    "en": "A runnable teaching project with a small Electron target, line-referenced evidence extraction, an MCP probe and a reconstruction exercise. The README names the published rea-agents package, explains its real-analysis path and distinguishes that path from an offline fixture-only demo. The offline demo does not run REA. The no-native-engine claim applies to the JavaScript/Electron path, not arbitrary native binaries. Test claims were not rerun here.",
+    "zh-CN": "可运行的教学项目，包含小型 Electron 目标、带行号引用的证据提取、MCP 探测及重实现练习。README 注明使用已发布的 rea-agents 软件包，介绍真实分析路径，并将其与仅使用固定样例的离线演示区分。离线演示不运行 REA。“无需原生分析引擎”仅适用于 JavaScript/Electron 路径，不适用于任意原生二进制。我们未重新运行其测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "rea-lab": {
+    "en": "A Windows-focused REA lab documenting provider setup, isolated MCP registration, seeded challenges and work toward reproducible evaluation. The README names REA and Ghidra, links Windows verification contributions and separates completed environment work from benchmarks and planned features. The live evidence pane is planned, not delivered. Verification and benchmark claims are author-reported. Targets are limited to authorized exercises and locally built binaries.",
+    "zh-CN": "面向 Windows 的 REA 实验项目，记录分析引擎配置、隔离的 MCP 注册、预设练习及可复现评估工作。README 注明 REA 和 Ghidra，链接 Windows 验证贡献，并区分已完成的环境工作、基准测试和计划功能。实时证据面板仍在计划中，尚未交付。验证和基准测试声明来自作者报告；目标限于已授权练习及本地构建的二进制。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "rea-french-guide": {
+    "en": "An independent French introduction to REA, with setup guidance, an investigation walkthrough, provider explanations and responsible-use context. The repository explicitly identifies itself as an unofficial educational guide to morluto/rea and says it does not contain REA's own source code. Educational documentation, not an analysis engine or official support channel. REA changes quickly; current upstream instructions take precedence over translated guidance.",
+    "zh-CN": "独立的 REA 法语入门资料，包含配置指导、调查示例、分析引擎说明及负责任使用提示。仓库明确自称 morluto/rea 的非官方教学指南，并说明不包含 REA 自身源码。这是教学文档，不是分析引擎或官方支持渠道。REA 变化较快，翻译指南与最新上游说明冲突时应以上游为准。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "awesome-ai-reverse": {
+    "en": "A categorized list of AI reverse-engineering tools, including REA among agent, CLI and MCP-based investigation options. The list explicitly links morluto/rea in its agent-platform section. It is a discovery resource that features REA, not a collection of software built with REA. This listing does not endorse every linked tool or transfer their test, safety or license claims. Check the individual upstream projects before use.",
+    "zh-CN": "按类别整理 AI 逆向工程工具的目录，在智能体、命令行和 MCP 调查方案中包含 REA。该目录在智能体平台章节明确链接 morluto/rea。它是包含 REA 的发现工具，不是“由 REA 构建的软件”集合。收录不代表认可其所有链接工具，也不沿用这些工具的测试、安全或许可声明。使用前请查阅各自上游项目。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "awesome-reverse-engineering": {
+    "en": "A broad tools-and-learning list maintained by morluto, featuring REA alongside resources for binaries, apps, firmware, formats and protocols. The README features morluto/rea and describes its broader reverse-engineering scope. It is a companion resource list, not evidence that all listed tools use REA. Individual listed projects retain their own licenses and requirements. Inclusion here is not an affiliation or endorsement of Awesome REA by the maintainer.",
+    "zh-CN": "morluto 维护的综合工具与学习目录，涵盖 REA 及二进制、应用、固件、格式和协议方面的资源。README 收录 morluto/rea，并说明更广泛的逆向工程范围。这是配套资源目录，不能证明其中所有工具都使用 REA。每个项目保留自身许可与使用要求。本站收录不代表该维护者与 Awesome REA 有隶属关系或为其背书。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "photocraft": {
+    "en": "A Rust image editor recreating Photoshop-style workflows with layers, masks, typography and PSD documents. The upstream README explicitly targets Adobe Photoshop workflows and describes a separate Rust implementation. Source review does not establish clean-room legality or full behavioral parity; no REA involvement is claimed by this listing. The author explicitly says it is not ready to replace Photoshop for daily professional work. AI features, tools, typography depth and plug-in compatibility remain incomplete. We have not installed, run or audited it.",
+    "zh-CN": "Rust 图像编辑器，重现 Photoshop 式图层、蒙版、文字排版及 PSD 文档工作流程。上游 README 明确面向 Adobe Photoshop 工作流程，并介绍独立的 Rust 实现。来源审核不证明净室开发合法性或完整行为等价；本站不声称 REA 参与该项目。作者明确表示尚不适合替代 Photoshop 的日常专业工作。AI 功能、工具、排版深度和插件兼容性仍不完整。我们没有安装、运行或审计该软件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "vectorcraft": {
+    "en": "A Rust vector illustration app recreating Illustrator-style drawing, paths, typography and document interchange. The upstream README explicitly targets Adobe Illustrator workflows and describes a separate Rust implementation. Source review does not establish clean-room legality or full behavioral parity; no REA involvement is claimed by this listing. Reliable native AI round-tripping, several effects, scripting and interaction fidelity remain incomplete. Affinity import is partial; Affinity export is not supported. We have not installed, run or audited it.",
+    "zh-CN": "Rust 矢量绘图应用，重现 Illustrator 式绘图、路径、文字排版和文档交换流程。上游 README 明确面向 Adobe Illustrator 工作流程，并介绍独立的 Rust 实现。来源审核不证明净室开发合法性或完整行为等价；本站不声称 REA 参与该项目。原生 AI 文件的可靠往返读写、部分效果、脚本和交互还不完整。Affinity 仅支持部分导入，不支持导出。我们没有安装、运行或审计该软件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "filmcraft": {
+    "en": "A Rust video editor recreating Premiere-style timelines, trimming, color, titles, audio mixing and media export. The upstream README explicitly targets Adobe Premiere Pro workflows and describes a separate Rust implementation. Source review does not establish clean-room legality or full behavioral parity; no REA involvement is claimed by this listing. The reviewed README says PRPROJ import and VST3, Audio Units and OpenFX plug-in hosting are unavailable. Large-footage performance, delivery codecs and platform testing remain limited. We have not installed, run or audited it.",
+    "zh-CN": "Rust 视频编辑器，重现 Premiere 式时间线、修剪、调色、字幕、混音和媒体导出流程。上游 README 明确面向 Adobe Premiere Pro 工作流程，并介绍独立的 Rust 实现。来源审核不证明净室开发合法性或完整行为等价；本站不声称 REA 参与该项目。所核对的 README 表明尚不支持 PRPROJ 导入及 VST3、Audio Units、OpenFX 插件宿主功能。大型素材性能、交付编码和跨平台测试仍有限。我们没有安装、运行或审计该软件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "lightcraft": {
+    "en": "A Rust photo library and non-destructive RAW developer recreating Lightroom-style library and adjustment workflows. The upstream README explicitly targets Adobe Lightroom workflows and describes a separate Rust implementation. Source review does not establish clean-room legality or full behavioral parity; no REA involvement is claimed by this listing. Camera color calibration and support for some compressed RAW variants are incomplete. Some files fall back to embedded JPEG previews; HDR display, video and several Classic modules have gaps. We have not installed, run or audited it.",
+    "zh-CN": "Rust 照片库与无损 RAW 处理应用，重现 Lightroom 式素材管理和调整流程。上游 README 明确面向 Adobe Lightroom 工作流程，并介绍独立的 Rust 实现。来源审核不证明净室开发合法性或完整行为等价；本站不声称 REA 参与该项目。相机色彩校准及部分压缩 RAW 变体支持不完整。有些文件只能回退到内嵌 JPEG 预览；HDR 显示、视频和部分 Classic 模块仍有缺口。我们没有安装、运行或审计该软件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "pdfcraft": {
+    "en": "A Rust PDF workbench recreating Acrobat-style viewing, page organization, annotation, forms and document security workflows. The upstream README explicitly targets Adobe Acrobat workflows and describes a separate Rust implementation. Source review does not establish clean-room legality or full behavioral parity; no REA involvement is claimed by this listing. Office conversion, existing CJK text editing, non-Latin OCR and advanced signing remain limited. Upstream reports crashes or hangs found by fuzzing; do not assume hostile-file safety. We have not installed, run or audited it.",
+    "zh-CN": "Rust PDF 工作台，重现 Acrobat 式阅读、页面整理、批注、表单和文档安全流程。上游 README 明确面向 Adobe Acrobat 工作流程，并介绍独立的 Rust 实现。来源审核不证明净室开发合法性或完整行为等价；本站不声称 REA 参与该项目。Office 转换、既有中日韩文字编辑、非拉丁文字 OCR 和高级签名仍有限。上游报告模糊测试发现了崩溃或卡死，不应假定能安全处理恶意文件。我们没有安装、运行或审计该软件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "effectcraft": {
+    "en": "A Rust motion-graphics and compositing app recreating After Effects-style layers, keyframes, effects and rendering workflows. The upstream README explicitly targets Adobe After Effects workflows and describes a separate Rust implementation. Source review does not establish clean-room legality or full behavioral parity; no REA involvement is claimed by this listing. The reviewed README says AEP/AEPX import and After Effects plug-ins are unsupported. Render equivalence is not established and the author does not recommend replacing client-work workflows yet. We have not installed, run or audited it.",
+    "zh-CN": "Rust 动态图形与合成应用，重现 After Effects 式图层、关键帧、效果和渲染流程。上游 README 明确面向 Adobe After Effects 工作流程，并介绍独立的 Rust 实现。来源审核不证明净室开发合法性或完整行为等价；本站不声称 REA 参与该项目。所核对的 README 表明不支持 AEP/AEPX 导入和 After Effects 插件。渲染等价性尚未证实，作者暂不建议用于替换客户项目的工作流程。我们没有安装、运行或审计该软件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "designcraft": {
+    "en": "A Rust publishing app recreating InDesign-style page layout, text frames, typography and document export. The upstream README explicitly targets Adobe InDesign workflows and describes a separate Rust implementation. Source review does not establish clean-room legality or full behavioral parity; no REA involvement is claimed by this listing. The upstream roadmap reports incomplete manual text threading, INDD opening and real-file IDML validation. Typography and platform fidelity remain unfinished; a populated interface is not full parity. We have not installed, run or audited it.",
+    "zh-CN": "Rust 出版应用，重现 InDesign 式页面布局、文本框、文字排版和文档导出。上游 README 明确面向 Adobe InDesign 工作流程，并介绍独立的 Rust 实现。来源审核不证明净室开发合法性或完整行为等价；本站不声称 REA 参与该项目。上游路线图指出，手动文本串接、INDD 打开及真实文件 IDML 验证仍不完整。文字排版和平台一致性尚未完成；界面功能丰富不等于完整等价。我们没有安装、运行或审计该软件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "figcraft": {
+    "en": "A clean-room Figma-style interface design app in pure Rust, with frames, auto layout, components, vector networks, styles, variables and prototypes on desktop and WebAssembly. The upstream README states a clean-room implementation from public documentation and observed behaviour only, with no proprietary code, file formats, icons or images. It describes offline-first .figcraft files and early-alpha parity. No REA involvement is claimed. Authors estimate incomplete parity; multiplayer/cloud are preview and .fig import is best-effort. Not a drop-in Figma replacement. Brand marks and bundled fonts/assets keep separate terms. Submitter reviewed public README/license only; we have not independently tested it.",
+    "zh-CN": "纯 Rust 的净室 Figma 式界面设计应用，支持画板、自动布局、组件、矢量网络、样式、变量与原型，覆盖桌面与 WebAssembly。上游 README 声明基于公开文档与可观察行为的净室实现，不含专有代码、文件格式、图标或图像；介绍离线优先的 .figcraft 文件与早期测试版对等程度。本站不声称 REA 参与该项目。作者估计对等度仍不完整；多人/云功能为预览，.fig 导入仅为尽力而为。并非 Figma 的直接替代品。品牌标识与附带字体/素材另有条款。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "wordcraft": {
+    "en": "A Rust word processor recreating Word-style writing, document layout and DOCX workflows. The upstream README explicitly targets Microsoft Word workflows and describes a separate Rust implementation. Source review does not establish clean-room legality or full behavioral parity; no REA involvement is claimed by this listing. Real-world DOCX round-tripping, chart and SmartArt preservation, pagination fidelity, native printing and stability still need work according to the author. We have not installed, run or audited it.",
+    "zh-CN": "Rust 文字处理应用，重现 Word 式写作、文档排版和 DOCX 工作流程。上游 README 明确面向 Microsoft Word 工作流程，并介绍独立的 Rust 实现。来源审核不证明净室开发合法性或完整行为等价；本站不声称 REA 参与该项目。作者指出，真实 DOCX 文件往返读写、图表和 SmartArt 保留、分页一致性、系统原生打印和稳定性仍待完善。我们没有安装、运行或审计该软件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "soundcraft": {
+    "en": "A Rust digital audio workstation recreating Pro Tools-style recording, editing, mixing and bouncing workflows. The upstream README explicitly targets Avid Pro Tools workflows and describes a separate Rust implementation. Source review does not establish clean-room legality or full behavioral parity; no REA involvement is claimed by this listing. The reviewed README lists audio-interface and buffer selection, MIDI-controller recording and AAF/OMF session interchange as missing. Low-latency reliability has not been independently tested. We have not installed, run or audited it.",
+    "zh-CN": "Rust 数字音频工作站，重现 Pro Tools 式录制、编辑、混音和混缩导出流程。上游 README 明确面向 Avid Pro Tools 工作流程，并介绍独立的 Rust 实现。来源审核不证明净室开发合法性或完整行为等价；本站不声称 REA 参与该项目。所核对的 README 列出音频接口与缓冲区选择、MIDI 控制器录制及 AAF/OMF 工程交换等缺失项。低延迟可靠性尚未独立测试。我们没有安装、运行或审计该软件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "deckcraft": {
+    "en": "A Rust presentation app recreating PowerPoint-style slide editing, presentation delivery and file interchange. The upstream README explicitly targets Microsoft PowerPoint workflows and describes a separate Rust implementation. Source review does not establish clean-room legality or full behavioral parity; no REA involvement is claimed by this listing. Feature breadth is not replacement readiness. Imported PowerPoint parts may be skipped, and file fidelity, stability and platform behavior are not independently verified here. We have not installed, run or audited it.",
+    "zh-CN": "Rust 演示应用，重现 PowerPoint 式幻灯片编辑、演示播放与文件交换流程。上游 README 明确面向 Microsoft PowerPoint 工作流程，并介绍独立的 Rust 实现。来源审核不证明净室开发合法性或完整行为等价；本站不声称 REA 参与该项目。功能覆盖广不代表已可替代。导入时可能跳过部分 PowerPoint 内容，本站未独立验证文件保真度、稳定性和跨平台行为。我们没有安装、运行或审计该软件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "cadcraft": {
+    "en": "A Rust CAD application recreating AutoCAD-style drafting, dimensions, layouts and DXF/DWG workflows. The upstream README explicitly targets Autodesk AutoCAD workflows and describes a separate Rust implementation. Source review does not establish clean-room legality or full behavioral parity; no REA involvement is claimed by this listing. The roadmap reports incomplete precision drafting, block editing and plot styles. Saving drops entities the app does not model, and DWG output has not been checked in AutoCAD; work on copies only. We have not installed, run or audited it.",
+    "zh-CN": "Rust CAD 应用，重现 AutoCAD 式绘图、尺寸标注、布局及 DXF/DWG 工作流程。上游 README 明确面向 Autodesk AutoCAD 工作流程，并介绍独立的 Rust 实现。来源审核不证明净室开发合法性或完整行为等价；本站不声称 REA 参与该项目。路线图指出精确绘图、块编辑及打印样式尚未完成。保存会丢弃应用未建模的图元，DWG 输出尚未在 AutoCAD 中核对；务必只操作文件副本。我们没有安装、运行或审计该软件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "gridcraft": {
+    "en": "A Rust spreadsheet app recreating Excel-style workbooks, formulas, charts and file interchange. The upstream README explicitly targets Microsoft Excel workflows and describes a separate Rust implementation. Source review does not establish clean-room legality or full behavioral parity; no REA involvement is claimed by this listing. XLSX fidelity, very large workbooks, recalculation, chart depth and legacy XLS handling remain incomplete. Function or ribbon coverage does not prove compatible results or safe round-tripping. We have not installed, run or audited it.",
+    "zh-CN": "Rust 电子表格应用，重现 Excel 式工作簿、公式、图表和文件交换流程。上游 README 明确面向 Microsoft Excel 工作流程，并介绍独立的 Rust 实现。来源审核不证明净室开发合法性或完整行为等价；本站不声称 REA 参与该项目。XLSX 保真度、超大工作簿、重新计算、图表功能及旧式 XLS 处理仍不完整。函数或功能区覆盖率不能证明结果兼容或文件往返读写安全。我们没有安装、运行或审计该软件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "openrct2": {
+    "en": "An independent RollerCoaster Tycoon 2 engine reimplementation with modern-platform support and cooperative multiplayer. The upstream README documents a reimplementation of RCT2, supported builds and the requirement for original game data. REA use is not required or claimed. Requires legally obtained RollerCoaster Tycoon 2 files. Its code license does not include the original game assets. We have not played it or verified feature parity.",
+    "zh-CN": "独立的 RollerCoaster Tycoon 2 引擎重实现，支持现代平台及多人合作。上游 README 介绍 RCT2 重实现、支持的构建及原游戏数据要求。不要求也不声称使用 REA。需要合法取得的 RollerCoaster Tycoon 2 文件。代码许可不包含原游戏素材。我们没有试玩或验证功能等价性。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "openmw": {
+    "en": "An independent Morrowind-compatible RPG engine and Construction Set replacement supporting the original game data. The upstream README describes the replacement engine and editor, reports completable main quests and documents mod-compatibility limits. The GitHub repository mirrors development hosted on public GitLab. Requires ownership of Morrowind and its data. Some original-engine mods depend on quirks not reproduced here. Development-branch version numbers are not release guarantees; no gameplay test was performed.",
+    "zh-CN": "独立的 Morrowind 兼容角色扮演游戏引擎及 Construction Set 编辑器替代实现，支持原游戏数据。上游 README 介绍替代引擎和编辑器，报告主线任务可完成，并列出模组兼容性限制。GitHub 仓库是公开 GitLab 开发仓库的镜像。需拥有 Morrowind 及其数据。部分原引擎模组依赖此项目尚未复现的特殊行为。开发分支版本号不代表正式发布保证；我们没有进行游戏实测。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "openttd": {
+    "en": "An open-source Transport Tycoon Deluxe reimplementation and transport simulation, with extensions and optional free graphics, sound and music. The upstream README says it aims to mimic and extend Transport Tycoon Deluxe, documents supported platforms and distinguishes free OpenGFX/OpenSFX/OpenMSX assets from optional original game data. Original graphics or music still require their own rights; free replacement asset sets have separate licenses. Add-ons and third-party components retain their terms. We have not run or benchmarked the game.",
+    "zh-CN": "开源 Transport Tycoon Deluxe 重实现与运输经营模拟游戏，包含扩展功能及可选免费图像、音效和音乐素材。上游 README 说明目标是模仿并扩展 Transport Tycoon Deluxe，列出支持的平台，并区分免费 OpenGFX/OpenSFX/OpenMSX 素材与可选的原游戏数据。原版图像或音乐仍需相应授权；免费替代素材包分别适用各自许可。扩展和第三方组件保留自身条款。我们没有运行或进行性能测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "scummvm": {
+    "en": "A collection of replacement game engines that runs supported classic adventures and RPGs using their existing data files. The upstream README explicitly says ScummVM replaces the original executable files while using the game data, and directs readers to per-game compatibility lists. It is not a bundled collection of commercial games. Support and completeness differ by game and version. You normally need lawful game data, whose license is separate from the engine. Consult the official compatibility list; we did not execute any game.",
+    "zh-CN": "替代游戏引擎集合，利用既有数据文件运行受支持的经典冒险与角色扮演游戏。上游 README 明确说明 ScummVM 替换原可执行文件，但使用游戏数据，并指引读者查看逐游戏兼容列表。它不是商业游戏合集。支持程度和完整性因游戏及版本而异。通常需要合法的游戏数据，其许可与引擎分开。请查阅官方兼容列表；我们没有运行任何游戏。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "wine": {
+    "en": "A Windows API compatibility layer and program loader for running Windows applications on supported Unix-like systems. The upstream README documents loading Windows executables and implementing Windows APIs through Unix, X11 or macOS equivalents. This is the Wine project mirror, not an entire replacement Windows installation. Application compatibility varies and some programs can crash. Original applications retain their licenses. Use WineHQ for official releases and compatibility guidance; the mirror has no latest GitHub release, and we did not run it.",
+    "zh-CN": "Windows API 兼容层与程序加载器，可在受支持的类 Unix 系统上运行 Windows 应用。上游 README 介绍加载 Windows 可执行文件，并通过 Unix、X11 或 macOS 对应机制实现 Windows API。这是 Wine 项目镜像，不是完整 Windows 系统替代安装。应用兼容性各异，部分程序可能崩溃。原应用保留自身许可。正式发布和兼容说明请查看 WineHQ；此镜像没有 GitHub 最新发布项，我们也没有运行验证。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "paper-rs": {
+    "en": "A local-first design and whiteboard app recreating Paper-style canvas behavior, with pages, vector editing, exports and an agent-facing MCP server. The README documents studying Paper Desktop with REA and implementing its behavior in Rust. The architecture writeup separates observed desktop-shell findings from inferred hosted-editor behavior; it does not establish full Paper parity. No cloud collaboration or plug-ins. Rendering, text shaping and imports have gaps; macOS has only been type-checked by the author, not run on hardware. We have not built, run or audited it; clean-room claims are author-reported.",
+    "zh-CN": "本地优先的设计与白板应用，重实现 Paper 式画布行为，提供分页、矢量编辑、导出和面向智能体的 MCP 服务。README 记录了使用 REA 研究 Paper Desktop、再用 Rust 实现其行为的过程。架构报告区分已观察的桌面外壳与推测的云端编辑器行为，不能证明完整 Paper 功能等价。不提供云端协作或插件。渲染、文字塑形和导入仍有缺口；作者仅做过 macOS 类型检查，未在 Mac 硬件运行。我们未构建、运行或审计，洁净室声明仅来自作者。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "openghub": {
+    "en": "A Linux-native G HUB-style manager for Logitech peripherals, implementing device settings, button assignments, lighting and profiles through HID++ and userspace services. The HID++ documentation explains recovering onboard-memory and macro formats from a real G502. The README and lighting notes describe G HUB settings imports, vendor-depot research and device-specific compatibility; no REA involvement is claimed. Requires supported peripherals and Linux device permissions. Onboard macros flatten some behavior; firmware updates are not tested on every device family and can leave a device in its bootloader. We have not installed it or tested hardware.",
+    "zh-CN": "Linux 原生的 G HUB 式罗技外设管理器，通过 HID++ 与用户态服务实现设备设置、按键分配、灯效和配置文件。HID++ 文档说明如何从真实 G502 恢复板载内存和宏格式。README 与灯效文档介绍 G HUB 设置导入、厂商数据包研究和逐设备兼容范围；未声称使用 REA。需要受支持的外设及 Linux 设备权限。板载宏会将部分行为展平；固件更新未在每个设备系列验证，失败可能使设备停留在引导加载模式。我们未安装或实测硬件。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "free-heroes4": {
+    "en": "An unfinished Heroes of Might and Magic IV engine reimplementation, with the openh4 app and h4-tool for inspecting and rendering the user's game data. The README explicitly describes an engine reimplementation, separates engine code from original GOG data and marks the project unfinished. Source contains engine modules and an app; the reviewed passive AI controller only ends its turn. Needs a legally obtained GOG copy; optional acquisition signs in to GOG. The passive AI stub and brief README do not establish campaign playability or engine parity. We have not built it, signed in to GOG or played it.",
+    "zh-CN": "尚未完成的英雄无敌 IV 引擎重实现，含 openh4 应用及 h4-tool，可检查和渲染用户自行提供的游戏数据。README 明确说明重实现引擎、区分引擎代码与原版 GOG 数据，并标注项目未完成。源码包含引擎模块和应用；所查被动 AI 控制器仅执行结束回合。需要合法获取的 GOG 副本；可选下载路径会登录 GOG。被动 AI 桩和简短 README 不能证明战役可玩或引擎等价。我们未构建、登录 GOG 或试玩。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "rook": {
+    "en": "A Rust engine for loading local Roblox places and models, running Luau scripts and rendering a separate client/server simulation outside Roblox. The README describes reimplementing formats, APIs and behavior from public documentation and Studio observations. Replication is Rook-to-Rook, not wire-compatible with Roblox servers; the roadmap identifies remaining content and gameplay work. Use only places and assets you own or have rights to. Meshes, textures, characters, GUI, audio and networking remain roadmap work at the reviewed commit. Author-reported load rates do not prove playable games; we have not run or audited it.",
+    "zh-CN": "Rust 引擎，可在 Roblox 之外加载本地场景和模型、运行 Luau 脚本，并渲染独立的客户端与服务端模拟。README 介绍依据公开文档与 Studio 观察重实现场景格式、API 和行为。同步仅限 Rook 之间，不兼容 Roblox 服务器通信协议；路线图列出尚缺的内容和玩法系统。仅使用自有或获授权的场景与素材。所查提交仍将网格、纹理、角色、GUI、音频与网络列为后续工作。作者报告的加载率不能证明游戏可玩；我们未运行或审计。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "rct3pp": {
+    "en": "An early RollerCoaster Tycoon 3 reimplementation researching original formats, with OVL inspection, audio tools and a graphical front-screen viewer. The README describes bottom-up reverse engineering of asset formats before saves, simulation and rendering. The viewer source renders startup and front screens from the user's installation; this is not evidence of complete gameplay. Requires a legitimate game copy, a C++26 toolchain and currently POSIX builds. The viewer needs GLFW and Vulkan. A front screen is not a playable replacement; full simulation and compatibility are not established. We have not built or run it.",
+    "zh-CN": "早期过山车大亨 3 重实现，研究原游戏格式，提供 OVL 检查、音频工具和图形化主界面查看器。README 说明先自底向上逆向素材格式，再推进存档、模拟与渲染。查看器源码使用用户安装目录中的素材显示启动和主界面，不能证明完整玩法已实现。需要合法游戏副本和 C++26 工具链，目前仅支持 POSIX 构建。查看器依赖 GLFW 与 Vulkan。主界面不等于可玩替代品，完整模拟和兼容性尚未证明。我们未构建或运行。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "openrealm": {
+    "en": "An open-source Quake-style engine and compatibility project for Blizzard-era game data, with Warcraft III as the primary playable target on desktop and iPad. The upstream README describes an open-source Quake-style engine for Blizzard-era data, names Warcraft III as the primary playable target, lists exploratory WoW/SC2 work, and states that retail game data is not included and the project is unaffiliated with Blizzard. No REA involvement is claimed. Original Warcraft III / WoW / SC2 assets must be supplied by the user and are not shipped. WoW and StarCraft II targets are exploratory. Submitter reviewed public README/license only; we have not independently tested builds or gameplay.",
+    "zh-CN": "面向暴雪时代游戏数据的开源类 Quake 引擎与兼容项目，以魔兽争霸 III 为桌面与 iPad 上的主要可玩目标。上游 README 介绍面向暴雪时代数据的开源类 Quake 引擎，将魔兽争霸 III 列为主要可玩目标，并列出探索性的 WoW/SC2 工作；声明不包含零售游戏数据且与暴雪无关。本站不声称 REA 参与该项目。原版魔兽争霸 III / WoW / 星际争霸 II 资源需由用户自行提供，项目不附带。WoW 与星际争霸 II 目标仍为探索性。投稿者仅审阅公开 README/许可；我们未独立测试构建或游玩。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "jazz2-native": {
+    "en": "An open-source reimplementation of the 1998 Jazz Jackrabbit 2 game, fully rewritten in C++ with many platform ports and partial JJ2+/MLLE support. The upstream README describes Jazz² Resurrection as a reimplementation of Jazz Jackrabbit 2 and states that this repository contains a fully rewritten C++ game. It documents the original-asset requirement and platform matrix. No REA involvement is claimed. Original Jazz Jackrabbit 2 assets are not included and must be placed in a Source/ directory. Some console ports are experimental or untested on real hardware. Uses extensively modified nCine. Submitter reviewed public README/license only; we have not independently tested it.",
+    "zh-CN": "1998 年 Jazz Jackrabbit 2 的开源重实现，以 C++ 完全重写，支持多平台移植及部分 JJ2+/MLLE。上游 README 将 Jazz² Resurrection 描述为 Jazz Jackrabbit 2 的重实现，并说明本仓库包含完全重写的 C++ 游戏；记录原版素材要求与平台矩阵。本站不声称 REA 参与该项目。不包含原版 Jazz Jackrabbit 2 素材，需放入 Source/ 目录。部分主机移植为实验性或未在真机验证。使用大量修改的 nCine。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "ruffle": {
+    "en": "An Adobe Flash Player emulator written in Rust for desktop and the web via WebAssembly, aimed at keeping Flash/SWF content playable after Adobe’s EOL. The upstream README describes Ruffle as an Adobe Flash Player emulator written in Rust that targets both desktop and the web using WebAssembly. Project status notes ActionScript 1/2/3 support is strong but unfinished. No REA involvement is claimed. Not feature-complete versus historical Flash Player; ActionScript gaps remain. Report issues upstream. Submitter reviewed public README/license only; we have not independently tested content compatibility.",
+    "zh-CN": "用 Rust 编写的 Adobe Flash Player 模拟器，面向桌面与基于 WebAssembly 的网页，旨在让 Flash/SWF 内容在 Adobe 停服后仍可播放。上游 README 将 Ruffle 描述为用 Rust 编写、同时面向桌面与 WebAssembly 网页的 Adobe Flash Player 模拟器。项目状态说明 ActionScript 1/2/3 支持较强但尚未完成。本站不声称 REA 参与该项目。相对历史 Flash Player 尚未功能完备，ActionScript 仍有缺口。问题请向上游反馈。投稿者仅审阅公开 README/许可；我们未独立测试内容兼容性。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "nv-rs": {
+    "en": "A from-scratch reimplementation of Fallout: New Vegas in Rust with Bevy that reads the user’s own Data folder and ports engine behavior toward 1:1 gameplay. The upstream README describes a from-scratch reimplementation of Fallout: New Vegas, states that behaviour, rules, constants and formulas come from FalloutNV.exe read in Ghidra, and notes that the project contains no game files. No REA involvement is claimed. Not a full campaign; original saves and NVSE DLLs unsupported; Windows is the tested platform. Original Fallout: New Vegas assets/executable are not included. Submitter reviewed public README/license only; we have not independently tested it.",
+    "zh-CN": "用 Rust 与 Bevy 从零重实现辐射：新维加斯，读取用户自有的 Data 目录，并将引擎行为向 1:1 游玩推进。上游 README 介绍从零重实现辐射：新维加斯，说明行为、规则、常量与公式来自在 Ghidra 中阅读的 FalloutNV.exe，并声明项目不包含游戏文件。本站不声称 REA 参与该项目。并非完整战役；不支持原版存档与 NVSE DLL；以 Windows 为测试平台。不包含原版辐射：新维加斯素材/可执行文件。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "openra": {
+    "en": "A libre/free real-time strategy engine for early Westwood classics, shipping reimagined mods for Red Alert, Tiberian Dawn and Dune 2000 on major desktop platforms. The upstream README describes a Libre/Free RTS engine supporting early Westwood classics and distributed mods for Red Alert, Tiberian Dawn and Dune 2000. It states EA has not endorsed and does not support the product. No REA involvement is claimed. Original Westwood/EA assets and trademarks remain with their owners; OpenRA provides engine and community content, not a licensed commercial remaster. Large open issue backlog is typical of a long-lived engine. Submitter reviewed public README/license only; we have not independently tested it.",
+    "zh-CN": "面向早期 Westwood 经典作品的自由/开源即时战略引擎，在主流桌面平台提供红色警戒、泰伯利亚黎明与沙丘 2000 的重制模组。上游 README 描述支持早期 Westwood 经典的自由/开源 RTS 引擎，并分发红色警戒、泰伯利亚黎明与沙丘 2000 模组；声明 EA 未背书亦不支持该产品。本站不声称 REA 参与该项目。原版 Westwood/EA 素材与商标仍归权利方所有；OpenRA 提供引擎与社区内容，并非获许可的商业重制。长期引擎常见大量开放议题。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "openxcom": {
+    "en": "An open-source clone of MicroProse’s UFO: Enemy Unknown (X-COM: UFO Defense) and X-COM: Terror From the Deep, written in C++/SDL with a large mod ecosystem. The upstream README describes OpenXcom as an open-source GPL clone of UFO: Enemy Unknown and Terror From the Deep in C++/SDL. Installation requires vanilla X-COM resources and warns against modded resource packs. No REA involvement is claimed. Original X-COM assets are not included and must be supplied by the user. Compatibility depends on unmodded resource files. Bundled SDL_gfx-derived code is LGPL with author permission (per README). Submitter reviewed public README/license only; we have not independently tested it.",
+    "zh-CN": "MicroProse《UFO：未知敌人》（X-COM：UFO Defense）与《X-COM：深海恐怖》的开源克隆，以 C++/SDL 编写，并拥有庞大模组生态。上游 README 将 OpenXcom 描述为以 C++/SDL 编写的 UFO：未知敌人与深海恐怖开源 GPL 克隆；安装要求原版 X-COM 资源，并警告勿使用改装资源包。本站不声称 REA 参与该项目。不包含原版 X-COM 素材，需由用户自行提供。兼容性依赖未改装资源文件。附带的 SDL_gfx 衍生代码按 README 为 LGPL（经作者许可）。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "openloco": {
+    "en": "An open-source re-implementation of Chris Sawyer's Locomotion that aims to improve the game similarly to OpenTTD/OpenRCT2, using the player's own original assets. The upstream README describes an open source re-implementation of Chris Sawyer's Locomotion and states that as of December 2025 the game has been reimplemented in C++. It notes the original was x86 assembly on an RCT2-derived engine and that OpenLoco does not share codebase with OpenRCT2. No REA involvement is claimed. Original Chris Sawyer’s Locomotion assets are not included (Steam/GOG purchase required). Multiplayer and higher map/vehicle limits pending a new save format; still bound to CSL SV5/SC5 save limits until NSF. macOS builds are unsigned. Submitter reviewed public README/license only; we have not independently tested it.",
+    "zh-CN": "Chris Sawyer's Locomotion 的开源重实现，目标类似 OpenTTD/OpenRCT2 般改进游戏，使用玩家自有的原版素材。上游 README 描述对 Chris Sawyer's Locomotion 的开源重实现，并说明截至 2025 年 12 月已用 C++ 完成游戏重实现；注明原作为基于 RCT2 衍生引擎的 x86 汇编，且与 OpenRCT2 不共享代码库。本站不声称 REA 参与该项目。不包含原版 Chris Sawyer’s Locomotion 素材（需 Steam/GOG 购买）。多人与更高地图/载具上限有待新存档格式；在 NSF 之前仍受 CSL SV5/SC5 存档限制。macOS 构建未签名。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "openblack": {
+    "en": "An open-source reimplementation of Lionhead’s Black & White (2001) in modern C++ with OpenGL/Vulkan, using original assets extracted from the retail installer/patches. The upstream readme describes openblack as an open source reimplementation of Black & White (2001) in modern C++ with OpenGL/Vulkan and states that original game assets are still required. Repository topics include reverse-engineering; asset extraction docs cover Audio/Data/Scripts from the original install. No REA involvement is claimed. Original Black & White assets remain copyrighted and are not included. Android/iOS and some cross-compile targets are experimental. Gameplay completeness depends on original assets and ongoing engine work. Submitter reviewed public readme/license only; we have not independently tested it.",
+    "zh-CN": "Lionhead《黑与白》（2001）的开源重实现，采用现代 C++ 与 OpenGL/Vulkan，使用从零售安装包/补丁提取的原版素材。上游 readme 将 openblack 描述为以现代 C++ 与 OpenGL/Vulkan 对《黑与白》（2001）的开源重实现，并声明仍需原游戏素材。仓库主题包含 reverse-engineering；素材提取文档覆盖原安装中的 Audio/Data/Scripts。本站不声称 REA 参与该项目。原版《黑与白》素材仍受版权保护且不包含。Android/iOS 及部分交叉编译目标为实验性。可玩完整度取决于原版素材与持续引擎工作。投稿者仅审阅公开 readme/许可；我们未独立测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "daggerfall-unity": {
+    "en": "An open-source recreation of The Elder Scrolls II: Daggerfall in the Unity engine, using free DOS Daggerfall assets for textures, models and audio with modern rendering, QoL and mod support. The upstream README describes Daggerfall Unity as an open source recreation of Daggerfall in the Unity engine and states that a free copy of DOS Daggerfall is required for assets. It documents cross-platform play without emulation and a community mod ecosystem. No REA involvement is claimed. Original Daggerfall assets are not redistributed; users supply DOS Daggerfall data. Unity engine runtime is subject to Unity’s own terms for builds. Optional mods can raise system requirements or reduce stability. Submitter reviewed public README/license only; we have not independently tested it.",
+    "zh-CN": "在 Unity 引擎中开源重现《上古卷轴 II：匕首雨》，使用免费 DOS 版匕首雨素材提供贴图、模型与音频，并加入现代渲染、体验改进与模组支持。上游 README 将 Daggerfall Unity 描述为在 Unity 引擎中对匕首雨的开源重现，并声明运行需要免费的 DOS 版匕首雨素材；记录无需模拟即可跨平台游玩及社区模组生态。本站不声称 REA 参与该项目。不重新分发原版匕首雨素材；用户需自行提供 DOS 版数据。Unity 引擎运行时受 Unity 自身构建条款约束。可选模组可能提高系统要求或降低稳定性。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "open-claude-ui": {
+    "en": "An open-source high-fidelity reconstruction of Claude’s desktop design system and interaction physics, shipping React/TypeScript components, motion presets and a reverse-engineering handbook. The README states the project was reverse-engineered with REA (AST/deobfuscation/runtime tracing of the production Electron/ASAR client) and links an REA badge. A clean-room asset policy is documented separately. This listing does not claim a drop-in Claude desktop client. Not a drop-in Claude desktop app or API client; no Anthropic branding assets are redistributed. Author claims high component fidelity; we have not installed, run or audited it beyond README/source review.",
+    "zh-CN": "开源高保真重建 Claude 桌面设计系统与交互物理，提供 React/TypeScript 组件、动效预设与逆向工程手册。README 声明项目使用 REA（对生产 Electron/ASAR 客户端做 AST/去混淆/运行时追踪）逆向，并链接 REA 徽章；另有洁净室素材策略说明。本站不将其标为可即用的 Claude 桌面客户端。不是可即用的 Claude 桌面应用或 API 客户端；不重新分发 Anthropic 品牌素材。作者声称组件高保真；我们仅审阅 README/源码，未安装、运行或审计。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "pvz-portable": {
+    "en": "A community cross-platform reimplementation of Plants vs. Zombies: Game of the Year Edition using SDL and OpenGL ES, with original-compatible user data and a portable mid-level save format. The upstream README describes a cross-platform community-driven reimplementation of Plants vs. Zombies GOTY and states that copyrighted assets are not shipped. The author notes code based on public community research/game testing rather than binary RE of the EXE. No REA involvement is claimed. Requires a legally purchased GOTY copy (main.pak + properties/). Best with GOTY 1.2.0.1073 EN assets; other builds may need compat overrides. Touch UIs are not mobile-optimized. We have not playtested it.",
+    "zh-CN": "社区驱动的跨平台《植物大战僵尸：年度版》重实现，基于 SDL 与 OpenGL ES，兼容原版用户数据并提供可移植中层存档格式。上游 README 描述跨平台社区驱动的 GOTY 重实现，并声明不附带受版权保护的素材。作者说明代码基于公开社区研究/游戏测试，而非对 EXE 的二进制逆向。本站不声称 REA 参与。需要合法购买的 GOTY 副本（main.pak + properties/）。最好使用 GOTY 1.2.0.1073 英版素材；其他构建可能需兼容覆盖。触控 UI 未针对移动端优化。我们未试玩。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "dethrace": {
+    "en": "An ongoing reverse-engineering rebuild of the 1997 Carmageddon engine so it runs natively on modern systems with SDL2, replacing original assembly function-by-function using recovered Watcom debug symbols. The upstream README describes rebuilding Carmageddon to run natively, with symbol-driven reverse engineering and a progress chart. Topics include reverse-engineering. Game content is not shipped. No REA involvement is claimed. Needs original Carmageddon data or freeware demos. Matching progress is incomplete. README also contains conflicting “Public Domain” / non-commercial wording; the LICENSE file is GPL-3.0 — this listing follows the LICENSE file. We have not tested it beyond README/source review.",
+    "zh-CN": "持续进行中的 1997 年《Carmageddon》引擎逆向重建，借助恢复的 Watcom 调试符号逐函数替换原汇编，以 SDL2 在现代系统原生运行。上游 README 描述重建 Carmageddon 以原生运行，并说明基于符号的逆向与进度图。主题含 reverse-engineering。不附带游戏内容。本站不声称 REA 参与。需要原版 Carmageddon 数据或免费试用版。匹配进度未完成。README 另有冲突的“公有领域”/非商业表述；LICENSE 文件为 GPL-3.0——本站以 LICENSE 为准。我们仅审阅 README/源码，未测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "metaforce": {
+    "en": "A native reverse-engineered reimplementation of the Metroid Prime engine, recently rewritten atop the Metroid Prime matching decompilation, targeting modern graphics backends. The upstream README describes Metaforce as a reverse-engineered reimplementation of the Metroid Prime engine and notes a rewrite on the matching decompilation. Topics include reimplementation and reverse-engineering. No REA involvement is claimed. README states builds are currently unavailable while the project restabilizes after the decompilation rewrite. Original Nintendo/Retro assets are not redistributed. Platform support list is aspirational relative to current build state. We have not tested it.",
+    "zh-CN": "对《密特罗德 究极》引擎的原生逆向重实现，近期基于匹配反编译重写，面向现代图形后端。上游 README 将 Metaforce 描述为 Metroid Prime 引擎的逆向重实现，并说明基于匹配反编译的重写。主题含 reimplementation 与 reverse-engineering。本站不声称 REA 参与。README 声明反编译重写后项目再稳定期间构建暂不可用。不重新分发任天堂/Retro 原版素材。平台支持列表相对当前构建状态偏理想化。我们未测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "webamp": {
+    "en": "An HTML5/JavaScript reimplementation of Winamp 2 with full classic skin support via Web Audio, usable as an NPM module or at webamp.org. The upstream README describes a reimplementation of Winamp in HTML5 and JavaScript with full skin support. Topics include reimplementation. It does not claim binary reverse engineering of Winamp. No REA involvement is claimed. IE unsupported. “Modern” Winamp skins are a separate prototype package. Winamp name/interface/sample audio remain Nullsoft property. We have not tested beyond public demos/docs review.",
+    "zh-CN": "用 HTML5/JavaScript 重实现 Winamp 2，经 Web Audio 完整支持经典皮肤，可作为 NPM 模块或在 webamp.org 使用。上游 README 描述用 HTML5 与 JavaScript 重实现 Winamp 并完整支持皮肤。主题含 reimplementation。未声称对 Winamp 做二进制逆向。本站不声称 REA 参与。不支持 IE。“现代” Winamp 皮肤为单独原型包。Winamp 名称/界面/示例音频仍属 Nullsoft。我们仅审阅公开演示/文档，未深入测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "openlara": {
+    "en": "An open-source engine for classic Tomb Raider titles that loads original game data and runs levels on modern platforms, including a WebGL demo build. The upstream README states it is a classic Tomb Raider open-source engine with a WebGL demo and standalone releases. Original game data is required and not redistributed. No REA involvement is claimed. Compatibility and feature coverage vary by Tomb Raider title. Users must supply legally obtained original game data. Submitter reviewed public README/license only; we have not independently tested it.",
+    "zh-CN": "面向经典《古墓丽影》的开源引擎，加载原游戏数据并在现代平台运行关卡，含 WebGL 演示构建。上游 README 声明其为经典古墓丽影开源引擎，提供 WebGL 演示与独立发行。原游戏数据需自行提供且不重新分发。本站不声称 REA 参与。各《古墓丽影》作品的兼容与功能覆盖不一。用户须提供合法获得的原游戏数据。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "opengol": {
+    "en": "Decompiles Naughty Dog GOAL code from Jak & Daxter, provides a GOAL compiler and asset tools, and recompiles the games as native x86-64 PC ports for owners of a legal PS2 retail disc. The upstream README documents a decompile → GOAL compiler → asset extract/repack → native x86-64 port strategy. Topics include reverse-engineering. Assets are not shipped. No REA involvement is claimed. Requires a legally purchased PS2 retail disc; later console remasters are out of scope. Windows/Linux/macOS (Rosetta) x86-64 only. Submitter reviewed public README/license only; we have not independently tested it.",
+    "zh-CN": "反编译 Naughty Dog 的 GOAL 代码，提供 GOAL 编译器与素材工具，并将《杰克与达克斯特》系列重编译为原生 x86-64 PC 移植，面向合法 PS2 零售盘持有者。上游 README 记录反编译 → GOAL 编译器 → 素材提取/重打包 → 原生 x86-64 移植策略。主题含 reverse-engineering。不附带素材。本站不声称 REA 参与。需要合法购买的 PS2 零售盘；后续主机重制版不在范围内。仅 Windows/Linux/macOS（Rosetta）x86-64。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "siegefx": {
+    "en": "A clean-room reimplementation of Gas Powered Games’ Dungeon Siege (2002) in C#/.NET that loads original .dsres archives, GAS templates, Skrit scripts and meshes without redistributing copyrighted assets. The upstream README describes an open-source clean-room reimplementation of Dungeon Siege that loads original data files directly rather than redistributing them. It documents format parsers, a Skrit VM and alpha playable releases. No REA involvement is claimed. Original Dungeon Siege data required (GOG/Steam/discs). Remaining parity gaps include Bink movies, interior lighting and combat balance. Optional Epic Online Services multiplayer uses Epic’s SDK under separate terms. We have not independently tested it.",
+    "zh-CN": "用 C#/.NET 洁净室重实现 Gas Powered Games 的《地下城围攻》（2002），直接加载原版 .dsres 档案、GAS 模板、Skrit 脚本与网格，不重新分发受版权保护的素材。上游 README 描述开源洁净室重实现，直接加载原版数据文件而非重新分发。记录格式解析器、Skrit 虚拟机与可玩的 alpha 发行。本站不声称 REA 参与。需要原版《地下城围攻》数据（GOG/Steam/光盘）。仍有奇偶差距（Bink 影片、室内光照、战斗平衡）。可选 Epic Online Services 多人使用 Epic SDK，条款另计。我们未独立测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "legend-of-legaia-re": {
+    "en": "Reverse-engineering and clean-room Rust reimplementation of PlayStation Legend of Legaia, with Ghidra-backed format docs, disc extractors, a wgpu/SDL3 engine and patcher/randomizer tools. The upstream README defines scope as reverse-engineering plus a from-scratch Rust port reading original disc data (not a byte-match decompilation rebuild), with Ghidra provenance and parity tooling. Explicit BYO-disc policy. No REA involvement is claimed. Sony executable/assets are not redistributed. Remaining bugs, partial retail parity, silent spell voices and keyboard-only native input; USA disc focus for the engine. Submitter reviewed public README/license only; we have not independently tested it.",
+    "zh-CN": "对 PlayStation《乐克乐克传说》的逆向与洁净室 Rust 重实现，含 Ghidra 支撑的格式文档、光盘提取器、wgpu/SDL3 引擎及补丁/随机化工具。上游 README 将范围定义为逆向加从零开始的 Rust 移植（读取原光盘数据，非字节匹配反编译重建），含 Ghidra 溯源与奇偶工具。明确“自备光盘”政策。本站不声称 REA 参与。不重新分发索尼可执行文件/素材。仍有缺陷、部分零售奇偶差距、法术语音静音、原生仅键鼠；引擎侧重美版光盘。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  },
+  "corsixth": {
+    "en": "An open-source reimplementation of Bullfrog’s 1997 Theme Hospital that recreates the original campaign while adding modern OS support, HD/4K, zooming, custom campaigns and QoL features. The upstream README describes a reimplementation of Theme Hospital that faithfully recreates the original and adds modern platform support. It states most original features work and the full campaign can be completed. No REA involvement is claimed. Original Theme Hospital graphics/sound/data required (CD, GOG or EA). Some original features still missing (multiplayer/LAN, AI hospitals, rats, certain videos/art). Submitter reviewed public README/license only; we have not independently tested it.",
+    "zh-CN": "开源重实现 Bullfrog 1997 年《主题医院》，复现原版战役并加入现代系统支持、高清/4K、缩放、自定义战役与体验改进。上游 README 描述忠实复现原作并加入现代平台支持的《主题医院》重实现；声明多数原版功能可用且战役可通关。本站不声称 REA 参与。需要原版《主题医院》图像/声音/数据（光盘、GOG 或 EA）。仍缺部分原版功能（多人/局域网、AI 医院、老鼠、部分影片/美术）。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
+  }
+}
