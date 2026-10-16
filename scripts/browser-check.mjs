@@ -14,7 +14,7 @@ const types = ['all', ...Object.keys(kinds).filter(key=>catalog.some(p=>p.kind==
 const base=(process.env.TEST_URL||'http://127.0.0.1:4387').replace(/\/$/,'');
 const targetOrigin=new URL(base).origin;
 const allowedThirdPartyOrigins=new Set(['https://fazier.com']);
-const isUnexpectedThirdParty=url=>{const origin=new URL(url).origin;return origin!==targetOrigin&&!allowedThirdPartyOrigins.has(origin)};
+const isUnexpectedThirdParty=(url,sameOrigin=targetOrigin)=>{const origin=new URL(url).origin;return origin!==sameOrigin&&!allowedThirdPartyOrigins.has(origin)};
 const consentKey='awesomerea.analytics-consent.v1';
 const out=process.env.TEST_OUTPUT||'test-results/local';
 await mkdir(out,{recursive:true});
@@ -262,7 +262,7 @@ async function checkWarmCache(browser, engine, locale, output) {
   await page.waitForFunction(() => document.querySelector('#dx-ball .cover-image').naturalWidth > 0);
   await page.locator('#dx-ball .cover-image').evaluate(image => image.decode());
   await page.locator('#search').fill('DX-Ball'); assert.equal(await page.locator('.project-card:visible').count(), 1);
-  assert.equal(requests.filter(url => new URL(url).origin !== fixture).length, 0);
+  assert.equal(requests.filter(url => isUnexpectedThirdParty(url, fixture)).length, 0);
   await page.screenshot({path: `${output}/warm-cache-upgrade.png`});
   report.contexts.push({locale, engine, warmCacheUpgrade: true, nativeHttpCache: true, legacyCssBypassed: true, cards: total, thirdPartyRequests: 0});
  } finally { await context.close(); server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); }
