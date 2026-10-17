@@ -785,5 +785,70 @@
     "limitation": "需要原版《主题医院》图像/声音/数据（光盘、GOG 或 EA）。仍缺部分原版功能（多人/局域网、AI 医院、老鼠、部分影片/美术）。投稿者仅审阅公开 README/许可；我们未独立测试。",
     "license": "MIT-style",
     "licenseNote": "CorsixTH 代码为 MIT 风格授权，另含第三方声明；不含原版《主题医院》素材。"
+  },
+  "dusklight": {
+    "sourceHash": "598fc3141ee27d2a8a882df6b1de2e80fe1e63c1ab1a25c78a8f8ec3eb70990e",
+    "name": "Dusklight",
+    "tag": "独立游戏引擎",
+    "target": "塞尔达传说：黄昏公主 · C++ / D3D12 / Vulkan / Metal",
+    "summary": "基于黄昏公主反编译的逆向重实现，力求贴近原版并提供增强与工具，面向 PC 与移动端 GPU。",
+    "listSummary": "《黄昏公主》逆向重实现；需自备光盘转储。",
+    "evidenceScope": "上游 README 称 Dusklight 为基于黄昏公主反编译的逆向重实现，并声明不提供受版权保护的素材。本站不声称 REA 参与。",
+    "status": "活跃；支持商业光盘（除韩版 Wii）",
+    "limitation": "需自备《黄昏公主》光盘转储（ISO/RVZ），不重新分发任天堂素材。完整精度需 D3D12、Vulkan 1.1+ 或 Metal；旧后端为尽力支持。Wii 盘游玩仍会呈现 GameCube HUD 等差异。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "license": "CC0-1.0",
+    "licenseNote": "Dusklight 代码为 CC0-1.0；任天堂《黄昏公主》素材与商标仍属原权利方。"
+  },
+  "openprototype": {
+    "sourceHash": "f8b08791b68e7c51eb4d124ad893cf944725b92d1dfeb50bf430aed47fb3931a",
+    "name": "OpenPrototype",
+    "tag": "独立游戏引擎",
+    "target": "Prototype（1995，DOS）· Rust",
+    "summary": "对 NEO Software 1995 年 DOS 射击游戏 Prototype 的从零 Rust 移植，依据发行文件逆向并参考原程序作者的格式笔记。",
+    "listSummary": "Prototype（1995）Rust 逆向移植；需自备光盘镜像。",
+    "evidenceScope": "上游 README 描述为基于发行文件逆向的从零 Rust 移植，可用自备光盘镜像从头玩到尾。本站不声称 REA 参与。",
+    "status": "可通关的早期版本；作者称七关齐全",
+    "limitation": "需合法取得的 Prototype 光盘镜像。安装脚本可能提示从互联网档案馆下载——用户须自行确认权利。社区较小；上游最近推送约在 2026 年中。macOS 构建未签名。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "license": "GPL-3.0",
+    "licenseNote": "OpenPrototype 代码为 GPL-3.0；原版 Prototype 素材仍属原权利方。"
+  },
+  "openyamm": {
+    "sourceHash": "071c4b1e466ae4f85db5dbe39f369265879ae5fd53f389127d281dbddc876b21",
+    "name": "OpenYAMM",
+    "tag": "独立游戏引擎",
+    "target": "魔法门 VI–VIII · C++ / SDL3",
+    "summary": "现代 C++ 重实现《魔法门》VI、VII、VIII（Open Yet Another Might and Magic），使用原版数据并配合高清美术、新 HUD/菜单与跨作大陆旅行。",
+    "listSummary": "《魔法门》VI–VIII 的 C++/SDL3 重实现；需原版数据。",
+    "evidenceScope": "上游 README 称 OpenYAMM 为《魔法门》VI–VIII 的现代 C++ 重实现，使用原版数据与高清美术，并称三作可玩且共享系统。本站不声称 REA 参与。",
+    "status": "MM6–8 可玩；持续维护",
+    "limitation": "需原版《魔法门》VI–VIII 数据。兼容与打磨仍在进行。README 称支持 Windows/Linux/Android。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "license": "GPL-3.0",
+    "licenseNote": "OpenYAMM 代码为 GPL-3.0；New World Computing / Ubisoft 游戏素材仍属原权利方。"
+  },
+  "opents": {
+    "sourceHash": "9285438573642dc013c6074d9e09f7aaf065f737248772b94e50fdd8e28cce93",
+    "name": "OpenTS",
+    "tag": "独立游戏引擎",
+    "target": "命令与征服：泰伯利亚之日 2.03 Firestorm · C++",
+    "summary": "社区主导的《泰伯利亚之日》引擎开源重建，结合 EA 以 GPL 释出的相关 C&C 源码与针对本作的逆向，面向可玩引擎与模组能力。",
+    "listSummary": "《命令与征服：泰伯利亚之日》引擎重建；需原版素材。",
+    "evidenceScope": "上游 README 描述为面向泰伯利亚之日 2.03 Firestorm 的独立重建，基于 EA GPL 相关源码与本作逆向，并声明不重新分发原版素材。本站不声称 REA 参与。",
+    "status": "活跃；可玩引擎并侧重模组",
+    "limitation": "非 EA 重制或官方源码发布。需原版素材且不重新分发。GitHub 许可字段为未声明（NOASSERTION）；本条依据 LICENSE.md（GPL-3.0-or-later 及派生文件的 EA 第 7 条附加条款）。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "license": "GPL-3.0-or-later",
+    "licenseNote": "GPL-3.0-or-later，并对源自 EA 释出红色警戒源码的派生材料适用 GPL 第 7 条附加条款；《泰伯利亚之日》游戏素材仍属原权利方。"
+  },
+  "opentesarena": {
+    "sourceHash": "90a5c40e98b0717cae61fd19b580ddd7b46509de0bb5c1c8f69b16f4db0fdba2",
+    "name": "OpenTESArena",
+    "tag": "独立游戏引擎",
+    "target": "上古卷轴：竞技场（1994）· C++",
+    "summary": "为 Bethesda 1994 年 DOS RPG《上古卷轴：竞技场》从零编写的现代洁净室开源引擎，目标复现原作并加入体验改进。",
+    "listSummary": "洁净室《上古卷轴：竞技场》引擎；需原版 DOS 数据。",
+    "evidenceScope": "上游 README 描述为从零洁净室引擎，不重新分发游戏素材，并列出当前功能状态。本站不声称 REA 参与。",
+    "status": "活跃开发中；战斗/商店/快速旅行可用，法术/任务未完成",
+    "limitation": "需原版竞技场数据（不重新分发）。按 README，任务、法术、药水、板甲材质与存读档尚未实现。投稿者仅审阅公开 README/许可；我们未独立测试。",
+    "license": "MIT",
+    "licenseNote": "OpenTESArena 代码为 MIT；Bethesda Softworks《竞技场》素材仍属原权利方。"
   }
 }

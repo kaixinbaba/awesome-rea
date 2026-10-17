@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-61 projects & resources · 6 categories
+66 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -50,6 +50,11 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [SiegeFX](<https://github.com/codingncaffeine/SiegeFX>) — Clean-room Dungeon Siege (2002) reimplementation in C#/.NET; original .dsres data required.
 - [legend-of-legaia-re](<https://github.com/AndrewAltimit/legend-of-legaia-re>) — PSX Legend of Legaia reverse engineering and Rust port; BYO disc, no Sony assets.
 - [CorsixTH](<https://github.com/CorsixTH/CorsixTH>) — Theme Hospital (1997) reimplementation with modern OS/HD support; original assets required.
+- [Dusklight](<https://github.com/TwilitRealm/dusklight>) — Twilight Princess reverse-engineered reimplementation; original disc dump required.
+- [OpenPrototype](<https://github.com/openprototype-game/openprototype>) — From-scratch Rust port of Prototype (1995) via RE; own disc image required.
+- [OpenYAMM](<https://github.com/pjasicek/openyamm>) — Might and Magic VI–VIII C++/SDL3 reimplementation; original data + HD art.
+- [OpenTS](<https://github.com/OpenTS-Developers/OpenTS>) — Command & Conquer: Tiberian Sun engine reconstruction; original assets required.
+- [OpenTESArena](<https://github.com/afritz1/OpenTESArena>) — Clean-room Elder Scrolls: Arena engine; original DOS data required.
 
 ### Desktop & productivity apps
 
