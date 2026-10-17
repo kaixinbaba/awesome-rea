@@ -22,6 +22,8 @@ const claritySnippet = `(function(){if(location.origin!=="https://awesomerea.com
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "yy4tlvmg63");})();`;
 const umamiSnippet = `(function(){if(location.origin!=="https://awesomerea.com")return;var s=document.createElement("script");s.defer=true;s.src="https://analytics.murdoku.fans/script.js";s.setAttribute("data-website-id","47d78379-0c7b-4149-b17e-9535a292bdb8");document.head.appendChild(s);})();`;
+// Only executable inline scripts need CSP hashes; JSON-LD data blocks are not executed and are not subject to script-src.
+// Keep the CSP line under Cloudflare Pages' 2,000-character _headers limit, or Pages silently drops it.
 const hashes = [claritySnippet, umamiSnippet].map(snippet => createHash('sha256').update(snippet).digest('base64'));
 const projectPage = id => `projects/${id}/`;
 const categoryPage = key => `categories/${key}/`;
@@ -40,7 +42,6 @@ for (const locale of Object.keys(locales)) {
   const detailHref = id => localePath(locale, projectPage(id));
   const categoryHref = key => localePath(locale, categoryPage(key));
   const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@type': 'ItemList', name: t('seo.catalogName'), inLanguage: lang, numberOfItems: projects.length, itemListElement: projects.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: `${origin}${detailHref(p.id)}` })) }).replaceAll('<', '\\u003c');
-  hashes.push(createHash('sha256').update(jsonLd).digest('base64'));
 
   function head(page, { title, description, noindex = false, includeApp = false, extraJsonLd = '' } = {}) {
     const path = localePath(locale, page);
@@ -120,7 +121,6 @@ ${section('method.privacyTitle', ['method.privacy1', 'method.privacy2', 'method.
       operatingSystem: p.target,
       license: p.licenseUrl || undefined,
     }).replaceAll('<', '\\u003c');
-    hashes.push(createHash('sha256').update(projectLd).digest('base64'));
     const html = head(page, {
       title,
       description,
