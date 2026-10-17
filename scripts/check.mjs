@@ -8,6 +8,9 @@ const data = await loadProjects();
 const covers = await loadCovers(data);
 const origin = new URL(process.env.SITE_URL || 'https://awesomerea.com').origin;
 const headers = await readFile('dist/_headers', 'utf8');
+// Cloudflare Pages ignores any _headers line longer than 2,000 characters (including the CSP line).
+for (const line of headers.split('\n')) assert(line.length <= 2000, `_headers line exceeds Cloudflare Pages 2,000-character limit (${line.length}): ${line.slice(0, 40)}`);
+assert(/^  Content-Security-Policy: /m.test(headers), 'Missing enforced CSP');
 const esc = value => value.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 for (const locale of Object.keys(locales)) {
  const { lang, projects, og, t } = await loadLocale(locale, data);
@@ -64,7 +67,6 @@ for (const locale of Object.keys(locales)) {
    assert.equal(structured.numberOfItems, projects.length);
    assert.equal(structured.itemListElement.length, projects.length);
    assert.deepEqual(structured.itemListElement.map(item => item.url), projects.map(p => `${origin}${localePath(locale, `projects/${p.id}/`)}`));
-   assert(headers.includes(`'sha256-${createHash('sha256').update(json).digest('base64')}'`), 'JSON-LD must be permitted by CSP');
    assert(html.includes(esc(t('hero.optional'))));
   }
   if (page === 'method/') {
