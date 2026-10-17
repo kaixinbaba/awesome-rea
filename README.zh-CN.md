@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-61 个项目与资源 · 6 个分类
+66 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -50,6 +50,11 @@
 - [SiegeFX](<https://github.com/codingncaffeine/SiegeFX>) — C#/.NET 洁净室重实现《地下城围攻》（2002）；需要原版 .dsres 数据。
 - [legend-of-legaia-re](<https://github.com/AndrewAltimit/legend-of-legaia-re>) — PSX《乐克乐克传说》逆向与 Rust 移植；自备光盘，不含索尼素材。
 - [CorsixTH](<https://github.com/CorsixTH/CorsixTH>) — 《主题医院》（1997）重实现，支持现代系统与高清；需要原版素材。
+- [Dusklight](<https://github.com/TwilitRealm/dusklight>) — 《黄昏公主》逆向重实现；需自备光盘转储。
+- [OpenPrototype](<https://github.com/openprototype-game/openprototype>) — Prototype（1995）Rust 逆向移植；需自备光盘镜像。
+- [OpenYAMM](<https://github.com/pjasicek/openyamm>) — 《魔法门》VI–VIII 的 C++/SDL3 重实现；需原版数据。
+- [OpenTS](<https://github.com/OpenTS-Developers/OpenTS>) — 《命令与征服：泰伯利亚之日》引擎重建；需原版素材。
+- [OpenTESArena](<https://github.com/afritz1/OpenTESArena>) — 洁净室《上古卷轴：竞技场》引擎；需原版 DOS 数据。
 
 ### 桌面与效率应用
 
