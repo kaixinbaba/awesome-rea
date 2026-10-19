@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-66 projects & resources · 6 categories
+78 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -55,6 +55,18 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [OpenYAMM](<https://github.com/pjasicek/openyamm>) — Might and Magic VI–VIII C++/SDL3 reimplementation; original data + HD art.
 - [OpenTS](<https://github.com/OpenTS-Developers/OpenTS>) — Command & Conquer: Tiberian Sun engine reconstruction; original assets required.
 - [OpenTESArena](<https://github.com/afritz1/OpenTESArena>) — Clean-room Elder Scrolls: Arena engine; original DOS data required.
+- [OpenRW](<https://github.com/rwengine/openrw>) — Open-source GTA III engine re-implementation; original PC game data required.
+- [San Andreas Unity](<https://github.com/in0finite/SanAndreasUnity>) — GTA San Andreas engine reimplementation in Unity; own GTA SA install required.
+- [xoreos](<https://github.com/xoreos/xoreos>) — BioWare Aurora engine reimplementation; foundation only, no normal gameplay yet.
+- [OpenTS2](<https://github.com/LazyDuchess/OpenTS2>) — Early Unity reimplementation of The Sims 2; Ultimate Collection install required.
+- [Open Scrantic](<https://github.com/glauberlima/open-scrantic>) — Rust reimplementation of the Johnny Castaway screensaver; original files required.
+- [ReChan](<https://github.com/SilverwireGames/ReChan>) — Native C++ reimplementation of PS1 Jackie Chan Stuntmaster; own disc image required.
+- [Marble Love](<https://github.com/magno73/marble-love>) — Function-by-function TypeScript port of arcade Marble Madness; MAME ROMs required.
+- [OpenReliant](<https://github.com/OpenReliant/openreliant>) — StarLancer (2000) engine reimplementation with format tools; retail copy required.
+- [OpenEnroth](<https://github.com/OpenEnroth/OpenEnroth>) — Might and Magic VI–VIII engine reimplementation; MM7 playable, game data required.
+- [OpenAWE](<https://github.com/OpenAWE-Project/OpenAWE>) — Early Alan Wake (Northlight) engine reimplementation; viewer only, game data required.
+- [sacengine](<https://github.com/tg-2/sacengine>) — Sacrifice (2000) engine reimplementation in D; original maps and data required.
+- [ByroRedux](<https://github.com/matiaszanolli/ByroRedux>) — Rust/Vulkan engine reading Bethesda Gamebryo/Creation data; no gameplay parity claimed.
 
 ### Desktop & productivity apps
 
