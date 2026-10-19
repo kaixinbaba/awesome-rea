@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-66 个项目与资源 · 6 个分类
+78 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -55,6 +55,18 @@
 - [OpenYAMM](<https://github.com/pjasicek/openyamm>) — 《魔法门》VI–VIII 的 C++/SDL3 重实现；需原版数据。
 - [OpenTS](<https://github.com/OpenTS-Developers/OpenTS>) — 《命令与征服：泰伯利亚之日》引擎重建；需原版素材。
 - [OpenTESArena](<https://github.com/afritz1/OpenTESArena>) — 洁净室《上古卷轴：竞技场》引擎；需原版 DOS 数据。
+- [OpenRW](<https://github.com/rwengine/openrw>) — 《GTA III》开源引擎重实现；需原版 PC 游戏数据。
+- [San Andreas Unity](<https://github.com/in0finite/SanAndreasUnity>) — Unity 版《GTA 圣安地列斯》引擎重实现；需自备原版安装。
+- [xoreos](<https://github.com/xoreos/xoreos>) — BioWare Aurora 引擎重实现；目前仅有基础，尚无正常玩法。
+- [OpenTS2](<https://github.com/LazyDuchess/OpenTS2>) — 《模拟人生 2》早期 Unity 重实现；需终极收藏版安装。
+- [Open Scrantic](<https://github.com/glauberlima/open-scrantic>) — Johnny Castaway 屏保 Rust 重实现；需原版文件。
+- [ReChan](<https://github.com/SilverwireGames/ReChan>) — PS1《成龙特技王》原生 C++ 重实现；需自备光盘镜像。
+- [Marble Love](<https://github.com/magno73/marble-love>) — 街机《Marble Madness》逐函数 TypeScript 移植；需 MAME ROM。
+- [OpenReliant](<https://github.com/OpenReliant/openreliant>) — 《StarLancer》（2000）引擎重实现，附格式工具；需正版游戏。
+- [OpenEnroth](<https://github.com/OpenEnroth/OpenEnroth>) — 《魔法门》VI–VIII 引擎重实现；MM7 可玩，需游戏数据。
+- [OpenAWE](<https://github.com/OpenAWE-Project/OpenAWE>) — 《心灵杀手》Northlight 引擎早期重实现；仅查看器，需游戏数据。
+- [sacengine](<https://github.com/tg-2/sacengine>) — 《Sacrifice》（2000）D 语言引擎重实现；需原版地图与数据。
+- [ByroRedux](<https://github.com/matiaszanolli/ByroRedux>) — 读取 Bethesda Gamebryo/Creation 数据的 Rust/Vulkan 引擎；不宣称玩法对等。
 
 ### 桌面与效率应用
 
