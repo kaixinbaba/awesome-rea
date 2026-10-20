@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-78 个项目与资源 · 6 个分类
+81 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -67,6 +67,9 @@
 - [OpenAWE](<https://github.com/OpenAWE-Project/OpenAWE>) — 《心灵杀手》Northlight 引擎早期重实现；仅查看器，需游戏数据。
 - [sacengine](<https://github.com/tg-2/sacengine>) — 《Sacrifice》（2000）D 语言引擎重实现；需原版地图与数据。
 - [ByroRedux](<https://github.com/matiaszanolli/ByroRedux>) — 读取 Bethesda Gamebryo/Creation 数据的 Rust/Vulkan 引擎；不宣称玩法对等。
+- [MeitouClient](<https://github.com/VlcekM/MeitouClient>) — C#/.NET 版 Kenshi 引擎重实现，Vulkan 渲染；早期可玩切片，需正版游戏。
+- [LEGO Island Decompilation (isle)](<https://github.com/isledecomp/isle>) — 《LEGO Island》1.1 匹配式反编译，三个零售二进制可逐字节重现；需原版游戏。
+- [SpaceCadetPinball](<https://github.com/k4zmu2a/SpaceCadetPinball>) — 《太空军校生弹球》逆向为可移植 C++/SDL2；需原版数据文件。
 
 ### 桌面与效率应用
 
