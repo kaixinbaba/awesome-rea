@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-78 projects & resources · 6 categories
+81 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -67,6 +67,9 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [OpenAWE](<https://github.com/OpenAWE-Project/OpenAWE>) — Early Alan Wake (Northlight) engine reimplementation; viewer only, game data required.
 - [sacengine](<https://github.com/tg-2/sacengine>) — Sacrifice (2000) engine reimplementation in D; original maps and data required.
 - [ByroRedux](<https://github.com/matiaszanolli/ByroRedux>) — Rust/Vulkan engine reading Bethesda Gamebryo/Creation data; no gameplay parity claimed.
+- [MeitouClient](<https://github.com/VlcekM/MeitouClient>) — C#/.NET Kenshi engine reimplementation with Vulkan renderer; early playable slice, legal copy required.
+- [LEGO Island Decompilation (isle)](<https://github.com/isledecomp/isle>) — Matching decompilation of LEGO Island 1.1 that rebuilds all three retail binaries byte for byte; original game required.
+- [SpaceCadetPinball](<https://github.com/k4zmu2a/SpaceCadetPinball>) — Reverse engineering of 3D Pinball for Windows – Space Cadet into portable C++/SDL2; original data files required.
 
 ### Desktop & productivity apps
 
