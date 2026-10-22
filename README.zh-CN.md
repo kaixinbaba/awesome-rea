@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-92 个项目与资源 · 6 个分类
+93 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -98,6 +98,7 @@
 - [Wine](<https://github.com/wine-mirror/wine>) — 面向类 Unix 系统的 Windows API 兼容层，应用兼容性各异。
 - [paper-rs](<https://github.com/michaelshimeles/paper-rs>) — 原生 Rust 的 Paper 式画布应用，记录了 REA 研究过程；渲染和平台支持仍有缺口。
 - [open-claude-ui](<https://github.com/Caho1/open-claude-ui>) — 高保真 Claude 桌面 UI 的 React 重实现；作者记录了 REA 辅助分析。
+- [ReaCut（映刻）](<https://github.com/Xiangyu-CAS/rea-capcut>) — 面向剪映／CapCut 的独立视频编辑器；作者记录了用 REA 研究界面与项目格式。
 
 ### 音频、硬件与驱动
 
