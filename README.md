@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-81 projects & resources · 6 categories
+92 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -70,6 +70,16 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [MeitouClient](<https://github.com/VlcekM/MeitouClient>) — C#/.NET Kenshi engine reimplementation with Vulkan renderer; early playable slice, legal copy required.
 - [LEGO Island Decompilation (isle)](<https://github.com/isledecomp/isle>) — Matching decompilation of LEGO Island 1.1 that rebuilds all three retail binaries byte for byte; original game required.
 - [SpaceCadetPinball](<https://github.com/k4zmu2a/SpaceCadetPinball>) — Reverse engineering of 3D Pinball for Windows – Space Cadet into portable C++/SDL2; original data files required.
+- [fheroes2](<https://github.com/ihhub/fheroes2>) — Heroes of Might and Magic II engine recreation in C++; original or free demo data required.
+- [GLSMAC](<https://github.com/afwbkbc/glsmac>) — OpenGL/SDL2 reimplementation of Sid Meier's Alpha Centauri (+ Alien Crossfire); original game required; pre-1.0.
+- [Underworld Exhumed](<https://github.com/abedegno/underworld-exhumed>) — Byte-matching Ultima Underworld I & II decompilation with native and WebAssembly ports; original data required.
+- [Halo 2 Decompilation](<https://github.com/kirklandsig/halo2-decompiled>) — Matching decompilation of original Xbox Halo 2 retail executable into C/C++; WIP; BYO disc.
+- [Super Mario 64 DS Decompilation](<https://github.com/tangosdev/sm64ds-decomp>) — Byte-matching Super Mario 64 DS decompilation with a Windows PC port; cartridge dump required.
+- [gt4-decomp](<https://github.com/gustavocanepa/gt4-decomp>) — Matching Gran Turismo 4 (PS2) engine decompilation; no game data; sister gt4-native not playable yet.
+- [UnderworldGodot](<https://github.com/hankmorgan/UnderworldGodot>) — Pre-alpha Godot recreation of Ultima Underworld I & II; original game files required; interactive map viewer with substantial game logic.
+- [1oom](<https://github.com/1oom-fork/1oom>) — Master of Orion (1993) engine recreation; original v1.3 LBX files required.
+- [khdays-decomp](<https://github.com/Yokimitsuro/khdays-decomp>) — Matching Kingdom Hearts 358/2 Days (Nintendo DS) decompilation; nearly complete; BYO ROM.
+- [Shiloh](<https://github.com/Asterber/shiloh>) — Rust/SDL2/WASM engine for The X-Files Game (1998); independent rewrite; player's own copy required.
 
 ### Desktop & productivity apps
 
@@ -113,6 +123,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [REA French community guide](<https://github.com/valorisa/Reverse-Engineer-Anything>) — Unofficial French guide to REA concepts, setup and investigation workflows.
 - [Awesome AI Reverse Engineering](<https://github.com/DiscoverBox/awesome-ai-reverse>) — AI reverse-engineering tool list featuring REA, in Chinese and English.
 - [Awesome Reverse Engineering](<https://github.com/morluto/awesome-reverse-engineering>) — Broad reverse-engineering tool and learning list from REA's maintainer.
+- [REA Guide (unofficial)](<https://reaguide.com/>) — Unofficial English REA install and troubleshooting guide with version-pinned setup notes.
 <!-- catalog:end -->
 
 ## Contribute

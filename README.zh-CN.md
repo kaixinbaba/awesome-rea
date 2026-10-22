@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-81 个项目与资源 · 6 个分类
+92 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -70,6 +70,16 @@
 - [MeitouClient](<https://github.com/VlcekM/MeitouClient>) — C#/.NET 版 Kenshi 引擎重实现，Vulkan 渲染；早期可玩切片，需正版游戏。
 - [LEGO Island Decompilation (isle)](<https://github.com/isledecomp/isle>) — 《LEGO Island》1.1 匹配式反编译，三个零售二进制可逐字节重现；需原版游戏。
 - [SpaceCadetPinball](<https://github.com/k4zmu2a/SpaceCadetPinball>) — 《太空军校生弹球》逆向为可移植 C++/SDL2；需原版数据文件。
+- [fheroes2](<https://github.com/ihhub/fheroes2>) — 用 C++ 重现《英雄无敌 II》引擎；需要原版或免费试玩数据。
+- [GLSMAC](<https://github.com/afwbkbc/glsmac>) — 用 OpenGL/SDL2 重实现《半人马座阿尔法》（含资料片）；需原版；尚属 pre-1.0。
+- [Underworld Exhumed](<https://github.com/abedegno/underworld-exhumed>) — 字节匹配的地下世界 I/II 反编译，含原生与 WASM 移植；需原版数据。
+- [Halo 2 Decompilation](<https://github.com/kirklandsig/halo2-decompiled>) — 初代 Xbox《光环 2》零售程序的匹配反编译（C/C++）；进行中；需自备光盘。
+- [Super Mario 64 DS Decompilation](<https://github.com/tangosdev/sm64ds-decomp>) — 字节匹配的《超级马力欧 64 DS》反编译，含 Windows PC 移植；需卡带转储。
+- [gt4-decomp](<https://github.com/gustavocanepa/gt4-decomp>) — 匹配的《跑车浪漫旅 4》（PS2）引擎反编译；无游戏数据；姊妹 gt4-native 尚不可玩。
+- [UnderworldGodot](<https://github.com/hankmorgan/UnderworldGodot>) — 用 Godot 重做地下世界 I/II（pre-alpha）；需原版文件；交互地图查看器含大量逻辑。
+- [1oom](<https://github.com/1oom-fork/1oom>) — 重现 1993《银河飞将》引擎；需要原版 v1.3 LBX 文件。
+- [khdays-decomp](<https://github.com/Yokimitsuro/khdays-decomp>) — 匹配的《王国之心 358/2 Days》（DS）反编译；接近完成；需自备 ROM。
+- [Shiloh](<https://github.com/Asterber/shiloh>) — 用 Rust/SDL2/WASM 运行 1998《X 档案》游戏；独立重写；需玩家自备副本。
 
 ### 桌面与效率应用
 
@@ -113,6 +123,7 @@
 - [REA 法语社区指南](<https://github.com/valorisa/Reverse-Engineer-Anything>) — 介绍 REA 概念、配置和调查流程的非官方法语指南。
 - [Awesome AI Reverse Engineering](<https://github.com/DiscoverBox/awesome-ai-reverse>) — 收录 REA 的 AI 逆向工具目录，提供中文和英文。
 - [Awesome Reverse Engineering](<https://github.com/morluto/awesome-reverse-engineering>) — 由 REA 维护者整理的综合逆向工程工具与学习目录。
+- [REA Guide（非官方）](<https://reaguide.com/>) — 非官方英语 REA 安装与排错指南，含按版本核对的配置说明。
 <!-- catalog:end -->
 
 ## 参与贡献
