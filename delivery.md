@@ -91,4 +91,11 @@
 
 ## PR
 
-（push 后回填）
+https://github.com/kaixinbaba/awesome-rea/pull/91
+
+可抽查 URL（合并前用本地 dist；合入后现网）:
+- https://awesomerea.com/projects/openblack/
+- https://awesomerea.com/zh/projects/openblack/
+- https://awesomerea.com/projects/cadcraft/
+- https://awesomerea.com/projects/nv-rs/
+- https://awesomerea.com/sitemap.xml
