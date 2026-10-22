@@ -42,6 +42,10 @@ export function validateCovers(covers, projects) {
     if (c.sourceType === 'generated') validateGenerated(id, c);
     else validateUpstream(id, c);
   }
+  // Permanent gate: every catalog project needs a reviewed WebP cover.
+  // Missing entries render as letter-initial fallbacks on cards — forbidden to ship.
+  const missing = projects.map(p => p.id).filter(id => !Object.hasOwn(covers, id));
+  assert.equal(missing.length, 0, `Missing required project covers (letter-fallback forbidden): ${missing.join(', ')}`);
   return covers;
 }
 

@@ -60,9 +60,15 @@ test('README generation is deterministic, project-linked and preserves surroundi
   assert.throws(() => updateReadme('no markers', projects));
   assert.throws(() => updateReadme(original + '<!-- catalog:start -->', projects));
 });
-test('covers are optional, local, attributed and validated against their actual files', () => {
+test('covers are required, local, attributed and validated against their actual files', () => {
   assert(covers['dx-ball'], 'The requested DX-Ball README cover must be present');
-  assert.doesNotThrow(() => validateCovers({}, projects));
+  assert.equal(Object.keys(covers).length, projects.length, 'every project must have a cover');
+  assert.throws(() => validateCovers({}, projects), /Missing required project covers/);
+  assert.throws(() => {
+    const copy = structuredClone(covers);
+    delete copy['dx-ball'];
+    validateCovers(copy, projects);
+  }, /Missing required project covers/);
   assert.doesNotThrow(() => validateCovers(covers, projects));
 });
 for (const [name, mutate] of [

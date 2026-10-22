@@ -548,5 +548,297 @@
     "source": "https://raw.githubusercontent.com/Xiangyu-CAS/rea-capcut/f607e3a8f678dbd9b6b775775a1289a071b1bdc1/docs/screenshots/ui-parity-editor.png",
     "readme": "https://github.com/Xiangyu-CAS/rea-capcut/blob/f607e3a8f678dbd9b6b775775a1289a071b1bdc1/README.md",
     "checked": "2026-10-22"
+  },
+  "openyamm": {
+    "src": "/covers/openyamm-6d41d52843ee.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/pjasicek/openyamm/1414884155362e613977a3444a3c7f81ed4ee047/res/showcase/gameplay-hud.webp",
+    "readme": "https://github.com/pjasicek/openyamm/blob/1414884155362e613977a3444a3c7f81ed4ee047/README.md",
+    "checked": "2026-10-22"
+  },
+  "opentesarena": {
+    "src": "/covers/opentesarena-fe23cd386fd6.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/afritz1/OpenTESArena/3ce0d977f33c9be2685bc9077ff5bb8bd33af885/Preview.PNG",
+    "readme": "https://github.com/afritz1/OpenTESArena/blob/3ce0d977f33c9be2685bc9077ff5bb8bd33af885/README.md",
+    "checked": "2026-10-22"
+  },
+  "openrw": {
+    "src": "/covers/openrw-6cbbd383b42c.webp",
+    "width": 960,
+    "height": 720,
+    "source": "https://user-images.githubusercontent.com/418211/48028326-21260b80-e143-11e8-9a7e-53c073c39cc6.png",
+    "readme": "https://github.com/rwengine/openrw/blob/5c5f266b71aa55aeec8cb4d823f19e7c4348f3bd/README.md",
+    "checked": "2026-10-22"
+  },
+  "openenroth": {
+    "src": "/covers/openenroth-162e4838de47.webp",
+    "width": 799,
+    "height": 449,
+    "source": "https://user-images.githubusercontent.com/24377109/79051217-491a7800-7c2f-11ea-85c7-f9120b7d79dd.png",
+    "readme": "https://github.com/OpenEnroth/OpenEnroth/blob/e355c999ca1351a8ee58ad094a70ffa2312bc16b/README.md",
+    "checked": "2026-10-22"
+  },
+  "openawe": {
+    "src": "/covers/openawe-52ab94c9cf9c.webp",
+    "width": 960,
+    "height": 559,
+    "source": "https://raw.githubusercontent.com/OpenAWE-Project/OpenAWE/cce15d3bc289df31522d778fb8e99180e6752b58/screenshots/awan1.png",
+    "readme": "https://github.com/OpenAWE-Project/OpenAWE/blob/cce15d3bc289df31522d778fb8e99180e6752b58/README.md",
+    "checked": "2026-10-22"
+  },
+  "fheroes2": {
+    "src": "/covers/fheroes2-b752be61c62c.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/ihhub/fheroes2/3368fd0b0c67e523eb0d4c9119c39b7c464b6214/docs/images/screenshots/screenshot_world_map.webp",
+    "readme": "https://github.com/ihhub/fheroes2/blob/3368fd0b0c67e523eb0d4c9119c39b7c464b6214/README.md",
+    "checked": "2026-10-22"
+  },
+  "glsmac": {
+    "src": "/covers/glsmac-641a6e804260.webp",
+    "width": 960,
+    "height": 480,
+    "source": "https://user-images.githubusercontent.com/7736265/227072592-0acc91e6-d3b4-46d2-98f6-0ba4e430328f.png",
+    "readme": "https://github.com/afwbkbc/glsmac/blob/0fe9ef16ba7022569eaa43295dbe47f643683601/README.md",
+    "checked": "2026-10-22"
+  },
+  "underworld-exhumed": {
+    "src": "/covers/underworld-exhumed-95e4160c1e4e.webp",
+    "width": 960,
+    "height": 720,
+    "source": "https://raw.githubusercontent.com/abedegno/underworld-exhumed/e5deadd6945b492636aadccc14f52caa908b4186/docs/img/uw1-dungeon.png",
+    "readme": "https://github.com/abedegno/underworld-exhumed/blob/e5deadd6945b492636aadccc14f52caa908b4186/README.md",
+    "checked": "2026-10-22"
+  },
+  "underworld-godot": {
+    "src": "/covers/underworld-godot-d81f53631f0c.webp",
+    "width": 960,
+    "height": 590,
+    "source": "https://raw.githubusercontent.com/hankmorgan/UnderworldGodot/d1df5d0d5b775bfb0d999d47bfe09f82cd4fb3cc/resources/screenshots/screenshotuw1.jpg",
+    "readme": "https://github.com/hankmorgan/UnderworldGodot/blob/d1df5d0d5b775bfb0d999d47bfe09f82cd4fb3cc/README.md",
+    "checked": "2026-10-22"
+  },
+  "dusklight": {
+    "sourceType": "generated",
+    "src": "/covers/dusklight-c01dcf03853a.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for a Twilight Princess style open-world reverse-engineering remake: misty forest canyon at dusk with ancient stone bridge and soft amber lantern glow over a quiet river, painterly fantasy mood, original art, NO TEXT no logos no watermarks, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "openprototype": {
+    "sourceType": "generated",
+    "src": "/covers/openprototype-e84ee3c2fe4b.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for a 1995 DOS Prototype racing remake in Rust: neon-lit futuristic city racetrack at night with sleek abstract cars as light streaks, cyberpunk teal magenta, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "opents": {
+    "sourceType": "generated",
+    "src": "/covers/opents-0ae8328f01d4.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Tiberian Sun engine reconstruction: scorched desert battlefield with ruined tech bunkers and green toxic haze under stormy sky, dark industrial sci-fi mood, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "san-andreas-unity": {
+    "sourceType": "generated",
+    "src": "/covers/san-andreas-unity-10a42ad5f54c.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for San Andreas Unity open-world remake: sun-bleached palm highway into sprawling state panorama with distant city haze, open-road freedom mood, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "xoreos": {
+    "sourceType": "generated",
+    "src": "/covers/xoreos-d9228c9c3cd3.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for BioWare Aurora engine foundation: ancient glowing rune tablet dissolving into wireframe 3D meshes and soft teal code lattice, scholarly tech-fantasy art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "opents2": {
+    "sourceType": "generated",
+    "src": "/covers/opents2-b44efa667af2.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for early The Sims 2 Unity reimplementation: bright suburban dollhouse cutaway with cozy rooms plants and soft daylight, cheerful miniature-life mood, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "open-scrantic": {
+    "sourceType": "generated",
+    "src": "/covers/open-scrantic-81f7b61e5e5e.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Johnny Castaway screensaver reimplementation: tiny tropical island with palm tree castaway silhouette and drifting clouds in serene blue sky, whimsical desktop nostalgia, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "rechan": {
+    "sourceType": "generated",
+    "src": "/covers/rechan-bc972c848ea2.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Jackie Chan Stuntmaster PS1 reimplementation: dynamic rooftop chase silhouette leaping between neon signs in rainy night city, energetic action mood, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "marble-love": {
+    "sourceType": "generated",
+    "src": "/covers/marble-love-f0d1a0219e78.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for arcade Marble Madness TypeScript port: isometric labyrinth of ramps rails and a luminous marble rolling through pastel geometric maze, playful retro-arcade mood, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "openreliant": {
+    "sourceType": "generated",
+    "src": "/covers/openreliant-27755c768e83.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for StarLancer 2000 space combat remake: sleek fighters dogfighting among asteroid fields and distant nebula, cool blue amber space opera mood, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "sacengine": {
+    "sourceType": "generated",
+    "src": "/covers/sacengine-8f7d913b3ccb.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Sacrifice 2000 god-game remake: floating volcanic island with mystical creatures and magical energy beams under dramatic sky, dark fantasy strategy mood, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "byroredux": {
+    "sourceType": "generated",
+    "src": "/covers/byroredux-6ffef7eb638f.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for ByroRedux Bethesda Gamebryo/Creation data engine: abstract northern ruins dissolving into Vulkan mesh wireframes and aurora over snowy hills, tech-meets-lore mood, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "meitouclient": {
+    "sourceType": "generated",
+    "src": "/covers/meitouclient-5e104a81096f.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Kenshi-style survival engine remake: barren desert outpost with scrap metal walls and lone wanderer silhouette under harsh sun, post-apocalyptic grit, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "lego-island-isle": {
+    "sourceType": "generated",
+    "src": "/covers/lego-island-isle-6647b5eb74ac.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for LEGO Island matching decompilation: cheerful toy-island town with brick buildings and bright sunny harbor, playful construction-set mood without brand marks, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "spacecadetpinball": {
+    "sourceType": "generated",
+    "src": "/covers/spacecadetpinball-919e55b88bb0.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Space Cadet 3D pinball remake: glowing pinball table in dark arcade with chrome bumpers and cosmic stars on backglass, nostalgic Windows nostalgia mood, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "reaguide": {
+    "sourceType": "generated",
+    "src": "/covers/reaguide-3f6a20502738.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for unofficial REA install troubleshooting guide: clean desk with laptop checklist sticky notes and soft mint lighting, helpful documentation editorial art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "halo2-decompiled": {
+    "sourceType": "generated",
+    "src": "/covers/halo2-decompiled-acbaa0078a85.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for an early-2000s console game engine decompilation research project: luminous sapphire energy arches and floating geometric ring structures over a calm reflective alien plaza at twilight, serene sci-fi architecture mood without weapons vehicles soldiers or combat, soft volumetric light, original art, NO TEXT no logos no watermarks, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "sm64ds-decomp": {
+    "sourceType": "generated",
+    "src": "/covers/sm64ds-decomp-4898b0b7cfc8.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Super Mario 64 DS decompilation: whimsical floating island castle gardens under bright sky with abstract star coins as geometric shapes, joyful platformer mood without characters, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "gt4-decomp": {
+    "sourceType": "generated",
+    "src": "/covers/gt4-decomp-34fa574cb765.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Gran Turismo 4 engine decompilation: polished sports car silhouette on rain-slick night circuit with neon reflections, precision racing mood, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "moo-1oom": {
+    "sourceType": "generated",
+    "src": "/covers/moo-1oom-b9a292c168cf.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Master of Orion 1993 engine recreation: colorful star map with planetary systems and tiny fleet icons, classic 4X space strategy mood, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "khdays-decomp": {
+    "sourceType": "generated",
+    "src": "/covers/khdays-decomp-1c69a3457b04.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for Kingdom Hearts 358/2 Days DS decompilation: twilight city rooftops with soft neon and floating geometric keyblade-shaped light ribbons without logos, melancholic adventure mood, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
+  },
+  "shiloh": {
+    "sourceType": "generated",
+    "src": "/covers/shiloh-cb85874cb22f.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Cover for The X-Files Game 1998 Rust/WASM remake: rainy Pacific Northwest night with flashlight beam on foggy forest road and distant government facility lights, conspiracy thriller mood, original art, NO TEXT no logos, 16:9.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-22T14:43:47.992Z",
+    "checked": "2026-10-22"
   }
 }
