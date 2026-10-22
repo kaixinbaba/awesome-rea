@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-92 projects & resources · 6 categories
+93 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -98,6 +98,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [Wine](<https://github.com/wine-mirror/wine>) — Windows API compatibility layer for Unix-like systems; application compatibility varies.
 - [paper-rs](<https://github.com/michaelshimeles/paper-rs>) — Native Rust canvas modeled on Paper, with documented REA research; rendering and platform gaps remain.
 - [open-claude-ui](<https://github.com/Caho1/open-claude-ui>) — High-fidelity Claude desktop UI reconstruction in React; author documents REA-assisted analysis.
+- [ReaCut](<https://github.com/Xiangyu-CAS/rea-capcut>) — Independent Jianying/CapCut-informed video editor; author documents REA research into UI and project formats.
 
 ### Audio, hardware & drivers
 

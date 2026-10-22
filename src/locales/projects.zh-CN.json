@@ -1188,5 +1188,19 @@
     "license": "GPL-2.0",
     "licenseNote": "引擎代码为 GPL-2.0。原版《银河飞将》LBX/游戏数据未包含，仍属专有。",
     "secondaryLabel": "当前 vanilla 开发分支"
+  },
+  "reacut": {
+    "sourceHash": "4b69cfc0f96288a9be5a19aadf7bc9990a9ec30f51e26ded224a8516ca6cb5b8",
+    "name": "ReaCut（映刻）",
+    "tag": "视频编辑器重实现",
+    "target": "剪映 / CapCut 工作流程 · Electron / React / TypeScript / FFmpeg",
+    "summary": "借助 REA 研究剪映／CapCut 界面行为与本地项目格式后独立实现的开源桌面视频编辑器，含多轨剪辑、字幕、本地导出与实验性草稿导入。",
+    "listSummary": "面向剪映／CapCut 的独立视频编辑器；作者记录了用 REA 研究界面与项目格式。",
+    "evidenceScope": "README 写明用 REA 研究剪映界面行为与本地项目格式，再以 Electron、React、TypeScript 与 FFmpeg 独立实现；运行不依赖 REA、Ghidra 或剪映。研究与互通文档描述授权范围内的研究；本站不声称复制专有代码或素材，也不声称功能对等。",
+    "status": "v0.6.0 预览版；早期开发",
+    "limitation": "已验证路径为 macOS Apple Silicon；未提供 Windows／Linux 安装包。预览版为 ad-hoc 签名、未公证。实验性剪映草稿导入有损（特效、关键帧与复杂样式可能丢失），不支持写回。未实现云同步、SaaS 与 AI 人像抠像。我们仅审阅公开 README／文档，未安装、运行或审计。",
+    "license": "MIT（自有代码）",
+    "licenseNote": "捆绑的 FFmpeg／x264 使用 GPL；Noto Sans SC 使用 SIL OFL 1.1。详见上游第三方声明。独立项目，与剪映／CapCut 无关联。",
+    "secondaryLabel": "REA 研究笔记"
   }
 }
