@@ -63,10 +63,17 @@ for (const locale of Object.keys(locales)) {
    for (const key of Object.keys(kinds).filter(k => projects.some(p => p.kind === k))) assert(html.includes(`<option value="${key}">`));
    const json = html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1];
    const structured = JSON.parse(json);
-   assert.equal(structured.inLanguage, lang);
-   assert.equal(structured.numberOfItems, projects.length);
-   assert.equal(structured.itemListElement.length, projects.length);
-   assert.deepEqual(structured.itemListElement.map(item => item.url), projects.map(p => `${origin}${localePath(locale, `projects/${p.id}/`)}`));
+   const graph = structured['@graph'];
+   assert(Array.isArray(graph), 'homepage JSON-LD must use @graph');
+   const website = graph.find(n => n['@type'] === 'WebSite');
+   const itemList = graph.find(n => n['@type'] === 'ItemList');
+   assert.equal(website?.name, 'Awesome REA');
+   assert.equal(website?.alternateName, 'awesome-rea');
+   assert.equal(website?.inLanguage, lang);
+   assert.equal(itemList?.inLanguage, lang);
+   assert.equal(itemList?.numberOfItems, projects.length);
+   assert.equal(itemList?.itemListElement.length, projects.length);
+   assert.deepEqual(itemList.itemListElement.map(item => item.url), projects.map(p => `${origin}${localePath(locale, `projects/${p.id}/`)}`));
    assert(html.includes(esc(t('hero.optional'))));
   }
   if (page === 'method/') {

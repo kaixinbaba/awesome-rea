@@ -20,7 +20,6 @@
   "footer.correct": "纠正条目",
   "footer.github": "Awesome REA 的 GitHub 仓库",
   "footer.curator": "由 Jeff Xun 维护",
-  "footer.partners": "合作伙伴",
   "common.checked": "核对日期",
   "common.review": "来源审核",
   "card.permalink": "链接到 {name}",
@@ -191,8 +190,8 @@
   "relationship.REA tooling present": "仓库含有 REA 工具",
   "relationship.REA integration / packaging": "REA 集成与安装分发",
   "relationship.REA learning resource": "REA 学习资源",
-  "seo.projectTitle": "{name} — Awesome REA 条目",
-  "seo.projectDescription": "条目摘要：{summary}",
+  "seo.projectTitle": "{name} — {original} {relationship} | Awesome REA 条目",
+  "seo.projectDescription": "{summary} 状态：{status}。使用前请注意：{limitation}。{reaNote} 来源复核：{checked}。",
   "seo.categoryTitle": "{category} — Awesome REA 分类目录",
   "seo.categoryDescription": "「{category}」分类下的开源逆向与重实现项目。含来源与限制说明；是否使用 REA 不是收录前提。",
   "card.coverAltGenerated": "{name} 的编辑生成封面",
@@ -215,5 +214,6 @@
   "detail.heroAlt": "{name} 封面图",
   "category.back": "返回目录首页",
   "category.count": "共 {count} 个条目",
-  "category.lead": "本分类下已复核来源的条目。打开条目可查看证据、限制与许可说明。"
+  "category.lead": "本分类下已复核来源的条目。打开条目可查看证据、限制与许可说明。",
+  "seo.projectReaNote": "收录于 Awesome REA（{relationship}）；是否使用 REA 非收录前提。"
 }

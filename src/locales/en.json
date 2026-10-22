@@ -20,7 +20,6 @@
   "footer.correct": "Correct a listing",
   "footer.github": "Awesome REA on GitHub",
   "footer.curator": "Curated by Jeff Xun",
-  "footer.partners": "Partners",
   "common.checked": "Checked",
   "common.review": "Source review",
   "card.permalink": "Link to {name}",
@@ -191,8 +190,8 @@
   "relationship.REA tooling present": "REA tooling present",
   "relationship.REA integration / packaging": "REA integration / packaging",
   "relationship.REA learning resource": "REA learning resource",
-  "seo.projectTitle": "{name} — Awesome REA",
-  "seo.projectDescription": "{summary}",
+  "seo.projectTitle": "{name} — {relationship} of {original} | Awesome REA",
+  "seo.projectDescription": "{summary} Status: {status}. Know before you try: {limitation}. {reaNote} Sources checked: {checked}.",
   "seo.categoryTitle": "{category} — Awesome REA directory",
   "seo.categoryDescription": "Open-source reverse-engineering and reimplementation projects in {category}. Sources and limits included; REA usage is optional.",
   "card.coverAltGenerated": "{name} generated cover",
@@ -215,5 +214,6 @@
   "detail.heroAlt": "{name} cover",
   "category.back": "Back to directory",
   "category.count": "{count} listings",
-  "category.lead": "Source-checked entries in this category. Open a listing for evidence, limits and license notes."
+  "category.lead": "Source-checked entries in this category. Open a listing for evidence, limits and license notes.",
+  "seo.projectReaNote": "Listed on Awesome REA ({relationship}); REA usage is optional."
 }

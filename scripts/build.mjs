@@ -15,11 +15,15 @@ const assetUrl = name => `/${name}?v=${assetVersions[name]}`;
 const checked = source.map(p => p.checked).sort().at(-1);
 const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const ext = (url, label, cls = '') => `<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}<span aria-hidden="true"> ↗</span></a>`;
-const footerPartners = [
-  { href: 'https://realisticai.io', label: 'Realistic AI' },
-  { href: 'https://aitoolcenter.com/', label: 'AI Tool Center', title: 'AI Tool Center' },
-];
-const partnerAnchor = ({ href, label, title }) => `<a href="${esc(href)}"${title ? ` title="${esc(title)}"` : ''}>${esc(label)}</a>`;
+const originalName = target => String(target).split(/\s*[·•]\s*/)[0].trim();
+const clipMeta = (value, max) => {
+  const text = String(value).trim().replace(/\s+/g, ' ');
+  if (text.length <= max) return text;
+  const sliced = text.slice(0, max - 1);
+  const cut = sliced.replace(/\s+\S*$/, '');
+  return `${cut || sliced}…`;
+};
+const trimSentenceEnd = value => String(value).replace(/[。.]+$/u, '');
 const icon = '<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M11 7 3 16l8 9M21 7l8 9-8 9M19 5l-6 22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const brandIcon = '<img class="brand-mark" src="/favicon.svg" width="31" height="31" alt="" decoding="async">';
 const claritySnippet = `(function(){if(location.origin!=="https://awesomerea.com")return;(function(c,l,a,r,i,t,y){
@@ -37,7 +41,11 @@ await rm('dist' , { recursive: true, force: true });
 await mkdir('dist', { recursive: true });
 await cp('public', 'dist', { recursive: true });
 
-const sitemapPages = [];
+const pageLastmod = new Map();
+const noteSitemapPage = (page, lastmod) => {
+  const prev = pageLastmod.get(page);
+  if (!prev || lastmod > prev) pageLastmod.set(page, lastmod);
+};
 
 for (const locale of Object.keys(locales)) {
   const { t, projects, lang, og, ogLocale } = await loadLocale(locale, source);
@@ -47,7 +55,9 @@ for (const locale of Object.keys(locales)) {
   const methodPath = localePath(locale, 'method/');
   const detailHref = id => localePath(locale, projectPage(id));
   const categoryHref = key => localePath(locale, categoryPage(key));
-  const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@type': 'ItemList', name: t('seo.catalogName'), inLanguage: lang, numberOfItems: projects.length, itemListElement: projects.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: `${origin}${detailHref(p.id)}` })) }).replaceAll('<', '\\u003c');
+  const itemListLd = { '@type': 'ItemList', name: t('seo.catalogName'), inLanguage: lang, numberOfItems: projects.length, itemListElement: projects.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: `${origin}${detailHref(p.id)}` })) };
+  const websiteLd = { '@type': 'WebSite', name: 'Awesome REA', alternateName: 'awesome-rea', url: `${origin}${home}`, inLanguage: lang };
+  const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': [websiteLd, itemListLd] }).replaceAll('<', '\\u003c');
 
   function head(page, { title, description, noindex = false, includeApp = false, extraJsonLd = '' } = {}) {
     const path = localePath(locale, page);
@@ -60,7 +70,7 @@ for (const locale of Object.keys(locales)) {
     return `<header class="header wrap"><a class="brand" href="${home}" aria-label="${s('nav.home')}">${brandIcon}<span>awesome<span class="brand-light">rea</span><span class="brand-dot">.</span></span></a><nav aria-label="${s('nav.label')}"><a href="${home}#directory">${s('nav.directory')}</a><a href="${home}#get-started">${s('nav.start')}</a><a href="${methodPath}">${s('nav.method')}</a>${ext(repository, t('nav.contribute'), 'nav-github')}<div class="language-switch" role="group" aria-label="${s('nav.language')}">${Object.entries(locales).map(([code, l]) => `<a data-language="${code}" lang="${l.lang}" hreflang="${l.lang}" href="${localePath(code, page)}"${code === locale ? ' aria-current="page"' : ''}>${esc(l.label)}</a>`).join('<span aria-hidden="true"> / </span>')}</div></nav></header>`;
   }
   const consent = `<section id="analytics-consent" class="analytics-consent wrap" aria-labelledby="analytics-consent-title" hidden><div><strong id="analytics-consent-title">${s('analytics.title')}</strong><p>${s('analytics.text')} <a href="${methodPath}#privacy">${s('analytics.privacy')}</a></p><p id="analytics-status" role="status" data-signal="${s('analytics.signal')}" data-preview="${s('analytics.preview')}"></p></div><div class="analytics-actions"><button type="button" id="analytics-reject">${s('analytics.reject')}</button><button type="button" id="analytics-accept">${s('analytics.accept')}</button></div></section>`;
-  const footer = consent + `<footer class="footer wrap"><div><a class="brand" href="${home}">${brandIcon}<span>awesomerea<span class="brand-dot">.</span></span></a><p>${s('footer.independent')}</p><a class="fazier-badge" href="https://fazier.com/launches/awesomerea.com" target="_blank" rel="noopener noreferrer"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=light" width="120" alt="Fazier badge" /></a><div class="footer-partners"><p class="footer-partners-label">${s('footer.partners')}</p><div class="footer-partners-links">${footerPartners.map(partnerAnchor).join('')}</div></div></div><div class="footer-links"><a href="${methodPath}">${s('footer.method')}</a><a href="${issueLinks.suggest}">${s('footer.suggest')} ↗</a><a href="${issueLinks.correction}">${s('footer.correct')} ↗</a>${ext(repository, t('footer.github'))}${ext('https://github.com/kaixinbaba', t('footer.curator'))}<span>${s('common.review')}: ${checked}</span><button type="button" id="analytics-settings" data-allowed="${s('analytics.allowed')}" data-off="${s('analytics.off')}" hidden>${s('analytics.settings')}</button></div></footer></body></html>`;
+  const footer = consent + `<footer class="footer wrap"><div><a class="brand" href="${home}">${brandIcon}<span>awesomerea<span class="brand-dot">.</span></span></a><p>${s('footer.independent')}</p><a class="fazier-badge" href="https://fazier.com/launches/awesomerea.com" target="_blank" rel="noopener noreferrer"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=light" width="120" alt="Fazier badge" /></a></div><div class="footer-links"><a href="${methodPath}">${s('footer.method')}</a><a href="${issueLinks.suggest}">${s('footer.suggest')} ↗</a><a href="${issueLinks.correction}">${s('footer.correct')} ↗</a>${ext(repository, t('footer.github'))}${ext('https://github.com/kaixinbaba', t('footer.curator'))}<span>${s('common.review')}: ${checked}</span><button type="button" id="analytics-settings" data-allowed="${s('analytics.allowed')}" data-off="${s('analytics.off')}" hidden>${s('analytics.settings')}</button></div></footer></body></html>`;
   function cover(p, { detail = false } = {}) {
     const image = covers[p.id];
     const generated = image && isGeneratedCover(image);
@@ -100,7 +110,8 @@ ${section('method.privacyTitle', ['method.privacy1', 'method.privacy2', 'method.
   await writeFile(`dist${home}index.html`, index);
   await writeFile(`dist${methodPath}index.html`, method);
   await writeFile(`dist${home}404.html`, notFound);
-  sitemapPages.push('', 'method/');
+  noteSitemapPage('', checked);
+  noteSitemapPage('method/', checked);
 
   for (const [key] of groups) {
     const page = categoryPage(key);
@@ -110,13 +121,24 @@ ${section('method.privacyTitle', ['method.privacy1', 'method.privacy2', 'method.
     const html = head(page, { title: catTitle, description: catDesc }) + nav(page) + `<main id="main" class="category-page wrap"><a class="text-link" href="${home}#directory">← ${s('category.back')}</a><p class="eyebrow">${s('directory.eyebrow')}</p><h1>${s(`category.${key}`)}</h1><p class="category-lead">${s('category.lead')}</p><p class="review-date">${s('category.count', { count: items.length })} · ${s('common.review')} <time datetime="${checked}">${checked}</time></p><div class="project-grid category-grid">${items.map(card).join('')}</div></main>` + footer;
     await mkdir(`dist${localePath(locale, page)}`, { recursive: true });
     await writeFile(`dist${localePath(locale, page)}index.html`, html);
-    sitemapPages.push(page);
+    const catLastmod = items.map(p => p.checked).sort().at(-1) || checked;
+    noteSitemapPage(page, catLastmod);
   }
 
   for (const p of projects) {
     const page = projectPage(p.id);
-    const title = t('seo.projectTitle', { name: p.name });
-    const description = t('seo.projectDescription', { summary: p.summary });
+    const relationshipLabel = t(`relationship.${p.relationship}`);
+    const relationshipForTitle = locale === 'en' ? relationshipLabel.toLowerCase() : relationshipLabel;
+    const original = originalName(p.target);
+    const title = t('seo.projectTitle', { name: p.name, relationship: relationshipForTitle, original });
+    const reaNote = t('seo.projectReaNote', { relationship: relationshipLabel });
+    const description = t('seo.projectDescription', {
+      summary: clipMeta(p.summary, 160),
+      status: clipMeta(p.status, 80),
+      limitation: trimSentenceEnd(clipMeta(p.limitation, 120)),
+      reaNote,
+      checked: p.checked,
+    });
     const projectLd = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
@@ -124,7 +146,6 @@ ${section('method.privacyTitle', ['method.privacy1', 'method.privacy2', 'method.
       url: `${origin}${detailHref(p.id)}`,
       description: p.summary,
       applicationCategory: t(`category.${p.category}`),
-      operatingSystem: p.target,
       license: p.licenseUrl || undefined,
     }).replaceAll('<', '\\u003c');
     const html = head(page, {
@@ -155,13 +176,13 @@ ${blurbs[p.id]?.[locale] ? `<p class="detail-blurb">${esc(blurbs[p.id][locale])}
 </main>` + footer;
     await mkdir(`dist${localePath(locale, page)}`, { recursive: true });
     await writeFile(`dist${localePath(locale, page)}index.html`, html);
-    sitemapPages.push(page);
+    noteSitemapPage(page, p.checked);
   }
 }
 
 await writeFile('dist/robots.txt', `User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);
-const uniquePages = [...new Set(sitemapPages)];
-const sitemapItems = Object.keys(locales).flatMap(locale => uniquePages.map(page => `<url><loc>${origin}${localePath(locale, page)}</loc><lastmod>${checked}</lastmod>${Object.entries(locales).map(([code, l]) => `<xhtml:link rel="alternate" hreflang="${l.lang}" href="${origin}${localePath(code, page)}"/>`).join('')}<xhtml:link rel="alternate" hreflang="x-default" href="${origin}${localePath('en', page)}"/></url>`));
+const uniquePages = [...pageLastmod.keys()];
+const sitemapItems = Object.keys(locales).flatMap(locale => uniquePages.map(page => `<url><loc>${origin}${localePath(locale, page)}</loc><lastmod>${pageLastmod.get(page)}</lastmod>${Object.entries(locales).map(([code, l]) => `<xhtml:link rel="alternate" hreflang="${l.lang}" href="${origin}${localePath(code, page)}"/>`).join('')}<xhtml:link rel="alternate" hreflang="x-default" href="${origin}${localePath('en', page)}"/></url>`));
 await writeFile('dist/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${sitemapItems.join('')}</urlset>`);
 await writeFile('dist/_headers', `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.clarity.ms https://scripts.clarity.ms https://*.clarity.ms https://analytics.murdoku.fans ${hashes.map(hash => `'sha256-${hash}'`).join(' ')}; style-src 'self'; img-src 'self' data: https://www.google-analytics.com https://region1.google-analytics.com https://c.bing.com https://c.clarity.ms https://fazier.com; font-src 'self'; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://analytics.murdoku.fans; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'\n`);
 const pageCount = Object.keys(locales).length * (2 + populatedCategories(source).length + source.length);
