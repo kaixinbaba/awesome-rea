@@ -148,3 +148,7 @@ These are original abstract SVGs rendered to WebP for catalog cards when no suit
 
 GPT project-fitting covers (2026-10-16)
 Replaced abstract local-svg-editorial previews with GPT-generated images matched to each project's subject. Original art, no trademarks/logos/watermarks. Model: gpt-image-1.
+
+reacut
+https://github.com/Xiangyu-CAS/rea-capcut/blob/f607e3a8f678dbd9b6b775775a1289a071b1bdc1/README.md
+https://raw.githubusercontent.com/Xiangyu-CAS/rea-capcut/f607e3a8f678dbd9b6b775775a1289a071b1bdc1/docs/screenshots/ui-parity-editor.png
