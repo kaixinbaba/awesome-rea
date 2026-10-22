@@ -540,5 +540,13 @@
     "model": "gpt-image-1",
     "generatedAt": "2026-10-16T06:47:08.053Z",
     "checked": "2026-10-16"
+  },
+  "reacut": {
+    "src": "/covers/reacut-bfce01415d48.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/Xiangyu-CAS/rea-capcut/f607e3a8f678dbd9b6b775775a1289a071b1bdc1/docs/screenshots/ui-parity-editor.png",
+    "readme": "https://github.com/Xiangyu-CAS/rea-capcut/blob/f607e3a8f678dbd9b6b775775a1289a071b1bdc1/README.md",
+    "checked": "2026-10-22"
   }
 }
