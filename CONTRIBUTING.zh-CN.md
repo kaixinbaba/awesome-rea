@@ -36,13 +36,13 @@
 5. 运行 `npm ci`、`npm run readme`、`npm test`，一并提交原始数据、译文和两份生成后的 README。不要手改 README 生成区；缺译、过期翻译及目录不同步都会导致检查失败。
 6. 在 PR 中说明核对过的来源及尚未实测的声明。界面改动还需完成[浏览器检查](docs/development.zh-CN.md#浏览器检查)。
 
-可选卡片封面使用经核对的 README 头图或截图，不选徽章或小 Logo。按[预览图字段说明](docs/development.zh-CN.md#readme-卡片预览图)提交本地优化图片与来源声明，仅提交你有权展示的图片。缺图时使用占位图，构建不会抓取上游来源；软件许可不自动覆盖每张图片或游戏素材。
+**每个项目合入前必须带经核对的卡片封面**。字母首字母占位会被 `npm test` / check 拒绝。优先用合适的上游 README 截图（`scripts/ingest-covers.mjs`）；没有合适真图时，再用 GPT/Codex Images 生成并经 `scripts/ingest-gpt-covers.mjs` 入库（记录 `sourceType=generated`、prompt、model）。封面须为经核对的 README 头图或截图，不选徽章或小 Logo。按[预览图字段说明](docs/development.zh-CN.md#readme-卡片预览图)提交本地优化图片与来源声明，仅提交你有权展示的图片。构建不会抓取上游来源；软件许可不自动覆盖每张图片或游戏素材。
 
 贡献原创内容即同意按本仓库 MIT 许可提供该内容。第三方作品保留自身权利，不要提交你无权授权的材料。
 
 ## 审核与发布
 
-Issue 是提案，不是正式收录。维护者核对一手来源、许可范围、重复项、标签和限制后，合并范围明确的修改。自动检查只识别结构错误和过期生成内容，**不判断事实真伪**，也不会安装或执行投稿项目。
+Issue 是提案，不是正式收录。维护者核对一手来源、许可范围、重复项、标签、限制以及**真实卡片封面**（上游截图 ingest 或经 `ingest-gpt-covers.mjs` 的 GPT/Codex Images，禁止字母占位）后，合并范围明确的修改。自动检查只识别结构错误和过期生成内容，**不判断事实真伪**，也不会安装或执行投稿项目。
 
 审核修改合并后，README 随之更新。已核对的提交推送到 `main` 后，GitHub Actions 自动校验、构建并发布网站；Issue 和未经审核的 PR 不触发上线。网站在发布流水线成功后更新，详见[开发与部署](docs/development.zh-CN.md#部署)。
 

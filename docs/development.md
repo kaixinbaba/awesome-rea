@@ -24,7 +24,7 @@ Preview at `http://127.0.0.1:4387`. Build output is in `dist/`; it is not commit
 | `src/locales/projects.zh-CN.json` | Chinese project display fields, keyed by the same IDs; no separate URLs or classifications |
 | `scripts/i18n.mjs` | Locale registry, strict coverage / placeholder checks and translation freshness hashes |
 | `scripts/catalog.mjs` | Taxonomy and data validation |
-| `src/project-covers.json`, `scripts/covers.mjs` | Optional reviewed README previews keyed by project ID; provenance, local asset and size checks |
+| `src/project-covers.json`, `scripts/covers.mjs` | Required reviewed README/GPT previews keyed by project ID; provenance, local asset, size and full-coverage checks |
 | `public/covers/` | Optimized static WebP previews and third-party attribution in `NOTICE.txt` |
 | `scripts/readme.mjs` | Generate/check both README catalog blocks |
 | `scripts/build.mjs` | Generate HTML, sitemap, robots and security headers |
@@ -58,7 +58,7 @@ Run `npm run readme` after data or translation changes. `npm test` fails if eith
 
 ## README card previews
 
-Cards use the first suitable README header or screenshot after review, not badges, small logos or arbitrary gallery images. Covers are optional: missing entries get a decorative fallback; failed requests preserve the card layout and text. Both languages share the same image and translated alternative text/source labels. Images load lazily from this site's origin, never from an upstream image host. Builds do not fetch or crawl.
+Cards use the first suitable README header or screenshot after review, not badges, small logos or arbitrary gallery images. **Covers are required for every catalog project**: `scripts/covers.mjs` fails check/build when any project is missing a cover (letter-initial card fallbacks must not ship). Prefer ingesting a suitable upstream screenshot; otherwise add an original GPT/Codex Images cover via `scripts/ingest-gpt-covers.mjs`. Failed image requests still preserve card layout and text. Both languages share the same image and translated alternative text/source labels. Images load lazily from this site's origin, never from an upstream image host. Builds do not fetch or crawl.
 
 | `src/project-covers.json` field | Meaning |
 | --- | --- |
