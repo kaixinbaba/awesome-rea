@@ -191,3 +191,18 @@ https://raw.githubusercontent.com/hankmorgan/UnderworldGodot/d1df5d0d5b775bfb0d9
 
 GPT project-fitting covers (2026-10-22)
 Original art matched to each project's subject via Codex Images. No trademarks/logos/watermarks. Model: gpt-image-2.
+
+nanolathe
+https://github.com/nanolathe-gg/nanolathe/blob/736d37858cba8455d71891881f7b62ebc1fbe724/README.md
+https://raw.githubusercontent.com/nanolathe-gg/nanolathe-gg.github.io/42a4cd40425fa4908bbd28bd4285095f0efc4a6a/static/brand/readme-header.png
+
+forza-horizon1-reimagined
+https://github.com/Dyotson/ForzaHorizon1-ReImagined/blob/3c72d7d87f67e467965493b8be9d82f982a19439/README.md
+https://raw.githubusercontent.com/Dyotson/ForzaHorizon1-ReImagined/3c72d7d87f67e467965493b8be9d82f982a19439/docs/images/forza-free-roam.jpg
+
+chupathingyce
+https://github.com/ChupathingyCE/chupathingyce/blob/382f1c94a85551aee12e4d2ac09fc07945a84206/README.md
+https://raw.githubusercontent.com/ChupathingyCE/chupathingyce/382f1c94a85551aee12e4d2ac09fc07945a84206/docs/screenshots/lobby.jpg
+
+GPT project-fitting covers (2026-10-23)
+Original art matched to each project's subject via Codex Images. No trademarks/logos/watermarks. Model: gpt-image-2.
