@@ -840,5 +840,49 @@
     "model": "gpt-image-2",
     "generatedAt": "2026-10-22T14:43:47.992Z",
     "checked": "2026-10-22"
+  },
+  "nanolathe": {
+    "src": "/covers/nanolathe-2616962e1115.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/nanolathe-gg/nanolathe-gg.github.io/42a4cd40425fa4908bbd28bd4285095f0efc4a6a/static/brand/readme-header.png",
+    "readme": "https://github.com/nanolathe-gg/nanolathe/blob/736d37858cba8455d71891881f7b62ebc1fbe724/README.md",
+    "checked": "2026-10-23"
+  },
+  "forza-horizon1-reimagined": {
+    "src": "/covers/forza-horizon1-reimagined-aad2a7c38276.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/Dyotson/ForzaHorizon1-ReImagined/3c72d7d87f67e467965493b8be9d82f982a19439/docs/images/forza-free-roam.jpg",
+    "readme": "https://github.com/Dyotson/ForzaHorizon1-ReImagined/blob/3c72d7d87f67e467965493b8be9d82f982a19439/README.md",
+    "checked": "2026-10-23"
+  },
+  "chupathingyce": {
+    "src": "/covers/chupathingyce-7ac6d66fbc0b.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/ChupathingyCE/chupathingyce/382f1c94a85551aee12e4d2ac09fc07945a84206/docs/screenshots/lobby.jpg",
+    "readme": "https://github.com/ChupathingyCE/chupathingyce/blob/382f1c94a85551aee12e4d2ac09fc07945a84206/README.md",
+    "checked": "2026-10-23"
+  },
+  "impacto": {
+    "sourceType": "generated",
+    "src": "/covers/impacto-10c202cb42a4.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an open visual-novel engine reimplementation project: soft paper-cut layers of translucent dialogue panels and soft-glow sakura petals over a quiet dusk gradient in peach lavender mint, abstract interface ribbons suggesting choice branches, tasteful product-mood art, NO TEXT no logos no watermarks no readable titles, cinematic soft light.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-23T06:01:00.179Z",
+    "checked": "2026-10-23"
+  },
+  "chaotix-recompiled": {
+    "sourceType": "generated",
+    "src": "/covers/chaotix-recompiled-2a64729bdcac.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for a classic 32-bit era platformer static recompilation project: abstract crystal facets and dual metallic rings echoing twin processor cores, widescreen horizon of jewel-toned geometric platforms, copper mint peach palette, tasteful hardware-meets-playground mood, NO TEXT no logos no mascots no watermarks no readable titles.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-23T06:01:00.179Z",
+    "checked": "2026-10-23"
   }
 }

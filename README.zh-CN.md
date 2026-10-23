@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-93 个项目与资源 · 6 个分类
+98 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -80,6 +80,11 @@
 - [1oom](<https://github.com/1oom-fork/1oom>) — 重现 1993《银河飞将》引擎；需要原版 v1.3 LBX 文件。
 - [khdays-decomp](<https://github.com/Yokimitsuro/khdays-decomp>) — 匹配的《王国之心 358/2 Days》（DS）反编译；接近完成；需自备 ROM。
 - [Shiloh](<https://github.com/Asterber/shiloh>) — 用 Rust/SDL2/WASM 运行 1998《X 档案》游戏；独立重写；需玩家自备副本。
+- [Nanolathe](<https://github.com/nanolathe-gg/nanolathe>) — 净室重实现的《横扫千军》向 2.5D RTS 引擎（Go）；需原版 TA 文件；含多人与浏览器试玩。
+- [Forza Horizon 1: ReImagined](<https://github.com/Dyotson/ForzaHorizon1-ReImagined>) — 经 ReXGlue 将 Xbox 360《地平线 1》静态重编译为原生 Windows/Linux；自备游戏包；仓内不含游戏代码。
+- [impacto](<https://github.com/CommitteeOfZero/impacto>) — 开源 MAGES. 视觉小说引擎重实现（C++/OpenGL）；需原版游戏数据；跨平台进行中。
+- [Knuckles' Chaotix Recompiled](<https://github.com/YuutaTsubasa/ChaotixRecompiled>) — 世嘉 32X《Chaotix》静态重编译为原生 C++/SDL3；自备 ROM；非模拟器。
+- [Chupathingy](<https://github.com/ChupathingyCE/chupathingyce>) — 《光环：战斗进化》反编译的原生多端移植；自备 Xbox/PC/CE 地图；兼容 OpenCE 在线。
 
 ### 桌面与效率应用
 
