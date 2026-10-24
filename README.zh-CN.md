@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-98 个项目与资源 · 6 个分类
+103 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -85,6 +85,11 @@
 - [impacto](<https://github.com/CommitteeOfZero/impacto>) — 开源 MAGES. 视觉小说引擎重实现（C++/OpenGL）；需原版游戏数据；跨平台进行中。
 - [Knuckles' Chaotix Recompiled](<https://github.com/YuutaTsubasa/ChaotixRecompiled>) — 世嘉 32X《Chaotix》静态重编译为原生 C++/SDL3；自备 ROM；非模拟器。
 - [Chupathingy](<https://github.com/ChupathingyCE/chupathingyce>) — 《光环：战斗进化》反编译的原生多端移植；自备 Xbox/PC/CE 地图；兼容 OpenCE 在线。
+- [khdays-port](<https://github.com/Yokimitsuro/khdays-port>) — 基于 khdays-decomp 的《王国之心 358/2 Days》原生 PC 运行时；需自备 ROM；Windows x64 进行中。
+- [Dune Dynasty](<https://github.com/gameflorist/dunedynasty>) — 基于 OpenDUNE 逆向引擎的《沙丘 II》重制；宽屏/HiDPI、类 C&C 操作、遭遇战/多人；需自备数据。
+- [OpenSHC](<https://github.com/sourcehold/OpenSHC>) — 以钩子 DLL 逐步开源重实现《要塞：十字军》1.41，目标功能等价；需自备 Latin 1.41。
+- [WoodyRE](<https://github.com/jjmhalew/WoodyRE>) — 逆向重实现 2001 年《啄木鸟伍迪大逃亡》引擎；需自备 CD/ISO；Windows/Linux/Android/Switch。
+- [Horizon](<https://github.com/ludovic111/horizon>) — 非官方《我的世界》Java 26.3 的 Rust 重写，含差分 harness；经启动器自备原版；不含 Mojang 代码。
 
 ### 桌面与效率应用
 

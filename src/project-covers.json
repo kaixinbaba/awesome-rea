@@ -884,5 +884,49 @@
     "model": "gpt-image-2",
     "generatedAt": "2026-10-23T06:01:00.179Z",
     "checked": "2026-10-23"
+  },
+  "dunedynasty": {
+    "src": "/covers/dunedynasty-0e54761ba512.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/gameflorist/dunedynasty/2dc350fc9a77de99ba253c1f19cc812cb9333632/docs/banner.jpg",
+    "readme": "https://github.com/gameflorist/dunedynasty/blob/2dc350fc9a77de99ba253c1f19cc812cb9333632/README.md",
+    "checked": "2026-10-24"
+  },
+  "woodyre": {
+    "src": "/covers/woodyre-20300801e7ca.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://github.com/user-attachments/assets/caf51280-5d79-4810-a16f-c9ee0cfb5059",
+    "readme": "https://github.com/jjmhalew/WoodyRE/blob/02c2bb830accb8b60ee6c2f2cb52cdc7cdb4a914/README.md",
+    "checked": "2026-10-24"
+  },
+  "horizon": {
+    "src": "/covers/horizon-82555fbf0e61.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/ludovic111/horizon/f67b2b320496cfd8079eaff06a487c5e62b1af9f/docs/media/sunset.webp",
+    "readme": "https://github.com/ludovic111/horizon/blob/47459b0b19c3fea053cf9127a4707ce06aae5939/README.md",
+    "checked": "2026-10-24"
+  },
+  "khdays-port": {
+    "sourceType": "generated",
+    "src": "/covers/khdays-port-316775f3f2a3.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an open-source handheld-era RPG native PC port project: soft dual overlapping translucent screens like a portable console fold, abstract crystalline UI shards and soft moonlight over a quiet midnight teal peach mint gradient, tasteful preservation-mood product art, NO TEXT no logos no watermarks no readable titles no character likenesses, cinematic soft light.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-24T05:59:32.605Z",
+    "checked": "2026-10-24"
+  },
+  "openshc": {
+    "sourceType": "generated",
+    "src": "/covers/openshc-3da38b9163a9.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an open-source medieval castle-builder RTS stepwise reimplementation project: abstract stone curtain walls and soft parchment layers over warm sand copper mint dusk light, geometric keep silhouettes without heraldry, tasteful archival engineering mood, NO TEXT no logos no watermarks no readable titles no flags, cinematic soft light.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-24T05:59:32.605Z",
+    "checked": "2026-10-24"
   }
 }

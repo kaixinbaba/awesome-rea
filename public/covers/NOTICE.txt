@@ -206,3 +206,18 @@ https://raw.githubusercontent.com/ChupathingyCE/chupathingyce/382f1c94a85551aee1
 
 GPT project-fitting covers (2026-10-23)
 Original art matched to each project's subject via Codex Images. No trademarks/logos/watermarks. Model: gpt-image-2.
+
+dunedynasty
+https://github.com/gameflorist/dunedynasty/blob/2dc350fc9a77de99ba253c1f19cc812cb9333632/README.md
+https://raw.githubusercontent.com/gameflorist/dunedynasty/2dc350fc9a77de99ba253c1f19cc812cb9333632/docs/banner.jpg
+
+woodyre
+https://github.com/jjmhalew/WoodyRE/blob/02c2bb830accb8b60ee6c2f2cb52cdc7cdb4a914/README.md
+https://github.com/user-attachments/assets/caf51280-5d79-4810-a16f-c9ee0cfb5059
+
+horizon
+https://github.com/ludovic111/horizon/blob/47459b0b19c3fea053cf9127a4707ce06aae5939/README.md
+https://raw.githubusercontent.com/ludovic111/horizon/f67b2b320496cfd8079eaff06a487c5e62b1af9f/docs/media/sunset.webp
+
+GPT project-fitting covers (2026-10-24)
+Original art matched to each project's subject via Codex Images. No trademarks/logos/watermarks. Model: gpt-image-2.
