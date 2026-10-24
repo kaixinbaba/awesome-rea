@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-98 projects & resources · 6 categories
+103 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -85,6 +85,11 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [impacto](<https://github.com/CommitteeOfZero/impacto>) — Open-source MAGES. visual novel engine reimplementation in C++/OpenGL; original game data required; cross-platform WIP.
 - [Knuckles' Chaotix Recompiled](<https://github.com/YuutaTsubasa/ChaotixRecompiled>) — Sega 32X Knuckles' Chaotix statically recompiled to native C++/SDL3; BYO ROM; not an emulator.
 - [Chupathingy](<https://github.com/ChupathingyCE/chupathingyce>) — Native multi-platform port of the Halo: Combat Evolved decompilation; BYO Xbox/PC/CE maps; OpenCE-compatible online.
+- [khdays-port](<https://github.com/Yokimitsuro/khdays-port>) — Native PC runtime for Kingdom Hearts 358/2 Days built on khdays-decomp; BYO ROM; Windows x64 WIP.
+- [Dune Dynasty](<https://github.com/gameflorist/dunedynasty>) — Dune II remaster on the OpenDUNE reverse-engineered engine; widescreen/HiDPI, C&C-style controls, skirmish/multiplayer; BYO data.
+- [OpenSHC](<https://github.com/sourcehold/OpenSHC>) — Stepwise open reimplementation of Stronghold Crusader 1.41 as a hooking DLL aiming for functional identity; BYO Latin 1.41.
+- [WoodyRE](<https://github.com/jjmhalew/WoodyRE>) — Engine reimplementation of Woody Woodpecker Escape (2001) by reverse engineering; BYO CD/ISO; Windows/Linux/Android/Switch.
+- [Horizon](<https://github.com/ludovic111/horizon>) — Unofficial Minecraft Java 26.3 rewrite in Rust with differential harnesses; BYO Minecraft via launcher; no Mojang code shipped.
 
 ### Desktop & productivity apps
 
