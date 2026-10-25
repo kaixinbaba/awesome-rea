@@ -221,3 +221,25 @@ https://raw.githubusercontent.com/ludovic111/horizon/f67b2b320496cfd8079eaff06a4
 
 GPT project-fitting covers (2026-10-24)
 Original art matched to each project's subject via Codex Images. No trademarks/logos/watermarks. Model: gpt-image-2.
+
+silent-hill-pc-port
+https://github.com/SlickAmogus/silent-hill-decomp/blob/7ae306a9a5239f8740c3025e35bffb7469739efd/README.md
+https://sh1pc.com/images/sh/shot5.png
+
+sotn-decomp
+https://github.com/Xeeynamo/sotn-decomp/blob/625075774c5802e35097731b16d4fc90f8fff2f3/README.md
+https://repository-images.githubusercontent.com/441414984/96aaa773-f5f1-43a6-8ca4-ad38009540a2
+
+goldeneye-pc-port
+https://github.com/jkdansereau/goldeneye-pc-port/blob/fda76b69837e6c5aae436e0d3e798989e49b06d2/README.md
+https://raw.githubusercontent.com/jkdansereau/goldeneye-pc-port/fda76b69837e6c5aae436e0d3e798989e49b06d2/docs/img/shots/feature-splitscreen.jpg
+
+opensmash-ultimate
+https://github.com/OpenSmash-Ultimate/ssbu-recomp/blob/fea28c18b785372b5024ece0a2ea52e860b1fa04/README.md
+https://raw.githubusercontent.com/OpenSmash-Ultimate/ssbu-recomp/fea28c18b785372b5024ece0a2ea52e860b1fa04/media/og-image.png
+
+GPT project-fitting covers (2026-10-25)
+Original art matched to each project's subject via Codex Images. No trademarks/logos/watermarks. Model: gpt-image-2.
+
+kartpad
+https://github.com/chrissotraidis/kartpad/blob/02e88fab8025769ec195cdfb39558de20372a93f/README.md

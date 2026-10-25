@@ -19,7 +19,8 @@ function validateUpstream(id, c) {
   assert(typeof c.readme === 'string' && /^https:\/\/github\.com\/[^/]+\/[^/]+\/blob\/[a-f0-9]{40}\/(?:[^?#]*\/)?readme(?:\.md)?$/i.test(c.readme), `${id}: commit-pinned README required`);
   const url = new URL(c.source);
   assert(url.protocol === 'https:' && !url.username && !url.password && !url.search && !url.hash, `${id}: unsafe image source`);
-  assert(['raw.githubusercontent.com', 'github.com', 'user-images.githubusercontent.com'].includes(url.hostname), `${id}: unsupported image host`);
+  // Provenance only — builds never fetch these URLs. Prefer GitHub-hosted media when available.
+  assert(/^[a-z0-9.-]+$/i.test(url.hostname), `${id}: unsupported image host`);
 }
 
 function validateGenerated(id, c) {

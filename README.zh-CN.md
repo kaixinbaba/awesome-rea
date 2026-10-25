@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-103 个项目与资源 · 6 个分类
+108 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -90,6 +90,11 @@
 - [OpenSHC](<https://github.com/sourcehold/OpenSHC>) — 以钩子 DLL 逐步开源重实现《要塞：十字军》1.41，目标功能等价；需自备 Latin 1.41。
 - [WoodyRE](<https://github.com/jjmhalew/WoodyRE>) — 逆向重实现 2001 年《啄木鸟伍迪大逃亡》引擎；需自备 CD/ISO；Windows/Linux/Android/Switch。
 - [Horizon](<https://github.com/ludovic111/horizon>) — 非官方《我的世界》Java 26.3 的 Rust 重写，含差分 harness；经启动器自备原版；不含 Mojang 代码。
+- [Silent Hill PC Port](<https://github.com/SlickAmogus/silent-hill-decomp>) — 基于 PSX 反编译与 PsyCross 的《寂静岭》原生 Windows/Linux 移植；战役可通关；自备光盘；非模拟器/非静态重编译。
+- [sotn-decomp](<https://github.com/Xeeynamo/sotn-decomp>) — 《月下夜想曲》PS1/PSP（DXC 欧版）/Saturn 匹配反编译；可字节级重建；自备 dump。非独立可玩 remake。
+- [GoldenEye 007 PC Port](<https://github.com/jkdansereau/goldeneye-pc-port>) — 基于 n64decomp/007 的《黄金眼 007》原生 PC 移植；宽屏/约 60fps/分屏；自备 NTSC-U ROM；非模拟器/非二进制重编译。
+- [OpenSmash-Ultimate](<https://github.com/OpenSmash-Ultimate/ssbu-recomp>) — SSBU 静态重编译至原生 Windows x64（Vulkan 运行时）；仅工具/运行时；自备 dump+密钥；产品名 OpenSmash-Ultimate。
+- [KartPad](<https://github.com/chrissotraidis/kartpad>) — 《马里奥赛车 Wii》（及 Retro Rewind）原生静态重编译，面向 Android Vulkan 与 Apple Metal；基于 WiiCompiled；自备 PAL RMCP01 rev0。
 
 ### 桌面与效率应用
 

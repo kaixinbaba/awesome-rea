@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-103 projects & resources · 6 categories
+108 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -90,6 +90,11 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [OpenSHC](<https://github.com/sourcehold/OpenSHC>) — Stepwise open reimplementation of Stronghold Crusader 1.41 as a hooking DLL aiming for functional identity; BYO Latin 1.41.
 - [WoodyRE](<https://github.com/jjmhalew/WoodyRE>) — Engine reimplementation of Woody Woodpecker Escape (2001) by reverse engineering; BYO CD/ISO; Windows/Linux/Android/Switch.
 - [Horizon](<https://github.com/ludovic111/horizon>) — Unofficial Minecraft Java 26.3 rewrite in Rust with differential harnesses; BYO Minecraft via launcher; no Mojang code shipped.
+- [Silent Hill PC Port](<https://github.com/SlickAmogus/silent-hill-decomp>) — Native Windows/Linux PC port of Silent Hill 1 on a PSX decompilation via PsyCross; fully playable campaign; BYO disc; not an emulator or static recomp.
+- [sotn-decomp](<https://github.com/Xeeynamo/sotn-decomp>) — Matching decompilation of Symphony of the Night across PS1, PSP (DXC EU) and Saturn; byte-identical rebuilds; BYO dump.
+- [GoldenEye 007 PC Port](<https://github.com/jkdansereau/goldeneye-pc-port>) — Native PC port of GoldenEye 007 from n64decomp/007; widescreen/~60 fps/split-screen; BYO NTSC-U ROM; not an emulator or binary recomp.
+- [OpenSmash-Ultimate](<https://github.com/OpenSmash-Ultimate/ssbu-recomp>) — Static recompilation of SSBU to native Windows x64 with Vulkan runtime; tools/runtime only; BYO dump+keys; product name OpenSmash-Ultimate.
+- [KartPad](<https://github.com/chrissotraidis/kartpad>) — Native static recompilation of Mario Kart Wii (and Retro Rewind) for Android Vulkan and Apple Metal; builds on WiiCompiled; BYO PAL RMCP01 rev0.
 
 ### Desktop & productivity apps
 

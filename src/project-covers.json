@@ -928,5 +928,47 @@
     "model": "gpt-image-2",
     "generatedAt": "2026-10-24T05:59:32.605Z",
     "checked": "2026-10-24"
+  },
+  "silent-hill-pc-port": {
+    "src": "/covers/silent-hill-pc-port-1dec955b9ccd.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://sh1pc.com/images/sh/shot5.png",
+    "readme": "https://github.com/SlickAmogus/silent-hill-decomp/blob/7ae306a9a5239f8740c3025e35bffb7469739efd/README.md",
+    "checked": "2026-10-25"
+  },
+  "sotn-decomp": {
+    "src": "/covers/sotn-decomp-703d64fb7cea.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://repository-images.githubusercontent.com/441414984/96aaa773-f5f1-43a6-8ca4-ad38009540a2",
+    "readme": "https://github.com/Xeeynamo/sotn-decomp/blob/625075774c5802e35097731b16d4fc90f8fff2f3/README.md",
+    "checked": "2026-10-25"
+  },
+  "goldeneye-pc-port": {
+    "src": "/covers/goldeneye-pc-port-4c48baf9820f.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/jkdansereau/goldeneye-pc-port/fda76b69837e6c5aae436e0d3e798989e49b06d2/docs/img/shots/feature-splitscreen.jpg",
+    "readme": "https://github.com/jkdansereau/goldeneye-pc-port/blob/fda76b69837e6c5aae436e0d3e798989e49b06d2/README.md",
+    "checked": "2026-10-25"
+  },
+  "opensmash-ultimate": {
+    "src": "/covers/opensmash-ultimate-9fdabc9b99fa.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/OpenSmash-Ultimate/ssbu-recomp/fea28c18b785372b5024ece0a2ea52e860b1fa04/media/og-image.png",
+    "readme": "https://github.com/OpenSmash-Ultimate/ssbu-recomp/blob/fea28c18b785372b5024ece0a2ea52e860b1fa04/README.md",
+    "checked": "2026-10-25"
+  },
+  "kartpad": {
+    "sourceType": "generated",
+    "src": "/covers/kartpad-f3aec9f46ca5.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an open-source Mario Kart Wii static-recompilation mobile/desktop port project: abstract curved race-track ribbons and soft neon checkered motion streaks over a dusk indigo peach mint gradient, geometric kart silhouettes without branding, tasteful preservation-mood product art, NO TEXT no logos no watermarks no readable titles no character likenesses no Nintendo marks, cinematic soft light.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-25T06:02:47.516Z",
+    "checked": "2026-10-25"
   }
 }
