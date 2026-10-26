@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-108 projects & resources · 6 categories
+113 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -95,6 +95,10 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [GoldenEye 007 PC Port](<https://github.com/jkdansereau/goldeneye-pc-port>) — Native PC port of GoldenEye 007 from n64decomp/007; widescreen/~60 fps/split-screen; BYO NTSC-U ROM; not an emulator or binary recomp.
 - [OpenSmash-Ultimate](<https://github.com/OpenSmash-Ultimate/ssbu-recomp>) — Static recompilation of SSBU to native Windows x64 with Vulkan runtime; tools/runtime only; BYO dump+keys; product name OpenSmash-Ultimate.
 - [KartPad](<https://github.com/chrissotraidis/kartpad>) — Native static recompilation of Mario Kart Wii (and Retro Rewind) for Android Vulkan and Apple Metal; builds on WiiCompiled; BYO PAL RMCP01 rev0.
+- [OpenCrystalCaves](<https://github.com/OpenCrystalCaves/OpenCrystalCaves>) — Unofficial Crystal Caves engine reimplementation; episode 1 playable with in-repo shareware; retail ep. 2–3 need owner data (Steam/GoG).
+- [aoe](<https://github.com/FolkertVanVerseveld/aoe>) — Cross-platform free-software remake/port of classic Age of Empires and Rise of Rome; reconstructs Genie parts from disassembly; BYO data.
+- [homm3-decomp](<https://github.com/sushi-shi/homm3-decomp>) — Matching C++ decomp of HoMM3 Complete (HEROES3.EXE); ~99% Windows match; BYO executables; research build, not a drop-in remake.
+- [sotc-decomp](<https://github.com/TheRealestNwah/sotc-decomp>) — Matching decomp of Shadow of the Colossus PS2 NTSC-U toward a future native PC port; XFF ~75% matching C; native port not started.
 
 ### Desktop & productivity apps
 
@@ -121,6 +125,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [SoundCraft](<https://github.com/storytold/soundcraft>) — Pre-alpha Pro Tools-style audio recording, editing and mixing in Rust.
 - [OpenGHub](<https://github.com/Slyvan25/OpenGHub>) — Linux G HUB-style peripheral manager using HID++ research; device support and firmware paths need care.
 - [Webamp](<https://github.com/captbaritone/webamp>) — HTML5/JavaScript Winamp 2 reimplementation with classic skin support; MIT code.
+- [open-appleremote](<https://github.com/a-funk/open-appleremote>) — Reverse-engineered Linux support for 1st-gen Apple Siri Remote: unlocks BlueZ hidraw, decodes touch/buttons/gestures in pure-stdlib Python.
 
 ### REA plugins, integrations & packaging
 

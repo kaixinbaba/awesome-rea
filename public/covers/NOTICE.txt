@@ -243,3 +243,23 @@ Original art matched to each project's subject via Codex Images. No trademarks/l
 
 kartpad
 https://github.com/chrissotraidis/kartpad/blob/02e88fab8025769ec195cdfb39558de20372a93f/README.md
+
+opencrystalcaves
+https://github.com/OpenCrystalCaves/OpenCrystalCaves/blob/1b0ffb64f0ec4c8d1466f501c5135de33ff838c7/README.md
+https://raw.githubusercontent.com/OpenCrystalCaves/OpenCrystalCaves/1b0ffb64f0ec4c8d1466f501c5135de33ff838c7/screenshots/screenshot3.png
+
+aoe
+https://github.com/FolkertVanVerseveld/aoe/blob/ff52da3cadd699cdebe7bb0dd6dc8ee422bbb5aa/README.md
+https://github.com/FolkertVanVerseveld/aoe/assets/5989565/4920f958-da29-44fd-a263-7ab0d5d9a5f6
+
+GPT project-fitting covers (2026-10-26)
+Original art matched to each project's subject via Cursor GenerateImage (Mac Codex/pi offline). No trademarks/logos/watermarks. Model: cursor-generate-image. Reason: no upstream image.
+
+homm3-decomp
+https://github.com/sushi-shi/homm3-decomp/blob/87d863874a08b270b68a5f7484b2c6980e057d2c/README.md
+
+sotc-decomp
+https://github.com/TheRealestNwah/sotc-decomp/blob/fe4105a1762139bcf8da6c27d71145bb4729655b/README.md
+
+open-appleremote
+https://github.com/a-funk/open-appleremote/blob/1e6e190c3c29a3d2d8cad2c38c09f8953e9633e3/README.md
