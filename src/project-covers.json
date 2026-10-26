@@ -970,5 +970,51 @@
     "model": "gpt-image-2",
     "generatedAt": "2026-10-25T06:02:47.516Z",
     "checked": "2026-10-25"
+  },
+  "opencrystalcaves": {
+    "src": "/covers/opencrystalcaves-975b0f764a10.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/OpenCrystalCaves/OpenCrystalCaves/1b0ffb64f0ec4c8d1466f501c5135de33ff838c7/screenshots/screenshot3.png",
+    "readme": "https://github.com/OpenCrystalCaves/OpenCrystalCaves/blob/1b0ffb64f0ec4c8d1466f501c5135de33ff838c7/README.md",
+    "checked": "2026-10-26"
+  },
+  "aoe": {
+    "src": "/covers/aoe-5ec03f16ffee.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://github.com/FolkertVanVerseveld/aoe/assets/5989565/4920f958-da29-44fd-a263-7ab0d5d9a5f6",
+    "readme": "https://github.com/FolkertVanVerseveld/aoe/blob/ff52da3cadd699cdebe7bb0dd6dc8ee422bbb5aa/README.md",
+    "checked": "2026-10-26"
+  },
+  "homm3-decomp": {
+    "sourceType": "generated",
+    "src": "/covers/homm3-decomp-f1b21a6a1dd5.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an open-source Heroes of Might and Magic III matching-decompilation research project: abstract fantasy castle silhouette and soft polygonal battlefield tiles over a dusk sand lavender gradient, geometric hero banner shapes without branding, tasteful preservation-mood product art, NO TEXT no logos no watermarks no readable titles no character likenesses no Ubisoft or New World Computing marks, cinematic soft light.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-10-26T02:32:40.451Z",
+    "checked": "2026-10-26"
+  },
+  "sotc-decomp": {
+    "sourceType": "generated",
+    "src": "/covers/sotc-decomp-3b23e98f5afe.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an open-source Shadow of the Colossus matching-decompilation research project: abstract colossal stone silhouette and soft windswept mesa ridges over a dusk indigo sand gradient, geometric bridge and sword-like shapes without branding, tasteful preservation-mood product art, NO TEXT no logos no watermarks no readable titles no character likenesses no Sony marks, cinematic soft light.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-10-26T02:32:40.451Z",
+    "checked": "2026-10-26"
+  },
+  "open-appleremote": {
+    "sourceType": "generated",
+    "src": "/covers/open-appleremote-2ff6f4ffaa24.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an open-source Linux Siri Remote protocol interoperability project: abstract slim remote silhouette and soft Bluetooth wave ribbons over a cool mint lavender gradient, geometric touch-pad and button shapes without branding, tasteful hardware-interop product art, NO TEXT no logos no watermarks no readable titles no Apple marks, cinematic soft light.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-10-26T02:32:40.451Z",
+    "checked": "2026-10-26"
   }
 }

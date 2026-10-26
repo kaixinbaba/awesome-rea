@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-108 个项目与资源 · 6 个分类
+113 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -95,6 +95,10 @@
 - [GoldenEye 007 PC Port](<https://github.com/jkdansereau/goldeneye-pc-port>) — 基于 n64decomp/007 的《黄金眼 007》原生 PC 移植；宽屏/约 60fps/分屏；自备 NTSC-U ROM；非模拟器/非二进制重编译。
 - [OpenSmash-Ultimate](<https://github.com/OpenSmash-Ultimate/ssbu-recomp>) — SSBU 静态重编译至原生 Windows x64（Vulkan 运行时）；仅工具/运行时；自备 dump+密钥；产品名 OpenSmash-Ultimate。
 - [KartPad](<https://github.com/chrissotraidis/kartpad>) — 《马里奥赛车 Wii》（及 Retro Rewind）原生静态重编译，面向 Android Vulkan 与 Apple Metal；基于 WiiCompiled；自备 PAL RMCP01 rev0。
+- [OpenCrystalCaves](<https://github.com/OpenCrystalCaves/OpenCrystalCaves>) — 非官方《水晶洞穴》引擎重实现；第 1 集可玩（仓内共享版）；零售第 2–3 集需自备 Steam/GoG 数据。
+- [aoe](<https://github.com/FolkertVanVerseveld/aoe>) — 跨平台自由软件重制/移植经典《帝国时代》与《罗马复兴》；从反汇编重建部分 Genie；自备数据。
+- [homm3-decomp](<https://github.com/sushi-shi/homm3-decomp>) — 《英雄无敌 III Complete》（HEROES3.EXE）匹配 C++ 反编译；Windows 约 99% 匹配；自备可执行文件；研究构建，非即开即玩 remake。
+- [sotc-decomp](<https://github.com/TheRealestNwah/sotc-decomp>) — 《旺达与巨像》PS2 NTSC-U 匹配反编译，面向未来原生 PC 移植；XFF 约 75% 匹配 C；原生移植未开工。
 
 ### 桌面与效率应用
 
@@ -121,6 +125,7 @@
 - [SoundCraft](<https://github.com/storytold/soundcraft>) — 测试前期的 Rust 音频录制、编辑和混音应用，面向 Pro Tools 式工作流程。
 - [OpenGHub](<https://github.com/Slyvan25/OpenGHub>) — 基于 HID++ 研究的 Linux G HUB 式外设管理器；设备支持和固件更新路径需谨慎核对。
 - [Webamp](<https://github.com/captbaritone/webamp>) — 带经典皮肤支持的 HTML5/JavaScript Winamp 2 重实现；代码 MIT。
+- [open-appleremote](<https://github.com/a-funk/open-appleremote>) — 初代 Apple Siri Remote 的 Linux 逆向支持：解锁 BlueZ hidraw，用纯标准库 Python 解码触摸/按键/手势。
 
 ### REA 插件、集成与安装分发
 
