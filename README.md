@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-113 projects & resources · 6 categories
+118 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -99,6 +99,11 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [aoe](<https://github.com/FolkertVanVerseveld/aoe>) — Cross-platform free-software remake/port of classic Age of Empires and Rise of Rome; reconstructs Genie parts from disassembly; BYO data.
 - [homm3-decomp](<https://github.com/sushi-shi/homm3-decomp>) — Matching C++ decomp of HoMM3 Complete (HEROES3.EXE); ~99% Windows match; BYO executables; research build, not a drop-in remake.
 - [sotc-decomp](<https://github.com/TheRealestNwah/sotc-decomp>) — Matching decomp of Shadow of the Colossus PS2 NTSC-U toward a future native PC port; XFF ~75% matching C; native port not started.
+- [Lost Odyssey Recomp](<https://github.com/freefrank/LostOdysseyRecomp>) — Experimental native PC/Android port of Lost Odyssey via Xbox 360 static recomp (XenonRecomp lineage); BYO discs/XEX; not an emulator.
+- [Tenkaichi3Decomp](<https://github.com/z3xox/Tenkaichi3Decomp>) — Native PC port of Budokai Tenkaichi 3 on matching decomp BT3-Decompiled; Vulkan/OpenGL; BYO USA disc; not an emulator.
+- [namco22-decompile](<https://github.com/spacestate1/namco22-decompile>) — Native PC rebuilds of 1990s Namco System 21/22/23 arcade games (Prop Cycle, Rave Racer, Time Crisis…); BYO MAME ROMs.
+- [doaxvb-re](<https://github.com/NoRain211/doaxvb-re>) — Native PC port of DOA Xtreme Beach Volleyball via Xbox static recomp plus hand-written runtime; BYO USA Xbox copy; beta/RC.
+- [cps2recomp](<https://github.com/tmcleroy/cps2recomp>) — Unofficial native PC ports of Capcom CPS-2 (and some CPS-1) via AOT static recomp into C++; one launcher; BYO ROM sets; Beta.
 
 ### Desktop & productivity apps
 
