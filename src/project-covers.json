@@ -1016,5 +1016,47 @@
     "model": "cursor-generate-image",
     "generatedAt": "2026-10-26T02:32:40.451Z",
     "checked": "2026-10-26"
+  },
+  "lostodysseyrecomp": {
+    "src": "/covers/lostodysseyrecomp-a4b7502d440b.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/freefrank/LostOdysseyRecomp/f9da0ae9bdd481a5ea4fe6431f3a4724d8261147/assets/lost-odyssey-recomp.png",
+    "readme": "https://github.com/freefrank/LostOdysseyRecomp/blob/f9da0ae9bdd481a5ea4fe6431f3a4724d8261147/README.md",
+    "checked": "2026-10-27"
+  },
+  "namco22-decompile": {
+    "src": "/covers/namco22-decompile-9e66deccd4d3.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/spacestate1/namco22-decompile/1cc6bdada679d47fa0ef11ae3a3b3d450c63e68c/docs/images/tokyowar-widescreen.png",
+    "readme": "https://github.com/spacestate1/namco22-decompile/blob/1cc6bdada679d47fa0ef11ae3a3b3d450c63e68c/README.md",
+    "checked": "2026-10-27"
+  },
+  "doaxvb-re": {
+    "src": "/covers/doaxvb-re-fc75c1a306db.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://github.com/NoRain211/doaxbv-re/releases/download/readme-media/doaxbv-match.jpg",
+    "readme": "https://github.com/NoRain211/doaxvb-re/blob/d8357098d80d5f2efb0b2d77b37af0a9c0f66963/README.md",
+    "checked": "2026-10-27"
+  },
+  "cps2recomp": {
+    "src": "/covers/cps2recomp-c0c1b708b5bb.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/tmcleroy/cps2recomp/cd5236087f331e2af290be2d501ba15909cb3b14/docs/screenshots/launcher-games.png",
+    "readme": "https://github.com/tmcleroy/cps2recomp/blob/cd5236087f331e2af290be2d501ba15909cb3b14/README.md",
+    "checked": "2026-10-27"
+  },
+  "tenkaichi3decomp": {
+    "sourceType": "generated",
+    "src": "/covers/tenkaichi3decomp-cd4c004d6c5a.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an open-source Dragon Ball Z Budokai Tenkaichi 3 native PC decomp-port project: abstract arena ring silhouette and soft energy-ribbon motion streaks over a dusk indigo peach mint gradient, geometric fighter-stance shapes without branding or character likenesses, tasteful preservation-mood product art, NO TEXT no logos no watermarks no readable titles no Bandai Namco or Dragon Ball marks, cinematic soft light.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-27T06:06:17.662Z",
+    "checked": "2026-10-27"
   }
 }

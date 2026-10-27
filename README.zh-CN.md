@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-113 个项目与资源 · 6 个分类
+118 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -99,6 +99,11 @@
 - [aoe](<https://github.com/FolkertVanVerseveld/aoe>) — 跨平台自由软件重制/移植经典《帝国时代》与《罗马复兴》；从反汇编重建部分 Genie；自备数据。
 - [homm3-decomp](<https://github.com/sushi-shi/homm3-decomp>) — 《英雄无敌 III Complete》（HEROES3.EXE）匹配 C++ 反编译；Windows 约 99% 匹配；自备可执行文件；研究构建，非即开即玩 remake。
 - [sotc-decomp](<https://github.com/TheRealestNwah/sotc-decomp>) — 《旺达与巨像》PS2 NTSC-U 匹配反编译，面向未来原生 PC 移植；XFF 约 75% 匹配 C；原生移植未开工。
+- [Lost Odyssey Recomp](<https://github.com/freefrank/LostOdysseyRecomp>) — Xbox 360《失落的奥德赛》实验性原生 PC/Android 静态重编译移植（XenonRecomp 系）；自备碟片/XEX；非模拟器。
+- [Tenkaichi3Decomp](<https://github.com/z3xox/Tenkaichi3Decomp>) — 基于匹配反编译 BT3-Decompiled 的《武道会 3》原生 PC 移植；Vulkan/OpenGL；自备美版碟；非模拟器。
+- [namco22-decompile](<https://github.com/spacestate1/namco22-decompile>) — 1990 年代 Namco System 21/22/23 街机（Prop Cycle、Rave Racer、Time Crisis 等）原生 PC 重建；自备 MAME ROM。
+- [doaxvb-re](<https://github.com/NoRain211/doaxvb-re>) — Xbox《死或生 沙滩排球》原生 PC 静态重编译移植（手写运行时）；自备美版 Xbox；beta/RC。
+- [cps2recomp](<https://github.com/tmcleroy/cps2recomp>) — Capcom CPS-2（及部分 CPS-1）非官方原生 PC 静态重编译移植；统一启动器；自备 ROM；Beta。
 
 ### 桌面与效率应用
 
