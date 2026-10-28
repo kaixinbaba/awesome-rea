@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-118 个项目与资源 · 6 个分类
+123 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -104,6 +104,11 @@
 - [namco22-decompile](<https://github.com/spacestate1/namco22-decompile>) — 1990 年代 Namco System 21/22/23 街机（Prop Cycle、Rave Racer、Time Crisis 等）原生 PC 重建；自备 MAME ROM。
 - [doaxvb-re](<https://github.com/NoRain211/doaxvb-re>) — Xbox《死或生 沙滩排球》原生 PC 静态重编译移植（手写运行时）；自备美版 Xbox；beta/RC。
 - [cps2recomp](<https://github.com/tmcleroy/cps2recomp>) — Capcom CPS-2（及部分 CPS-1）非官方原生 PC 静态重编译移植；统一启动器；自备 ROM；Beta。
+- [SCDA-XBERecomp](<https://github.com/TGP482/SCDA-XBERecomp>) — Xbox《细胞分裂：双重间谍》非官方原生 Windows 静态重编译移植；自备 ISO/数据；D3D12。
+- [BattleShip](<https://github.com/JRickey/BattleShip>) — N64《任天堂明星大乱斗》原生多平台移植（ssb-decomp-re + libultraship/Torch）；自备匹配 ROM。
+- [doa2u-re](<https://github.com/NoRain211/doa2u-re>) — Xbox《死或生 2 终极版》原生 PC 静态重编译移植（手写运行时）；自备 Ultimate ISO；Alpha 拉起中。
+- [rac1-decomp](<https://github.com/OpenRAC/rac1-decomp>) — OpenRAC 旗下《瑞奇与叮当》PS2 匹配反编译（WIP）；目标字节级重建；自备光盘。
+- [Code Veronica Recomp](<https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC>) — PS3《代号：维罗妮卡 X》非官方原生 Windows 静态重编译移植；启动器+SRT；自备 PSN 01.00。
 
 ### 桌面与效率应用
 

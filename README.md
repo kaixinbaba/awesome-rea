@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-118 projects & resources · 6 categories
+123 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -104,6 +104,11 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [namco22-decompile](<https://github.com/spacestate1/namco22-decompile>) — Native PC rebuilds of 1990s Namco System 21/22/23 arcade games (Prop Cycle, Rave Racer, Time Crisis…); BYO MAME ROMs.
 - [doaxvb-re](<https://github.com/NoRain211/doaxvb-re>) — Native PC port of DOA Xtreme Beach Volleyball via Xbox static recomp plus hand-written runtime; BYO USA Xbox copy; beta/RC.
 - [cps2recomp](<https://github.com/tmcleroy/cps2recomp>) — Unofficial native PC ports of Capcom CPS-2 (and some CPS-1) via AOT static recomp into C++; one launcher; BYO ROM sets; Beta.
+- [SCDA-XBERecomp](<https://github.com/TGP482/SCDA-XBERecomp>) — Unofficial native Windows PC port of Xbox Splinter Cell: Double Agent via XBE static recomp; BYO ISO/data; D3D12.
+- [BattleShip](<https://github.com/JRickey/BattleShip>) — Native multi-platform port of Super Smash Bros. N64 on ssb-decomp-re + libultraship/Torch; BYO matching ROM.
+- [doa2u-re](<https://github.com/NoRain211/doa2u-re>) — Native PC port of DOA2 Ultimate via Xbox static recomp plus hand-written runtime; BYO Ultimate ISO; Alpha bring-up.
+- [rac1-decomp](<https://github.com/OpenRAC/rac1-decomp>) — WIP matching decompilation of Ratchet & Clank PS2 under OpenRAC; byte-identical rebuild goal; BYO disc.
+- [Code Veronica Recomp](<https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC>) — Unofficial native Windows port of Code Veronica X PS3 via ps3recomp; launcher + SRT tools; BYO PSN 01.00.
 
 ### Desktop & productivity apps
 
