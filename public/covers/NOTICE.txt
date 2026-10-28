@@ -283,3 +283,23 @@ https://raw.githubusercontent.com/tmcleroy/cps2recomp/cd5236087f331e2af290be2d50
 tenkaichi3decomp
 generated · model=gpt-image-2 · no upstream image
 Editorial 16:9 cover for an open-source Dragon Ball Z Budokai Tenkaichi 3 native PC decomp-port project: abstract arena ring silhouette and soft energy-ribbon motion streaks over a dusk indigo peach m…
+
+battleship
+https://github.com/JRickey/BattleShip/blob/507f5543df2cd1d57efdba3d1fef3bc63341f5df/README.md
+https://raw.githubusercontent.com/JRickey/BattleShip/507f5543df2cd1d57efdba3d1fef3bc63341f5df/assets/BattleShip.svg
+
+doa2u-re
+https://github.com/NoRain211/doa2u-re/blob/c74f0dc9a023c3035225f638c3a8f6960f6b9c50/README.md
+https://github.com/NoRain211/doa2u-re/releases/download/readme-media/doa2u-logo.png
+
+re-code-veronica-recomp
+https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC/blob/26878e29bdc1ab9009a1dd899748d63d09a47102/README.md
+https://raw.githubusercontent.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC/26878e29bdc1ab9009a1dd899748d63d09a47102/docs/images/gameplay-claire-red-room.jpg
+
+scda-xberecomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for an open-source preservation project: original Xbox stealth-action title brought to native PC via static recompilation. Abstract night-rain city silhouette, soft cyan HUD grid …
+
+rac1-decomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for an open-source matching decompilation of an early-2000s PlayStation 2 platform-adventure. Abstract planet-ring horizon, soft metallic gadget silhouettes and orbital arcs over …
