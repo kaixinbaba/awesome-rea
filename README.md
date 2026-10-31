@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-123 projects & resources · 6 categories
+128 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -109,6 +109,11 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [doa2u-re](<https://github.com/NoRain211/doa2u-re>) — Native PC port of DOA2 Ultimate via Xbox static recomp plus hand-written runtime; BYO Ultimate ISO; Alpha bring-up.
 - [rac1-decomp](<https://github.com/OpenRAC/rac1-decomp>) — WIP matching decompilation of Ratchet & Clank PS2 under OpenRAC; byte-identical rebuild goal; BYO disc.
 - [Code Veronica Recomp](<https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC>) — Unofficial native Windows port of Code Veronica X PS3 via ps3recomp; launcher + SRT tools; BYO PSN 01.00.
+- [memory-of-alessa](<https://github.com/dreamingmoths/memory-of-alessa>) — Early WIP matching decomp of Silent Hill 3 PS2 (plus SH2 engine); byte-identical rebuild goal; BYO disc.
+- [lain-psx-decompiled](<https://github.com/Y0oshi/lain-psx-decompiled>) — Matching decomp of Serial Experiments Lain PSX (321/321) plus native Win/macOS/Linux client; BYO two-disc dumps.
+- [oracles-decomp](<https://github.com/kirby-letsgo/oracles-decomp>) — Native macOS/Windows/Linux/Android ports of Zelda Oracle Ages & Seasons from game C; no emulator; BYO ROM.
+- [Downhill Revived](<https://github.com/skuza-oss/downhill-revived>) — Native 64-bit Windows PC port of Downhill Domination PS2 on matching decomp; Mac/Linux experimental; BYO USA disc.
+- [saga](<https://github.com/opensagadev/saga>) — Matching decomp of LEGO Star Wars: The Complete Saga Android x86; foundation for planned saga64; BYO game files.
 
 ### Desktop & productivity apps
 

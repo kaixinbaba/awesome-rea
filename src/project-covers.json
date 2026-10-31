@@ -1102,5 +1102,53 @@
     "model": "gpt-image-2",
     "generatedAt": "2026-10-28T03:18:01.461Z",
     "checked": "2026-10-28"
+  },
+  "lain-psx-decompiled": {
+    "src": "/covers/lain-psx-decompiled-c0cd24a3ebf6.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/Y0oshi/lain-psx-decompiled/205c1977e2aa8d26128fcdbab19170c2c2bbde0e/docs/assets/banner.svg",
+    "readme": "https://github.com/Y0oshi/lain-psx-decompiled/blob/205c1977e2aa8d26128fcdbab19170c2c2bbde0e/README.md",
+    "checked": "2026-10-31"
+  },
+  "memory-of-alessa": {
+    "sourceType": "generated",
+    "src": "/covers/memory-of-alessa-63500ad206d9.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an open-source matching decompilation of an early-2000s PlayStation 2 survival-horror title. Abstract fog-bank alley silhouette, soft amber streetlamp haze and geometric radio-static ripples over a muted mauve-grey fog gradient, preservation-lab mood product art without character likenesses or branding, NO TEXT no logos no watermarks no readable titles no Konami marks, cinematic soft light.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-31T02:52:45.092Z",
+    "checked": "2026-10-31"
+  },
+  "oracles-decomp": {
+    "sourceType": "generated",
+    "src": "/covers/oracles-decomp-365699991aaa.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an open-source native port of late-1990s Game Boy Color twin adventure titles rebuilt from original code. Abstract twin seasonal trees (spring blossoms and autumn leaves) framing a soft pixel-grid horizon over mint-gold and peach gradients, geometric dungeon-door and harp motifs without character likenesses or branding, preservation-lab mood product art, NO TEXT no logos no watermarks no Nintendo or Capcom marks, cinematic soft light.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-31T02:52:45.092Z",
+    "checked": "2026-10-31"
+  },
+  "downhill-revived": {
+    "sourceType": "generated",
+    "src": "/covers/downhill-revived-65d267b24307.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an open-source native PC port of an early-2000s PlayStation 2 downhill mountain-bike racing title built on matching decompilation. Abstract steep trail switchbacks and soft motion-blur dust ribbons over a dusk amber-teal cliffside gradient, geometric bike-frame and tire-track motifs without rider likenesses or branding, preservation-lab mood product art, NO TEXT no logos no watermarks no Sony marks, cinematic soft light.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-31T02:52:45.092Z",
+    "checked": "2026-10-31"
+  },
+  "saga": {
+    "sourceType": "generated",
+    "src": "/covers/saga-6415b6bee2b2.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an open-source matching decompilation of a mid-2000s brick-built space-adventure compilation (Android x86). Abstract interlocking brick constellation and soft starfield arcs over a deep indigo-gold gradient, geometric wrench and mini-figure-block silhouettes without character likenesses or branding, preservation-lab mood product art, NO TEXT no logos no watermarks no LEGO or Lucasfilm marks, cinematic soft light.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-10-31T02:52:45.092Z",
+    "checked": "2026-10-31"
   }
 }

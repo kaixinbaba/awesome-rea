@@ -303,3 +303,23 @@ Editorial 16:9 cover for an open-source preservation project: original Xbox stea
 rac1-decomp
 generated · model=gpt-image-2 · no upstream image
 Editorial 16:9 cover for an open-source matching decompilation of an early-2000s PlayStation 2 platform-adventure. Abstract planet-ring horizon, soft metallic gadget silhouettes and orbital arcs over …
+
+lain-psx-decompiled
+https://github.com/Y0oshi/lain-psx-decompiled/blob/205c1977e2aa8d26128fcdbab19170c2c2bbde0e/README.md
+https://raw.githubusercontent.com/Y0oshi/lain-psx-decompiled/205c1977e2aa8d26128fcdbab19170c2c2bbde0e/docs/assets/banner.svg
+
+memory-of-alessa
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for an open-source matching decompilation of an early-2000s PlayStation 2 survival-horror title. A…
+
+oracles-decomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for an open-source native port of late-1990s Game Boy Color twin adventure titles rebuilt from ori…
+
+downhill-revived
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for an open-source native PC port of an early-2000s PlayStation 2 downhill mountain-bike racing ti…
+
+saga
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for an open-source matching decompilation of a mid-2000s brick-built space-adventure compilation (…
