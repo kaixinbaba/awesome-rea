@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-123 个项目与资源 · 6 个分类
+128 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -109,6 +109,11 @@
 - [doa2u-re](<https://github.com/NoRain211/doa2u-re>) — Xbox《死或生 2 终极版》原生 PC 静态重编译移植（手写运行时）；自备 Ultimate ISO；Alpha 拉起中。
 - [rac1-decomp](<https://github.com/OpenRAC/rac1-decomp>) — OpenRAC 旗下《瑞奇与叮当》PS2 匹配反编译（WIP）；目标字节级重建；自备光盘。
 - [Code Veronica Recomp](<https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC>) — PS3《代号：维罗妮卡 X》非官方原生 Windows 静态重编译移植；启动器+SRT；自备 PSN 01.00。
+- [memory-of-alessa](<https://github.com/dreamingmoths/memory-of-alessa>) — 《寂静岭3》PS2 早期 WIP 匹配反编译（含 SH2 引擎）；目标字节级重建；自备光盘。
+- [lain-psx-decompiled](<https://github.com/Y0oshi/lain-psx-decompiled>) — 《玲音》PSX 匹配反编译（321/321）加 Win/macOS/Linux 原生客户端；自备双碟转储。
+- [oracles-decomp](<https://github.com/kirby-letsgo/oracles-decomp>) — 《塞尔达传说：不可思议的树果》原生多端移植（无模拟器）；自备美欧 ROM。
+- [Downhill Revived](<https://github.com/skuza-oss/downhill-revived>) — 《Downhill Domination》PS2 匹配反编译原生 Win PC 移植；Mac/Linux 实验性；自备美版光盘。
+- [saga](<https://github.com/opensagadev/saga>) — 《乐高星球大战：完整传奇》Android x86 匹配反编译；拟作 saga64 基础；自备游戏文件。
 
 ### 桌面与效率应用
 
