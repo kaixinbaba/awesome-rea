@@ -24,7 +24,7 @@ npm run dev
 | `src/locales/projects.zh-CN.json` | 按相同 ID 组织的中文展示字段，不另存链接或分类 |
 | `scripts/i18n.mjs` | 语言注册、完整性／占位符检查与译文过期检测 |
 | `scripts/catalog.mjs` | 分类与数据校验 |
-| `src/project-covers.json`、`scripts/covers.mjs` | 按项目 ID 组织的可选 README 预览图，校验来源、本地资源和大小 |
+| `src/project-covers.json`、`scripts/covers.mjs` | 按项目 ID 组织的必填 README/GPT 预览图；校验来源、本地资源、大小与全量覆盖 |
 | `public/covers/` | 优化后的静态 WebP 预览图与 `NOTICE.txt` 中的第三方来源声明 |
 | `scripts/readme.mjs` | 生成和检查两份 README 的目录区块 |
 | `scripts/build.mjs` | 生成页面、站点地图、爬虫规则及安全响应头 |
@@ -58,7 +58,7 @@ npm run dev
 
 ## README 卡片预览图
 
-经核对后选用 README 中第一张合适的头图或截图，不把徽章、小 Logo 或任意图库图片当封面。没有图片的项目使用装饰性占位图；图片加载失败仍保留卡片尺寸和正文。中英共用图片，替代文本和来源标签分别翻译。图片由本站延迟加载，不请求上游图床；构建不联网抓图。
+经核对后选用 README 中第一张合适的头图或截图，不把徽章、小 Logo 或任意图库图片当封面。**每个目录项目都必须有封面**：`scripts/covers.mjs` 在 check/build 阶段对缺封面项目直接失败（禁止字母首字母主视觉占位上线）。优先 ingest 合适的上游截图；没有合适真图时用 `scripts/ingest-gpt-covers.mjs` 入库 GPT/Codex Images 原图。图片加载失败仍保留卡片尺寸和正文。中英共用图片，替代文本和来源标签分别翻译。图片由本站延迟加载，不请求上游图床；构建不联网抓图。
 
 | `src/project-covers.json` 字段 | 含义 |
 | --- | --- |

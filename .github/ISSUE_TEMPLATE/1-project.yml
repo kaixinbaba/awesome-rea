@@ -108,3 +108,5 @@ body:
           required: true
         - label: I have not included secrets, private data, proprietary binaries or content I am not authorized to share.
           required: true
+        - label: I understand merged listings need a reviewed card cover (suitable upstream screenshot or GPT ingest) — letter-initial placeholders are blocked. / 明白合入需经核对封面（合适上游截图或 GPT 入库），字母占位会被门禁拒绝。
+          required: false

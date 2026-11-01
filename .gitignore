@@ -11,3 +11,4 @@ playwright-report/
 # Private local delivery records; never publish them with the source.
 docs/launch-2026-10-12.md
 docs/domain-shortlist-2026-10-12.txt
+tmp/
