@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-132 个项目与资源 · 6 个分类
+144 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -118,6 +118,17 @@
 - [LAS Recomp](<https://github.com/peiikai/LASRecomp>) — 《塞尔达传说 织梦岛》（Switch）Beta 版静态重编译，原生 Windows、Apple Silicon macOS 与 Linux，含随机化模式；需自备拷贝。
 - [GTA VCS Recomp](<https://github.com/gothamor/gta-vcs-recomp>) — 《侠盗猎车手：罪恶都市传奇》（PS2 美版）开发中的原生 Windows/Linux 静态重编译移植；用你自己的 ISO 构建。
 - [PS2 Web Recomp](<https://github.com/snuri00/ps2-web-recomp>) — 把 PS2 Emotion Engine 代码静态重编译为 WebAssembly，配合 WebGPU 运行时；《GT 赛车 4》与《战神 II》可在浏览器运行。
+- [Wind Waker HD Recomp](<https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp>) — 《风之杖 HD》（Wii U）静态重编译，原生 macOS、Windows、Linux 与 Android，可完整通关；需自备拷贝。
+- [B2recomp](<https://github.com/K0NL/B2recomp>) — 《猎天使魔女 2》（Switch）Windows 静态重编译；游戏在你的电脑上由你自己的拷贝构建。序章可通关，后续章节测试中。
+- [SpeedBreaker](<https://github.com/SpeedBreakerProject/speedbreaker>) — 《极品飞车：最高通缉》（Xbox 360）静态重编译，支持 Steam Deck、Linux 和 Mac，Windows 测试中；最高 4K、超宽屏与分屏。需自备光盘。
+- [Takedawn](<https://github.com/xenophobentx/takedawn>) — 《火爆狂飙 3》（Xbox）静态重编译，支持 Mac、Windows、Linux、Steam Deck 和 Android，4 倍分辨率与超宽屏。需自备美版光盘。
+- [Conker’s Bad Fur Day: Recompiled](<https://github.com/sciaschi/CBFD-Recompiled>) — 《坏松鼠的倒霉日》（美版）N64Recomp 移植，支持 Windows、Linux 和 macOS，含宽屏、鼠标瞄准、模组和材质包；需自备拷贝。
+- [Metroid Prime Unbound](<https://github.com/Odrannnn/MetroidPrimePort>) — 基于 PrimeDecomp 的《密特罗德 Prime》原生移植，支持 Windows、Linux、macOS、Android 和 iOS，含现代操作、宽屏和随机化；需自备光盘。
+- [ico-pc](<https://github.com/nathanialf/ico-pc>) — 《ICO》（PS2）反编译原生移植，支持 Windows、Linux、Steam Deck、Android、Mac 和 iPhone；可选宽屏与更清晰画面。需自备光盘。
+- [The Darkness Recomp](<https://github.com/portingpete/The-Darkness-Recomp>) — 《黑暗领域》（Xbox 360）静态重编译为原生 Windows，Direct3D 11、键鼠操作和画面选项；需自备解出的游戏文件。
+- [ReStreet](<https://github.com/samuelit0davila/fifa-street-pc-port>) — 由 Xbox 360 版重编译的《FIFA 街头足球》（2012）Windows 版，带启动器、好友和社区服务器在线对战。需自备拷贝。
+- [God of War Recomp](<https://github.com/KIexster/god-of-war-recomp>) — 《战神》（PS2）实验性 PS2Recomp 移植，原生 Windows 和 Linux；可进入游戏，尚未完整通关。需自备拷贝。
+- [Black 2006 Recomp](<https://github.com/portingpete/Black-2006-Recomp>) — 《黑色》（2006，初代 Xbox）实验性 XboxRecomp Windows 移植；启动器在本机用你自己的光盘构建游戏。
 
 ### 桌面与效率应用
 
@@ -137,6 +148,7 @@
 - [paper-rs](<https://github.com/michaelshimeles/sketch>) — 原生 Rust 的 Paper 式画布应用，记录了 REA 研究过程；渲染和平台支持仍有缺口。
 - [open-claude-ui](<https://github.com/Caho1/open-claude-ui>) — 高保真 Claude 桌面 UI 的 React 重实现；作者记录了 REA 辅助分析。
 - [ReaCut（映刻）](<https://github.com/Xiangyu-CAS/rea-capcut>) — 面向剪映／CapCut 的独立视频编辑器；作者记录了用 REA 研究界面与项目格式。
+- [BIMCraft](<https://github.com/IPedrax/BIMCraft>) — Rust 净室实现的 Revit 式 BIM 应用，含平面、剖面、图纸、IFC 和可供智能体调用的命令接口；早期开发中。
 
 ### 音频、硬件与驱动
 

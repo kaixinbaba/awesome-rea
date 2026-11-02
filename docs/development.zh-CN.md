@@ -96,8 +96,8 @@ node --input-type=module -e "import {loadProjects} from './scripts/catalog.mjs';
 - 项目需要游戏数据时，写明“需自备合法获得的拷贝”。“不分发密钥或固件”这类否定说法可以保留；不要把密钥、dump 或固件写成需要去获取的东西。
 - `evidence`、`secondary` 等链接只指向项目本身、发行页或文档，不指向 ROM/ISO、密钥、固件或提取工具站点。
 - `validateProjects`（`scripts/catalog.mjs`）会在中英文条目、SEO 覆盖值和专属介绍中拦截盗版、破解、注册机类措辞以及已知 ROM 站点域名。
-- 解锁付费内容或移除 DRM 的项目不收录（例如 Pinyon Shift 默认启用曾经付费的追加内容）。
-- 当前名单：`opensmash-ultimate`, `kartpad`, `dusklight`, `totk-recomp`, `savage-wind-recomp`, `las-recomp`, `sm64ds-decomp`, `khdays-decomp`, `khdays-port`, `battleship`, `oracles-decomp`, `goldeneye-pc-port`, `sotn-decomp`, `sotc-decomp`, `downhill-revived`, `lain-psx-decompiled`, `aegis`, `rook`。TotK Recomp 还说明了可在单机游戏中使用 Atmosphère 金手指文件。
+- 解锁付费内容或移除 DRM 的项目不收录（例如 Pinyon Shift 默认启用曾经付费的追加内容；DriveClub Recomp 的启动器提供解锁追加车辆和赛事的开关）。
+- 当前名单：`opensmash-ultimate`, `kartpad`, `dusklight`, `totk-recomp`, `savage-wind-recomp`, `las-recomp`, `sm64ds-decomp`, `khdays-decomp`, `khdays-port`, `battleship`, `oracles-decomp`, `goldeneye-pc-port`, `sotn-decomp`, `sotc-decomp`, `downhill-revived`, `lain-psx-decompiled`, `zelda-wwhd-recomp`, `b2recomp`, `metroid-prime-port`, `conker-recompiled`, `aegis`, `rook`。TotK Recomp 还说明了可在单机游戏中使用 Atmosphère 金手指文件。
 
 ## 浏览器检查
 

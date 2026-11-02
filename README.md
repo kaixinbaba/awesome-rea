@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-132 projects & resources · 6 categories
+144 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -118,6 +118,17 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [LAS Recomp](<https://github.com/peiikai/LASRecomp>) — Beta static recompilation of Link's Awakening (Switch) to native Windows, Apple Silicon macOS and Linux, with randomizer; own copy required.
 - [GTA VCS Recomp](<https://github.com/gothamor/gta-vcs-recomp>) — In-development native Windows/Linux port of GTA: Vice City Stories (PS2 USA) via static recompilation; built from your own ISO.
 - [PS2 Web Recomp](<https://github.com/snuri00/ps2-web-recomp>) — Static recompilation of PS2 Emotion Engine code to WebAssembly with a WebGPU runtime; Gran Turismo 4 and God of War II run in the browser.
+- [Wind Waker HD Recomp](<https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp>) — Static recompilation of Wind Waker HD (Wii U) to native macOS, Windows, Linux and Android, playable start to finish; own copy required.
+- [B2recomp](<https://github.com/K0NL/B2recomp>) — Static recompilation of Bayonetta 2 (Switch) for Windows; the game is built on your PC from your own copy. Prologue played through, later chapters in testing.
+- [SpeedBreaker](<https://github.com/SpeedBreakerProject/speedbreaker>) — Static recompilation of NFS: Most Wanted (Xbox 360) for Steam Deck, Linux and Mac, Windows in beta; up to 4K, ultrawide and split screen. Own disc.
+- [Takedawn](<https://github.com/xenophobentx/takedawn>) — Static recompilation of Burnout 3: Takedown (Xbox) for Mac, Windows, Linux, Steam Deck and Android, with 4x resolution and ultrawide. Own NTSC-U disc.
+- [Conker’s Bad Fur Day: Recompiled](<https://github.com/sciaschi/CBFD-Recompiled>) — N64Recomp port of Conker’s Bad Fur Day (US) for Windows, Linux and macOS, with widescreen, mouse aiming, mods and texture packs; own copy required.
+- [Metroid Prime Unbound](<https://github.com/Odrannnn/MetroidPrimePort>) — Native Metroid Prime port built from PrimeDecomp for Windows, Linux, macOS, Android and iOS, with modern controls, widescreen and randomizer; own disc.
+- [ico-pc](<https://github.com/nathanialf/ico-pc>) — Native port of the ICO (PS2) decompilation for Windows, Linux, Steam Deck, Android, Mac and iPhone; optional widescreen and sharper picture. Own disc.
+- [The Darkness Recomp](<https://github.com/portingpete/The-Darkness-Recomp>) — Static recompilation of The Darkness (Xbox 360) to native Windows with Direct3D 11, mouse and keyboard and graphics options; own extracted game files required.
+- [ReStreet](<https://github.com/samuelit0davila/fifa-street-pc-port>) — FIFA Street (2012) recompiled from Xbox 360 for Windows, with a launcher, friends and online play on community servers. Own copy required.
+- [God of War Recomp](<https://github.com/KIexster/god-of-war-recomp>) — Experimental PS2Recomp port of God of War (PS2) to native Windows and Linux; boots to gameplay, full playthrough pending. Own copy required.
+- [Black 2006 Recomp](<https://github.com/portingpete/Black-2006-Recomp>) — Experimental XboxRecomp port of BLACK (2006, original Xbox) to Windows; the launcher builds the game locally from your own disc.
 
 ### Desktop & productivity apps
 
@@ -137,6 +148,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [paper-rs](<https://github.com/michaelshimeles/sketch>) — Native Rust canvas modeled on Paper, with documented REA research; rendering and platform gaps remain.
 - [open-claude-ui](<https://github.com/Caho1/open-claude-ui>) — High-fidelity Claude desktop UI reconstruction in React; author documents REA-assisted analysis.
 - [ReaCut](<https://github.com/Xiangyu-CAS/rea-capcut>) — Independent Jianying/CapCut-informed video editor; author documents REA research into UI and project formats.
+- [BIMCraft](<https://github.com/IPedrax/BIMCraft>) — Clean-room Revit-style BIM app in Rust with plans, sections, sheets, IFC and an agent-drivable command API; early development.
 
 ### Audio, hardware & drivers
 

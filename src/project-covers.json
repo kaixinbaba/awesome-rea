@@ -1188,5 +1188,113 @@
     "source": "https://raw.githubusercontent.com/snuri00/ps2-web-recomp/e026b971324068773eed88bf502437de9e581b6b/docs/media/demo.webp",
     "readme": "https://github.com/snuri00/ps2-web-recomp/blob/e026b971324068773eed88bf502437de9e581b6b/README.md",
     "checked": "2026-11-02"
+  },
+  "zelda-wwhd-recomp": {
+    "sourceType": "generated",
+    "src": "/covers/zelda-wwhd-recomp-ccb183dedb7e.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Abstract sea-and-sky mood: blurred plasma of ocean blue and pale aqua with light flowing curves; no text, no logos, no game artwork; 16:9.",
+    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
+    "generatedAt": "2026-11-02T06:05:45.000Z",
+    "checked": "2026-11-02"
+  },
+  "b2recomp": {
+    "sourceType": "generated",
+    "src": "/covers/b2recomp-a135b927219e.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Abstract dusk mood: swirled plasma of deep violet and antique gold with light flowing curves; no text, no logos, no game artwork; 16:9.",
+    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
+    "generatedAt": "2026-11-02T06:05:45.000Z",
+    "checked": "2026-11-02"
+  },
+  "metroid-prime-port": {
+    "sourceType": "generated",
+    "src": "/covers/metroid-prime-port-20843674944a.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Abstract alien-planet mood: blurred plasma of burnt orange and slate navy with light flowing curves; no text, no logos, no game artwork; 16:9.",
+    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
+    "generatedAt": "2026-11-02T06:05:45.000Z",
+    "checked": "2026-11-02"
+  },
+  "ico-pc": {
+    "sourceType": "generated",
+    "src": "/covers/ico-pc-e434c5588b6c.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Abstract weathered-stone mood: soft plasma of sandstone beige and muted sage with light flowing curves; no text, no logos, no game artwork; 16:9.",
+    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
+    "generatedAt": "2026-11-02T06:05:45.000Z",
+    "checked": "2026-11-02"
+  },
+  "the-darkness-recomp": {
+    "sourceType": "generated",
+    "src": "/covers/the-darkness-recomp-e236a6718091.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Abstract night mood: swirled plasma of near-black violet and dark crimson with light flowing curves; no text, no logos, no game artwork; 16:9.",
+    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
+    "generatedAt": "2026-11-02T06:05:45.000Z",
+    "checked": "2026-11-02"
+  },
+  "restreet": {
+    "sourceType": "generated",
+    "src": "/covers/restreet-28a994703dea.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Abstract street-football mood: blurred plasma of signal yellow and pitch green with light flowing curves; no text, no logos, no game artwork; 16:9.",
+    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
+    "generatedAt": "2026-11-02T06:05:45.000Z",
+    "checked": "2026-11-02"
+  },
+  "speedbreaker": {
+    "src": "/covers/speedbreaker-8b4537cb06ba.webp",
+    "width": 960,
+    "height": 402,
+    "source": "https://raw.githubusercontent.com/SpeedBreakerProject/speedbreaker/6cabdc7997bbc0572525265d65a3559dc72c5843/assets/screenshots/speedbreaker-00-ultrawide-chase-cam-race.jpg",
+    "readme": "https://github.com/SpeedBreakerProject/speedbreaker/blob/6cabdc7997bbc0572525265d65a3559dc72c5843/README.md",
+    "checked": "2026-11-02"
+  },
+  "takedawn": {
+    "src": "/covers/takedawn-67c61e65bb69.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/xenophobentx/takedawn/e75aeb6d8116c13b801735ff2ec1638cb8fbe382/docs/screenshots/takedawn-hero-roadrage-psyche-out.jpg",
+    "readme": "https://github.com/xenophobentx/takedawn/blob/e75aeb6d8116c13b801735ff2ec1638cb8fbe382/README.md",
+    "checked": "2026-11-02"
+  },
+  "god-of-war-recomp": {
+    "src": "/covers/god-of-war-recomp-25e8b9c9c7fc.webp",
+    "width": 825,
+    "height": 720,
+    "source": "https://raw.githubusercontent.com/KIexster/god-of-war-recomp/2d3c91dc173727058073c267bbfb27b3dab703a1/docs/capturas/menu.jpg",
+    "readme": "https://github.com/KIexster/god-of-war-recomp/blob/2d3c91dc173727058073c267bbfb27b3dab703a1/README.md",
+    "checked": "2026-11-02"
+  },
+  "conker-recompiled": {
+    "src": "/covers/conker-recompiled-6587dcfbf06b.webp",
+    "width": 960,
+    "height": 542,
+    "source": "https://github.com/user-attachments/assets/abb979d7-24a5-44f8-98d3-088ba2054a74",
+    "readme": "https://github.com/sciaschi/CBFD-Recompiled/blob/ed1b8bb7f3f036334124ec27eb28efa64e400178/README.md",
+    "checked": "2026-11-02"
+  },
+  "bimcraft": {
+    "src": "/covers/bimcraft-e922fb338ab0.webp",
+    "width": 960,
+    "height": 596,
+    "source": "https://raw.githubusercontent.com/IPedrax/BIMCraft/0733fd4328a4aceb1c2dfa3ec07bd9f4d970d546/docs/images/desktop.png",
+    "readme": "https://github.com/IPedrax/BIMCraft/blob/0733fd4328a4aceb1c2dfa3ec07bd9f4d970d546/README.md",
+    "checked": "2026-11-02"
+  },
+  "black-2006-recomp": {
+    "src": "/covers/black-2006-recomp-c28b745848fa.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/portingpete/Black-2006-Recomp/2041e5a97f1300dca128d51fc06e1ae32cea9f21/docs/images/textures-original.jpg",
+    "readme": "https://github.com/portingpete/Black-2006-Recomp/blob/2041e5a97f1300dca128d51fc06e1ae32cea9f21/README.md",
+    "checked": "2026-11-02"
   }
 }

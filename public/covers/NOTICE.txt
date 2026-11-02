@@ -339,3 +339,51 @@ Abstract wind mood: swirled plasma of teal and warm amber with light flowing cur
 gta-vcs-recomp
 generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
 Abstract neon sunset mood: blurred plasma of hot pink, cyan and deep purple with light flowing curves; no text, no logos, no game artwork; 16:9.
+
+zelda-wwhd-recomp
+generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
+Abstract sea-and-sky mood: blurred plasma of ocean blue and pale aqua with light flowing curves; no text, no logos, no game artwork; 16:9.
+
+b2recomp
+generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
+Abstract dusk mood: swirled plasma of deep violet and antique gold with light flowing curves; no text, no logos, no game artwork; 16:9.
+
+metroid-prime-port
+generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
+Abstract alien-planet mood: blurred plasma of burnt orange and slate navy with light flowing curves; no text, no logos, no game artwork; 16:9.
+
+ico-pc
+generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
+Abstract weathered-stone mood: soft plasma of sandstone beige and muted sage with light flowing curves; no text, no logos, no game artwork; 16:9.
+
+the-darkness-recomp
+generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
+Abstract night mood: swirled plasma of near-black violet and dark crimson with light flowing curves; no text, no logos, no game artwork; 16:9.
+
+restreet
+generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
+Abstract street-football mood: blurred plasma of signal yellow and pitch green with light flowing curves; no text, no logos, no game artwork; 16:9.
+
+speedbreaker
+https://github.com/SpeedBreakerProject/speedbreaker/blob/6cabdc7997bbc0572525265d65a3559dc72c5843/README.md
+https://raw.githubusercontent.com/SpeedBreakerProject/speedbreaker/6cabdc7997bbc0572525265d65a3559dc72c5843/assets/screenshots/speedbreaker-00-ultrawide-chase-cam-race.jpg
+
+takedawn
+https://github.com/xenophobentx/takedawn/blob/e75aeb6d8116c13b801735ff2ec1638cb8fbe382/README.md
+https://raw.githubusercontent.com/xenophobentx/takedawn/e75aeb6d8116c13b801735ff2ec1638cb8fbe382/docs/screenshots/takedawn-hero-roadrage-psyche-out.jpg
+
+god-of-war-recomp
+https://github.com/KIexster/god-of-war-recomp/blob/2d3c91dc173727058073c267bbfb27b3dab703a1/README.md
+https://raw.githubusercontent.com/KIexster/god-of-war-recomp/2d3c91dc173727058073c267bbfb27b3dab703a1/docs/capturas/menu.jpg
+
+conker-recompiled
+https://github.com/sciaschi/CBFD-Recompiled/blob/ed1b8bb7f3f036334124ec27eb28efa64e400178/README.md
+https://github.com/user-attachments/assets/abb979d7-24a5-44f8-98d3-088ba2054a74
+
+bimcraft
+https://github.com/IPedrax/BIMCraft/blob/0733fd4328a4aceb1c2dfa3ec07bd9f4d970d546/README.md
+https://raw.githubusercontent.com/IPedrax/BIMCraft/0733fd4328a4aceb1c2dfa3ec07bd9f4d970d546/docs/images/desktop.png
+
+black-2006-recomp
+https://github.com/portingpete/Black-2006-Recomp/blob/2041e5a97f1300dca128d51fc06e1ae32cea9f21/README.md
+https://raw.githubusercontent.com/portingpete/Black-2006-Recomp/2041e5a97f1300dca128d51fc06e1ae32cea9f21/docs/images/textures-original.jpg

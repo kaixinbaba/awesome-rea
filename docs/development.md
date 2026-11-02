@@ -90,8 +90,8 @@ To add a language, register its paths and metadata in `scripts/i18n.mjs`, provid
 - State "requires your own legally obtained copy" where the project needs game data. Negative statements such as "no keys or firmware redistributed" are fine; never present keys, dumps or firmware as something to obtain.
 - `evidence`, `secondary` and other links point only to the project, its releases or documentation, never to ROM/ISO, key, firmware or dump-tool sites.
 - `validateProjects` (`scripts/catalog.mjs`) rejects piracy, crack and keygen wording plus known ROM-site hosts in both languages, SEO overrides and detail blurbs.
-- Skip projects that unlock paid content or remove DRM (for example, Pinyon Shift enables a formerly paid add-on by default).
-- Current list: `opensmash-ultimate`, `kartpad`, `dusklight`, `totk-recomp`, `savage-wind-recomp`, `las-recomp`, `sm64ds-decomp`, `khdays-decomp`, `khdays-port`, `battleship`, `oracles-decomp`, `goldeneye-pc-port`, `sotn-decomp`, `sotc-decomp`, `downhill-revived`, `lain-psx-decompiled`, `aegis`, `rook`. TotK Recomp also documents Atmosphère cheat files for single-player use.
+- Skip projects that unlock paid content or remove DRM (for example, Pinyon Shift enables a formerly paid add-on by default, and DriveClub Recomp offers a launcher switch that unlocks the add-on cars and tours).
+- Current list: `opensmash-ultimate`, `kartpad`, `dusklight`, `totk-recomp`, `savage-wind-recomp`, `las-recomp`, `sm64ds-decomp`, `khdays-decomp`, `khdays-port`, `battleship`, `oracles-decomp`, `goldeneye-pc-port`, `sotn-decomp`, `sotc-decomp`, `downhill-revived`, `lain-psx-decompiled`, `zelda-wwhd-recomp`, `b2recomp`, `metroid-prime-port`, `conker-recompiled`, `aegis`, `rook`. TotK Recomp also documents Atmosphère cheat files for single-player use.
 
 ## Browser checks
 

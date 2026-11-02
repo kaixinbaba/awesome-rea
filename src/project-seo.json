@@ -132,5 +132,29 @@
       "title": "PS2 Web Recomp: PS2 Games in the Browser – Status",
       "subtitle": "PlayStation 2 static recompilation to WebAssembly"
     }
+  },
+  "zelda-wwhd-recomp": {
+    "en": {
+      "title": "Wind Waker HD Recomp: Native PC, Mac & Android Port",
+      "subtitle": "The Wind Waker HD (Wii U) static recompilation"
+    }
+  },
+  "conker-recompiled": {
+    "en": {
+      "title": "Conker’s Bad Fur Day Recompiled: Native PC Port – Status",
+      "subtitle": "Conker’s Bad Fur Day (N64) recompiled for PC and Mac"
+    }
+  },
+  "metroid-prime-port": {
+    "en": {
+      "title": "Metroid Prime Unbound: Native PC & Android Port – Status",
+      "subtitle": "Metroid Prime native port built from PrimeDecomp"
+    }
+  },
+  "restreet": {
+    "en": {
+      "title": "ReStreet: FIFA Street (2012) PC Port with Online Play",
+      "subtitle": "FIFA Street (Xbox 360, 2012) recompiled for Windows"
+    }
   }
 }
