@@ -8,6 +8,7 @@ import { loadCovers } from './covers.mjs';
 const projects=await loadProjects();
 const projectCount=projects.length;
 const coverPaths=Object.values(await loadCovers(projects)).map(cover=>cover.src);
+const projectPath=`/projects/${projects[0].id}/`, categoryPath=`/categories/${projects[0].category}/`;
 const ID='G-KFLGGK81K8', KEY='awesomerea.analytics-consent.v1', DAY=86400000;
 const out=process.env.ANALYTICS_OUTPUT||'test-results/analytics-local';
 await mkdir(out,{recursive:true});
@@ -22,11 +23,18 @@ const mockTag=`(() => {
   }
  };
 })();`;
+// Records Clarity API calls queued before and after the tag "loads", and sets a Clarity cookie that withdrawal must clear.
+const mockClarity=`(() => {
+ const calls=((window.clarity&&window.clarity.q)||[]).map(a=>Array.from(a));
+ window.clarityCalls=calls;
+ window.clarity=function(...args){calls.push(args);};window.clarity.v='mock';
+ document.cookie='_clck=fixture; Path=/; Domain=awesomerea.com; Secure; SameSite=Lax';
+})();`;
 const headers=Object.fromEntries((await readFile('dist/_headers','utf8')).split('\n').filter(l=>l.startsWith('  ')).map(l=>{const i=l.indexOf(':');return [l.slice(2,i),l.slice(i+1).trim()];}));
 const results=[];
 async function fixture(browser,{origin='https://awesomerea.com',seed,signal,storageBlocked=false,blocked=false,gate,javascript=true,width=390}={}){
  const context=await browser.newContext({viewport:{width,height:950},reducedMotion:'reduce',javaScriptEnabled:javascript});
- const traffic={tags:0,collect:[],unexpected:[]};
+ const traffic={tags:0,clarity:0,collect:[],unexpected:[]};
  await context.addInitScript(({key,seed,signal,storageBlocked})=>{
   if(seed!==undefined)localStorage.setItem(key,typeof seed==='string'?seed:JSON.stringify(seed));
   if(signal==='DNT')Object.defineProperty(navigator,'doNotTrack',{get:()=> '1'});
@@ -36,7 +44,7 @@ async function fixture(browser,{origin='https://awesomerea.com',seed,signal,stor
  await context.route('**/*',async route=>{
   const url=new URL(route.request().url());
   if(url.origin===origin){
-   const path=decodeURIComponent(url.pathname);const allowed=['/','/zh/','/method/','/zh/method/','/styles.css','/analytics.js','/locale.js','/app.js','/favicon.svg',...coverPaths];
+   const path=decodeURIComponent(url.pathname);const allowed=['/','/zh/','/method/','/zh/method/',projectPath,categoryPath,'/zh'+projectPath,'/styles.css','/analytics.js','/locale.js','/app.js','/favicon.svg',...coverPaths];
    const file=allowed.includes(path)?(path.endsWith('/')?path+'index.html':path):(path.startsWith('/zh/')?'/zh/404.html':'/404.html');
    const type=file.endsWith('.css')?'text/css':file.endsWith('.js')?'text/javascript':file.endsWith('.svg')?'image/svg+xml':file.endsWith('.webp')?'image/webp':'text/html';
    await route.fulfill({status:allowed.includes(path)?200:404,headers:{...headers,'Content-Type':type},body:await readFile('dist'+file)});
@@ -46,9 +54,10 @@ async function fixture(browser,{origin='https://awesomerea.com',seed,signal,stor
    if(blocked)await route.abort('blockedbyclient');else await route.fulfill({contentType:'text/javascript',body:mockTag});
   }else if(url.hostname==='www.google-analytics.com'&&url.pathname==='/g/collect'){
    traffic.collect.push(JSON.parse(route.request().postData()));await route.fulfill({status:204});
-  }else if(url.hostname==='www.clarity.ms'||url.hostname==='scripts.clarity.ms'||url.hostname.endsWith('.clarity.ms')||url.hostname==='c.bing.com'){
-   // Production-gated Clarity loader is expected on the mocked production origin; never hit the real network.
-   await route.abort();
+  }else if(url.hostname==='www.clarity.ms'&&url.pathname==='/tag/yy4tlvmg63'){
+   // Consent-gated Clarity tag; mocked so tests never hit the real network.
+   traffic.clarity++;
+   if(blocked)await route.abort('blockedbyclient');else await route.fulfill({contentType:'text/javascript',body:mockClarity});
   }else if(url.hostname==='analytics.murdoku.fans'){
    // Production-gated Umami loader is expected on the mocked production origin; never hit the real network.
    await route.abort();
@@ -71,7 +80,7 @@ for(const [engine,launcher]of [['chromium',chromium],['webkit',webkit]]){
    const f=await fixture(browser,{width:locale==='en'?1440:390});
    await f.context.addCookies([{name:'unrelated',value:'fixture',domain:'awesomerea.com',path:'/',secure:true}]);
    await f.page.goto(f.origin+path+'?q=private-search#private-fragment',{waitUntil:'networkidle',referer:'https://search.example/private?email=private'});
-   assert.equal(f.traffic.tags,0);assert.equal(f.traffic.collect.length,0);
+   assert.equal(f.traffic.tags,0);assert.equal(f.traffic.collect.length,0);assert.equal(f.traffic.clarity,0,'Clarity must wait for consent');
    assert(await f.page.locator('#analytics-consent').isVisible());
    await assertFits(f,`${engine}/${locale}/initial-consent`);
    const a11y=await new AxeBuilder({page:f.page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();assert.deepEqual(a11y.violations.map(v=>v.id),[]);
@@ -79,6 +88,8 @@ for(const [engine,launcher]of [['chromium',chromium],['webkit',webkit]]){
    await Promise.all([f.page.waitForResponse(r=>r.url().includes('/g/collect')),f.page.locator('#analytics-accept').click()]);
    await f.page.waitForFunction(()=>!!window.dataLayer&&Array.from(window.dataLayer).some(a=>a[0]==='event'));
    assert.equal(f.traffic.tags,1);assert.equal(f.traffic.collect.length,1);
+   await f.page.waitForFunction(()=>Array.isArray(window.clarityCalls));assert.equal(f.traffic.clarity,1);
+   assert.deepEqual(await f.page.evaluate(()=>window.clarityCalls),[['consentv2',{ad_Storage:'denied',analytics_Storage:'granted'}]]);
    assert.equal(f.traffic.collect[0].page_location,f.origin+path);assert.equal(f.traffic.collect[0].page_referrer,'https://search.example');
    const config=await f.page.evaluate(()=>Array.from(window.dataLayer).map(a=>Array.from(a)).find(a=>a[0]==='config')[2]);
    assert.equal(config.send_page_view,false);assert.equal(config.allow_google_signals,false);assert.equal(config.allow_ad_personalization_signals,false);
@@ -87,9 +98,11 @@ for(const [engine,launcher]of [['chromium',chromium],['webkit',webkit]]){
    await f.page.locator('#analytics-settings').click();await f.page.locator('#analytics-reject').click();
    assert.equal(await f.page.evaluate(id=>window['ga-disable-'+id],ID),true);
    assert.deepEqual((await f.context.cookies()).map(c=>c.name),['unrelated']);
+   assert.deepEqual((await f.page.evaluate(()=>window.clarityCalls)).slice(1),[['consentv2',{ad_Storage:'denied',analytics_Storage:'denied'}],['stop']]);
    assert.equal(await f.page.locator('#search').inputValue(),'NOTION');assert.equal(await f.page.locator('.project-card:visible').count(),1);
    await f.page.locator('#analytics-settings').click();await f.page.locator('#analytics-accept').click();
    assert.equal(f.traffic.tags,1);assert.equal(f.traffic.collect.length,1,'Reallowing must not duplicate the same document pageview');
+   assert.equal(f.traffic.clarity,1);assert.deepEqual((await f.page.evaluate(()=>window.clarityCalls)).slice(3),[['start'],['consentv2',{ad_Storage:'denied',analytics_Storage:'granted'}]]);
    const second=await f.context.newPage();await second.goto(f.origin+(locale==='en'?'/zh/':'/')+'?q=private',{waitUntil:'networkidle'});
    assert.equal(f.traffic.collect.length,2,'Saved consent works in the other language');
    await f.page.locator('#analytics-settings').click();await f.page.locator('#analytics-reject').click();
@@ -105,7 +118,7 @@ for(const [engine,launcher]of [['chromium',chromium],['webkit',webkit]]){
    ['preview',{origin:'https://preview.awesomerea.pages.dev',seed:choice('accepted')}],['local',{origin:'http://127.0.0.1:4387',seed:choice('accepted')}],
   ]){
    const f=await fixture(browser,{...options,width:320});await f.page.goto(f.origin+'/',{waitUntil:'networkidle'});
-   assert.equal(f.traffic.tags,0,name);assert.equal(f.traffic.collect.length,0,name);assert.equal(await f.page.evaluate(id=>window['ga-disable-'+id],ID),true);
+   assert.equal(f.traffic.tags,0,name);assert.equal(f.traffic.collect.length,0,name);assert.equal(f.traffic.clarity,0,name);assert.equal(await f.page.evaluate(id=>window['ga-disable-'+id],ID),true);
    await f.page.locator('#analytics-settings').click();assert(await f.page.locator('#analytics-consent').isVisible());
    await assertFits(f,`${engine}/${name}/settings-consent`);
    if(options.signal)assert(await f.page.locator('#analytics-accept').isDisabled());
@@ -135,6 +148,12 @@ for(const [engine,launcher]of [['chromium',chromium],['webkit',webkit]]){
    assert.equal(f.traffic.collect.length,1);await f.page.evaluate(day=>{const now=Date.now()+181*day;Date.now=()=>now;window.dispatchEvent(new Event('focus'));},DAY);
    assert.equal(await f.page.evaluate(id=>window['ga-disable-'+id],ID),true);assert.deepEqual((await f.context.cookies()).map(c=>c.name),[]);
    results.push({engine,case:'live-consent-expiry',mockPageviews:1});await f.context.close();
+  }
+  for(const [path,expected]of [[projectPath,projectPath],[categoryPath,categoryPath],['/zh'+projectPath,'/zh'+projectPath],['/projects/not-listed/','/404.html'],['/zh/projects/not-listed/','/zh/404.html']]){
+   const f=await fixture(browser,{seed:choice('accepted')});
+   await f.page.goto(f.origin+path+'?q=private#frag',{waitUntil:'networkidle'});
+   assert.equal(f.traffic.collect.length,1,path);assert.equal(f.traffic.collect[0].page_location,f.origin+expected,path);
+   assert.deepEqual(f.traffic.unexpected,[]);results.push({engine,case:`page-location ${path}`,mockPageviews:1});await f.context.close();
   }
   {
    const f=await fixture(browser,{javascript:false});await f.page.goto(f.origin+'/');assert.equal(await f.page.locator('.project-card:visible').count(),projectCount);

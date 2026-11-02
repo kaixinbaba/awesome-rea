@@ -13,8 +13,8 @@
 | GA4 属性 | `awesomerea.com`，`558521378`，Standard，Asia/Shanghai，USD |
 | Web 数据流 | `awesomerea`，`16113204294`，URL 已核对为正式裸域 |
 | Measurement ID | `G-KFLGGK81K8` |
-| Microsoft Clarity | project `yy4tlvmg63`，生产 origin 全局 head 注入；本地／预览不加载 |
-| Umami | website id `47d78379-0c7b-4149-b17e-9535a292bdb8`，`https://analytics.murdoku.fans/script.js`，生产 origin 全局 head 注入；本地／预览不加载 |
+| Microsoft Clarity | project `yy4tlvmg63`，与 GA4 共用同一许可：同意后由 `public/analytics.js` 加载；本地／预览不加载 |
+| Umami | website id `47d78379-0c7b-4149-b17e-9535a292bdb8`，`https://analytics.murdoku.fans/script.js`，生产 origin 全局 head 注入，无 Cookie，`data-do-not-track`；本地／预览不加载 |
 | GSC | `sc-domain:awesomerea.com`，当前账号 `siteOwner` |
 | Sitemap | `https://awesomerea.com/sitemap.xml`，四个双语首页／方法页 URL |
 
@@ -23,10 +23,10 @@
 ## 采集与隐私
 
 - 默认不加载 Google 标签、不发送无 Cookie ping；仅正式 origin、有效明确同意且无 DNT/GPC 隐私信号时启用。
-- Microsoft Clarity（`yy4tlvmg63`）在正式 origin 的全局 head 注入官方 loader；本地与预览 origin 跳过。CSP 额外放行 `clarity.ms`／`c.bing.com`，仍禁止 `unsafe-inline`／`unsafe-eval`（loader 使用 sha256）。
-- Umami（`47d78379-0c7b-4149-b17e-9535a292bdb8`）在正式 origin 的全局 head 注入 `https://analytics.murdoku.fans/script.js`；本地与预览 origin 跳过。CSP 额外放行 `analytics.murdoku.fans`（script-src／connect-src），仍禁止 `unsafe-inline`／`unsafe-eval`（loader 使用 sha256）。
+- Microsoft Clarity（`yy4tlvmg63`）与 GA4 同一许可开关：同意后才加载 `https://www.clarity.ms/tag/yy4tlvmg63` 并调用 `consentv2`（ad denied、analytics granted）；撤回时 `consentv2` 全部 denied 后 `stop`，并清理 `_clck`／`_clsk`；同一文档内重新同意时 `start`。搜索框带 `data-clarity-mask`。CSP 放行 `clarity.ms`／`c.bing.com`，不再需要内联 loader hash。
+- Umami（`47d78379-0c7b-4149-b17e-9535a292bdb8`）在正式 origin 的全局 head 注入 `https://analytics.murdoku.fans/script.js`（无 Cookie、遵守 DNT）；本地与预览 origin 跳过。CSP 放行 `analytics.murdoku.fans`（script-src／connect-src），仍禁止 `unsafe-inline`／`unsafe-eval`（loader 使用 sha256）。
 - 仅主动上报每个文档一次 `page_view`。GA4 可能生成 `first_visit`、`session_start` 等基础会话事件；不启用增强型点击、滚动、下载、表单或站内搜索采集。
-- 页面 URL 去除 query/hash；未知路径映射到本语言 404，避免路径带入个人标识。外部 referrer 仅保留 origin；同站仅保留已知公开页面路径。
+- 页面 URL 去除 query/hash。构建在 `#analytics-consent` 上输出 `data-path`（首页、方法页、分类页、项目页），只有与当前路径一致才上报；404 页不输出，未知路径映射到本语言 404，避免路径带入个人标识。外部 referrer 仅保留 origin；同站仅保留公开页面路径格式。
 - 不传搜索词、业务用户 ID、项目筛选值或广告归因参数。设备与基础会话信息仍由 GA4 处理，不称为匿名、无 Cookie 统计。
 - 许可键 `awesomerea.analytics-consent.v1`，至多 180 天；损坏、过期、未来时间或读取失败不授权。写入失败时，仅当前页面明确选择生效。
 - GA Cookie 期限 180 天；撤回先禁用本 Measurement ID，再更新 consent、清理本接入的 `_ga`／`_ga_KFLGGK81K8` Cookie，不清理其他站点数据，不刷新页面。

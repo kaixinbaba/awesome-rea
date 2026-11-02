@@ -2,6 +2,7 @@
 (() => {
   'use strict';
   const ID = 'G-KFLGGK81K8';
+  const CLARITY = 'yy4tlvmg63';
   const KEY = 'awesomerea.analytics-consent.v1';
   const AGE = 180 * 24 * 60 * 60 * 1000;
   const panel = document.querySelector('#analytics-consent');
@@ -11,8 +12,9 @@
   const reject = panel.querySelector('#analytics-reject');
   const status = panel.querySelector('#analytics-status');
   const production = location.origin === 'https://awesomerea.com';
-  const paths = new Set(['/', '/zh/', '/method/', '/zh/method/']);
-  const path = paths.has(location.pathname) ? location.pathname : (location.pathname.startsWith('/zh/') ? '/zh/404.html' : '/404.html');
+  // Build output marks each public page with its path; anything else, including 404 pages, reports the localized 404.
+  const publicPath = /^\/(zh\/)?((method|projects\/[a-z][a-z0-9-]*|categories\/[a-z-]+)\/)?$/;
+  const path = panel.dataset.path && panel.dataset.path === location.pathname ? location.pathname : (location.pathname.startsWith('/zh/') ? '/zh/404.html' : '/404.html');
   const pageLocation = location.origin + path;
   const adsDenied = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' };
   let saved = read();
@@ -20,6 +22,7 @@
   let initialized = false;
   let loaded = false;
   let sent = false;
+  let clarityStopped = false;
   let expiry;
   window['ga-disable-' + ID] = true;
   function read() {
@@ -40,12 +43,12 @@
   function referrer() {
     try {
       const url = new URL(document.referrer);
-      return url.origin === location.origin && paths.has(url.pathname) ? url.origin + url.pathname : url.origin;
+      return url.origin === location.origin && publicPath.test(url.pathname) ? url.origin + url.pathname : url.origin;
     } catch { return ''; }
   }
   function clearCookies() {
     const names = document.cookie.split(';').map(c => c.trim().split('=')[0])
-      .filter(name => name === '_ga' || name === '_ga_' + ID.slice(2));
+      .filter(name => ['_ga', '_ga_' + ID.slice(2), '_clck', '_clsk'].includes(name));
     for (const name of names) for (const domain of ['', '; Domain=awesomerea.com', '; Domain=.awesomerea.com']) {
       document.cookie = `${name}=; Max-Age=0; Path=/${domain}; SameSite=Lax; Secure`;
     }
@@ -59,7 +62,15 @@
     const enabled = allowed();
     window['ga-disable-' + ID] = !enabled;
     if (!enabled) {
-      if (initialized) window.gtag('consent', 'update', { analytics_storage: 'denied', ...adsDenied });
+      if (initialized) {
+        window.gtag('consent', 'update', { analytics_storage: 'denied', ...adsDenied });
+        // Denied consent alone leaves Clarity collecting without cookies; stop ends this document's recording.
+        if (!clarityStopped) {
+          clarityStopped = true;
+          window.clarity('consentv2', { ad_Storage: 'denied', analytics_Storage: 'denied' });
+          window.clarity('stop');
+        }
+      }
       clearCookies();
     } else if (!initialized) {
       initialized = true;
@@ -79,8 +90,19 @@
       script.src = `https://www.googletagmanager.com/gtag/js?id=${ID}`;
       script.addEventListener('load', () => { loaded = true; pageview(); }, { once: true });
       document.head.append(script);
+      window.clarity = window.clarity || function () { (window.clarity.q = window.clarity.q || []).push(arguments); };
+      window.clarity('consentv2', { ad_Storage: 'denied', analytics_Storage: 'granted' });
+      const clarity = document.createElement('script');
+      clarity.id = 'awesomerea-clarity'; clarity.async = true;
+      clarity.src = `https://www.clarity.ms/tag/${CLARITY}`;
+      document.head.append(clarity);
     } else {
       window.gtag('consent', 'update', { analytics_storage: 'granted', ...adsDenied });
+      if (clarityStopped) {
+        clarityStopped = false;
+        window.clarity('start');
+        window.clarity('consentv2', { ad_Storage: 'denied', analytics_Storage: 'granted' });
+      }
       pageview();
     }
     clearTimeout(expiry);
