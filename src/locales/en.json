@@ -190,8 +190,9 @@
   "relationship.REA tooling present": "REA tooling present",
   "relationship.REA integration / packaging": "REA integration / packaging",
   "relationship.REA learning resource": "REA learning resource",
-  "seo.projectTitle": "{name} — {relationship} of {original} | Awesome REA",
-  "seo.projectDescription": "{summary} Status: {status}. Know before you try: {limitation}. {reaNote} Sources checked: {checked}.",
+  "seo.projectTitle": "{name}: {original} – Status & Requirements",
+  "seo.projectTitleShort": "{name}: {original}",
+  "seo.projectDescription": "{status}. {limitation} {summary}",
   "seo.categoryTitle": "{category} — Awesome REA directory",
   "seo.categoryDescription": "Open-source reverse-engineering and reimplementation projects in {category}. Sources and limits included; REA usage is optional.",
   "card.coverAltGenerated": "{name} generated cover",
@@ -211,9 +212,9 @@
   "detail.category": "Category",
   "detail.target": "Target",
   "detail.secondary": "Also see",
+  "detail.related": "Related projects",
   "detail.heroAlt": "{name} cover",
   "category.back": "Back to directory",
   "category.count": "{count} listings",
-  "category.lead": "Source-checked entries in this category. Open a listing for evidence, limits and license notes.",
-  "seo.projectReaNote": "Listed on Awesome REA ({relationship}); REA usage is optional."
+  "category.lead": "Source-checked entries in this category. Open a listing for evidence, limits and license notes."
 }

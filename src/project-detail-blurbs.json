@@ -269,11 +269,6 @@
     "zh-CN": "持续进行中的 1997 年《Carmageddon》引擎逆向重建，借助恢复的 Watcom 调试符号逐函数替换原汇编，以 SDL2 在现代系统原生运行。上游 README 描述重建 Carmageddon 以原生运行，并说明基于符号的逆向与进度图。主题含 reverse-engineering。不附带游戏内容。本站不声称 REA 参与。需要原版 Carmageddon 数据或免费试用版。匹配进度未完成。README 另有冲突的“公有领域”/非商业表述；LICENSE 文件为 GPL-3.0——本站以 LICENSE 为准。我们仅审阅 README/源码，未测试。",
     "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
   },
-  "metaforce": {
-    "en": "A native reverse-engineered reimplementation of the Metroid Prime engine, recently rewritten atop the Metroid Prime matching decompilation, targeting modern graphics backends. The upstream README describes Metaforce as a reverse-engineered reimplementation of the Metroid Prime engine and notes a rewrite on the matching decompilation. Topics include reimplementation and reverse-engineering. No REA involvement is claimed. README states builds are currently unavailable while the project restabilizes after the decompilation rewrite. Original Nintendo/Retro assets are not redistributed. Platform support list is aspirational relative to current build state. We have not tested it.",
-    "zh-CN": "对《密特罗德 究极》引擎的原生逆向重实现，近期基于匹配反编译重写，面向现代图形后端。上游 README 将 Metaforce 描述为 Metroid Prime 引擎的逆向重实现，并说明基于匹配反编译的重写。主题含 reimplementation 与 reverse-engineering。本站不声称 REA 参与。README 声明反编译重写后项目再稳定期间构建暂不可用。不重新分发任天堂/Retro 原版素材。平台支持列表相对当前构建状态偏理想化。我们未测试。",
-    "note": "Claude-polished (run 4a8f9b05b9144e1fa2dea792e517be28); catalog-field-only, no invented facts"
-  },
   "webamp": {
     "en": "An HTML5/JavaScript reimplementation of Winamp 2 with full classic skin support via Web Audio, usable as an NPM module or at webamp.org. The upstream README describes a reimplementation of Winamp in HTML5 and JavaScript with full skin support. Topics include reimplementation. It does not claim binary reverse engineering of Winamp. No REA involvement is claimed. IE unsupported. “Modern” Winamp skins are a separate prototype package. Winamp name/interface/sample audio remain Nullsoft property. We have not tested beyond public demos/docs review.",
     "zh-CN": "用 HTML5/JavaScript 重实现 Winamp 2，经 Web Audio 完整支持经典皮肤，可作为 NPM 模块或在 webamp.org 使用。上游 README 描述用 HTML5 与 JavaScript 重实现 Winamp 并完整支持皮肤。主题含 reimplementation。未声称对 Winamp 做二进制逆向。本站不声称 REA 参与。不支持 IE。“现代” Winamp 皮肤为单独原型包。Winamp 名称/界面/示例音频仍属 Nullsoft。我们仅审阅公开演示/文档，未深入测试。",

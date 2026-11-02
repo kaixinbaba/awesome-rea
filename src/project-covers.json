@@ -223,14 +223,6 @@
     "readme": "https://github.com/OpenLoco/OpenLoco/blob/6d7f5b1bfb4abd5ae2f1a2ade628a2b0d46f861e/README.md",
     "checked": "2026-10-16"
   },
-  "metaforce": {
-    "src": "/covers/metaforce-fd3849d9933b.webp",
-    "width": 960,
-    "height": 529,
-    "source": "https://raw.githubusercontent.com/AxioDL/metaforce/de8fc69bd7f345d6cf5f0c8fc2798295e22522d3/assets/metaforce-screen1.png",
-    "readme": "https://github.com/AxioDL/metaforce/blob/de8fc69bd7f345d6cf5f0c8fc2798295e22522d3/README.md",
-    "checked": "2026-10-16"
-  },
   "opengol": {
     "src": "/covers/opengol-8599939507a2.webp",
     "width": 960,

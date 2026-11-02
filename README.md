@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-128 projects & resources · 6 categories
+127 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -32,7 +32,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [ScummVM](<https://github.com/scummvm/scummvm>) — Replacement engines for supported classic adventures and RPGs; original game data usually required.
 - [free-heroes4 (openh4)](<https://github.com/tallowmere/free-heroes4>) — Unfinished Heroes of Might and Magic IV engine and inspection tools; original GOG game data required.
 - [Rook](<https://github.com/AsyncFinn/rook>) — Early Rust Roblox-engine reimplementation for local places and Luau scripts; not a Roblox server client.
-- [rct3++](<https://github.com/tomast1337/rct3pp>) — Early RollerCoaster Tycoon 3 format tools and viewer; original game required, not a complete playable engine.
+- [rct3++](<https://github.com/tomast1337/RCT3PlusPlus>) — Early RollerCoaster Tycoon 3 format tools and viewer; original game required, not a complete playable engine.
 - [OpenRealm](<https://github.com/corepunch/open-realm>) — Quake-style engine for Blizzard-era data with Warcraft III as the main playable target; original MPQ assets required.
 - [Jazz² Resurrection](<https://github.com/deathkiller/jazz2-native>) — C++ reimplementation of Jazz Jackrabbit 2 with wide platform ports; original game files required.
 - [Ruffle](<https://github.com/ruffle-rs/ruffle>) — Adobe Flash Player emulator in Rust for desktop and the web; ActionScript support still has gaps.
@@ -44,7 +44,6 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [Daggerfall Unity](<https://github.com/Interkarma/daggerfall-unity>) — Unity recreation of The Elder Scrolls II: Daggerfall; free DOS Daggerfall assets required.
 - [PvZ-Portable](<https://github.com/wszqkzqk/PvZ-Portable>) — Cross-platform Plants vs. Zombies GOTY reimplementation; original GOTY assets required.
 - [dethrace](<https://github.com/dethrace-labs/dethrace>) — Carmageddon (1997) engine rebuild via symbol-driven RE; original game data required.
-- [Metaforce](<https://github.com/AxioDL/metaforce>) — Metroid Prime engine reimplementation on matching decomp; builds currently unavailable.
 - [OpenLara](<https://github.com/XProger/OpenLara>) — Classic Tomb Raider open-source engine; original game data required.
 - [OpenGOAL](<https://github.com/open-goal/jak-project>) — Jak & Daxter GOAL decompile and native x86-64 PC ports; PS2 retail disc required.
 - [SiegeFX](<https://github.com/codingncaffeine/SiegeFX>) — Clean-room Dungeon Siege (2002) reimplementation in C#/.NET; original .dsres data required.
@@ -81,7 +80,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [khdays-decomp](<https://github.com/Yokimitsuro/khdays-decomp>) — Matching Kingdom Hearts 358/2 Days (Nintendo DS) decompilation; nearly complete; BYO ROM.
 - [Shiloh](<https://github.com/Asterber/shiloh>) — Rust/SDL2/WASM engine for The X-Files Game (1998); independent rewrite; player's own copy required.
 - [Nanolathe](<https://github.com/nanolathe-gg/nanolathe>) — Clean-room Total Annihilation-focused 2.5D RTS engine in Go; original TA files required; multiplayer and browser demo.
-- [Forza Horizon 1: ReImagined](<https://github.com/Dyotson/ForzaHorizon1-ReImagined>) — Xbox 360 Forza Horizon statically recompiled to native Windows/Linux via ReXGlue; BYO game package; no game code shipped.
+- [Forza Horizon 1: ReImagined](<https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined>) — Xbox 360 Forza Horizon statically recompiled to native Windows/Linux via ReXGlue; BYO game package; no game code shipped.
 - [impacto](<https://github.com/CommitteeOfZero/impacto>) — Open-source MAGES. visual novel engine reimplementation in C++/OpenGL; original game data required; cross-platform WIP.
 - [Knuckles' Chaotix Recompiled](<https://github.com/YuutaTsubasa/ChaotixRecompiled>) — Sega 32X Knuckles' Chaotix statically recompiled to native C++/SDL3; BYO ROM; not an emulator.
 - [Chupathingy](<https://github.com/ChupathingyCE/chupathingyce>) — Native multi-platform port of the Halo: Combat Evolved decompilation; BYO Xbox/PC/CE maps; OpenCE-compatible online.
@@ -89,7 +88,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [Dune Dynasty](<https://github.com/gameflorist/dunedynasty>) — Dune II remaster on the OpenDUNE reverse-engineered engine; widescreen/HiDPI, C&C-style controls, skirmish/multiplayer; BYO data.
 - [OpenSHC](<https://github.com/sourcehold/OpenSHC>) — Stepwise open reimplementation of Stronghold Crusader 1.41 as a hooking DLL aiming for functional identity; BYO Latin 1.41.
 - [WoodyRE](<https://github.com/jjmhalew/WoodyRE>) — Engine reimplementation of Woody Woodpecker Escape (2001) by reverse engineering; BYO CD/ISO; Windows/Linux/Android/Switch.
-- [Horizon](<https://github.com/ludovic111/horizon>) — Unofficial Minecraft Java 26.3 rewrite in Rust with differential harnesses; BYO Minecraft via launcher; no Mojang code shipped.
+- [Horizon](<https://github.com/horizon-rust/horizon>) — Unofficial Minecraft Java 26.3 rewrite in Rust with differential harnesses; BYO Minecraft via launcher; no Mojang code shipped.
 - [Silent Hill PC Port](<https://github.com/SlickAmogus/silent-hill-decomp>) — Native Windows/Linux PC port of Silent Hill 1 on a PSX decompilation via PsyCross; fully playable campaign; BYO disc; not an emulator or static recomp.
 - [sotn-decomp](<https://github.com/Xeeynamo/sotn-decomp>) — Matching decompilation of Symphony of the Night across PS1, PSP (DXC EU) and Saturn; byte-identical rebuilds; BYO dump.
 - [GoldenEye 007 PC Port](<https://github.com/jkdansereau/goldeneye-pc-port>) — Native PC port of GoldenEye 007 from n64decomp/007; widescreen/~60 fps/split-screen; BYO NTSC-U ROM; not an emulator or binary recomp.
@@ -130,7 +129,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [CADCraft](<https://github.com/storytold/cadcraft>) — Pre-alpha AutoCAD-style drafting in Rust; unsupported entities can be lost on save.
 - [GridCraft](<https://github.com/storytold/gridcraft>) — Alpha-stage Excel-style spreadsheets, formulas and charts in Rust.
 - [Wine](<https://github.com/wine-mirror/wine>) — Windows API compatibility layer for Unix-like systems; application compatibility varies.
-- [paper-rs](<https://github.com/michaelshimeles/paper-rs>) — Native Rust canvas modeled on Paper, with documented REA research; rendering and platform gaps remain.
+- [paper-rs](<https://github.com/michaelshimeles/sketch>) — Native Rust canvas modeled on Paper, with documented REA research; rendering and platform gaps remain.
 - [open-claude-ui](<https://github.com/Caho1/open-claude-ui>) — High-fidelity Claude desktop UI reconstruction in React; author documents REA-assisted analysis.
 - [ReaCut](<https://github.com/Xiangyu-CAS/rea-capcut>) — Independent Jianying/CapCut-informed video editor; author documents REA research into UI and project formats.
 
@@ -145,7 +144,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 ### REA plugins, integrations & packaging
 
 - [dsh-mcp-rea](<https://github.com/Ersith/dsh-mcp-rea>) — Community MCP bridge exposing a smaller selection of REA tools.
-- [REA Investigator](<https://github.com/Devaretanmay/rea-investigate>) — Agent skill for planning, tracing, verifying and reporting REA investigations.
+- [REA Investigator](<https://github.com/Devaretanmay/fox>) — Agent skill for planning, tracing, verifying and reporting REA investigations.
 - [rea-jev](<https://github.com/juan-viox/rea-jev>) — REA plugin with Jev-based evidence checks; external model calls and fail-open hooks.
 - [rea-agents Homebrew formula](<https://github.com/moonfruit/homebrew-tap/blob/main/Formula/rea-agents.rb>) — Community Homebrew formula for the upstream rea-agents package.
 

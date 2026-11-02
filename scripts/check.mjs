@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { loadProjects, issueLinks, populatedCategories, kinds } from './catalog.mjs';
 import { locales, loadLocale, localePath, displayFields } from './i18n.mjs';
 import { loadCovers, isGeneratedCover } from './covers.mjs';
+import { titleLimit, descriptionLimit } from './seo.mjs';
 const data = await loadProjects();
 const covers = await loadCovers(data);
 const origin = new URL(process.env.SITE_URL || 'https://awesomerea.com').origin;
@@ -105,6 +106,14 @@ for (const locale of Object.keys(locales)) {
   assert(html.includes(esc(p.limitation)));
   assert(html.includes(p.evidence));
   if (covers[p.id]) assert(html.includes(`src="${covers[p.id].src}"`));
+  if (locale === 'en') {
+   assert(html.match(/<title>(.*?)<\/title>/)[1].replace(/&[a-z#0-9]+;/g, 'x').length <= titleLimit, `${file}: title exceeds ${titleLimit} characters`);
+   assert(html.match(/name="description" content="(.*?)"/)[1].replace(/&[a-z#0-9]+;/g, 'x').length <= descriptionLimit, `${file}: description exceeds ${descriptionLimit} characters`);
+  }
+  const relatedLinks = new Set([...(html.match(/<section class="related".*?<\/section>/s)?.[0] || '').matchAll(/href="([^"]+)"/g)].map(m => m[1]));
+  assert(relatedLinks.size >= 4 && [...relatedLinks].every(href => href.startsWith(localePath(locale, 'projects/')) && href !== localePath(locale, page)), `${file}: at least four related project links required`);
+  const graph = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+  assert.deepEqual(graph.find(n => n['@type'] === 'BreadcrumbList')?.itemListElement.at(-1).item, `${origin}${localePath(locale, page)}`, `${file}: breadcrumb JSON-LD required`);
  }
  for (const [key] of populatedCategories(projects)) {
   const page = `categories/${key}/`;

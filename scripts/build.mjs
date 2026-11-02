@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto';
 import { loadProjects, kinds, relationships, populatedCategories, repository, issueLinks } from './catalog.mjs';
 import { locales, loadLocale, localePath } from './i18n.mjs';
 import { loadCovers, isGeneratedCover } from './covers.mjs';
+import { loadSeo, titleLimit, descriptionLimit } from './seo.mjs';
 
 const site = new URL(process.env.SITE_URL || 'https://awesomerea.com');
 if (site.protocol !== 'https:' || site.pathname !== '/' || site.search || site.hash || site.username || site.password) throw new Error('SITE_URL must be an HTTPS origin');
@@ -10,6 +11,15 @@ const origin = site.origin;
 const source = await loadProjects();
 const covers = await loadCovers(source);
 const blurbs = JSON.parse(await readFile('src/project-detail-blurbs.json', 'utf8'));
+const seo = await loadSeo(source);
+// Related links: same category first, then shared target words (usually the same original game), then most recently reviewed.
+const targetWords = p => new Set(String(p.target).toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(w => w.length >= 4));
+const relatedIds = new Map(source.map(p => {
+  const words = targetWords(p);
+  const ranked = source.filter(o => o.id !== p.id).map(o => ({ id: o.id, checked: o.checked, same: o.category === p.category ? 1 : 0, shared: [...targetWords(o)].filter(w => words.has(w)).length }))
+    .sort((a, b) => b.same - a.same || b.shared - a.shared || b.checked.localeCompare(a.checked) || a.id.localeCompare(b.id));
+  return [p.id, ranked.slice(0, 6).map(o => o.id)];
+}));
 const assetVersions = Object.fromEntries(await Promise.all(['styles.css', 'locale.js', 'analytics.js', 'app.js'].map(async name => [name, createHash('sha256').update(await readFile(`public/${name}`)).digest('hex').slice(0, 12)])));
 const assetUrl = name => `/${name}?v=${assetVersions[name]}`;
 const checked = source.map(p => p.checked).sort().at(-1);
@@ -115,7 +125,9 @@ ${section('method.privacyTitle', ['method.privacy1', 'method.privacy2', 'method.
     const items = projects.filter(p => p.category === key);
     const catTitle = t('seo.categoryTitle', { category: t(`category.${key}`) });
     const catDesc = t('seo.categoryDescription', { category: t(`category.${key}`) });
-    const html = head(page, { title: catTitle, description: catDesc }) + nav(page) + `<main id="main" class="category-page wrap"><a class="text-link" href="${home}#directory">← ${s('category.back')}</a><p class="eyebrow">${s('directory.eyebrow')}</p><h1>${s(`category.${key}`)}</h1><p class="category-lead">${s('category.lead')}</p><p class="review-date">${s('category.count', { count: items.length })} · ${s('common.review')} <time datetime="${checked}">${checked}</time></p><div class="project-grid category-grid">${items.map(card).join('')}</div></main>` + footer(page);
+    const catUrl = `${origin}${categoryHref(key)}`;
+    const catLd = JSON.stringify({ '@context': 'https://schema.org', '@type': 'CollectionPage', '@id': catUrl, url: catUrl, name: catTitle, description: catDesc, inLanguage: lang, mainEntity: { '@type': 'ItemList', numberOfItems: items.length, itemListElement: items.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: `${origin}${detailHref(p.id)}` })) } }).replaceAll('<', '\\u003c');
+    const html = head(page, { title: catTitle, description: catDesc, extraJsonLd: `<script type="application/ld+json">${catLd}</script>` }) + nav(page) + `<main id="main" class="category-page wrap"><a class="text-link" href="${home}#directory">← ${s('category.back')}</a><p class="eyebrow">${s('directory.eyebrow')}</p><h1>${s(`category.${key}`)}</h1><p class="category-lead">${s('category.lead')}</p><p class="review-date">${s('category.count', { count: items.length })} · ${s('common.review')} <time datetime="${checked}">${checked}</time></p><div class="project-grid category-grid">${items.map(card).join('')}</div></main>` + footer(page);
     await mkdir(`dist${localePath(locale, page)}`, { recursive: true });
     await writeFile(`dist${localePath(locale, page)}index.html`, html);
     const catLastmod = items.map(p => p.checked).sort().at(-1) || checked;
@@ -124,27 +136,29 @@ ${section('method.privacyTitle', ['method.privacy1', 'method.privacy2', 'method.
 
   for (const p of projects) {
     const page = projectPage(p.id);
-    const relationshipLabel = t(`relationship.${p.relationship}`);
-    const relationshipForTitle = locale === 'en' ? relationshipLabel.toLowerCase() : relationshipLabel;
+    const override = seo[p.id]?.[locale] || {};
     const original = originalName(p.target);
-    const title = t('seo.projectTitle', { name: p.name, relationship: relationshipForTitle, original });
-    const reaNote = t('seo.projectReaNote', { relationship: relationshipLabel });
-    const description = t('seo.projectDescription', {
-      summary: clipMeta(p.summary, 160),
-      status: clipMeta(p.status, 80),
-      limitation: trimSentenceEnd(clipMeta(p.limitation, 120)),
-      reaNote,
-      checked: p.checked,
-    });
+    const fullTitle = t('seo.projectTitle', { name: p.name, original });
+    // Search results truncate long titles; reviewed overrides cover entries whose short form is still too long.
+    const title = override.title || (fullTitle.length <= titleLimit ? fullTitle : t('seo.projectTitleShort', { name: p.name, original }));
+    const description = override.description || clipMeta(t('seo.projectDescription', { status: trimSentenceEnd(p.status), limitation: p.limitation, summary: p.summary }), descriptionLimit);
+    const subtitle = override.subtitle || original;
+    const url = `${origin}${detailHref(p.id)}`;
+    const about = ['analysis', 'resource'].includes(p.kind)
+      ? { '@type': 'CreativeWork', name: p.name, url: p.url, description: p.summary }
+      : { '@type': 'SoftwareSourceCode', name: p.name, codeRepository: p.url, description: p.summary, license: p.licenseUrl || undefined };
     const projectLd = JSON.stringify({
       '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: p.name,
-      url: `${origin}${detailHref(p.id)}`,
-      description: p.summary,
-      applicationCategory: t(`category.${p.category}`),
-      license: p.licenseUrl || undefined,
+      '@graph': [
+        { '@type': 'BreadcrumbList', itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Awesome REA', item: `${origin}${home}` },
+          { '@type': 'ListItem', position: 2, name: t(`category.${p.category}`), item: `${origin}${categoryHref(p.category)}` },
+          { '@type': 'ListItem', position: 3, name: p.name, item: url },
+        ] },
+        { '@type': 'WebPage', '@id': url, url, name: title, description, inLanguage: lang, dateModified: p.checked, about },
+      ],
     }).replaceAll('<', '\\u003c');
+    const related = relatedIds.get(p.id).map(id => projects.find(o => o.id === id));
     const html = head(page, {
       title,
       description,
@@ -152,7 +166,7 @@ ${section('method.privacyTitle', ['method.privacy1', 'method.privacy2', 'method.
     }) + nav(page) + `<main id="main" class="project-detail wrap">
 <nav class="detail-nav" aria-label="breadcrumb"><a class="text-link" href="${home}#directory">← ${s('detail.backHome')}</a><a class="text-link" href="${categoryHref(p.category)}">${s('detail.backCategory', { category: t(`category.${p.category}`) })}</a></nav>
 ${cover(p, { detail: true })}
-<header class="detail-header"><p class="eyebrow">${esc(p.tag)}</p><h1>${esc(p.name)}</h1>
+<header class="detail-header"><p class="eyebrow">${esc(p.tag)}</p><h1>${esc(p.name)}<span class="h1-sub"><span class="sr-only">: </span>${esc(subtitle)}</span></h1>
 <p class="entry-kind">${s('detail.category')}: ${s(`category.${p.category}`)} · ${s('detail.kind')}: ${s(`kind.${p.kind}`)}</p>
 <p class="target"><strong>${s('detail.target')}:</strong> ${esc(p.target)}</p>
 <div class="detail-actions">${ext(p.url, t('detail.visit'), 'button primary')}<a class="text-link" href="${categoryHref(p.category)}">${s(`category.${p.category}`)} →</a></div>
@@ -170,6 +184,7 @@ ${blurbs[p.id]?.[locale] ? `<p class="detail-blurb">${esc(blurbs[p.id][locale])}
 <div class="source-links">${ext(p.evidence, t('detail.evidence'))}${p.secondary ? ext(p.secondary, p.secondaryLabel || t('detail.secondary')) : ''}</div>
 </div>
 </section>
+<section class="related" aria-labelledby="related-title"><h2 id="related-title">${s('detail.related')}</h2><ul>${related.map(o => `<li><a href="${detailHref(o.id)}">${esc(o.name)}</a><span>${esc(originalName(o.target))}</span></li>`).join('')}</ul></section>
 </main>` + footer(page);
     await mkdir(`dist${localePath(locale, page)}`, { recursive: true });
     await writeFile(`dist${localePath(locale, page)}index.html`, html);

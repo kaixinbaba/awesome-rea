@@ -56,6 +56,8 @@ body.analytics-open{padding-bottom:160px}.analytics-consent{position:fixed;z-ind
 @media(max-width:620px){.detail-header h1{font-size:36px}.detail-panel{padding:18px}.detail-summary{font-size:15px}}
 
 .detail-blurb{font-size:15px;line-height:1.75;color:var(--muted);margin:0 0 22px;text-wrap:pretty}
+.h1-sub{display:block;margin-top:10px;font-family:var(--sans);font-size:clamp(17px,2vw,20px);font-weight:500;letter-spacing:-.01em;line-height:1.4;color:var(--muted)}
+.related{margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}.related h2{font-size:22px;margin-bottom:14px}.related ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px}.related li{display:flex;flex-direction:column;min-width:0}.related a{font-weight:600;color:var(--accent);overflow-wrap:anywhere}.related li>span{font-size:13px;color:var(--muted);overflow-wrap:anywhere}@media(max-width:620px){.related ul{grid-template-columns:1fr}}
 
 .cover-source-static{background:var(--ink);color:var(--on-ink);border-color:transparent;font-weight:600}
 .detail-cover .cover-source-static{padding:7px 12px;font-size:12px}

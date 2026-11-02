@@ -137,7 +137,7 @@
     "license": "MIT"
   },
   "rea-investigate": {
-    "sourceHash": "69a653e853cd4db15d617c7543883a4369bafaae10c35e994cb5a0a322bae406",
+    "sourceHash": "83f23df069668dd72222d53e76da052b5ce347707f70b2cbed2af16e73a01ef5",
     "name": "REA Investigator",
     "tag": "智能体调查技能",
     "target": "智能体技能 · Python / REA 命令行",
@@ -462,7 +462,7 @@
     "license": "LGPL-2.1-or-later"
   },
   "paper-rs": {
-    "sourceHash": "10aae489592c39135a6232bbb98f8ce1da9a424085d756aa64fee234cb8843fd",
+    "sourceHash": "2d644ddaf6c1384d52adbe501135500282a48f21b6be6afb7f96ba4ccb2ac395",
     "name": "paper-rs",
     "tag": "设计应用重实现",
     "target": "Paper 式无限画布 · Rust / egui / wgpu",
@@ -518,7 +518,7 @@
     "secondaryLabel": "当前路线图与缺失系统"
   },
   "rct3pp": {
-    "sourceHash": "78223fa71028ea3091ecbc99a6186e1059474cd999697a107db7137fa714278f",
+    "sourceHash": "3ad4c234f71d4b0e5af81f97072bdb540cae245c2a21895e75784110ed604d3a",
     "name": "rct3++",
     "tag": "游戏格式与引擎研究",
     "target": "RollerCoaster Tycoon 3 Complete Edition · C++26",
@@ -697,18 +697,6 @@
     "limitation": "需要原版 Carmageddon 数据或免费试用版。匹配进度未完成。README 另有冲突的“公有领域”/非商业表述；LICENSE 文件为 GPL-3.0——本站以 LICENSE 为准。我们仅审阅 README/源码，未测试。",
     "license": "GPL-3.0",
     "licenseNote": "README 另有冲突的“公有领域”/非商业表述；LICENSE 文件为 GPL-3.0。原版 Carmageddon 素材仍属专有。"
-  },
-  "metaforce": {
-    "sourceHash": "c00103b7689a952eff4998a4e534c77ccd6092542bb6b49663b3a514d8b8120c",
-    "name": "Metaforce",
-    "tag": "独立游戏引擎",
-    "target": "密特罗德 究极（Metroid Prime）· C++ / D3D12 / Vulkan / Metal",
-    "summary": "对《密特罗德 究极》引擎的原生逆向重实现，近期基于匹配反编译重写，面向现代图形后端。",
-    "listSummary": "基于匹配反编译的《密特罗德 究极》引擎重实现；当前构建不可用。",
-    "evidenceScope": "上游 README 将 Metaforce 描述为 Metroid Prime 引擎的逆向重实现，并说明基于匹配反编译的重写。主题含 reimplementation 与 reverse-engineering。本站不声称 REA 参与。",
-    "status": "再稳定中；当前构建不可用",
-    "limitation": "README 声明反编译重写后项目再稳定期间构建暂不可用。不重新分发任天堂/Retro 原版素材。平台支持列表相对当前构建状态偏理想化。我们未测试。",
-    "license": "MIT"
   },
   "webamp": {
     "sourceHash": "ef752105c1e3af3613d9a4b75d4964c0ada9e8e291cded36a57103d7303870c9",
@@ -1218,7 +1206,7 @@
     "secondaryLabel": "项目站点 / 安装器 / 浏览器试玩"
   },
   "forza-horizon1-reimagined": {
-    "sourceHash": "3b287b0b1aec051a4dd88eb0a4c48b048c614c2bd239f1894efc3ecedc9a7a3c",
+    "sourceHash": "6536796759071d170f7279a2616c5d6c0e43202cabc6733b71b12ec1d8d98ca2",
     "name": "Forza Horizon 1: ReImagined",
     "tag": "静态重编译移植",
     "target": "《极限竞速：地平线》（Xbox 360，2012）· ReXGlue 静态重编译",
@@ -1330,7 +1318,7 @@
     "secondaryLabel": "多平台发行"
   },
   "horizon": {
-    "sourceHash": "9ef4a152c66db9f01c0d52ac7de326c83eebffc67ed8e35e9843d80e9c5162a1",
+    "sourceHash": "febdef5396e590da1ff0e26e8a3903c457d46d6b63ca05188fce93b369690923",
     "name": "Horizon",
     "tag": "独立游戏重实现",
     "target": "《我的世界：Java 版》26.3 · Rust 原生重写",

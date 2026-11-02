@@ -25,6 +25,7 @@ npm run dev
 | `scripts/i18n.mjs` | 语言注册、完整性／占位符检查与译文过期检测 |
 | `scripts/catalog.mjs` | 分类与数据校验 |
 | `src/project-covers.json`、`scripts/covers.mjs` | 按项目 ID 组织的必填 README/GPT 预览图；校验来源、本地资源、大小与全量覆盖 |
+| `src/project-seo.json`、`scripts/seo.mjs` | 可选的按语言搜索标题（≤60 字符）、描述（≤155）和 H1 副标题，以项目 ID 为键；不放进 `projects.json`，避免触发翻译哈希变化 |
 | `public/covers/` | 优化后的静态 WebP 预览图与 `NOTICE.txt` 中的第三方来源声明 |
 | `scripts/readme.mjs` | 生成和检查两份 README 的目录区块 |
 | `scripts/build.mjs` | 生成页面、站点地图、爬虫规则及安全响应头 |

@@ -1,0 +1,102 @@
+{
+  "forza-horizon1-reimagined": {
+    "en": {
+      "title": "Forza Horizon 1 ReImagined (FH1): Native PC Recomp Status",
+      "description": "Forza Horizon (Xbox 360) recompiled to run natively on PC with the ReXGlue SDK. Windows first, Linux builds, optional Forza Live online. Own copy needed.",
+      "subtitle": "Forza Horizon (Xbox 360, 2012) native PC recompilation"
+    }
+  },
+  "horizon": {
+    "en": {
+      "title": "Horizon: Minecraft Java Edition Rewritten in Rust – Status",
+      "description": "Native Rust rewrite of Minecraft: Java Edition 26.3 that reads vanilla worlds. Singleplayer and LAN/offline play; no Microsoft sign-in or Java mods yet.",
+      "subtitle": "Minecraft: Java Edition 26.3 rewritten in Rust"
+    }
+  },
+  "meitouclient": {
+    "en": {
+      "title": "MeitouClient: Kenshi Engine Reimplementation – Status",
+      "description": "Early playable C#/.NET 10 reimplementation of the Kenshi engine with a Vulkan renderer. Needs Windows 10/11, a Vulkan 1.3 GPU and your own Kenshi copy.",
+      "subtitle": "Kenshi engine reimplementation in C# / Vulkan"
+    }
+  },
+  "openyamm": {
+    "en": {
+      "title": "OpenYAMM: Might and Magic 6–8 Engine – Status & Setup",
+      "description": "Playable C++ reimplementation of Might and Magic VI–VIII with HD art, new menus and cross-game travel. Needs original MM6–8 data; Windows, Linux, Android.",
+      "subtitle": "Might and Magic VI–VIII engine reimplementation"
+    }
+  },
+  "opensmash-ultimate": {
+    "en": {
+      "title": "OpenSmash Ultimate: SSBU PC Recomp – Status & Requirements",
+      "description": "Static recompilation of Super Smash Bros. Ultimate 13.0.4/13.0.5 for Windows x64. Tools and runtime only; you supply your own copy. Online is experimental.",
+      "subtitle": "Super Smash Bros. Ultimate static recompilation for PC"
+    }
+  },
+  "opents": {
+    "en": {
+      "title": "OpenTS: Tiberian Sun Open-Source Engine – Status",
+      "description": "Community open-source reconstruction of the Command & Conquer: Tiberian Sun engine for play and modding. Not an EA remaster; original game assets required.",
+      "subtitle": "Command & Conquer: Tiberian Sun engine reconstruction"
+    }
+  },
+  "re-code-veronica-recomp": {
+    "en": {
+      "title": "Code Veronica Recomp: RE CVX PS3 to PC Port – Status",
+      "description": "Unofficial native Windows port of Resident Evil Code: Veronica X via ps3recomp static recompilation. Needs your own PSN 01.00 copy; launcher included.",
+      "subtitle": "Resident Evil Code: Veronica X (PS3) native Windows port"
+    }
+  },
+  "san-andreas-unity": {
+    "en": {
+      "title": "San Andreas Unity: Open-Source GTA SA Engine – Status",
+      "description": "Open-source GTA San Andreas engine reimplementation in Unity with multiplayer and modding. Not a complete reimplementation; needs a PC GTA SA install.",
+      "subtitle": "GTA San Andreas engine reimplementation in Unity"
+    }
+  },
+  "openreliant": {
+    "en": {
+      "title": "OpenReliant: StarLancer Engine Reimplementation – Status",
+      "description": "Beta open-source StarLancer (2000) engine in Zig with a playable single-player campaign on Linux, macOS and Windows. Requires retail StarLancer assets.",
+      "subtitle": "StarLancer (2000) engine reimplementation"
+    }
+  },
+  "opents2": {
+    "en": {
+      "title": "OpenTS2: Open-Source The Sims 2 Engine – Status",
+      "description": "Early open-source reimplementation of The Sims 2 in Unity with C# file-format libraries. Main menu and neighborhood view so far; needs Sims 2 UC installed.",
+      "subtitle": "The Sims 2 reimplementation in Unity"
+    }
+  },
+  "awesome-ai-reverse": {
+    "en": {
+      "title": "Awesome AI Reverse Engineering: Curated Tool List"
+    }
+  },
+  "awesome-reverse-engineering": {
+    "en": {
+      "title": "Awesome Reverse Engineering: Tools & Learning List"
+    }
+  },
+  "xoreos": {
+    "en": {
+      "title": "xoreos: BioWare Aurora Engine Reimplementation – Status"
+    }
+  },
+  "byroredux": {
+    "en": {
+      "title": "ByroRedux: Rust Engine for Bethesda Game Data – Status"
+    }
+  },
+  "woodyre": {
+    "en": {
+      "title": "WoodyRE: Woody Woodpecker PC Game Engine – Status"
+    }
+  },
+  "tenkaichi3decomp": {
+    "en": {
+      "title": "Tenkaichi3Decomp: Budokai Tenkaichi 3 PC Port – Status"
+    }
+  }
+}

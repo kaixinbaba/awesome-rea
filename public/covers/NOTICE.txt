@@ -119,10 +119,6 @@ openloco
 https://github.com/OpenLoco/OpenLoco/blob/6d7f5b1bfb4abd5ae2f1a2ade628a2b0d46f861e/README.md
 https://user-images.githubusercontent.com/604665/55420349-1a2aea00-5577-11e9-87da-78fe5cdb09e1.png
 
-metaforce
-https://github.com/AxioDL/metaforce/blob/de8fc69bd7f345d6cf5f0c8fc2798295e22522d3/README.md
-https://raw.githubusercontent.com/AxioDL/metaforce/de8fc69bd7f345d6cf5f0c8fc2798295e22522d3/assets/metaforce-screen1.png
-
 opengol
 https://github.com/open-goal/jak-project/blob/fd1976dcc83e48445e05bad05192d87001ddd15e/README.md
 https://raw.githubusercontent.com/open-goal/jak-project/fd1976dcc83e48445e05bad05192d87001ddd15e/docs/img/promosmall1.png

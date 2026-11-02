@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-128 个项目与资源 · 6 个分类
+127 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -32,7 +32,7 @@
 - [ScummVM](<https://github.com/scummvm/scummvm>) — 为受支持的经典冒险与角色扮演游戏提供替代引擎，通常需要原游戏数据。
 - [free-heroes4 (openh4)](<https://github.com/tallowmere/free-heroes4>) — 未完成的英雄无敌 IV 引擎及检查工具，需要原版 GOG 游戏数据。
 - [Rook](<https://github.com/AsyncFinn/rook>) — 早期 Rust Roblox 引擎重实现，支持本地场景与 Luau 脚本；不是 Roblox 服务器客户端。
-- [rct3++](<https://github.com/tomast1337/rct3pp>) — 早期过山车大亨 3 格式工具与查看器，需要原游戏，尚非完整可玩引擎。
+- [rct3++](<https://github.com/tomast1337/RCT3PlusPlus>) — 早期过山车大亨 3 格式工具与查看器，需要原游戏，尚非完整可玩引擎。
 - [OpenRealm](<https://github.com/corepunch/open-realm>) — 面向暴雪时代数据的类 Quake 引擎，以魔兽争霸 III 为主要可玩目标；需要原版 MPQ 资源。
 - [Jazz² Resurrection](<https://github.com/deathkiller/jazz2-native>) — Jazz Jackrabbit 2 的 C++ 重实现，支持广泛平台移植；需要原游戏文件。
 - [Ruffle](<https://github.com/ruffle-rs/ruffle>) — 用 Rust 编写的 Adobe Flash Player 模拟器，支持桌面与网页；ActionScript 支持仍有缺口。
@@ -44,7 +44,6 @@
 - [Daggerfall Unity](<https://github.com/Interkarma/daggerfall-unity>) — 在 Unity 中重现《上古卷轴 II：匕首雨》；需要免费 DOS 版匕首雨素材。
 - [PvZ-Portable](<https://github.com/wszqkzqk/PvZ-Portable>) — 跨平台《植物大战僵尸》GOTY 重实现；需要原版 GOTY 素材。
 - [dethrace](<https://github.com/dethrace-labs/dethrace>) — 借助符号驱动逆向重建《Carmageddon》（1997）引擎；需要原游戏数据。
-- [Metaforce](<https://github.com/AxioDL/metaforce>) — 基于匹配反编译的《密特罗德 究极》引擎重实现；当前构建不可用。
 - [OpenLara](<https://github.com/XProger/OpenLara>) — 经典《古墓丽影》开源引擎；需要原游戏数据。
 - [OpenGOAL](<https://github.com/open-goal/jak-project>) — 《杰克与达克斯特》GOAL 反编译与原生 x86-64 PC 移植；需要 PS2 零售盘。
 - [SiegeFX](<https://github.com/codingncaffeine/SiegeFX>) — C#/.NET 洁净室重实现《地下城围攻》（2002）；需要原版 .dsres 数据。
@@ -81,7 +80,7 @@
 - [khdays-decomp](<https://github.com/Yokimitsuro/khdays-decomp>) — 匹配的《王国之心 358/2 Days》（DS）反编译；接近完成；需自备 ROM。
 - [Shiloh](<https://github.com/Asterber/shiloh>) — 用 Rust/SDL2/WASM 运行 1998《X 档案》游戏；独立重写；需玩家自备副本。
 - [Nanolathe](<https://github.com/nanolathe-gg/nanolathe>) — 净室重实现的《横扫千军》向 2.5D RTS 引擎（Go）；需原版 TA 文件；含多人与浏览器试玩。
-- [Forza Horizon 1: ReImagined](<https://github.com/Dyotson/ForzaHorizon1-ReImagined>) — 经 ReXGlue 将 Xbox 360《地平线 1》静态重编译为原生 Windows/Linux；自备游戏包；仓内不含游戏代码。
+- [Forza Horizon 1: ReImagined](<https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined>) — 经 ReXGlue 将 Xbox 360《地平线 1》静态重编译为原生 Windows/Linux；自备游戏包；仓内不含游戏代码。
 - [impacto](<https://github.com/CommitteeOfZero/impacto>) — 开源 MAGES. 视觉小说引擎重实现（C++/OpenGL）；需原版游戏数据；跨平台进行中。
 - [Knuckles' Chaotix Recompiled](<https://github.com/YuutaTsubasa/ChaotixRecompiled>) — 世嘉 32X《Chaotix》静态重编译为原生 C++/SDL3；自备 ROM；非模拟器。
 - [Chupathingy](<https://github.com/ChupathingyCE/chupathingyce>) — 《光环：战斗进化》反编译的原生多端移植；自备 Xbox/PC/CE 地图；兼容 OpenCE 在线。
@@ -89,7 +88,7 @@
 - [Dune Dynasty](<https://github.com/gameflorist/dunedynasty>) — 基于 OpenDUNE 逆向引擎的《沙丘 II》重制；宽屏/HiDPI、类 C&C 操作、遭遇战/多人；需自备数据。
 - [OpenSHC](<https://github.com/sourcehold/OpenSHC>) — 以钩子 DLL 逐步开源重实现《要塞：十字军》1.41，目标功能等价；需自备 Latin 1.41。
 - [WoodyRE](<https://github.com/jjmhalew/WoodyRE>) — 逆向重实现 2001 年《啄木鸟伍迪大逃亡》引擎；需自备 CD/ISO；Windows/Linux/Android/Switch。
-- [Horizon](<https://github.com/ludovic111/horizon>) — 非官方《我的世界》Java 26.3 的 Rust 重写，含差分 harness；经启动器自备原版；不含 Mojang 代码。
+- [Horizon](<https://github.com/horizon-rust/horizon>) — 非官方《我的世界》Java 26.3 的 Rust 重写，含差分 harness；经启动器自备原版；不含 Mojang 代码。
 - [Silent Hill PC Port](<https://github.com/SlickAmogus/silent-hill-decomp>) — 基于 PSX 反编译与 PsyCross 的《寂静岭》原生 Windows/Linux 移植；战役可通关；自备光盘；非模拟器/非静态重编译。
 - [sotn-decomp](<https://github.com/Xeeynamo/sotn-decomp>) — 《月下夜想曲》PS1/PSP（DXC 欧版）/Saturn 匹配反编译；可字节级重建；自备 dump。非独立可玩 remake。
 - [GoldenEye 007 PC Port](<https://github.com/jkdansereau/goldeneye-pc-port>) — 基于 n64decomp/007 的《黄金眼 007》原生 PC 移植；宽屏/约 60fps/分屏；自备 NTSC-U ROM；非模拟器/非二进制重编译。
@@ -130,7 +129,7 @@
 - [CADCraft](<https://github.com/storytold/cadcraft>) — 测试前期的 Rust CAD 绘图应用，面向 AutoCAD 式流程；保存可能丢失不支持的图元。
 - [GridCraft](<https://github.com/storytold/gridcraft>) — 测试版 Rust 电子表格应用，面向 Excel 式表格、公式和图表工作流程。
 - [Wine](<https://github.com/wine-mirror/wine>) — 面向类 Unix 系统的 Windows API 兼容层，应用兼容性各异。
-- [paper-rs](<https://github.com/michaelshimeles/paper-rs>) — 原生 Rust 的 Paper 式画布应用，记录了 REA 研究过程；渲染和平台支持仍有缺口。
+- [paper-rs](<https://github.com/michaelshimeles/sketch>) — 原生 Rust 的 Paper 式画布应用，记录了 REA 研究过程；渲染和平台支持仍有缺口。
 - [open-claude-ui](<https://github.com/Caho1/open-claude-ui>) — 高保真 Claude 桌面 UI 的 React 重实现；作者记录了 REA 辅助分析。
 - [ReaCut（映刻）](<https://github.com/Xiangyu-CAS/rea-capcut>) — 面向剪映／CapCut 的独立视频编辑器；作者记录了用 REA 研究界面与项目格式。
 
@@ -145,7 +144,7 @@
 ### REA 插件、集成与安装分发
 
 - [dsh-mcp-rea](<https://github.com/Ersith/dsh-mcp-rea>) — 社区 MCP 桥接工具，提供精简的 REA 工具集合。
-- [REA Investigator](<https://github.com/Devaretanmay/rea-investigate>) — 用于规划、追踪、验证和报告 REA 调查的智能体技能。
+- [REA Investigator](<https://github.com/Devaretanmay/fox>) — 用于规划、追踪、验证和报告 REA 调查的智能体技能。
 - [rea-jev](<https://github.com/juan-viox/rea-jev>) — 带 Jev 证据检查的 REA 插件；会调用外部模型，钩子失败时放行。
 - [rea-agents Homebrew 安装配方](<https://github.com/moonfruit/homebrew-tap/blob/main/Formula/rea-agents.rb>) — 上游 rea-agents 软件包的社区 Homebrew 安装配方。
 

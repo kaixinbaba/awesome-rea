@@ -25,6 +25,7 @@ Preview at `http://127.0.0.1:4387`. Build output is in `dist/`; it is not commit
 | `scripts/i18n.mjs` | Locale registry, strict coverage / placeholder checks and translation freshness hashes |
 | `scripts/catalog.mjs` | Taxonomy and data validation |
 | `src/project-covers.json`, `scripts/covers.mjs` | Required reviewed README/GPT previews keyed by project ID; provenance, local asset, size and full-coverage checks |
+| `src/project-seo.json`, `scripts/seo.mjs` | Optional per-locale search title (≤60 chars), description (≤155) and H1 subtitle keyed by project ID; kept out of `projects.json` so translation hashes do not change |
 | `public/covers/` | Optimized static WebP previews and third-party attribution in `NOTICE.txt` |
 | `scripts/readme.mjs` | Generate/check both README catalog blocks |
 | `scripts/build.mjs` | Generate HTML, sitemap, robots and security headers |
