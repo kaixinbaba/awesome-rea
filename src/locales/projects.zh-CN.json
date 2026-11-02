@@ -1759,7 +1759,7 @@
     "listSummary": "《风之杖 HD》（Wii U）静态重编译，原生 macOS、Windows、Linux 与 Android，可完整通关；需自备拷贝。",
     "evidenceScope": "上游 README 写明针对美版或欧版 Wii U 游戏的静态重编译，重新实现了 Cafe OS 库并使用 Metal/Vulkan 图形，称四个平台均可从头玩到尾，并说明仓库和发布包不含任何游戏代码、素材或密钥。本站不声称 REA 参与。",
     "status": "活跃（v0.5.0）；可完整通关",
-    "limitation": "需自备合法获得的美版或欧版 Wii U 拷贝；所有游戏相关内容都在本机生成。真 60 fps 为实验性；几何着色器和矩形图元尚未实现；macOS 版不支持手柄震动。我们未独立测试。",
+    "limitation": "需自备合法获得的美版或欧版 Wii U 拷贝；所有游戏相关内容都在本机生成。真 60 fps 为实验性；几何着色器和矩形基元尚未实现；macOS 版不支持手柄震动。我们未独立测试。",
     "license": "MPL-2.0",
     "licenseNote": "MPL-2.0 覆盖项目自有的运行时和工具，不覆盖任天堂游戏代码或素材；第三方组件保留各自许可。与任天堂无关联。",
     "secondaryLabel": "发行页"
