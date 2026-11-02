@@ -319,3 +319,23 @@ Editorial 16:9 cover for an open-source native PC port of an early-2000s PlaySta
 saga
 generated · model=gpt-image-2 · no upstream image
 Editorial 16:9 cover for an open-source matching decompilation of a mid-2000s brick-built space-adventure compilation (…
+
+las-recomp
+https://github.com/peiikai/LASRecomp/blob/a6b4f03844ecfb4012f18deff96da8b410aeafcd/README.md
+https://raw.githubusercontent.com/peiikai/LASRecomp/a6b4f03844ecfb4012f18deff96da8b410aeafcd/docs/start_screen.jpg
+
+ps2-web-recomp
+https://github.com/snuri00/ps2-web-recomp/blob/e026b971324068773eed88bf502437de9e581b6b/README.md
+https://raw.githubusercontent.com/snuri00/ps2-web-recomp/e026b971324068773eed88bf502437de9e581b6b/docs/media/demo.webp
+
+totk-recomp
+generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
+Abstract sky-island mood: blurred plasma of pale blue and soft green with light flowing curves; no text, no logos, no game artwork; 16:9.
+
+savage-wind-recomp
+generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
+Abstract wind mood: swirled plasma of teal and warm amber with light flowing curves; no text, no logos, no game artwork; 16:9.
+
+gta-vcs-recomp
+generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
+Abstract neon sunset mood: blurred plasma of hot pink, cyan and deep purple with light flowing curves; no text, no logos, no game artwork; 16:9.

@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-127 个项目与资源 · 6 个分类
+132 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -113,6 +113,11 @@
 - [oracles-decomp](<https://github.com/kirby-letsgo/oracles-decomp>) — 《塞尔达传说：不可思议的树果》原生多端移植（无模拟器）；自备美欧 ROM。
 - [Downhill Revived](<https://github.com/skuza-oss/downhill-revived>) — 《Downhill Domination》PS2 匹配反编译原生 Win PC 移植；Mac/Linux 实验性；自备美版光盘。
 - [saga](<https://github.com/opensagadev/saga>) — 《乐高星球大战：完整传奇》Android x86 匹配反编译；拟作 saga64 基础；自备游戏文件。
+- [TotK Recomp](<https://github.com/valentderah/totk-pc-recomp>) — 《塞尔达传说 王国之泪》早期静态重编译，原生 Windows/Linux x86-64；用你自己合法获得的拷贝在本机构建。
+- [Savage Wind Recomp](<https://github.com/Revivedx/SavageWindRecomp>) — 《塞尔达传说 旷野之息》1.9.0 的 Alpha 版静态重编译，原生 Windows/Linux，基于 LAS Recomp；需自备合法拷贝。
+- [LAS Recomp](<https://github.com/peiikai/LASRecomp>) — 《塞尔达传说 织梦岛》（Switch）Beta 版静态重编译，原生 Windows、Apple Silicon macOS 与 Linux，含随机化模式；需自备拷贝。
+- [GTA VCS Recomp](<https://github.com/gothamor/gta-vcs-recomp>) — 《侠盗猎车手：罪恶都市传奇》（PS2 美版）开发中的原生 Windows/Linux 静态重编译移植；用你自己的 ISO 构建。
+- [PS2 Web Recomp](<https://github.com/snuri00/ps2-web-recomp>) — 把 PS2 Emotion Engine 代码静态重编译为 WebAssembly，配合 WebGPU 运行时；《GT 赛车 4》与《战神 II》可在浏览器运行。
 
 ### 桌面与效率应用
 

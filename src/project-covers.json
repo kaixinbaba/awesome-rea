@@ -1142,5 +1142,51 @@
     "model": "gpt-image-2",
     "generatedAt": "2026-10-31T02:52:45.092Z",
     "checked": "2026-10-31"
+  },
+  "totk-recomp": {
+    "sourceType": "generated",
+    "src": "/covers/totk-recomp-10ec9d7bd4f7.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Abstract sky-island mood: blurred plasma of pale blue and soft green with light flowing curves; no text, no logos, no game artwork; 16:9.",
+    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
+    "generatedAt": "2026-11-02T04:10:00.000Z",
+    "checked": "2026-11-02"
+  },
+  "savage-wind-recomp": {
+    "sourceType": "generated",
+    "src": "/covers/savage-wind-recomp-c3690e2ce80e.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Abstract wind mood: swirled plasma of teal and warm amber with light flowing curves; no text, no logos, no game artwork; 16:9.",
+    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
+    "generatedAt": "2026-11-02T04:10:00.000Z",
+    "checked": "2026-11-02"
+  },
+  "gta-vcs-recomp": {
+    "sourceType": "generated",
+    "src": "/covers/gta-vcs-recomp-fc4e9a4c612b.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Abstract neon sunset mood: blurred plasma of hot pink, cyan and deep purple with light flowing curves; no text, no logos, no game artwork; 16:9.",
+    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
+    "generatedAt": "2026-11-02T04:10:00.000Z",
+    "checked": "2026-11-02"
+  },
+  "las-recomp": {
+    "src": "/covers/las-recomp-ed9b906fa9e6.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/peiikai/LASRecomp/a6b4f03844ecfb4012f18deff96da8b410aeafcd/docs/start_screen.jpg",
+    "readme": "https://github.com/peiikai/LASRecomp/blob/a6b4f03844ecfb4012f18deff96da8b410aeafcd/README.md",
+    "checked": "2026-11-02"
+  },
+  "ps2-web-recomp": {
+    "src": "/covers/ps2-web-recomp-e82c62cb4525.webp",
+    "width": 720,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/snuri00/ps2-web-recomp/e026b971324068773eed88bf502437de9e581b6b/docs/media/demo.webp",
+    "readme": "https://github.com/snuri00/ps2-web-recomp/blob/e026b971324068773eed88bf502437de9e581b6b/README.md",
+    "checked": "2026-11-02"
   }
 }

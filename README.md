@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-127 projects & resources · 6 categories
+132 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -113,6 +113,11 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [oracles-decomp](<https://github.com/kirby-letsgo/oracles-decomp>) — Native macOS/Windows/Linux/Android ports of Zelda Oracle Ages & Seasons from game C; no emulator; BYO ROM.
 - [Downhill Revived](<https://github.com/skuza-oss/downhill-revived>) — Native 64-bit Windows PC port of Downhill Domination PS2 on matching decomp; Mac/Linux experimental; BYO USA disc.
 - [saga](<https://github.com/opensagadev/saga>) — Matching decomp of LEGO Star Wars: The Complete Saga Android x86; foundation for planned saga64; BYO game files.
+- [TotK Recomp](<https://github.com/valentderah/totk-pc-recomp>) — Early static recompilation of Tears of the Kingdom to native Windows/Linux x86-64; built locally from your own legally obtained copy.
+- [Savage Wind Recomp](<https://github.com/Revivedx/SavageWindRecomp>) — Alpha static recompilation of Breath of the Wild 1.9.0 to native Windows/Linux, built on LAS Recomp; own legally obtained copy required.
+- [LAS Recomp](<https://github.com/peiikai/LASRecomp>) — Beta static recompilation of Link's Awakening (Switch) to native Windows, Apple Silicon macOS and Linux, with randomizer; own copy required.
+- [GTA VCS Recomp](<https://github.com/gothamor/gta-vcs-recomp>) — In-development native Windows/Linux port of GTA: Vice City Stories (PS2 USA) via static recompilation; built from your own ISO.
+- [PS2 Web Recomp](<https://github.com/snuri00/ps2-web-recomp>) — Static recompilation of PS2 Emotion Engine code to WebAssembly with a WebGPU runtime; Gran Turismo 4 and God of War II run in the browser.
 
 ### Desktop & productivity apps
 

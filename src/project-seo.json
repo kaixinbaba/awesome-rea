@@ -98,5 +98,39 @@
     "en": {
       "title": "Tenkaichi3Decomp: Budokai Tenkaichi 3 PC Port – Status"
     }
+  },
+  "totk-recomp": {
+    "en": {
+      "title": "TotK Recomp: Tears of the Kingdom PC Port – Status",
+      "description": "Early static recompilation of Zelda: Tears of the Kingdom to native Windows and Linux. Built locally from your own legally obtained copy; crashes expected.",
+      "subtitle": "Tears of the Kingdom static recompilation for Windows and Linux"
+    }
+  },
+  "savage-wind-recomp": {
+    "en": {
+      "title": "Savage Wind Recomp: Breath of the Wild PC Port – Status",
+      "description": "Alpha static recompilation of Zelda: Breath of the Wild 1.9.0 to native Windows and Linux. Opening area playable; needs your own copy and a Vulkan 1.3 GPU.",
+      "subtitle": "Breath of the Wild static recompilation for Windows and Linux"
+    }
+  },
+  "las-recomp": {
+    "en": {
+      "title": "LAS Recomp: Link's Awakening PC Port – Status",
+      "description": "Beta static recompilation of Zelda: Link's Awakening (Switch) to native Windows, Apple Silicon Mac and Linux, with a randomizer. Needs your own copy.",
+      "subtitle": "Link's Awakening static recompilation for PC and Mac"
+    }
+  },
+  "gta-vcs-recomp": {
+    "en": {
+      "title": "GTA VCS Recomp: Vice City Stories PC Port – Status",
+      "description": "In-development native Windows and Linux port of GTA: Vice City Stories (PS2 USA) via static recompilation. Built locally from your own ISO.",
+      "subtitle": "GTA: Vice City Stories (PS2) native PC port"
+    }
+  },
+  "ps2-web-recomp": {
+    "en": {
+      "title": "PS2 Web Recomp: PS2 Games in the Browser – Status",
+      "subtitle": "PlayStation 2 static recompilation to WebAssembly"
+    }
   }
 }
