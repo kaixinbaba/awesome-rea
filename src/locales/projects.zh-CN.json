@@ -89,7 +89,7 @@
     "license": "MIT（分析内容）+ BSD 声明"
   },
   "aegis": {
-    "sourceHash": "6e0db6bd03987e996d41cac7e7bbcb0a94835d2def7d572a630faf2e7c237289",
+    "sourceHash": "3bedb3654e440074d6d41e94c19f0cf0f7e68bd6898e11996d8368314634131c",
     "name": "Aegis 身份验证器分析",
     "tag": "Android 分析案例",
     "target": "Aegis Authenticator · Android APK",
@@ -97,7 +97,7 @@
     "listSummary": "通过 REA 跟踪现有 Aegis Android 应用中验证码生成逻辑的案例。",
     "evidenceScope": "REA 官方案例追踪了 Aegis 发布版 APK 的验证码生成方法。这是在解释一个既有开源应用。",
     "status": "仅分析案例",
-    "limitation": "不是新的身份验证器、凭据恢复工具或账号绕过手段。该研究没有声称能恢复他人的登录验证码。",
+    "limitation": "不是新的身份验证器或凭据恢复工具，也不演示如何访问他人账号。该研究没有声称能恢复他人的登录验证码。",
     "license": "无独立代码许可"
   },
   "ctf": {
@@ -1347,7 +1347,7 @@
     "secondaryLabel": "项目站点"
   },
   "sotn-decomp": {
-    "sourceHash": "ab2084f732058c3b69319269ff58490087d82066796e9b183ceac7b86c9a93c7",
+    "sourceHash": "1bb87c7d812ed70f4612bdd88e7e76ad37fade159938e648d5cc60d733f86400",
     "name": "sotn-decomp",
     "tag": "匹配反编译",
     "target": "《恶魔城：月下夜想曲》· PS1/PSP/Saturn 匹配反编译",
@@ -1355,13 +1355,13 @@
     "listSummary": "《月下夜想曲》PS1/PSP（DXC 欧版）/Saturn 匹配反编译；可字节级重建；自备 dump。非独立可玩 remake。",
     "evidenceScope": "上游 README 写明这是进行中的匹配反编译，编译结果与原版二进制字节一致，覆盖 PS1/PSP/Saturn，且编译所需素材或汇编未随仓提供。本站不声称 REA 参与。",
     "status": "积极维护的匹配反编译（多版本 WIP）",
-    "limitation": "不是成品独立 remake；构建需自备游戏 dump。多版本仍为 WIP。我们未独立测试。",
+    "limitation": "不是成品独立 remake；构建需自备合法获得的游戏拷贝。多版本仍为 WIP。我们未独立测试。",
     "license": "AGPL-3.0",
     "licenseNote": "编译二进制所需的素材或汇编未包含；需自备游戏副本。非官方粉丝研究项目。",
     "secondaryLabel": "进度报告"
   },
   "goldeneye-pc-port": {
-    "sourceHash": "dab64b3c43208d07c5f1f3112ed8f9f935973100337ea9a0aa9e4b948ee4ffc3",
+    "sourceHash": "3400a75e06946fb2cccd13512e0c6fbd8726544173049d0f7b9e93f9dfa30ccd",
     "name": "GoldenEye 007 PC Port",
     "tag": "原生反编译移植",
     "target": "《黄金眼 007》（N64，1997）反编译 · 原生 PC 移植 · C",
@@ -1369,13 +1369,13 @@
     "listSummary": "基于 n64decomp/007 的《黄金眼 007》原生 PC 移植；宽屏/约 60fps/分屏；自备 NTSC-U ROM；非模拟器/非二进制重编译。",
     "evidenceScope": "上游 README 写明这是由《黄金眼 007》反编译重建而来的原生 PC 游戏，不是模拟器也不是二进制重编译，且不附带任天堂代码/素材/ROM。本站不声称 REA 参与。",
     "status": "Pre-1.0（v0.5.0）；战役与分屏可端到端游玩",
-    "limitation": "发行包目前仅 NTSC-U ROM；PAL/日版与 macOS 仍缺。预期偶发破坏性变更。已披露 AI 辅助开发。我们未独立测试。",
+    "limitation": "发行包目前仅支持 NTSC-U 版本；PAL/日版与 macOS 仍缺。预期偶发破坏性变更。已披露 AI 辅助开发。我们未独立测试。",
     "license": "MIT",
-    "licenseNote": "移植层为 MIT；继承的反编译内容见 NOTICE。不含任天堂代码/素材/ROM；用户自备《黄金眼 007》ROM。非官方；已披露 AI 辅助开发。",
+    "licenseNote": "移植层为 MIT；继承的反编译内容见 NOTICE。不含任天堂代码、素材或 ROM；需自备合法获得的《黄金眼 007》拷贝。非官方；已披露 AI 辅助开发。",
     "secondaryLabel": "上游匹配反编译"
   },
   "opensmash-ultimate": {
-    "sourceHash": "486ad8371792da610217f5dc9aaeaa17e74e8707ed29af6a3b9871778caaf845",
+    "sourceHash": "52d3cf01ab92926f34b141abea16dfe6e959ff2732a972d09fa3424aa0881912",
     "name": "OpenSmash-Ultimate",
     "tag": "静态重编译移植",
     "target": "《任天堂明星大乱斗 特别版》13.0.4/13.0.5 · 静态重编译 · Windows x64",
@@ -1383,13 +1383,13 @@
     "listSummary": "SSBU 静态重编译至原生 Windows x64（Vulkan 运行时）；仅工具/运行时；自备 dump+密钥；产品名 OpenSmash-Ultimate。",
     "evidenceScope": "上游 README 写明以静态重编译（非模拟）将《任天堂明星大乱斗 特别版》变为原生 PC 程序，仓内不含游戏代码/素材/密钥/固件。本站不声称 REA 参与。仓库现为 OpenSmash-Ultimate/ssbu-recomp（自 Denkishi/ssbu-recomp 迁移）。",
     "status": "活跃的 Windows 向原生重编译；联机/回滚推进中",
-    "limitation": "以 Windows 10/11 x64 为主；可玩性取决于用户 dump 与安装流程。联机/回滚仍实验/推进中。实体手柄尚未广泛确认。我们未独立测试。",
+    "limitation": "以 Windows 10/11 x64 为主；可玩性取决于用户自有拷贝与安装流程。联机/回滚仍实验/推进中。实体手柄尚未广泛确认。我们未独立测试。",
     "license": "GPL-3.0",
-    "licenseNote": "不重新分发游戏数据；需合法取得的 SSBU dump 与密钥。非官方；已披露 AI 主导开发。与任天堂无关。",
+    "licenseNote": "不重新分发游戏数据、密钥或固件；需自备合法获得的游戏拷贝。非官方；已披露 AI 主导开发。与任天堂无关。",
     "secondaryLabel": "项目站点"
   },
   "kartpad": {
-    "sourceHash": "979bbe5e0ae5c0d937e228a738fab3eb5475bea73d130563d631ed1cb2a23a59",
+    "sourceHash": "050628a0d4ca66724a2ac3f718060e4da82fded5476cd8d653025397bdbfc757",
     "name": "KartPad",
     "tag": "静态重编译移植",
     "target": "《马里奥赛车 Wii》· 静态重编译 · Android / Apple",
@@ -1399,7 +1399,7 @@
     "status": "活跃；Android APK 见 Releases；Apple 经 PadMint 本地构建",
     "limitation": "仅支持 PAL RMCP01 rev 0；tvOS 实验性。设备相关 GPU 问题仍开放。我们未独立测试。",
     "license": "GPL-3.0",
-    "licenseNote": "需自备合法取得的 PAL RMCP01 revision 0《马里奥赛车 Wii》镜像；不重新分发碟片/赛道/贴图/密钥。非官方；已披露大量 AI 协助。与任天堂无关。",
+    "licenseNote": "需自备合法获得的《马里奥赛车 Wii》光盘（PAL RMCP01 revision 0）；不重新分发光盘镜像、赛道、贴图或密钥。非官方；已披露大量 AI 协助。与任天堂无关。",
     "secondaryLabel": "上游 WiiCompiled 基础"
   },
   "opencrystalcaves": {
@@ -1626,7 +1626,7 @@
     "secondaryLabel": "decomp.dev 进度"
   },
   "lain-psx-decompiled": {
-    "sourceHash": "a00d0d374952e336b9e6299ac377edd2b5ffe12745d435457333377ca7c49544",
+    "sourceHash": "85ca15d29dfa6e1a8412c7f5049becab02edcf67c440c4a45dd32e6fea6e97dd",
     "name": "lain-psx-decompiled",
     "tag": "原生反编译移植",
     "target": "《玲音》（PSX）· 匹配反编译 + 原生客户端 · C",
@@ -1634,9 +1634,9 @@
     "listSummary": "《玲音》PSX 匹配反编译（321/321）加 Win/macOS/Linux 原生客户端；自备双碟转储。",
     "evidenceScope": "上游 README 写明可重建字节级一致零售 EXE 的 C 反编译，以及基于重实现 PlayStation SDK、无模拟器的原生客户端；需自备双碟 Redump 转储。本站不声称 REA 参与。",
     "status": "按 README 反编译已完成；提供 Windows/macOS/Linux 原生客户端",
-    "limitation": "构建未签名；需自备双碟 Redump 转储。60 fps 插值、模组、字幕等为作者文档所述。我们未独立测试。",
+    "limitation": "构建未签名；需自备合法获得的双碟拷贝（经 Redump 校验）。60 fps 插值、模组、字幕等为作者文档所述。我们未独立测试。",
     "license": "MIT",
-    "licenseNote": "不重新分发 Pioneer LDC / 权利方资源——需自行转储 SLPS-01603/01604。粉丝字幕可选、未捆绑。非官方。",
+    "licenseNote": "不重新分发 Pioneer LDC / 权利方资源；需自备合法获得的 SLPS-01603/01604 拷贝。粉丝字幕可选、未捆绑。非官方。",
     "secondaryLabel": "发行包"
   },
   "oracles-decomp": {
@@ -1696,7 +1696,7 @@
     "secondaryLabel": "发行页"
   },
   "savage-wind-recomp": {
-    "sourceHash": "64e47fb0f6ab785d98c04e79da9550e46479199426edc82d5c37a5475a43490d",
+    "sourceHash": "709726b84aba5a32790fe4be1f14d4d19f6791d4a240e01f0ec72b356166fc81",
     "name": "Savage Wind Recomp",
     "tag": "静态重编译",
     "target": "《塞尔达传说 旷野之息》1.9.0（Switch）· 静态重编译 · Windows / Linux",
@@ -1704,13 +1704,13 @@
     "listSummary": "《塞尔达传说 旷野之息》1.9.0 的 Alpha 版静态重编译，原生 Windows/Linux，基于 LAS Recomp；需自备合法拷贝。",
     "evidenceScope": "上游 README 介绍基于 LAS Recomp 的《旷野之息》1.9.0 静态重编译，声明不提供游戏文件、密钥、固件或提取工具，重编译在本机进行；并说明几乎全部代码由 AI（Claude Code）在人工指导下编写。本站不声称 REA 参与。",
     "status": "Alpha 4（0.4.1）；初始台地与第一个神兽据报可玩",
-    "limitation": "主线后续尚未确认，可能出现错误与崩溃。需游戏版本 1.9.0（不支持 1.8.2）、支持 Vulkan 1.3 的显卡与 16 GB 内存；Linux ARM 版高度实验性。我们未独立测试。",
+    "limitation": "主线后续尚未确认，可能出现错误与崩溃。需自备合法获得、已更新到 1.9.0 的拷贝（不支持 1.8.2）、支持 Vulkan 1.3 的显卡与 16 GB 内存；Linux ARM 版高度实验性。我们未独立测试。",
     "license": "MIT",
     "licenseNote": "MIT 覆盖 Savage Wind 与 LAS Recomp 的自有代码，不覆盖《旷野之息》、由用户拷贝生成的代码或 third_party/ 组件。与任天堂无关联。",
     "secondaryLabel": "发行页"
   },
   "las-recomp": {
-    "sourceHash": "6f0719208cef9630e608bf75ac71d93243b52dfc668b60e0b6a24ee3eb6f9961",
+    "sourceHash": "9abcf8572d762d9392666e129e1ad63210d5e7d66291ac3914b034d47938f10c",
     "name": "LAS Recomp",
     "tag": "静态重编译",
     "target": "《塞尔达传说 织梦岛》（Switch，2019）· 静态重编译 · Windows / macOS / Linux",
@@ -1718,7 +1718,7 @@
     "listSummary": "《塞尔达传说 织梦岛》（Switch）Beta 版静态重编译，原生 Windows、Apple Silicon macOS 与 Linux，含随机化模式；需自备拷贝。",
     "evidenceScope": "上游 README 写明面向游戏版本 1.0.0、1.0.1 与 1.1.0 的《织梦岛》原生静态重编译，不含任何游戏文件、素材或字体，首次启动时在本机完成重编译；并说明几乎全部代码由 AI（Claude Code）编写。本站不声称 REA 参与。",
     "status": "Beta；提供 Windows、macOS（Apple Silicon）与 Linux 版本",
-    "limitation": "可能有错误与崩溃；部分随机化种子可能无解，宽屏比例下仍有画面问题。Windows/Linux 需支持 AVX2/FMA 的 CPU 与 Vulkan 1.3 显卡；不支持 Intel Mac；Linux ARM 为实验性。我们未独立测试。",
+    "limitation": "需自备合法获得的拷贝（v1.0.0、1.0.1 或 1.1.0）。可能有错误与崩溃；部分随机化种子可能无解，宽屏比例下仍有画面问题。Windows/Linux 需支持 AVX2/FMA 的 CPU 与 Vulkan 1.3 显卡；不支持 Intel Mac；Linux ARM 为实验性。我们未独立测试。",
     "license": "MIT",
     "licenseNote": "MIT 覆盖 LAS Recomp 自有代码，不覆盖《织梦岛》或其他任天堂资产，也不覆盖 third_party/ 组件。与任天堂无关联。",
     "secondaryLabel": "发行页"

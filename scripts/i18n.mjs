@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
-import { categories, kinds, relationships } from './catalog.mjs';
+import { categories, kinds, relationships, assertPolicySafe } from './catalog.mjs';
 
 export const locales = {
   en: { lang: 'en', prefix: '/', label: 'English', readme: 'README.md', og: 'og.png', ogLocale: 'en_US' },
@@ -36,6 +36,7 @@ export function validateTranslations(projects, translations, locale = 'zh-CN') {
     for (const key of fields) {
       assert(typeof translated[key] === 'string' && translated[key].trim(), `${p.id}: missing translated ${key}`);
       assert(!/[<>\u0000-\u001f\u007f]/u.test(translated[key]), `${p.id}: markup/control character in ${key}`);
+      assertPolicySafe(`${p.id}.${key} (${locale})`, translated[key]);
     }
     if (locale === 'zh-CN') for (const key of ['tag', 'summary', 'listSummary', 'evidenceScope', 'status', 'limitation', 'licenseNote', 'secondaryLabel'].filter(k => fields.includes(k))) {
       assert(/\p{Script=Han}/u.test(translated[key]), `${p.id}: ${key} must contain Chinese, not an English fallback`);

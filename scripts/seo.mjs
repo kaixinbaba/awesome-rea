@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { locales } from './i18n.mjs';
+import { assertPolicySafe } from './catalog.mjs';
 
 export const titleLimit = 60;
 export const descriptionLimit = 155;
@@ -18,6 +19,7 @@ export function validateSeo(seo, projects) {
       for (const key of Object.keys(entry)) {
         assert(typeof entry[key] === 'string' && entry[key].trim(), `${id}/${locale}: empty ${key}`);
         assert(!/[<>\u0000-\u001f\u007f]/u.test(entry[key]), `${id}/${locale}: markup/control character in ${key}`);
+        assertPolicySafe(`${id}/${locale}.${key}`, entry[key]);
       }
       if (entry.title) assert(entry.title.length <= titleLimit, `${id}/${locale}: title exceeds ${titleLimit} characters`);
       if (entry.description) assert(entry.description.length <= descriptionLimit, `${id}/${locale}: description exceeds ${descriptionLimit} characters`);

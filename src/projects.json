@@ -169,7 +169,7 @@
     "relationship": "REA maintainer case study",
     "evidenceScope": "The official REA showcase traces code-generation methods in an Aegis release APK. It is an explanation of an existing open-source application.",
     "status": "Analysis only",
-    "limitation": "Not a new authenticator, credential-recovery tool or account bypass. The study does not claim to recover another person's login codes.",
+    "limitation": "Not a new authenticator or credential-recovery tool, and it does not show how to access other people's accounts. The study does not claim to recover another person's login codes.",
     "license": "No standalone code license",
     "licenseUrl": null,
     "url": "https://rea.tools/showcase/aegis/",
@@ -2333,7 +2333,7 @@
     "licenseUrl": "https://github.com/Xeeynamo/sotn-decomp/blob/625075774c5802e35097731b16d4fc90f8fff2f3/LICENSE",
     "licenseNote": "No assets or assembly required to compile the binaries are included; a prior copy of the game is required. Unofficial fan research project.",
     "status": "Actively maintained matching decomp (WIP across versions)",
-    "limitation": "Not a finished standalone remake; requires own game dump for builds. Multi-version WIP. We have not independently tested it.",
+    "limitation": "Not a finished standalone remake; builds require your own legally obtained copy of the game. Multi-version WIP. We have not independently tested it.",
     "checked": "2026-10-25"
   },
   {
@@ -2355,9 +2355,9 @@
     "secondaryLabel": "Upstream matching decomp",
     "license": "MIT",
     "licenseUrl": "https://github.com/jkdansereau/goldeneye-pc-port/blob/fda76b69837e6c5aae436e0d3e798989e49b06d2/LICENSE",
-    "licenseNote": "Port layer MIT; inherited decomp contents covered by NOTICE. No Nintendo code/assets/ROM shipped; users supply their own GoldenEye 007 ROM. Unofficial; AI-assisted development disclosed.",
+    "licenseNote": "Port layer MIT; inherited decomp contents covered by NOTICE. No Nintendo code, assets or ROM shipped; requires your own legally obtained copy of GoldenEye 007. Unofficial; AI-assisted development disclosed.",
     "status": "Pre-1.0 (v0.5.0); campaign and split-screen playable end-to-end",
-    "limitation": "NTSC-U ROM only in release packages; PAL/JP and macOS still missing. Occasional breaking changes expected. AI-assisted development disclosed. We have not independently tested it.",
+    "limitation": "Release packages support the NTSC-U version only; PAL/JP and macOS still missing. Occasional breaking changes expected. AI-assisted development disclosed. We have not independently tested it.",
     "checked": "2026-10-25"
   },
   {
@@ -2379,9 +2379,9 @@
     "secondaryLabel": "Project site",
     "license": "GPL-3.0",
     "licenseUrl": "https://github.com/OpenSmash-Ultimate/ssbu-recomp/blob/fea28c18b785372b5024ece0a2ea52e860b1fa04/LICENSE",
-    "licenseNote": "No game data redistributed; requires legally obtained SSBU dump and keys. Unofficial; AI-directed development disclosed. Not affiliated with Nintendo.",
+    "licenseNote": "No game data, keys or firmware redistributed; requires your own legally obtained copy of the game. Unofficial; AI-directed development disclosed. Not affiliated with Nintendo.",
     "status": "Active Windows-focused native recomp; online/rollback in progress",
-    "limitation": "Windows 10/11 x64 primary; playability depends on user dump and installer flow. Online/rollback experimental/in progress. Physical controllers not yet widely confirmed. We have not independently tested it.",
+    "limitation": "Windows 10/11 x64 primary; playability depends on the user's own copy and the installer flow. Online/rollback experimental/in progress. Physical controllers not yet widely confirmed. We have not independently tested it.",
     "checked": "2026-10-25"
   },
   {
@@ -2403,7 +2403,7 @@
     "secondaryLabel": "Upstream WiiCompiled foundation",
     "license": "GPL-3.0",
     "licenseUrl": "https://github.com/chrissotraidis/kartpad/blob/02e88fab8025769ec195cdfb39558de20372a93f/LICENSE",
-    "licenseNote": "BYO legally obtained PAL RMCP01 revision 0 Mario Kart Wii image; no disc/courses/textures/keys redistributed. Unofficial; substantial AI assistance disclosed. Not affiliated with Nintendo.",
+    "licenseNote": "Requires your own legally obtained Mario Kart Wii disc (PAL RMCP01 revision 0); no disc images, courses, textures or keys redistributed. Unofficial; substantial AI assistance disclosed. Not affiliated with Nintendo.",
     "status": "Active; Android APKs via Releases; Apple via PadMint local builds",
     "limitation": "Only PAL RMCP01 rev 0 supported; tvOS experimental. Device-specific GPU issues remain open. We have not independently tested it.",
     "checked": "2026-10-25"
@@ -2809,9 +2809,9 @@
     "secondaryLabel": "Releases",
     "license": "MIT",
     "licenseUrl": "https://github.com/Y0oshi/lain-psx-decompiled/blob/205c1977e2aa8d26128fcdbab19170c2c2bbde0e/LICENSE",
-    "licenseNote": "No Pioneer LDC / rights-holder assets redistributed — owners dump SLPS-01603/01604 themselves. Fan subtitles optional, not bundled. Unofficial.",
+    "licenseNote": "No Pioneer LDC / rights-holder assets redistributed; requires your own legally obtained copy of SLPS-01603/01604. Fan subtitles optional, not bundled. Unofficial.",
     "status": "Decomp complete per README; native clients for Windows/macOS/Linux",
-    "limitation": "Builds unsigned; needs owner’s two-disc Redump dumps. Feature claims (60 fps interpolation, mods, subtitles) are author-documented. We have not independently tested it.",
+    "limitation": "Builds unsigned; requires your own legally obtained two-disc copy (Redump-verified). Feature claims (60 fps interpolation, mods, subtitles) are author-documented. We have not independently tested it.",
     "checked": "2026-10-31"
   },
   {
@@ -2931,7 +2931,7 @@
     "licenseUrl": "https://github.com/Revivedx/SavageWindRecomp/blob/bf6146c14c37fee8781a601e5a544b93dff6d75e/LICENSE",
     "licenseNote": "MIT covers Savage Wind’s and LAS Recomp’s own code, not Breath of the Wild, code generated from a user’s copy, or third_party/ components. Not affiliated with Nintendo.",
     "status": "Alpha 4 (0.4.1); opening area and first Divine Beast reported playable",
-    "limitation": "The rest of the main story is not yet confirmed; expect bugs and crashes. Requires game version 1.9.0 (1.8.2 unsupported), a Vulkan 1.3 GPU and 16 GB RAM; the Linux ARM build is highly experimental. We have not independently tested it.",
+    "limitation": "The rest of the main story is not yet confirmed; expect bugs and crashes. Requires your own legally obtained copy updated to version 1.9.0 (1.8.2 unsupported), a Vulkan 1.3 GPU and 16 GB RAM; the Linux ARM build is highly experimental. We have not independently tested it.",
     "checked": "2026-11-02"
   },
   {
@@ -2955,7 +2955,7 @@
     "licenseUrl": "https://github.com/peiikai/LASRecomp/blob/a6b4f03844ecfb4012f18deff96da8b410aeafcd/LICENSE",
     "licenseNote": "MIT covers LAS Recomp’s own code, not Link’s Awakening or other Nintendo property, nor third_party/ components. Not affiliated with Nintendo.",
     "status": "Beta; Windows, macOS (Apple Silicon) and Linux builds",
-    "limitation": "Bugs and crashes are possible; some randomizer seeds may be unsolvable and wide aspect ratios still have graphics issues. Windows/Linux need an AVX2/FMA CPU and a Vulkan 1.3 GPU; Intel Macs are unsupported; Linux ARM is experimental. We have not independently tested it.",
+    "limitation": "Requires your own legally obtained copy (v1.0.0, 1.0.1 or 1.1.0). Bugs and crashes are possible; some randomizer seeds may be unsolvable and wide aspect ratios still have graphics issues. Windows/Linux need an AVX2/FMA CPU and a Vulkan 1.3 GPU; Intel Macs are unsupported; Linux ARM is experimental. We have not independently tested it.",
     "checked": "2026-11-02"
   },
   {

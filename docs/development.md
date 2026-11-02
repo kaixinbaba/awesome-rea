@@ -83,6 +83,16 @@ node --input-type=module -e "import {loadProjects} from './scripts/catalog.mjs';
 
 To add a language, register its paths and metadata in `scripts/i18n.mjs`, provide complete UI/project translations plus its README, and extend validation/browser coverage. Regenerate social images with `node scripts/social-image.mjs` after changing their messages; these are local HTML screenshots, not model-generated images. Production verified on 2026-10-12: Cloudflare Pages serves the nearest `404.html` for unknown paths, including nested Chinese paths under `/zh/`, with a real 404 status and the matching language. Recheck this after deployment rather than adding a wildcard 200 rewrite.
 
+## Policy-sensitive entries
+
+**Wording rules apply to every entry; the listed pages should carry no ads if ads are ever added.** Console-game ports and decompilations that need a user-supplied copy, plus security or platform-adjacent studies, attract the closest ad-network and rights-holder review.
+
+- State "requires your own legally obtained copy" where the project needs game data. Negative statements such as "no keys or firmware redistributed" are fine; never present keys, dumps or firmware as something to obtain.
+- `evidence`, `secondary` and other links point only to the project, its releases or documentation, never to ROM/ISO, key, firmware or dump-tool sites.
+- `validateProjects` (`scripts/catalog.mjs`) rejects piracy, crack and keygen wording plus known ROM-site hosts in both languages, SEO overrides and detail blurbs.
+- Skip projects that unlock paid content or remove DRM (for example, Pinyon Shift enables a formerly paid add-on by default).
+- Current list: `opensmash-ultimate`, `kartpad`, `dusklight`, `totk-recomp`, `savage-wind-recomp`, `las-recomp`, `sm64ds-decomp`, `khdays-decomp`, `khdays-port`, `battleship`, `oracles-decomp`, `goldeneye-pc-port`, `sotn-decomp`, `sotc-decomp`, `downhill-revived`, `lain-psx-decompiled`, `aegis`, `rook`. TotK Recomp also documents Atmosphère cheat files for single-player use.
+
 ## Browser checks
 
 ```sh

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile, stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { loadProjects, issueLinks, populatedCategories, kinds } from './catalog.mjs';
+import { loadProjects, issueLinks, populatedCategories, kinds, assertPolicySafe } from './catalog.mjs';
 import { locales, loadLocale, localePath, displayFields } from './i18n.mjs';
 import { loadCovers, isGeneratedCover } from './covers.mjs';
 import { titleLimit, descriptionLimit } from './seo.mjs';
@@ -124,6 +124,7 @@ for (const locale of Object.keys(locales)) {
   assert.equal((html.match(/class="project-card"/g) || []).length, projects.filter(p => p.category === key).length);
  }
 }
+for (const [id, byLocale] of Object.entries(JSON.parse(await readFile('src/project-detail-blurbs.json', 'utf8')))) for (const [locale, text] of Object.entries(byLocale)) assertPolicySafe(`${id} blurb (${locale})`, text);
 const sitemap = await readFile('dist/sitemap.xml', 'utf8');
 assert(!sitemap.includes('404'));
 const expectedLocs = Object.keys(locales).flatMap(locale => {

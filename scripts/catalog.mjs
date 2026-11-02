@@ -20,6 +20,12 @@ export const issueLinks = {
   correction: `${repository}/issues/new?template=2-correction.yml`,
   bug: `${repository}/issues/new?template=3-website.yml`,
 };
+// Wording and hosts that read as piracy, cracking or DRM removal. Entries describe reviewed projects; they never point
+// readers at game files, keys or cracks (also an ad-network policy requirement). Negative statements such as
+// "no keys redistributed" stay allowed; only these phrases and hosts fail.
+export const policyBlocked = /prod\.keys|title\.keys|keygen|\bcrack(?:ed|s|ing)?\b|\bwarez\b|\b(?:rom|iso)s?\s+downloads?\b|\bfree\s+downloads?\b|破解|注册机|免费下载/iu;
+export const policyBlockedHosts = ['vimm.net', 'romsfun.com', 'cdromance.org', 'romspure.cc', 'nopaystation.com', 'hshop.erista.me', 'wowroms.com', 'coolrom.com.au', 'emuparadise.me'];
+export const assertPolicySafe = (label, value) => assert(!policyBlocked.test(value), `${label}: policy-blocked wording`);
 export function validateProjects(projects) {
   assert(Array.isArray(projects) && projects.length, 'Catalog must be a nonempty array');
   const ids = new Set(), urls = new Set();
@@ -28,6 +34,7 @@ export function validateProjects(projects) {
       assert(typeof p[key] === 'string' && p[key].trim(), `${p.id || 'entry'}: missing ${key}`);
       assert(!/[\u0000-\u001f\u007f]/u.test(p[key]), `${p.id}: control character in ${key}`);
     }
+    for (const [key, value] of Object.entries(p)) if (typeof value === 'string') assertPolicySafe(`${p.id}.${key}`, value);
     if (Object.hasOwn(p, 'listSummary')) {
       assert(typeof p.listSummary === 'string' && p.listSummary.trim() && p.listSummary.length <= 160, `${p.id}: listSummary must be 1–160 characters`);
       assert(!/[\u0000-\u001f\u007f]/u.test(p.listSummary), `${p.id}: control character in listSummary`);
@@ -44,6 +51,7 @@ export function validateProjects(projects) {
       assert(u.protocol === 'https:' && !u.username && !u.password, `${p.id}: unsafe ${key}`);
       assert(!/[\s<>"'`\\]/.test(p[key]), `${p.id}: malformed ${key}`);
       assert(!/^(localhost|127\.|0\.|\[|.*\.local$)/.test(u.hostname), `${p.id}: nonpublic ${key}`);
+      assert(!policyBlockedHosts.some(host => u.hostname === host || u.hostname.endsWith(`.${host}`)), `${p.id}: policy-blocked host in ${key}`);
     }
     const normalized = new URL(p.url); normalized.hash = '';
     assert(!urls.has(normalized.href), `${p.id}: duplicate project URL`); urls.add(normalized.href);

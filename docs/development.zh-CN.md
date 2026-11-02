@@ -89,6 +89,16 @@ node --input-type=module -e "import {loadProjects} from './scripts/catalog.mjs';
 
 2026-10-12 已在生产验证：Cloudflare Pages 对未知路径返回最近的 `404.html`，包括 `/zh/` 下的多级未知路径，均为真实 404 状态及对应语言页面。每次部署后仍需复查，不要添加将未知页面重写为 200 的通配规则。
 
+## 政策敏感条目
+
+**措辞规则适用于所有条目；将来如果接入广告，下列页面不放广告。** 需要用户自备拷贝的主机游戏移植与反编译，以及涉及安全或平台的研究，最容易受到广告平台和权利方审查。
+
+- 项目需要游戏数据时，写明“需自备合法获得的拷贝”。“不分发密钥或固件”这类否定说法可以保留；不要把密钥、dump 或固件写成需要去获取的东西。
+- `evidence`、`secondary` 等链接只指向项目本身、发行页或文档，不指向 ROM/ISO、密钥、固件或提取工具站点。
+- `validateProjects`（`scripts/catalog.mjs`）会在中英文条目、SEO 覆盖值和专属介绍中拦截盗版、破解、注册机类措辞以及已知 ROM 站点域名。
+- 解锁付费内容或移除 DRM 的项目不收录（例如 Pinyon Shift 默认启用曾经付费的追加内容）。
+- 当前名单：`opensmash-ultimate`, `kartpad`, `dusklight`, `totk-recomp`, `savage-wind-recomp`, `las-recomp`, `sm64ds-decomp`, `khdays-decomp`, `khdays-port`, `battleship`, `oracles-decomp`, `goldeneye-pc-port`, `sotn-decomp`, `sotc-decomp`, `downhill-revived`, `lain-psx-decompiled`, `aegis`, `rook`。TotK Recomp 还说明了可在单机游戏中使用 Atmosphère 金手指文件。
+
 ## 浏览器检查
 
 ```sh
