@@ -2,21 +2,21 @@
   "forza-horizon1-reimagined": {
     "en": {
       "title": "Forza Horizon 1 ReImagined (FH1): Native PC Recomp Status",
-      "description": "Forza Horizon (Xbox 360) recompiled to run natively on PC with the ReXGlue SDK. Windows first, Linux builds, optional Forza Live online. Own copy needed.",
+      "description": "Forza Horizon (Xbox 360) recompiled to run natively on Windows and Linux, with online play restored via Forza Live. Bring your own copy of the game.",
       "subtitle": "Forza Horizon (Xbox 360, 2012) native PC recompilation"
     }
   },
   "horizon": {
     "en": {
       "title": "Horizon: Minecraft Java Edition Rewritten in Rust – Status",
-      "description": "Native Rust rewrite of Minecraft: Java Edition 26.3 that reads vanilla worlds. Singleplayer and LAN/offline play; no Microsoft sign-in or Java mods yet.",
+      "description": "Native Rust rewrite of Minecraft: Java Edition 26.3 that reads vanilla worlds and joins vanilla servers. Needs a Microsoft account that owns Java Edition.",
       "subtitle": "Minecraft: Java Edition 26.3 rewritten in Rust"
     }
   },
   "meitouclient": {
     "en": {
       "title": "MeitouClient: Kenshi Engine Reimplementation – Status",
-      "description": "Early playable C#/.NET 10 reimplementation of the Kenshi engine with a Vulkan renderer. Needs Windows 10/11, a Vulkan 1.3 GPU and your own Kenshi copy.",
+      "description": "Early playable C#/.NET 10 reimplementation of the Kenshi engine with a Vulkan renderer. Launcher for Windows, Linux and macOS; needs your own Kenshi copy.",
       "subtitle": "Kenshi engine reimplementation in C# / Vulkan"
     }
   },

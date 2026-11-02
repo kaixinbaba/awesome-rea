@@ -80,7 +80,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [khdays-decomp](<https://github.com/Yokimitsuro/khdays-decomp>) — Matching Kingdom Hearts 358/2 Days (Nintendo DS) decompilation; nearly complete; BYO ROM.
 - [Shiloh](<https://github.com/Asterber/shiloh>) — Rust/SDL2/WASM engine for The X-Files Game (1998); independent rewrite; player's own copy required.
 - [Nanolathe](<https://github.com/nanolathe-gg/nanolathe>) — Clean-room Total Annihilation-focused 2.5D RTS engine in Go; original TA files required; multiplayer and browser demo.
-- [Forza Horizon 1: ReImagined](<https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined>) — Xbox 360 Forza Horizon statically recompiled to native Windows/Linux via ReXGlue; BYO game package; no game code shipped.
+- [Forza Horizon 1: ReImagined](<https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined>) — Xbox 360 Forza Horizon statically recompiled to native Windows/Linux, online restored via Forza Live; BYO copy; no game code shipped.
 - [impacto](<https://github.com/CommitteeOfZero/impacto>) — Open-source MAGES. visual novel engine reimplementation in C++/OpenGL; original game data required; cross-platform WIP.
 - [Knuckles' Chaotix Recompiled](<https://github.com/YuutaTsubasa/ChaotixRecompiled>) — Sega 32X Knuckles' Chaotix statically recompiled to native C++/SDL3; BYO ROM; not an emulator.
 - [Chupathingy](<https://github.com/ChupathingyCE/chupathingyce>) — Native multi-platform port of the Halo: Combat Evolved decompilation; BYO Xbox/PC/CE maps; OpenCE-compatible online.
