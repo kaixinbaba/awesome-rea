@@ -156,5 +156,23 @@
       "title": "ReStreet: FIFA Street (2012) PC Port with Online Play",
       "subtitle": "FIFA Street (Xbox 360, 2012) recompiled for Windows"
     }
+  },
+  "sly1": {
+    "en": {
+      "title": "sly1: Sly Cooper PS2 Matching Decomp – Status",
+      "subtitle": "Sly Cooper and the Thievius Raccoonus (PS2) matching decomp"
+    }
+  },
+  "gow-psp-recomp": {
+    "en": {
+      "title": "gow-psp-recomp: God of War PSP Native Ports – Status",
+      "subtitle": "God of War CoO & Ghost of Sparta (PSP) static recomp"
+    }
+  },
+  "redalert2-recomp": {
+    "en": {
+      "title": "redalert2-recomp: RA2 / Yuri’s Revenge Native Port",
+      "subtitle": "Command & Conquer Red Alert 2 static recompilation"
+    }
   }
 }

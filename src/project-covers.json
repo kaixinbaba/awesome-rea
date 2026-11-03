@@ -1296,5 +1296,95 @@
     "source": "https://raw.githubusercontent.com/portingpete/Black-2006-Recomp/2041e5a97f1300dca128d51fc06e1ae32cea9f21/docs/images/textures-original.jpg",
     "readme": "https://github.com/portingpete/Black-2006-Recomp/blob/2041e5a97f1300dca128d51fc06e1ae32cea9f21/README.md",
     "checked": "2026-11-02"
+  },
+  "vandal-hearts-pc-port": {
+    "src": "/covers/vandal-hearts-pc-port-8bdf8f1abedf.webp",
+    "width": 720,
+    "height": 720,
+    "source": "https://raw.githubusercontent.com/HalmyLyseas/VandalHearts-PcPort/14552fffa0e0b47e02b57592e274fc6e7a649923/docs/images/cover-pc-port.webp",
+    "readme": "https://github.com/HalmyLyseas/VandalHearts-PcPort/blob/14552fffa0e0b47e02b57592e274fc6e7a649923/README.md",
+    "checked": "2026-11-03"
+  },
+  "sly1": {
+    "src": "/covers/sly1-2524fa062d00.webp",
+    "width": 960,
+    "height": 480,
+    "source": "https://raw.githubusercontent.com/TheOnlyZac/sly1/ba365e50953a7781fcf8c693f245249cf11e5401/docs/logo.png",
+    "readme": "https://github.com/TheOnlyZac/sly1/blob/ba365e50953a7781fcf8c693f245249cf11e5401/README.md",
+    "checked": "2026-11-03"
+  },
+  "gow-psp-recomp": {
+    "src": "/covers/gow-psp-recomp-3a72722e107b.webp",
+    "width": 960,
+    "height": 618,
+    "source": "https://raw.githubusercontent.com/DrummingBird1/gow-psp-recomp/afc345b4033e0f5a1487617832b407ac85b9ad03/docs/images/launcher-main.png",
+    "readme": "https://github.com/DrummingBird1/gow-psp-recomp/blob/afc345b4033e0f5a1487617832b407ac85b9ad03/README.md",
+    "checked": "2026-11-03"
+  },
+  "redalert2-recomp": {
+    "src": "/covers/redalert2-recomp-4d36f036a2bb.webp",
+    "width": 800,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/sp00nznet/redalert2-recomp/4ecdea4dd12729696d5fe0a4296c49202695bc3e/docs/screenshots/main-menu.png",
+    "readme": "https://github.com/sp00nznet/redalert2-recomp/blob/4ecdea4dd12729696d5fe0a4296c49202695bc3e/README.md",
+    "checked": "2026-11-03"
+  },
+  "bfm-decomp": {
+    "src": "/covers/bfm-decomp-65e28d3fe904.webp",
+    "width": 960,
+    "height": 701,
+    "source": "https://raw.githubusercontent.com/Druthulu/BFM-decomp/4c3682bc09f44b423c4af996c53c84a2a3afd7cf/docs/story-timeline.svg",
+    "readme": "https://github.com/Druthulu/BFM-decomp/blob/4c3682bc09f44b423c4af996c53c84a2a3afd7cf/README.md",
+    "checked": "2026-11-03"
+  },
+  "ff7-decomp": {
+    "sourceType": "generated",
+    "src": "/covers/ff7-decomp-511b114b6724.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Final Fantasy VII (PS1 USA) · matching decomp · C. Motif: soft geometric game-world horizon without characters or logos. Palette mint. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-03T05:25:54.352Z",
+    "checked": "2026-11-03"
+  },
+  "god-hand-decomp": {
+    "sourceType": "generated",
+    "src": "/covers/god-hand-decomp-9955763cc9dc.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about God Hand (PS2 NTSC-U SLUS-21503) · matching decomp · C++. Motif: soft geometric game-world horizon without characters or logos. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-03T05:25:54.352Z",
+    "checked": "2026-11-03"
+  },
+  "nsmb": {
+    "sourceType": "generated",
+    "src": "/covers/nsmb-cb75725e63fd.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about New Super Mario Bros. (Nintendo DS) · matching decomp · C. Motif: soft geometric game-world horizon without characters or logos. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-03T05:25:54.352Z",
+    "checked": "2026-11-03"
+  },
+  "mariokart64-recomp": {
+    "sourceType": "generated",
+    "src": "/covers/mariokart64-recomp-535cb1d52c63.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Mario Kart 64 · N64: Recompiled / RT64 · Windows / Linux / macOS. Motif: soft geometric game-world horizon without characters or logos. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-03T05:25:54.352Z",
+    "checked": "2026-11-03"
+  },
+  "cogbox": {
+    "sourceType": "generated",
+    "src": "/covers/cogbox-62aa1a67997f.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Gears of War 2/3/Judgment (Xbox 360) · static recomp · Windows. Motif: soft geometric game-world horizon without characters or logos. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-03T05:25:54.352Z",
+    "checked": "2026-11-03"
   }
 }

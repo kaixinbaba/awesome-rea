@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-144 个项目与资源 · 6 个分类
+154 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -129,6 +129,16 @@
 - [ReStreet](<https://github.com/samuelit0davila/fifa-street-pc-port>) — 由 Xbox 360 版重编译的《FIFA 街头足球》（2012）Windows 版，带启动器、好友和社区服务器在线对战。需自备拷贝。
 - [God of War Recomp](<https://github.com/KIexster/god-of-war-recomp>) — 《战神》（PS2）实验性 PS2Recomp 移植，原生 Windows 和 Linux；可进入游戏，尚未完整通关。需自备拷贝。
 - [Black 2006 Recomp](<https://github.com/portingpete/Black-2006-Recomp>) — 《黑色》（2006，初代 Xbox）实验性 XboxRecomp Windows 移植；启动器在本机用你自己的光盘构建游戏。
+- [ff7-decomp](<https://github.com/Xeeynamo/ff7-decomp>) — 《最终幻想 VII》PS1 美版匹配反编译；用原世代 MIPS 工具链重建代码；自备光盘。
+- [BFM-decomp](<https://github.com/Druthulu/BFM-decomp>) — 《武藏传》PS1 匹配反编译；项目称 218 个二进制可字节级重建；自备 redump。
+- [god-hand-decomp](<https://github.com/LucasPicoli/god-hand-decomp>) — 《神之手》PS2 WIP 匹配反编译；仅反编译、明确不做移植；自备 NTSC-U 光盘。
+- [nsmb（NSMB-Decomp）](<https://github.com/NSMB-Decomp/nsmb>) — 《新超级马里奥兄弟》DS 早期匹配反编译；尚不能编出完整 ROM；自备 dump；异于 NSMBU recomp。
+- [Vandal Hearts PC Port](<https://github.com/HalmyLyseas/VandalHearts-PcPort>) — 《破坏神》PS1 字节级匹配反编译原生 Windows/Linux 移植；自动识别美/亚/日光盘；自备光盘。
+- [MarioKart64Recomp](<https://github.com/sonicdcer/MarioKart64Recomp>) — 《马里奥卡丁车64》经 N64: Recompiled 与 RT64 静态重编译原生移植；高帧率与宽屏；自备 ROM。
+- [COGBox](<https://github.com/Shagg88/COGBox>) — Xbox 360《战争机器 2/3/审判》启动器 + 静态重编译 PC 移植；D3D12/Vulkan；自备 360 拷贝。
+- [sly1](<https://github.com/TheOnlyZac/sly1>) — 《狡狐大冒险》PS2（NTSC-U SCUS\_971.98）WIP 匹配反编译；目标匹配源码重建引擎；自备光盘。
+- [gow-psp-recomp](<https://github.com/DrummingBird1/gow-psp-recomp>) — 《战神》PSP（奥林巴斯之链/斯巴达之魂）非官方静态重编译 Windows 移植；启动器；自备美版光盘。
+- [redalert2-recomp](<https://github.com/sp00nznet/redalert2-recomp>) — RA2 / 《尤里的复仇》Win32 二进制静态重编译为原生 C + D3D11；非 OpenRA；自备安装。
 
 ### 桌面与效率应用
 

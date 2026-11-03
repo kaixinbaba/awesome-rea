@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-144 projects & resources · 6 categories
+154 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -129,6 +129,16 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [ReStreet](<https://github.com/samuelit0davila/fifa-street-pc-port>) — FIFA Street (2012) recompiled from Xbox 360 for Windows, with a launcher, friends and online play on community servers. Own copy required.
 - [God of War Recomp](<https://github.com/KIexster/god-of-war-recomp>) — Experimental PS2Recomp port of God of War (PS2) to native Windows and Linux; boots to gameplay, full playthrough pending. Own copy required.
 - [Black 2006 Recomp](<https://github.com/portingpete/Black-2006-Recomp>) — Experimental XboxRecomp port of BLACK (2006, original Xbox) to Windows; the launcher builds the game locally from your own disc.
+- [ff7-decomp](<https://github.com/Xeeynamo/ff7-decomp>) — Matching decomp of Final Fantasy VII PS1 (USA discs); rebuilds game code with original-era MIPS toolchain; BYO discs.
+- [BFM-decomp](<https://github.com/Druthulu/BFM-decomp>) — Matching decomp of Brave Fencer Musashi PS1; project reports 218 binaries rebuild byte-identical from C; BYO redump.
+- [god-hand-decomp](<https://github.com/LucasPicoli/god-hand-decomp>) — WIP matching decomp of God Hand PS2; sole aim decompilation, explicitly no port; BYO NTSC-U disc.
+- [nsmb (NSMB-Decomp)](<https://github.com/NSMB-Decomp/nsmb>) — Early matching decomp of New Super Mario Bros. DS; cannot build a full ROM yet; BYO dump; distinct from NSMBU recomp.
+- [Vandal Hearts PC Port](<https://github.com/HalmyLyseas/VandalHearts-PcPort>) — Native Windows/Linux PC port of PS1 Vandal Hearts on byte-exact matching decomp; auto-detects USA/Asia/Japan discs; BYO disc.
+- [MarioKart64Recomp](<https://github.com/sonicdcer/MarioKart64Recomp>) — Static recomp of Mario Kart 64 into a native PC port via N64: Recompiled and RT64; high FPS and widescreen; BYO ROM.
+- [COGBox](<https://github.com/Shagg88/COGBox>) — Launcher + static-recomp PC ports for Xbox 360 Gears of War 2/3/Judgment; D3D12/Vulkan; BYO 360 copies.
+- [sly1](<https://github.com/TheOnlyZac/sly1>) — WIP matching decomp of Sly Cooper PS2 (NTSC-U SCUS\_971.98); rebuilds engine as matching source; BYO disc.
+- [gow-psp-recomp](<https://github.com/DrummingBird1/gow-psp-recomp>) — Unofficial native Windows ports of God of War PSP (CoO/GoS) via static recomp; launcher setup; BYO US discs.
+- [redalert2-recomp](<https://github.com/sp00nznet/redalert2-recomp>) — Static recomp of RA2 / Yuri's Revenge Win32 binaries to native C with D3D11 presenter; not OpenRA; BYO install.
 
 ### Desktop & productivity apps
 
