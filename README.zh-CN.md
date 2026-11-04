@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-154 个项目与资源 · 6 个分类
+159 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -139,6 +139,11 @@
 - [sly1](<https://github.com/TheOnlyZac/sly1>) — 《狡狐大冒险》PS2（NTSC-U SCUS\_971.98）WIP 匹配反编译；目标匹配源码重建引擎；自备光盘。
 - [gow-psp-recomp](<https://github.com/DrummingBird1/gow-psp-recomp>) — 《战神》PSP（奥林巴斯之链/斯巴达之魂）非官方静态重编译 Windows 移植；启动器；自备美版光盘。
 - [redalert2-recomp](<https://github.com/sp00nznet/redalert2-recomp>) — RA2 / 《尤里的复仇》Win32 二进制静态重编译为原生 C + D3D11；非 OpenRA；自备安装。
+- [ac-decomp](<https://github.com/ACreTeam/ac-decomp>) — GameCube《动物森友会》美版 Rev 0 匹配反编译；自备 dump；异于 N64 af。
+- [MarathonRecomp](<https://github.com/sonicnext-dev/MarathonRecomp>) — Xbox 360《索尼克：刺猬》（2006）非官方 PC 移植（Xenon/Xenos 重编译）；WIP 暂不面向公众；自备文件。
+- [af](<https://github.com/zeldaret/af>) — N64《どうぶつの森》匹配反编译 WIP；自备 ROM 重建相同 ROM；明确非 PC 移植。
+- [rood-reverse](<https://github.com/ser-pounce/rood-reverse>) — PS1《流浪者传说》字节匹配反编译（SLUS\_010.40 + PRG/特效）；面向现代互通；自备碟片。
+- [brawl](<https://github.com/doldecomp/brawl>) — Wii《大乱斗X》美版 Rev 2 匹配反编译 WIP；自备 dump；异于 SSBU 重编译。
 
 ### 桌面与效率应用
 
