@@ -1386,5 +1386,49 @@
     "model": "local-svg-editorial-v1",
     "generatedAt": "2026-11-03T05:25:54.352Z",
     "checked": "2026-11-03"
+  },
+  "ac-decomp": {
+    "src": "/covers/ac-decomp-a53bb76449dd.webp",
+    "width": 960,
+    "height": 624,
+    "source": "https://raw.githubusercontent.com/ACreTeam/ac-decomp/706a76e0a91773efceeaead90b2cb4da91e337be/assets/objdiff.png",
+    "readme": "https://github.com/ACreTeam/ac-decomp/blob/706a76e0a91773efceeaead90b2cb4da91e337be/README.md",
+    "checked": "2026-11-04"
+  },
+  "marathon-recomp": {
+    "src": "/covers/marathon-recomp-7eedd88e8379.webp",
+    "width": 960,
+    "height": 180,
+    "source": "https://raw.githubusercontent.com/IsaacMarovitz/MarathonRecompResources/59ba8f86fa42b1f2c1ce845378d97670fa25fe6e/images/logo/Logo.png",
+    "readme": "https://github.com/sonicnext-dev/MarathonRecomp/blob/32d8c2e67746c61947d96a477170251eae7d189d/README.md",
+    "checked": "2026-11-04"
+  },
+  "brawl": {
+    "src": "/covers/brawl-04870f62a1e1.webp",
+    "width": 938,
+    "height": 720,
+    "source": "https://raw.githubusercontent.com/doldecomp/brawl/50eb0104808e91b1e8e1db4f4d728695490af2c4/assets/objdiff.png",
+    "readme": "https://github.com/doldecomp/brawl/blob/50eb0104808e91b1e8e1db4f4d728695490af2c4/README.md",
+    "checked": "2026-11-04"
+  },
+  "af": {
+    "sourceType": "generated",
+    "src": "/covers/af-2af81515a0ff.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Animal Forest / どうぶつの森 (N64) · matching decomp · C. Motif: soft geometric game-world horizon without characters or logos. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-04T06:13:09.768Z",
+    "checked": "2026-11-04"
+  },
+  "rood-reverse": {
+    "sourceType": "generated",
+    "src": "/covers/rood-reverse-d66af9e9b474.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Vagrant Story (PS1 SLUS_010.40) · matching decomp · C. Motif: soft geometric game-world horizon without characters or logos. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-04T06:13:09.768Z",
+    "checked": "2026-11-04"
   }
 }

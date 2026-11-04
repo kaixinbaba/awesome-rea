@@ -407,3 +407,15 @@ https://raw.githubusercontent.com/sp00nznet/redalert2-recomp/4ecdea4dd12729696d5
 bfm-decomp
 https://github.com/Druthulu/BFM-decomp/blob/4c3682bc09f44b423c4af996c53c84a2a3afd7cf/README.md
 https://raw.githubusercontent.com/Druthulu/BFM-decomp/4c3682bc09f44b423c4af996c53c84a2a3afd7cf/docs/story-timeline.svg
+
+ac-decomp
+https://github.com/ACreTeam/ac-decomp/blob/706a76e0a91773efceeaead90b2cb4da91e337be/README.md
+https://raw.githubusercontent.com/ACreTeam/ac-decomp/706a76e0a91773efceeaead90b2cb4da91e337be/assets/objdiff.png
+
+marathon-recomp
+https://github.com/sonicnext-dev/MarathonRecomp/blob/32d8c2e67746c61947d96a477170251eae7d189d/README.md
+https://raw.githubusercontent.com/IsaacMarovitz/MarathonRecompResources/59ba8f86fa42b1f2c1ce845378d97670fa25fe6e/images/logo/Logo.png
+
+brawl
+https://github.com/doldecomp/brawl/blob/50eb0104808e91b1e8e1db4f4d728695490af2c4/README.md
+https://raw.githubusercontent.com/doldecomp/brawl/50eb0104808e91b1e8e1db4f4d728695490af2c4/assets/objdiff.png

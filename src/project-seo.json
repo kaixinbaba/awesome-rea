@@ -174,5 +174,35 @@
       "title": "redalert2-recomp: RA2 / Yuri’s Revenge Native Port",
       "subtitle": "Command & Conquer Red Alert 2 static recompilation"
     }
+  },
+  "ac-decomp": {
+    "en": {
+      "title": "ac-decomp: Animal Crossing GameCube Matching Decomp",
+      "subtitle": "Animal Crossing (GameCube USA) matching decompilation"
+    }
+  },
+  "marathon-recomp": {
+    "en": {
+      "title": "MarathonRecomp: Sonic ’06 Xbox 360 Native Port",
+      "subtitle": "Sonic the Hedgehog (2006) Xbox 360 static recompilation"
+    }
+  },
+  "af": {
+    "en": {
+      "title": "af: Animal Forest N64 Matching Decomp – Status",
+      "subtitle": "Animal Forest / Doubutsu no Mori (N64) matching decomp"
+    }
+  },
+  "rood-reverse": {
+    "en": {
+      "title": "rood-reverse: Vagrant Story PS1 Matching Decomp",
+      "subtitle": "Vagrant Story (PlayStation 1) byte-matching decompilation"
+    }
+  },
+  "brawl": {
+    "en": {
+      "title": "brawl: Super Smash Bros. Brawl Matching Decomp",
+      "subtitle": "Super Smash Bros. Brawl (Wii) matching decompilation"
+    }
   }
 }

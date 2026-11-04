@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-154 projects & resources · 6 categories
+159 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -139,6 +139,11 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [sly1](<https://github.com/TheOnlyZac/sly1>) — WIP matching decomp of Sly Cooper PS2 (NTSC-U SCUS\_971.98); rebuilds engine as matching source; BYO disc.
 - [gow-psp-recomp](<https://github.com/DrummingBird1/gow-psp-recomp>) — Unofficial native Windows ports of God of War PSP (CoO/GoS) via static recomp; launcher setup; BYO US discs.
 - [redalert2-recomp](<https://github.com/sp00nznet/redalert2-recomp>) — Static recomp of RA2 / Yuri's Revenge Win32 binaries to native C with D3D11 presenter; not OpenRA; BYO install.
+- [ac-decomp](<https://github.com/ACreTeam/ac-decomp>) — Matching decomp of Animal Crossing GameCube (USA Rev 0 GAFE01\_00); rebuilds from C + owner dump; BYO disc; distinct from N64 af.
+- [MarathonRecomp](<https://github.com/sonicnext-dev/MarathonRecomp>) — Unofficial PC port of Sonic the Hedgehog (2006) Xbox 360 via XenonRecomp/XenosRecomp; WIP not for public use yet; BYO files.
+- [af](<https://github.com/zeldaret/af>) — WIP matching decomp of N64 Animal Forest (Doubutsu no Mori); rebuilds identical ROM from C + owner ROM; explicitly not a PC port.
+- [rood-reverse](<https://github.com/ser-pounce/rood-reverse>) — Byte-matching decomp / RE of Vagrant Story PS1 (SLUS\_010.40 + PRG/effects); aims modern interoperability; BYO disc.
+- [brawl](<https://github.com/doldecomp/brawl>) — WIP matching decomp of Super Smash Bros. Brawl Wii (USA Rev 2 RSBE01\_02); rebuilds from C + owner dump; distinct from SSBU recomp.
 
 ### Desktop & productivity apps
 
