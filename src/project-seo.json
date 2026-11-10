@@ -204,5 +204,77 @@
       "title": "brawl: Super Smash Bros. Brawl Matching Decomp",
       "subtitle": "Super Smash Bros. Brawl (Wii) matching decompilation"
     }
+  },
+  "fable-2-recomp": {
+    "en": {
+      "title": "Fable-2-Recomp: Fable 2 Xbox 360 Static Recomp",
+      "subtitle": "Fable 2 (Xbox 360 GOTY) static recompilation"
+    }
+  },
+  "xcx-recomp": {
+    "en": {
+      "title": "XCX Recomp: Xenoblade Chronicles X DE Native Port",
+      "subtitle": "Xenoblade Chronicles X DE (Switch) static recompilation"
+    }
+  },
+  "xc2-recomp": {
+    "en": {
+      "title": "XC2 Recomp: Xenoblade Chronicles 2 Native Port",
+      "subtitle": "Xenoblade Chronicles 2 (Switch) static recompilation"
+    }
+  },
+  "alienrerecomp": {
+    "en": {
+      "title": "AlienReRecomp: Alien Resurrection PS1 Native Port",
+      "subtitle": "Alien Resurrection (PlayStation 1) static recompilation"
+    }
+  },
+  "srw64-recomp": {
+    "en": {
+      "title": "srw64-recomp: Super Robot Wars 64 Native Recomp",
+      "subtitle": "Super Robot Wars 64 (N64) native recompilation"
+    }
+  },
+  "aflplusplus": {
+    "en": {
+      "title": "AFL++: Coverage-Guided Fuzzer – Status",
+      "subtitle": "Coverage-guided fuzzing for binaries and source"
+    }
+  },
+  "flashrom": {
+    "en": {
+      "title": "flashrom: Firmware Flash Utility – Status",
+      "subtitle": "Identify, read, write and erase firmware flash chips"
+    }
+  },
+  "impacket": {
+    "en": {
+      "title": "Impacket: Python Network Protocol Classes",
+      "subtitle": "Python classes for SMB, MSRPC, Kerberos and related stacks"
+    }
+  },
+  "openocd": {
+    "en": {
+      "title": "OpenOCD: On-Chip Debugger for Embedded Targets",
+      "subtitle": "Debug and in-system programming via JTAG/SWD"
+    }
+  },
+  "pefile": {
+    "en": {
+      "title": "pefile: Python Module for Reading PE Files",
+      "subtitle": "Parse Windows PE headers, sections, imports and exports"
+    }
+  },
+  "rehex": {
+    "en": {
+      "title": "REHex: Reverse Engineers’ Hex Editor – Status",
+      "subtitle": "Cross-platform hex editor for inspecting binary data"
+    }
+  },
+  "yara-x": {
+    "en": {
+      "title": "YARA-X: Rust Rewrite of the YARA Engine",
+      "subtitle": "Compile and match YARA-style rules in a Rust engine"
+    }
   }
 }

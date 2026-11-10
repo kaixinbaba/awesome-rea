@@ -419,3 +419,15 @@ https://raw.githubusercontent.com/IsaacMarovitz/MarathonRecompResources/59ba8f86
 brawl
 https://github.com/doldecomp/brawl/blob/50eb0104808e91b1e8e1db4f4d728695490af2c4/README.md
 https://raw.githubusercontent.com/doldecomp/brawl/50eb0104808e91b1e8e1db4f4d728695490af2c4/assets/objdiff.png
+
+rehex
+https://github.com/solemnwarning/rehex/blob/1e4fcd437700083cf36e5cbfe20da13577ab5fef/README.md
+https://raw.githubusercontent.com/solemnwarning/rehex/1e4fcd437700083cf36e5cbfe20da13577ab5fef/doc/comments-types.gif
+
+alienrerecomp
+https://github.com/DiegoDeDios/AlienReRecomp/blob/59c60ebc171a2e7715122599e4e36d4a91ecd86d/README.md
+https://raw.githubusercontent.com/DiegoDeDios/AlienReRecomp/59c60ebc171a2e7715122599e4e36d4a91ecd86d/docs/media/compare_port.jpg
+
+srw64-recomp
+https://github.com/dyzz/srw64-recomp/blob/c581cb35d3f22f57de17e117c12e5636420eb443/README.md
+https://raw.githubusercontent.com/dyzz/srw64-recomp/c581cb35d3f22f57de17e117c12e5636420eb443/web/public/media/prebattle-en.webp
