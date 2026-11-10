@@ -13,12 +13,19 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-159 个项目与资源 · 6 个分类
+171 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
 - [OpenBSD netcat 分析](<https://github.com/NullLabTests/OpenBSD_netcat_REA>) — 使用 REA 和 Ghidra 对 OpenBSD netcat 二进制文件进行静态分析。
 - [REA — Reverse Engineer Anything](<https://github.com/morluto/rea>) — 用于智能体辅助软件分析的上游命令行与 MCP 工具集。
+- [AFL++](<https://github.com/AFLplusplus/AFLplusplus>) — 从 AFL 发展而来的覆盖引导模糊测试器，具备自定义变异、功率调度及可选的 QEMU/Unicorn 模式。
+- [flashrom](<https://github.com/flashrom/flashrom>) — 用于识别、读取、写入、校验和擦除固件闪存芯片的工具，支持多种编程器与芯片组。
+- [Impacket](<https://github.com/fortra/impacket>) — 用于处理网络协议（SMB、MSRPC、Kerberos 及相关协议栈）的 Python 类库，并附带示例数据包工具。
+- [OpenOCD](<https://github.com/openocd-org/openocd>) — 开源片上调试器：通过 JTAG/SWD 适配器为嵌入式目标提供调试、在系统编程和边界扫描。
+- [pefile](<https://github.com/erocarrera/pefile>) — 纯 Python 的 PE 文件解析模块，可读取头、节区、导入/导出及相关 Windows 二进制结构。
+- [REHex](<https://github.com/solemnwarning/rehex>) — 面向逆向工程师的跨平台十六进制编辑器：检查并标注二进制数据，支持注释、类型和文件比较。
+- [YARA-X](<https://github.com/VirusTotal/yara-x>) — VirusTotal 用 Rust 重写的 YARA：编译并匹配 YARA 风格规则，独立于原来的 C 引擎。
 
 ### 游戏与游戏引擎
 
@@ -144,6 +151,11 @@
 - [af](<https://github.com/zeldaret/af>) — N64《どうぶつの森》匹配反编译 WIP；自备 ROM 重建相同 ROM；明确非 PC 移植。
 - [rood-reverse](<https://github.com/ser-pounce/rood-reverse>) — PS1《流浪者传说》字节匹配反编译（SLUS\_010.40 + PRG/特效）；面向现代互通；自备碟片。
 - [brawl](<https://github.com/doldecomp/brawl>) — Wii《大乱斗X》美版 Rev 2 匹配反编译 WIP；自备 dump；异于 SSBU 重编译。
+- [Fable-2-Recomp](<https://github.com/himdo/Fable-2-Recomp>) — Xbox 360《神鬼寓言 2》GOTY 经 ReXGlue 静态重编译；Windows 启动器提取受支持光盘镜像；自备 GOTY 镜像。
+- [XCX Recomp](<https://github.com/jmars125/xcx-recomp>) — 《异度神剑 X 终极版》（Switch）静态重编译为带 Vulkan 的原生 Windows x86-64；早期开发；自备 dump。
+- [XC2 Recomp](<https://github.com/AksharDP/xc2-recomp>) — 《异度神剑 2》（Switch）静态重编译为带 Vulkan 的原生 Windows/Linux x86-64；XCX Recomp 的 fork；自备 dump。
+- [Alien Resurrection: Recompiled](<https://github.com/DiegoDeDios/AlienReRecomp>) — 《异形：复活》（PS1 美版）经静态 MIPS 重编译的 macOS/Windows/Linux 原生移植；现代渲染；自备美版光盘。
+- [srw64-recomp](<https://github.com/dyzz/srw64-recomp>) — 《超级机器人大战 64》（N64 日版 Rev 0）非官方原生重编译，支持桌面、Deck、Android 与 Switch；有翻译和宽屏；自备 ROM。
 
 ### 桌面与效率应用
 

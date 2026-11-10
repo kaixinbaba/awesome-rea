@@ -1430,5 +1430,119 @@
     "model": "local-svg-editorial-v1",
     "generatedAt": "2026-11-04T06:13:09.768Z",
     "checked": "2026-11-04"
+  },
+  "rehex": {
+    "src": "/covers/rehex-b0225fcd1d92.webp",
+    "width": 854,
+    "height": 480,
+    "source": "https://raw.githubusercontent.com/solemnwarning/rehex/1e4fcd437700083cf36e5cbfe20da13577ab5fef/doc/comments-types.gif",
+    "readme": "https://github.com/solemnwarning/rehex/blob/1e4fcd437700083cf36e5cbfe20da13577ab5fef/README.md",
+    "checked": "2026-11-10"
+  },
+  "alienrerecomp": {
+    "src": "/covers/alienrerecomp-8447f1eb7eb1.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/DiegoDeDios/AlienReRecomp/59c60ebc171a2e7715122599e4e36d4a91ecd86d/docs/media/compare_port.jpg",
+    "readme": "https://github.com/DiegoDeDios/AlienReRecomp/blob/59c60ebc171a2e7715122599e4e36d4a91ecd86d/README.md",
+    "checked": "2026-11-10"
+  },
+  "srw64-recomp": {
+    "src": "/covers/srw64-recomp-130a49fdc912.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/dyzz/srw64-recomp/c581cb35d3f22f57de17e117c12e5636420eb443/web/public/media/prebattle-en.webp",
+    "readme": "https://github.com/dyzz/srw64-recomp/blob/c581cb35d3f22f57de17e117c12e5636420eb443/README.md",
+    "checked": "2026-11-10"
+  },
+  "fable-2-recomp": {
+    "sourceType": "generated",
+    "src": "/covers/fable-2-recomp-dbea49b64ffb.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Fable 2 (Xbox 360 GOTY, title ID 4D5307F1) · static recomp · Windows. Motif: soft geometric game-world horizon without characters or logos. Palette mint. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-10T06:37:41.782Z",
+    "checked": "2026-11-10"
+  },
+  "xcx-recomp": {
+    "sourceType": "generated",
+    "src": "/covers/xcx-recomp-a3e3d2a669b6.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Xenoblade Chronicles X: Definitive Edition (Switch, 2025) · static recomp · Windows. Motif: soft geometric game-world horizon without characters or logos. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-10T06:37:41.782Z",
+    "checked": "2026-11-10"
+  },
+  "xc2-recomp": {
+    "sourceType": "generated",
+    "src": "/covers/xc2-recomp-34c156980914.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Xenoblade Chronicles 2 (Switch, 2017) · static recomp · Windows / Linux. Motif: soft geometric game-world horizon without characters or logos. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-10T06:37:41.782Z",
+    "checked": "2026-11-10"
+  },
+  "aflplusplus": {
+    "sourceType": "generated",
+    "src": "/covers/aflplusplus-3713b2ae2807.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about Coverage-guided fuzzing · binaries and source · C. Motif: abstract debugger grid and circuit traces. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-10T06:37:41.782Z",
+    "checked": "2026-11-10"
+  },
+  "flashrom": {
+    "sourceType": "generated",
+    "src": "/covers/flashrom-2934af2eb50b.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about BIOS/UEFI and firmware flash chips · identify/read/write/erase · C. Motif: abstract debugger grid and circuit traces. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-10T06:37:41.782Z",
+    "checked": "2026-11-10"
+  },
+  "impacket": {
+    "sourceType": "generated",
+    "src": "/covers/impacket-81b96400ec47.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about SMB, MSRPC, Kerberos and related Windows/AD stacks · Python. Motif: abstract debugger grid and circuit traces. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-10T06:37:41.782Z",
+    "checked": "2026-11-10"
+  },
+  "openocd": {
+    "sourceType": "generated",
+    "src": "/covers/openocd-5423f9a459ad.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about Embedded targets via JTAG/SWD · debug and in-system programming · C. Motif: abstract debugger grid and circuit traces. Palette mint. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-10T06:37:41.782Z",
+    "checked": "2026-11-10"
+  },
+  "pefile": {
+    "sourceType": "generated",
+    "src": "/covers/pefile-ac1552c3c536.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about Windows PE files · headers, sections, imports/exports · Python. Motif: abstract debugger grid and circuit traces. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-10T06:37:41.782Z",
+    "checked": "2026-11-10"
+  },
+  "yara-x": {
+    "sourceType": "generated",
+    "src": "/covers/yara-x-70adb5d8fbc8.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about YARA-style rules against files and memory · Rust rewrite. Motif: abstract debugger grid and circuit traces. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-10T06:37:41.782Z",
+    "checked": "2026-11-10"
   }
 }

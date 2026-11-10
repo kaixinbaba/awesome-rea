@@ -13,12 +13,19 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-159 projects & resources · 6 categories
+171 projects & resources · 6 categories
 
 ### Developer & security tools
 
 - [OpenBSD netcat study](<https://github.com/NullLabTests/OpenBSD_netcat_REA>) — Static REA and Ghidra analysis of an OpenBSD netcat binary.
 - [REA — Reverse Engineer Anything](<https://github.com/morluto/rea>) — Upstream CLI and MCP toolkit for agent-assisted software analysis.
+- [AFL++](<https://github.com/AFLplusplus/AFLplusplus>) — State-of-the-art coverage-guided fuzzer grown from AFL, with custom mutators, power schedules and optional QEMU/Unicorn modes.
+- [flashrom](<https://github.com/flashrom/flashrom>) — Utility to identify, read, write, verify and erase firmware flash chips, with many programmers and chipsets supported.
+- [Impacket](<https://github.com/fortra/impacket>) — Python classes for working with network protocols (SMB, MSRPC, Kerberos and related stacks), plus example packet tools.
+- [OpenOCD](<https://github.com/openocd-org/openocd>) — Open On-Chip Debugger: debug, in-system programming and boundary-scan for embedded targets via JTAG/SWD adapters.
+- [pefile](<https://github.com/erocarrera/pefile>) — Pure-Python module to parse and work with PE files: headers, sections, imports/exports and related Windows binary structures.
+- [REHex](<https://github.com/solemnwarning/rehex>) — Cross-platform hex editor for reverse engineers: inspect and annotate binary data, with comments, types and file comparison.
+- [YARA-X](<https://github.com/VirusTotal/yara-x>) — VirusTotal’s Rust rewrite of YARA: compile and match YARA-style rules against files and memory, separate from the original C engine.
 
 ### Games & game engines
 
@@ -144,6 +151,11 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [af](<https://github.com/zeldaret/af>) — WIP matching decomp of N64 Animal Forest (Doubutsu no Mori); rebuilds identical ROM from C + owner ROM; explicitly not a PC port.
 - [rood-reverse](<https://github.com/ser-pounce/rood-reverse>) — Byte-matching decomp / RE of Vagrant Story PS1 (SLUS\_010.40 + PRG/effects); aims modern interoperability; BYO disc.
 - [brawl](<https://github.com/doldecomp/brawl>) — WIP matching decomp of Super Smash Bros. Brawl Wii (USA Rev 2 RSBE01\_02); rebuilds from C + owner dump; distinct from SSBU recomp.
+- [Fable-2-Recomp](<https://github.com/himdo/Fable-2-Recomp>) — Static recomp of Fable 2 Xbox 360 GOTY via ReXGlue; Windows launcher extracts a supported disc image; BYO GOTY image.
+- [XCX Recomp](<https://github.com/jmars125/xcx-recomp>) — Static recomp of Xenoblade Chronicles X DE (Switch) to native Windows x86-64 with Vulkan; early development; BYO dump.
+- [XC2 Recomp](<https://github.com/AksharDP/xc2-recomp>) — Static recomp of Xenoblade Chronicles 2 (Switch) to native Windows/Linux x86-64 with Vulkan; fork of XCX Recomp; BYO dump.
+- [Alien Resurrection: Recompiled](<https://github.com/DiegoDeDios/AlienReRecomp>) — Native macOS/Windows/Linux port of Alien Resurrection (PS1 USA) via static MIPS recomp; modern renderer; BYO USA disc.
+- [srw64-recomp](<https://github.com/dyzz/srw64-recomp>) — Unofficial native recomp of Super Robot Wars 64 (N64 JP Rev 0) for desktop, Deck, Android and Switch; translations and widescreen; BYO ROM.
 
 ### Desktop & productivity apps
 
