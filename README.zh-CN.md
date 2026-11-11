@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-171 个项目与资源 · 6 个分类
+183 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -26,6 +26,13 @@
 - [pefile](<https://github.com/erocarrera/pefile>) — 纯 Python 的 PE 文件解析模块，可读取头、节区、导入/导出及相关 Windows 二进制结构。
 - [REHex](<https://github.com/solemnwarning/rehex>) — 面向逆向工程师的跨平台十六进制编辑器：检查并标注二进制数据，支持注释、类型和文件比较。
 - [YARA-X](<https://github.com/VirusTotal/yara-x>) — VirusTotal 用 Rust 重写的 YARA：编译并匹配 YARA 风格规则，独立于原来的 C 引擎。
+- [Volatility 3](<https://github.com/volatilityfoundation/volatility3>) — 从易失性内存（RAM）样本中提取数字取证痕迹的框架，独立于被调查系统。
+- [Keystone](<https://github.com/keystone-engine/keystone>) — 轻量级多架构汇编器框架：通过统一 API 将指令文本转为机器码。
+- [iaito](<https://github.com/radareorg/iaito>) — radare2 逆向框架的官方 Qt 图形界面，追求简洁，并与命令、功能和快捷键保持一致。
+- [edb-debugger](<https://github.com/eteran/edb-debugger>) — 受 OllyDbg 启发的 Qt 图形调试器，面向 AArch32、x86 与 x86-64；目前仅正式支持 Linux。
+- [Project IceStorm](<https://github.com/YosysHQ/icestorm>) — 记录 Lattice iCE40 FPGA 配置比特流格式，并提供分析与生成比特流的简单工具。
+- [Remill](<https://github.com/lifting-bits/remill>) — 将 AArch64、SPARC、x86 与 amd64 机器码提升为 LLVM 位代码的静态二进制翻译库。
+- [Microsoft Detours](<https://github.com/microsoft/Detours>) — 通过拦截函数来监视和检测 Windows API 调用的库；以源码形式发布；不适用于 Store 应用。
 
 ### 游戏与游戏引擎
 
@@ -156,6 +163,11 @@
 - [XC2 Recomp](<https://github.com/AksharDP/xc2-recomp>) — 《异度神剑 2》（Switch）静态重编译为带 Vulkan 的原生 Windows/Linux x86-64；XCX Recomp 的 fork；自备 dump。
 - [Alien Resurrection: Recompiled](<https://github.com/DiegoDeDios/AlienReRecomp>) — 《异形：复活》（PS1 美版）经静态 MIPS 重编译的 macOS/Windows/Linux 原生移植；现代渲染；自备美版光盘。
 - [srw64-recomp](<https://github.com/dyzz/srw64-recomp>) — 《超级机器人大战 64》（N64 日版 Rev 0）非官方原生重编译，支持桌面、Deck、Android 与 Switch；有翻译和宽屏；自备 ROM。
+- [Recompia](<https://github.com/Dittobyte/Recompia>) — 将《宝可梦 Pokopia》（Switch 2）静态重编译为 Windows/Linux 原生程序，启动器在本机从自备 dump 构建；需自备合法取得的 2.0.1a dump。
+- [fefw-recomp](<https://github.com/Goldoire/fefw-recomp>) — 将 Fire Emblem: Fortune's Weave（Switch 2）静态重编译为 Windows（及 Linux/Proton）原生程序；启动器从 dump 构建；需自备 update 131072 dump。
+- [mkw-recomp](<https://github.com/adriadam10/mkw-recomp>) — 将《马里奥赛车 世界》（Switch 2，1.0.0）静态重编译为 Linux/Windows 原生程序；AArch64 先译为 C，NVN2 建在 Vulkan 上；早期；需自备 dump。
+- [GT3 Revisited](<https://github.com/matt-pulsipher/GT3-revisited>) — 独立重实现 PS2《GT 赛车 3 A-Spec》引擎，面向现代平台；运行时读取光盘镜像；需自备光盘。
+- [smm2recomp](<https://github.com/smm2recomp/smm2recomp>) — 将《超级马里奥制作大师 2》（v3.0.3）静态重编译为 Windows、Linux、macOS、iOS 与 Android 原生移植；需自备合法取得的 3.0.3 dump。
 
 ### 桌面与效率应用
 

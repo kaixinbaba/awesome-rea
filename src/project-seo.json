@@ -276,5 +276,77 @@
       "title": "YARA-X: Rust Rewrite of the YARA Engine",
       "subtitle": "Compile and match YARA-style rules in a Rust engine"
     }
+  },
+  "recompia": {
+    "en": {
+      "title": "Recompia: Pokémon Pokopia Switch 2 Recomp",
+      "subtitle": "Pokémon Pokopia (Switch 2) static recompilation"
+    }
+  },
+  "fefw-recomp": {
+    "en": {
+      "title": "fefw-recomp: Fortune's Weave Native Recomp",
+      "subtitle": "Fire Emblem: Fortune's Weave (Switch 2) static recompilation"
+    }
+  },
+  "mkw-recomp": {
+    "en": {
+      "title": "mkw-recomp: Mario Kart World Native Recomp",
+      "subtitle": "Mario Kart World (Switch 2) static recompilation"
+    }
+  },
+  "gt3-revisited": {
+    "en": {
+      "title": "GT3 Revisited: Gran Turismo 3 Engine Reimpl",
+      "subtitle": "Gran Turismo 3 A-Spec engine reimplementation"
+    }
+  },
+  "smm2recomp": {
+    "en": {
+      "title": "smm2recomp: Super Mario Maker 2 Static Recomp",
+      "subtitle": "Super Mario Maker 2 (v3.0.3) static recompilation"
+    }
+  },
+  "volatility3": {
+    "en": {
+      "title": "Volatility 3: Memory Forensics for OS RAM",
+      "subtitle": "Framework for extracting artifacts from RAM samples"
+    }
+  },
+  "keystone": {
+    "en": {
+      "title": "Keystone: Multi-Architecture Assembler",
+      "subtitle": "Multi-architecture assembler framework"
+    }
+  },
+  "iaito": {
+    "en": {
+      "title": "iaito: Official Qt GUI for radare2",
+      "subtitle": "Official graphical interface for radare2"
+    }
+  },
+  "edb-debugger": {
+    "en": {
+      "title": "edb-debugger: Qt AArch32/x86/x86-64 Debugger",
+      "subtitle": "Qt graphical debugger for AArch32, x86 and x86-64"
+    }
+  },
+  "project-icestorm": {
+    "en": {
+      "title": "Project IceStorm: iCE40 FPGA Bitstream Tools",
+      "subtitle": "Lattice iCE40 FPGA bitstream documentation and tools"
+    }
+  },
+  "remill": {
+    "en": {
+      "title": "Remill: Lift Machine Code to LLVM Bitcode",
+      "subtitle": "Library for lifting machine code to LLVM bitcode"
+    }
+  },
+  "microsoft-detours": {
+    "en": {
+      "title": "Microsoft Detours: Windows API Hooking Library",
+      "subtitle": "Windows API hooking and instrumentation library"
+    }
   }
 }

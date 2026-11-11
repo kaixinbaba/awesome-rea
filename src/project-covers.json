@@ -1544,5 +1544,117 @@
     "model": "local-svg-editorial-v1",
     "generatedAt": "2026-11-10T06:37:41.782Z",
     "checked": "2026-11-10"
+  },
+  "mkw-recomp": {
+    "src": "/covers/mkw-recomp-46529bbe21a6.webp",
+    "width": 640,
+    "height": 360,
+    "source": "https://raw.githubusercontent.com/adriadam10/mkw-recomp/784a87d4ef71645769ae73505075a82e26fcfe1a/docs/images/launcher-main.png",
+    "readme": "https://github.com/adriadam10/mkw-recomp/blob/784a87d4ef71645769ae73505075a82e26fcfe1a/README.md",
+    "checked": "2026-11-11"
+  },
+  "smm2recomp": {
+    "src": "/covers/smm2recomp-1cd8cf44968e.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/smm2recomp/smm2recomp/ec42cef0f929f4840bdc0dc07b74bd6d3ee3e405/docs/screenshots/title.jpg",
+    "readme": "https://github.com/smm2recomp/smm2recomp/blob/ec42cef0f929f4840bdc0dc07b74bd6d3ee3e405/README.md",
+    "checked": "2026-11-11"
+  },
+  "iaito": {
+    "src": "/covers/iaito-729ed7fe1e73.webp",
+    "width": 960,
+    "height": 600,
+    "source": "https://raw.githubusercontent.com/radareorg/iaito/a4badc5fd4b201c83349aaca7a78cc7dbc862d76/screenshots/macos-panels.png",
+    "readme": "https://github.com/radareorg/iaito/blob/a4badc5fd4b201c83349aaca7a78cc7dbc862d76/README.md",
+    "checked": "2026-11-11"
+  },
+  "edb-debugger": {
+    "src": "/covers/edb-debugger-61cd37918348.webp",
+    "width": 739,
+    "height": 720,
+    "source": "https://raw.githubusercontent.com/wiki/eteran/edb-debugger/img/edb_interface-2019.png",
+    "readme": "https://github.com/eteran/edb-debugger/blob/b8640ebd2f7f32839f6cbb53c7faf4374c329acd/README.md",
+    "checked": "2026-11-11"
+  },
+  "recompia": {
+    "sourceType": "generated",
+    "src": "/covers/recompia-e38b4f44b912.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Pokémon Pokopia (Switch 2) · static recomp · Windows / Linux. Motif: soft geometric game-world horizon without characters or logos. Palette mint. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-11T04:18:07.414Z",
+    "checked": "2026-11-11"
+  },
+  "fefw-recomp": {
+    "sourceType": "generated",
+    "src": "/covers/fefw-recomp-2348554fb956.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Fire Emblem: Fortune's Weave (Switch 2) · static recomp · Windows / Linux. Motif: soft geometric game-world horizon without characters or logos. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-11T04:18:07.414Z",
+    "checked": "2026-11-11"
+  },
+  "gt3-revisited": {
+    "sourceType": "generated",
+    "src": "/covers/gt3-revisited-b12d06754295.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Gran Turismo 3 A-Spec (PS2) · engine reimplementation · multi-platform. Motif: soft geometric game-world horizon without characters or logos. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-11T04:18:07.414Z",
+    "checked": "2026-11-11"
+  },
+  "volatility3": {
+    "sourceType": "generated",
+    "src": "/covers/volatility3-42788e7c7d59.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about OS RAM memory forensics · Python. Motif: abstract debugger grid and circuit traces. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-11T04:18:07.414Z",
+    "checked": "2026-11-11"
+  },
+  "keystone": {
+    "sourceType": "generated",
+    "src": "/covers/keystone-5ebcdea5a07d.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about Multi-architecture assembler · C++. Motif: abstract debugger grid and circuit traces. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-11T04:18:07.414Z",
+    "checked": "2026-11-11"
+  },
+  "project-icestorm": {
+    "sourceType": "generated",
+    "src": "/covers/project-icestorm-14178599a502.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about Lattice iCE40 FPGA bitstream tools · Python. Motif: abstract debugger grid and circuit traces. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-11T04:18:07.414Z",
+    "checked": "2026-11-11"
+  },
+  "remill": {
+    "sourceType": "generated",
+    "src": "/covers/remill-d29be7772061.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about Lift machine code to LLVM bitcode · C++. Motif: abstract debugger grid and circuit traces. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-11T04:18:07.414Z",
+    "checked": "2026-11-11"
+  },
+  "microsoft-detours": {
+    "sourceType": "generated",
+    "src": "/covers/microsoft-detours-4d21017aa299.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about Windows API hooking library · C++. Motif: abstract debugger grid and circuit traces. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
+    "model": "local-svg-editorial-v1",
+    "generatedAt": "2026-11-11T04:18:07.414Z",
+    "checked": "2026-11-11"
   }
 }
