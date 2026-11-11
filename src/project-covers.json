@@ -1145,33 +1145,33 @@
   },
   "totk-recomp": {
     "sourceType": "generated",
-    "src": "/covers/totk-recomp-10ec9d7bd4f7.webp",
+    "src": "/covers/totk-recomp-326331ceaf70.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Abstract sky-island mood: blurred plasma of pale blue and soft green with light flowing curves; no text, no logos, no game artwork; 16:9.",
-    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
-    "generatedAt": "2026-11-02T04:10:00.000Z",
-    "checked": "2026-11-02"
+    "prompt": "A refined editorial landscape photograph of a sculptor's sky table, not a video-game screenshot. Floating mint-slate islands hover over a deep crevasse, linked by thin bridges of light; a compact unmarked game package unspools into a wide, bright native proscenium at the back, suggesting a locally built native program with a broader, higher-dynamic-range view. Two slender side supports, one cool and one slightly green-glass, imply two desktop systems. No swords, no glowing triangles, no shrines of a known shape, no figures, no console marks. Airy mint daylight with a soft HDR gleam, filmic, shallow depth of field. Palette: mint #e4f0ea, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Distinct from a handmade workshop island on a desk: this is a sky of floating stones being compiled into a wide native frame. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T12:05:20.000Z",
+    "checked": "2026-11-11"
   },
   "savage-wind-recomp": {
     "sourceType": "generated",
-    "src": "/covers/savage-wind-recomp-c3690e2ce80e.webp",
+    "src": "/covers/savage-wind-recomp-2181b4f10c33.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Abstract wind mood: swirled plasma of teal and warm amber with light flowing curves; no text, no logos, no game artwork; 16:9.",
-    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
-    "generatedAt": "2026-11-02T04:10:00.000Z",
-    "checked": "2026-11-02"
+    "prompt": "A refined editorial landscape photograph of a windswept highland diorama, not a video-game screenshot. Peach-colored tall grass and weathered anonymous stone ruins lean under a visible gale; unmarked silk banners without symbols stream sideways. In the foreground, extracted unlabeled game files in a linen folder are being compiled by a small wooden launcher box into a native peach-lit window. The mood is wild open country and wind, not floating sky islands and not a painted ocean. No figures, no bow, no Sheikah-like eye marks, no branded controllers. Late-afternoon peach light, filmic, shallow depth of field. Palette: peach #f3e6d8, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T12:07:01.000Z",
+    "checked": "2026-11-11"
   },
   "gta-vcs-recomp": {
     "sourceType": "generated",
-    "src": "/covers/gta-vcs-recomp-fc4e9a4c612b.webp",
+    "src": "/covers/gta-vcs-recomp-3dfb2e698860.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Abstract neon sunset mood: blurred plasma of hot pink, cyan and deep purple with light flowing curves; no text, no logos, no game artwork; 16:9.",
-    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
-    "generatedAt": "2026-11-02T04:10:00.000Z",
-    "checked": "2026-11-02"
+    "prompt": "A refined editorial landscape photograph of a miniature 1980s tropical waterfront, not a video-game screenshot and not a movie poster. Sand and sunset-pink motel fronts without names, palms, and a generic unbranded speedboat at a quiet pier sit on a table; an unmarked compact disc is being checked and compiled by a small desk-top launcher into two rendering glasses — one warm amber, one faint violet — suggesting two native graphics paths. No neon words, no sunburst emblems, no guns, no cars with famous body shapes, no city-name signs. Golden-hour sandy light, filmic, shallow depth of field. Palette: sand #efe8dc, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T12:07:38.000Z",
+    "checked": "2026-11-11"
   },
   "las-recomp": {
     "src": "/covers/las-recomp-ed9b906fa9e6.webp",
@@ -1191,63 +1191,61 @@
   },
   "zelda-wwhd-recomp": {
     "sourceType": "generated",
-    "src": "/covers/zelda-wwhd-recomp-ccb183dedb7e.webp",
+    "src": "/covers/zelda-wwhd-recomp-fe867652871f.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Abstract sea-and-sky mood: blurred plasma of ocean blue and pale aqua with light flowing curves; no text, no logos, no game artwork; 16:9.",
-    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
-    "generatedAt": "2026-11-02T06:05:45.000Z",
-    "checked": "2026-11-02"
+    "prompt": "A refined editorial landscape photograph of a painted-wood seascape diorama, not a video-game screenshot. A mint paper-craft ocean holds small cel-shaded sailing islands of hard-edged painted wood and simple wind vanes, toy-like and physical rather than realistic terrain. An unmarked disc from a compact home console is being translated ahead of time into a native stage lit by two different treatments: a cool silvery metal sheen and a faint violet glass sheen, evoking two modern graphics back-ends. No boats with known silhouettes, no triangular emblems, no figures, no toon faces, no console logos. Fresh mint daylight, filmic, shallow depth of field. Palette: mint #e4f0ea, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Distinct from floating stone sky islands and from windswept grassy highlands: this is wind over a cel-shaded sea. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T12:08:57.000Z",
+    "checked": "2026-11-11"
   },
   "b2recomp": {
     "sourceType": "generated",
-    "src": "/covers/b2recomp-a135b927219e.webp",
+    "src": "/covers/b2recomp-dd6e3a87264b.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Abstract dusk mood: swirled plasma of deep violet and antique gold with light flowing curves; no text, no logos, no game artwork; 16:9.",
-    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
-    "generatedAt": "2026-11-02T06:05:45.000Z",
-    "checked": "2026-11-02"
+    "prompt": "A refined editorial landscape photograph of a baroque hall of still objects, not a video-game screenshot. Pale heavenly marble above and dark sea-glass below are joined by a newly woven silver bridge of silk cords being re-threaded on a loom from compact midnight-violet fibers into lighter linen, evoking ahead-of-time translation of machine code into native form over a Vulkan-violet glass floor. No witches, no hair-as-weapon, no guns, no angels, no demons, no glasses as a character prop, no religious pageant figures. Lavender candlelight and cool glass reflections, filmic, shallow depth of field. Palette: lavender #ebe4f0, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T12:09:40.000Z",
+    "checked": "2026-11-11"
   },
   "metroid-prime-port": {
     "sourceType": "generated",
-    "src": "/covers/metroid-prime-port-20843674944a.webp",
+    "src": "/covers/metroid-prime-port-971402f62b07.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Abstract alien-planet mood: blurred plasma of burnt orange and slate navy with light flowing curves; no text, no logos, no game artwork; 16:9.",
-    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
-    "generatedAt": "2026-11-02T06:05:45.000Z",
-    "checked": "2026-11-02"
+    "prompt": "A refined editorial landscape photograph of a ruined alien research atrium, not a video-game screenshot. Lavender stone halls and an overgrown greenhouse stand empty of statues or figures; a tripod-mounted scanning glass inspects abstract wall glyphs, while a second wooden camera crane at a wider angle suggests a native port that can also step back from the visor. A set of shuffled mosaic tiles on the floor and a few colored island stones linked by thread hint at a randomizer and a many-worlds link, without maps or writing. Faceted dawn light through a prismatic glass wall. No helmets, no armored suits, no visor HUDs, no alien parasites, no planetary logos. Palette: lavender #ebe4f0, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. The subject is a native multi-platform build of recovered source, not a static recompiler on a desk. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T12:10:29.000Z",
+    "checked": "2026-11-11"
   },
   "ico-pc": {
     "sourceType": "generated",
-    "src": "/covers/ico-pc-e434c5588b6c.webp",
+    "src": "/covers/ico-pc-38cc367dec23.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Abstract weathered-stone mood: soft plasma of sandstone beige and muted sage with light flowing curves; no text, no logos, no game artwork; 16:9.",
-    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
-    "generatedAt": "2026-11-02T06:05:45.000Z",
-    "checked": "2026-11-02"
+    "prompt": "A refined editorial landscape photograph of a vast sunlit castle interior in miniature, not a video-game screenshot. Tall sand-colored shafts of shadow and a single stone bridge join two empty towers, evoking connection and guidance without any figures. In the foreground, a small dusty original glass plate of the same hall sits beside a wider, slightly sharper modern print of it, suggesting an optional clearer, broader picture that still aims to match the original space. No horns, no glowing girl-silhouettes, no shadow creatures, no castle crests, no console marks. Late-afternoon sandy sunbeams, filmic, shallow depth of field. Palette: sand #efe8dc, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T12:12:06.000Z",
+    "checked": "2026-11-11"
   },
   "the-darkness-recomp": {
     "sourceType": "generated",
-    "src": "/covers/the-darkness-recomp-e236a6718091.webp",
+    "src": "/covers/the-darkness-recomp-73f5b593a907.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Abstract night mood: swirled plasma of near-black violet and dark crimson with light flowing curves; no text, no logos, no game artwork; 16:9.",
-    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
-    "generatedAt": "2026-11-02T06:05:45.000Z",
-    "checked": "2026-11-02"
+    "prompt": "A refined editorial landscape photograph of a nocturnal still life, not a comic cover and not a video-game screenshot. A lavender-noir alley of anonymous brick and a single sodium lamp throws long shadows like living smoke — tendrils of atmosphere only, not creature arms or mouths. An unmarked disc is being compiled into a cool glass rendering pane; a small phonograph and a locked brass box suggest audio and saved progress. No faces, no antihero coats, no demonic tattoos, no publisher marks. Moody lavender night light, filmic, shallow depth of field. Palette: lavender #ebe4f0, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T12:13:22.000Z",
+    "checked": "2026-11-11"
   },
   "restreet": {
-    "sourceType": "generated",
-    "src": "/covers/restreet-28a994703dea.webp",
+    "src": "/covers/restreet-cfc457d17e50.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Abstract street-football mood: blurred plasma of signal yellow and pitch green with light flowing curves; no text, no logos, no game artwork; 16:9.",
-    "model": "ImageMagick 7 procedural plasma (not AI-generated)",
-    "generatedAt": "2026-11-02T06:05:45.000Z",
-    "checked": "2026-11-02"
+    "source": "https://samuelit0davila.github.io/fifa-street-pc-port/assets/img/shot-juggle.jpg",
+    "readme": "https://github.com/samuelit0davila/fifa-street-pc-port/blob/0b554e377ef565a23641e5fe98dad4b569836ca4/README.md",
+    "checked": "2026-11-11"
   },
   "speedbreaker": {
     "src": "/covers/speedbreaker-8b4537cb06ba.webp",
@@ -1339,53 +1337,53 @@
   },
   "ff7-decomp": {
     "sourceType": "generated",
-    "src": "/covers/ff7-decomp-511b114b6724.webp",
+    "src": "/covers/ff7-decomp-ed071f69f7d4.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Final Fantasy VII (PS1 USA) · matching decomp · C. Motif: soft geometric game-world horizon without characters or logos. Palette mint. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-03T05:25:54.352Z",
-    "checked": "2026-11-03"
+    "prompt": "A refined editorial landscape photograph of a conservator's bench, not a video-game screenshot. On pale mint paper and ash wood sit two mechanical crystal assemblies that must match exactly: at left, a disassembled stack of unmarked translucent disc platters and tiny oxidized-brass gears; at right, the same mechanism fully rebuilt, ring for ring, as a compact mint-glass tower. A precision comparator stand hovers between them, proving the reconstruction is identical. Fine warm copper tools of an older workshop era lie neatly in a tray, evoking a vintage MIPS-era toolchain used to compile the rebuild. Soft morning window light, filmic, shallow depth of field. Palette: mint #e4f0ea, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. The mood is careful matching reconstruction from raw discs, not adventure or combat. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T11:50:01.000Z",
+    "checked": "2026-11-11"
   },
   "god-hand-decomp": {
     "sourceType": "generated",
-    "src": "/covers/god-hand-decomp-9955763cc9dc.webp",
+    "src": "/covers/god-hand-decomp-116f9f90a56d.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source games project about God Hand (PS2 NTSC-U SLUS-21503) · matching decomp · C++. Motif: soft geometric game-world horizon without characters or logos. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-03T05:25:54.352Z",
-    "checked": "2026-11-03"
+    "prompt": "A refined editorial landscape photograph of a museum conservation studio, not a video-game screenshot. On a lavender linen cloth, shattered pieces of an abstract geometric lacquer medallion are being fitted back into a complete circular seal; beside it, a second newly engraved copper seal is being checked under a binocular comparator so the two will be byte-identical in every groove. No faces, no gloves as costume, no religious icons, no weapons. A sealed glass ampoule and stacked translucent slates suggest a boot image and overlays being reproduced from one source tree. Quiet lavender daylight and a single warm copper lamp. Palette: lavender #ebe4f0, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. The feeling is exacting decompilation for its own sake, not a port or a fight. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T11:50:51.000Z",
+    "checked": "2026-11-11"
   },
   "nsmb": {
     "sourceType": "generated",
-    "src": "/covers/nsmb-cb75725e63fd.webp",
+    "src": "/covers/nsmb-18cdeca3a8ac.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source games project about New Super Mario Bros. (Nintendo DS) · matching decomp · C. Motif: soft geometric game-world horizon without characters or logos. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-03T05:25:54.352Z",
-    "checked": "2026-11-03"
+    "prompt": "A refined editorial landscape photograph of a model-maker's desk, not a video-game screenshot. Two shallow sand-colored trays sit stacked like twin work planes, the upper one holding a half-finished mosaic of tiny earthy clay tiles, the lower one still mostly bare — an early reconstruction that cannot yet form a complete cartridge. An unmarked black memory cartridge lies open beside a pile of unused tiles, ready for the owner to supply the missing dump. No mushrooms, no stars, no pipes, no cartoon icons, no branded handhelds. Warm sandy daylight, filmic, shallow depth of field. Palette: sand #efe8dc, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. The subject is an incomplete matching reconstruction of a dual-layer portable world. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T11:51:36.000Z",
+    "checked": "2026-11-11"
   },
   "mariokart64-recomp": {
     "sourceType": "generated",
-    "src": "/covers/mariokart64-recomp-535cb1d52c63.webp",
+    "src": "/covers/mariokart64-recomp-184ba5ddf77c.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Mario Kart 64 · N64: Recompiled / RT64 · Windows / Linux / macOS. Motif: soft geometric game-world horizon without characters or logos. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-03T05:25:54.352Z",
-    "checked": "2026-11-03"
+    "prompt": "A refined editorial landscape photograph of a workshop table, not a video-game screenshot and not a racetrack poster. On peach-tinted drafting paper, an old compact game cartridge's wiring is being statically woven into a wider, modern wooden chassis with a panoramic copper reflector at the back, suggesting a native widescreen port running at a steadier, faster rhythm. A small brass metronome and a spinning polished gyro imply a high, stable frame rate. No vehicles with familiar silhouettes, no checkered flags, no item boxes, no character figurines, no console branding. Soft peach afternoon light, filmic, shallow depth of field. Palette: peach #f3e6d8, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T11:53:12.000Z",
+    "checked": "2026-11-11"
   },
   "cogbox": {
     "sourceType": "generated",
-    "src": "/covers/cogbox-62aa1a67997f.webp",
+    "src": "/covers/cogbox-21fa2313bc19.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Gears of War 2/3/Judgment (Xbox 360) · static recomp · Windows. Motif: soft geometric game-world horizon without characters or logos. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-03T05:25:54.352Z",
-    "checked": "2026-11-03"
+    "prompt": "A refined editorial landscape photograph of a machinist's presentation tray, not a video-game screenshot. A low lavender-steel carousel holds three distinct mechanical gearboxes of different sizes, each translated from a heavy unmarked disc-and-case bundle into a slim native metal frame. Two thin glass rendering panes — one cool graphite, one faint violet — stand behind the carousel, hinting at two modern graphics paths. Literal machine cogs and oil-brass fittings only; no skulls, no chainsaws, no military armor, no publisher marks. Soft lavender studio light, filmic, shallow depth of field. Palette: lavender #ebe4f0, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. The subject is a launcher that prepares an owner's own copies for ahead-of-time native translation. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T11:53:50.000Z",
+    "checked": "2026-11-11"
   },
   "ac-decomp": {
     "src": "/covers/ac-decomp-a53bb76449dd.webp",
@@ -1413,23 +1411,23 @@
   },
   "af": {
     "sourceType": "generated",
-    "src": "/covers/af-2af81515a0ff.webp",
+    "src": "/covers/af-e3fc2b6050e3.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Animal Forest / どうぶつの森 (N64) · matching decomp · C. Motif: soft geometric game-world horizon without characters or logos. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-04T06:13:09.768Z",
-    "checked": "2026-11-04"
+    "prompt": "A refined editorial landscape photograph of a cabinet-maker's diorama, not a video-game screenshot. In lavender morning mist, a tiny rural village of empty wooden houses, dirt paths and simple fences sits on a plot shaped like an unmarked game cartridge; beside it, an identical second village is being rebuilt from pale manuscript sheets and the same unmarked cartridge, proving the reconstruction matches the original exactly. This is not a modern computer port: no keyboards, no contemporary monitors. No animals, no villagers, no leaf logos, no branded fruit or furniture icons. Quiet overcast light, filmic, shallow depth of field. Palette: lavender #ebe4f0, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T11:54:35.000Z",
+    "checked": "2026-11-11"
   },
   "rood-reverse": {
     "sourceType": "generated",
-    "src": "/covers/rood-reverse-d66af9e9b474.webp",
+    "src": "/covers/rood-reverse-c1a8366ba4e0.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Vagrant Story (PS1 SLUS_010.40) · matching decomp · C. Motif: soft geometric game-world horizon without characters or logos. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-04T06:13:09.768Z",
-    "checked": "2026-11-04"
+    "prompt": "A refined editorial landscape photograph of an antiquarian workbench, not a video-game screenshot. A sand-colored stone labyrinth model, worn and cracked, is being measured with calipers while an identical newly recast maze sits on a lightbox so every corridor registers as a perfect overlay. Nearby, a dusty unlabeled disc and a modern clear-glass key that fits an ancient lock suggest older software being made to interoperate with present hardware, and a few carefully mended fractures hint at original bugs being repaired. No crosses as emblems, no heraldry, no swords, no character statues. Warm sandy side light, filmic, shallow depth of field. Palette: sand #efe8dc, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T11:56:01.000Z",
+    "checked": "2026-11-11"
   },
   "rehex": {
     "src": "/covers/rehex-b0225fcd1d92.webp",
@@ -1457,93 +1455,93 @@
   },
   "fable-2-recomp": {
     "sourceType": "generated",
-    "src": "/covers/fable-2-recomp-dbea49b64ffb.webp",
+    "src": "/covers/fable-2-recomp-ed442be57bb2.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Fable 2 (Xbox 360 GOTY, title ID 4D5307F1) · static recomp · Windows. Motif: soft geometric game-world horizon without characters or logos. Palette mint. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-10T06:37:41.782Z",
-    "checked": "2026-11-10"
+    "prompt": "A refined editorial landscape photograph of a bookbinder's and model-maker's desk, not a video-game screenshot. A mint-green storybook landscape of empty wooden cottages and rolling hills rests on an unmarked disc; copper binder rods and a wooden press — like a glue and extraction jig — are translating that landscape into a native structure of mint glass walls, the guest architecture compiled once into a new solid form. No people, no dogs, no oak-tree emblems, no coins, no lion crests, no royal banners. Soft mint daylight through a window, filmic, shallow depth of field. Palette: mint #e4f0ea, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. The feeling is a static ahead-of-time build from the owner's own disc, not an emulator. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T11:57:10.000Z",
+    "checked": "2026-11-11"
   },
   "xcx-recomp": {
     "sourceType": "generated",
-    "src": "/covers/xcx-recomp-a3e3d2a669b6.webp",
+    "src": "/covers/xcx-recomp-a023f272c8c3.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Xenoblade Chronicles X: Definitive Edition (Switch, 2025) · static recomp · Windows. Motif: soft geometric game-world horizon without characters or logos. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-10T06:37:41.782Z",
-    "checked": "2026-11-10"
+    "prompt": "A refined editorial landscape photograph of a planetary survey table, not a video-game screenshot. A large peach terracotta relief map of arid canyons and dusty plateaus covers the desk; some regions are still unfinished raw clay, suggesting early development. An unmarked compact game card's contours are drawn in warm light threads into a native peach-metal frame with a faint violet glass viewport, like a modern graphics runtime. No mechs, no energy swords, no alien creatures, no character armor, no console branding. Dry afternoon light, filmic, shallow depth of field. Palette: peach #f3e6d8, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Sci-fi frontier atmosphere only, as still life. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T11:57:52.000Z",
+    "checked": "2026-11-11"
   },
   "xc2-recomp": {
     "sourceType": "generated",
-    "src": "/covers/xc2-recomp-34c156980914.webp",
+    "src": "/covers/xc2-recomp-7236a9e82421.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source games project about Xenoblade Chronicles 2 (Switch, 2017) · static recomp · Windows / Linux. Motif: soft geometric game-world horizon without characters or logos. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-10T06:37:41.782Z",
-    "checked": "2026-11-10"
+    "prompt": "A refined editorial landscape photograph of a mythic tabletop seascape, not a video-game screenshot. Lavender silk and blown glass form a quiet cloud-sea; a faceless sleeping landmass of pale stone and moss drifts on it like a living island of terrain only. A compact unmarked game card is being translated into a wide native light-stage, with two thin glass side panes (cool and slightly violet) suggesting two desktop systems sharing one Vulkan-like runtime. No swords, no crystals as trademarks, no figures, no wings, no console marks. Soft mythical dusk light, filmic, shallow depth of field. Palette: lavender #ebe4f0, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Mood is organic and maritime, distinct from a dusty canyon survey. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T11:58:39.000Z",
+    "checked": "2026-11-11"
   },
   "aflplusplus": {
     "sourceType": "generated",
-    "src": "/covers/aflplusplus-3713b2ae2807.webp",
+    "src": "/covers/aflplusplus-9901c9f6bd68.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about Coverage-guided fuzzing · binaries and source · C. Motif: abstract debugger grid and circuit traces. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-10T06:37:41.782Z",
-    "checked": "2026-11-10"
+    "prompt": "A refined editorial landscape photograph of an instrumented testing bench, not a software screenshot. Countless slightly varied peach paper seed packets travel through a narrow glass tunnel whose walls bloom with soft peach dye trails wherever a packet has touched a path, evoking coverage-guided fuzzing of programs. A few split or singed packets rest in a small copper tray as collected crashes; a wooden hopper at left feeds new mutations. No animals, no rabbits, no terminals, no charts with writing, no warning labels. Clean workshop daylight, filmic, shallow depth of field. Palette: peach #f3e6d8, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T11:59:38.000Z",
+    "checked": "2026-11-11"
   },
   "flashrom": {
     "sourceType": "generated",
-    "src": "/covers/flashrom-2934af2eb50b.webp",
+    "src": "/covers/flashrom-17e5ba62aa6f.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about BIOS/UEFI and firmware flash chips · identify/read/write/erase · C. Motif: abstract debugger grid and circuit traces. Palette lavender. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-10T06:37:41.782Z",
-    "checked": "2026-11-10"
+    "prompt": "A refined editorial landscape photograph of an electronics workbench, not a product shot with brands. On a lavender ESD mat, a bare unidentified flash memory chip sits in a clip-on programming socket; a faint ghost of an older gold bit-pattern is being erased while a new pattern is written. Four small empty glass dishes in a row suggest identify, read, write and erase. Copper tweezers, a grounded wrist-cord coiled neatly, no vendor silkscreen, no motherboard logos. Cool lavender task lighting, filmic, shallow depth of field. Palette: lavender #ebe4f0, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. The subject is firmware flashing of BIOS-like chips. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T12:00:25.000Z",
+    "checked": "2026-11-11"
   },
   "impacket": {
     "sourceType": "generated",
-    "src": "/covers/impacket-81b96400ec47.webp",
+    "src": "/covers/impacket-63e18abc65a9.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about SMB, MSRPC, Kerberos and related Windows/AD stacks · Python. Motif: abstract debugger grid and circuit traces. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-10T06:37:41.782Z",
-    "checked": "2026-11-10"
+    "prompt": "A refined editorial landscape photograph of a postal and cipher desk, not a corporate banner. Sand-colored envelopes and wax-sealed packets are being opened, inspected, and neatly resealed, evoking the construction and decoding of network protocol packets. A cluster of uncut brass keys hints at ticket-granting authentication, and a small unmarked wooden cabinet stands in the background like a quiet directory server. No writing on the envelopes, no wax monograms, no snakes, no corporate wordmarks, no computer UI. Warm sandy window light, filmic, shallow depth of field. Palette: sand #efe8dc, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T12:01:17.000Z",
+    "checked": "2026-11-11"
   },
   "openocd": {
     "sourceType": "generated",
-    "src": "/covers/openocd-5423f9a459ad.webp",
+    "src": "/covers/openocd-21d607d0e205.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about Embedded targets via JTAG/SWD · debug and in-system programming · C. Motif: abstract debugger grid and circuit traces. Palette mint. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-10T06:37:41.782Z",
-    "checked": "2026-11-10"
+    "prompt": "A refined editorial landscape photograph of an embedded-lab bench, not a vendor catalog. A bare, unmarked microcontroller board is halted under test: a tidy ribbon of fine probes and pogo pins meets a debug header, while a circular glass loupe looks into the silicon like a window on paused clockwork, evoking on-chip debugging and in-system programming. A second thin probe traces the edge of the package, suggesting boundary scan. No probe-pod logos, no evaluation-board silkscreen, no computer screens. Mint-tinted quiet daylight, filmic, shallow depth of field. Palette: mint #e4f0ea, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T12:02:03.000Z",
+    "checked": "2026-11-11"
   },
   "pefile": {
     "sourceType": "generated",
-    "src": "/covers/pefile-ac1552c3c536.webp",
+    "src": "/covers/pefile-cbd67f463861.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about Windows PE files · headers, sections, imports/exports · Python. Motif: abstract debugger grid and circuit traces. Palette peach. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-10T06:37:41.782Z",
-    "checked": "2026-11-10"
+    "prompt": "A refined editorial landscape photograph of a cutaway architectural model, not a diagram with labels. A peach basswood and paper building is opened like a portable executable: a heavy cornice for the header, clearly separated floors as sections, and two loading docks where unlabeled crates arrive and depart, suggesting imports and exports used in binary triage. The model sits on a pale desk as a forensic specimen, with a copper scale ruler. No flags, no window-pane trademarks, no letters on the crates or facade. Soft peach studio light, filmic, shallow depth of field. Palette: peach #f3e6d8, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T12:03:56.000Z",
+    "checked": "2026-11-11"
   },
   "yara-x": {
     "sourceType": "generated",
-    "src": "/covers/yara-x-70adb5d8fbc8.webp",
+    "src": "/covers/yara-x-7eca8aad5203.webp",
     "width": 960,
     "height": 540,
-    "prompt": "Tasteful 16:9 editorial still for an open-source dev-tools project about YARA-style rules against files and memory · Rust rewrite. Motif: abstract debugger grid and circuit traces. Palette sand. No logos, no trademarks, no watermarks, no readable product names.",
-    "model": "local-svg-editorial-v1",
-    "generatedAt": "2026-11-10T06:37:41.782Z",
-    "checked": "2026-11-10"
+    "prompt": "A refined editorial landscape photograph of a rule-maker's studio, not a product logo. A sand-colored compositor's case holds brass templates of abstract geometric patterns (not letters); those templates are being compiled into a fine rust-tinted steel sieve. Through the sieve, loose file folders and a small glass vial of swirling memory-like filaments are being matched — some fragments catch on the pattern, others pass through. A subtle crossed-thread loom in copper hints at a rewrite, without forming a letter. No shields, no virus icons, no text, no computer UI. Warm sandy sidelight, filmic, shallow depth of field. Palette: sand #efe8dc, paper #faf6f1, ink-dark wood #2d2d2d, a single copper accent #b35309. Technical constraints: landscape hero still, composed for a 1536x1024 canvas, with the main subject safely inside the central 16:9 band so a later crop to 960x540 will not cut important forms. Editorial, catalog-quality, cinematic lighting, physically believable materials, quiet and tasteful. Not a UI mockup, not a screenshot, not clipart, not a flat logo sheet, not a gradient poster with monograms. Hard negatives: no typography, no letters, no numbers, no monograms, no initials, no watermarks, no captions, no 'Generated cover' wording, no logos, no trademarks, no brand marks, no product names, no identifiable copyrighted characters, no game HUD, no operating-system chrome, no QR codes, no UI icons. No people, no faces, no hands, no creatures, no animals, no mascots, no handheld consoles with logos, no console manufacturer marks.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-11T12:04:39.000Z",
+    "checked": "2026-11-11"
   },
   "mkw-recomp": {
     "src": "/covers/mkw-recomp-46529bbe21a6.webp",

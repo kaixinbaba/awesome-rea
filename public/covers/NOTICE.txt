@@ -328,41 +328,9 @@ ps2-web-recomp
 https://github.com/snuri00/ps2-web-recomp/blob/e026b971324068773eed88bf502437de9e581b6b/README.md
 https://raw.githubusercontent.com/snuri00/ps2-web-recomp/e026b971324068773eed88bf502437de9e581b6b/docs/media/demo.webp
 
-totk-recomp
-generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
-Abstract sky-island mood: blurred plasma of pale blue and soft green with light flowing curves; no text, no logos, no game artwork; 16:9.
-
-savage-wind-recomp
-generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
-Abstract wind mood: swirled plasma of teal and warm amber with light flowing curves; no text, no logos, no game artwork; 16:9.
-
-gta-vcs-recomp
-generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
-Abstract neon sunset mood: blurred plasma of hot pink, cyan and deep purple with light flowing curves; no text, no logos, no game artwork; 16:9.
-
-zelda-wwhd-recomp
-generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
-Abstract sea-and-sky mood: blurred plasma of ocean blue and pale aqua with light flowing curves; no text, no logos, no game artwork; 16:9.
-
-b2recomp
-generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
-Abstract dusk mood: swirled plasma of deep violet and antique gold with light flowing curves; no text, no logos, no game artwork; 16:9.
-
-metroid-prime-port
-generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
-Abstract alien-planet mood: blurred plasma of burnt orange and slate navy with light flowing curves; no text, no logos, no game artwork; 16:9.
-
-ico-pc
-generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
-Abstract weathered-stone mood: soft plasma of sandstone beige and muted sage with light flowing curves; no text, no logos, no game artwork; 16:9.
-
-the-darkness-recomp
-generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
-Abstract night mood: swirled plasma of near-black violet and dark crimson with light flowing curves; no text, no logos, no game artwork; 16:9.
-
 restreet
-generated · model=ImageMagick 7 procedural plasma (not AI-generated) · no upstream image
-Abstract street-football mood: blurred plasma of signal yellow and pitch green with light flowing curves; no text, no logos, no game artwork; 16:9.
+https://github.com/samuelit0davila/fifa-street-pc-port/blob/0b554e377ef565a23641e5fe98dad4b569836ca4/README.md
+https://samuelit0davila.github.io/fifa-street-pc-port/assets/img/shot-juggle.jpg
 
 speedbreaker
 https://github.com/SpeedBreakerProject/speedbreaker/blob/6cabdc7997bbc0572525265d65a3559dc72c5843/README.md
@@ -482,3 +450,102 @@ Editorial 16:9 cover for a static binary-translation library that lifts machine 
 microsoft-detours
 generated · model=gpt-image-2 · no upstream image
 Editorial 16:9 cover for a Windows API intercept-and-instrument library; a sand-colored colonnade whose brass handrail detours through a side instrument bay. Original art, no system UI or vendor marks.
+
+GPT project-fitting covers (2026-11-11, remaining placeholders)
+Replaced twenty-four remaining local-svg-editorial-v1 letter templates and ImageMagick procedural-plasma placeholders with project-specific Codex Images art. No trademarks/logos/watermarks. Model: gpt-image-2. Provider quality in the generation receipts was medium for twenty-two images and low for mariokart64-recomp and pefile; the reviewed files are the ones shipped. restreet is not in this generated batch: its plasma placeholder was replaced with an ingested official Open Graph gameplay screenshot (see the restreet entry above). Copyright of that screenshot remains with upstream.
+
+ff7-decomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a matching PS1 decompilation that rebuilds game code with a vintage toolchain from a user-supplied disc; two crystal mechanisms compared ring for ring. Original art, no characters or trademarks.
+
+god-hand-decomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a matching PS2 decompilation that aims at byte-level reconstruction of the boot ELF, not a port; a fractured lacquer seal being restored beside a comparison microscope. Original art, no characters or weapons.
+
+nsmb
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for an early matching DS decompilation that cannot yet emit a complete ROM; a half-laid dual-tray mosaic beside an unmarked cartridge. Original art, no mascots or trademarks.
+
+mariokart64-recomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a static recompiler that turns a user-supplied N64 ROM into a widescreen, high-frame-rate native program; unmarked cartridge traces woven into a wider copper chassis with a metronome. Original art, no vehicles or item boxes.
+
+cogbox
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a launcher and static recompiler of three related Xbox 360 titles to Windows, with two modern graphics paths; three gearboxes of different sizes on a turntable before graphite and violet glass. Original art, no skulls or trademarks.
+
+af
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a matching N64 decompilation that rebuilds an identical ROM from C and a user-supplied dump, not a PC port; two empty villages in lavender mist, one finished and one under reconstruction. Original art, no animals or villagers.
+
+rood-reverse
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a byte-matching PS1 decompilation aimed at modern interoperability and original-bug fixes; a worn stone maze aligned with a newly cast maze on a lightbox. Original art, no characters or trademarks.
+
+fable-2-recomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a static recompiler whose launcher extracts a user-supplied disc and compiles guest code to native C++ at build time; a mint village disc pressed into mint glass. Original art, no figures or crests.
+
+xcx-recomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for an early-development static recompiler of a 2025 Switch title to Windows x86-64 with Vulkan; a peach canyon sandbox partly still clay, viewed through a violet glass viewport. Original art, no mechs or trademarks.
+
+xc2-recomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a static recompiler of a 2017 Switch title to Windows/Linux x86-64 with Vulkan; faceless stone isles in a lavender cloud-sea between two glass panes. Original art, no characters or trademarks.
+
+aflplusplus
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a coverage-guided fuzzing framework; slightly varied peach packets passing through a dyed-glass channel, with split packets on a copper dish. Original art, no mascots or terminal UI.
+
+flashrom
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a tool that identifies, reads, writes, and erases firmware flash chips; an unmarked chip in a programmer socket beside four glass dishes. Original art, no vendor marks.
+
+impacket
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a Python library that assembles and dissects Windows/AD network protocols; sand envelopes opened, inspected, and resealed beside brass keys. Original art, no wordmarks or snake logos.
+
+openocd
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for an on-chip debugger that talks to targets over JTAG/SWD; an unmarked microcontroller under spring probes, with a loupe over a paused movement. Original art, no vendor silkscreen.
+
+pefile
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a pure-Python parser of Windows PE structure; a peach basswood building sectioned into header eaves, section floors, and import/export docks. Original art, no letters on the facade.
+
+yara-x
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a Rust rewrite that compiles matching rules and runs them against files and memory; geometric copper molds and a rusted sieve over folders and a memory filament. Original art, no readable text.
+
+totk-recomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a static recompiler that builds a native program with ultrawide/HDR options from user-supplied game files; mint sky-islands linked by light bridges into a wide bright native frame. Original art, no swords or crests.
+
+savage-wind-recomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for an in-progress static recompiler with a launcher and PC display options; peach grassland and anonymous ruins, an unmarked silk flag, unpacked folders entering a native window. Original art, no trademarks.
+
+gta-vcs-recomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for an in-development static recompiler that verifies a user-supplied ISO and compiles two graphics backends; a nameless pink motel and unmarked disc drive linked to amber and violet glasses. Original art, no neon text or weapons.
+
+zelda-wwhd-recomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a static recompiler that ahead-of-time translates PowerPC to C, with Metal or Vulkan graphics; hard-edged painted wooden isles and a weather vane leading an unmarked disc toward silver and violet backends. Original art, no crests or famous hulls.
+
+b2recomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for an unofficial static recompiler that translates AArch64 to C locally and draws with Vulkan; a baroque hall where deep-violet silk is woven into pale linen over a sea-glass floor. Original art, no figures or weapons.
+
+metroid-prime-port
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a multi-platform native port with scanning, third-person, and randomized multiworld options; a statue-less lavender ruin greenhouse, a tripod scanning glass, and shuffled mosaic stones. Original art, no helmets or HUD.
+
+ico-pc
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a native port of a matching decompilation, optionally sharper and wider yet close to the original; two empty towers joined by a stone bridge, a dusty original pane beside a wider clearer photograph of the same view. Original art, no figures or horns.
+
+the-darkness-recomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a static recompiler to Windows x64 with audio, saves, and achievements; a lavender night alley under sodium light, an unmarked disc set in a glass frame beside a phonograph and a locked copper box. Original art, no faces or limbs.
