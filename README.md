@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-171 projects & resources · 6 categories
+183 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -26,6 +26,13 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [pefile](<https://github.com/erocarrera/pefile>) — Pure-Python module to parse and work with PE files: headers, sections, imports/exports and related Windows binary structures.
 - [REHex](<https://github.com/solemnwarning/rehex>) — Cross-platform hex editor for reverse engineers: inspect and annotate binary data, with comments, types and file comparison.
 - [YARA-X](<https://github.com/VirusTotal/yara-x>) — VirusTotal’s Rust rewrite of YARA: compile and match YARA-style rules against files and memory, separate from the original C engine.
+- [Volatility 3](<https://github.com/volatilityfoundation/volatility3>) — Framework for extracting digital artifacts from volatile memory (RAM) samples, independent of the system under investigation.
+- [Keystone](<https://github.com/keystone-engine/keystone>) — Lightweight multi-architecture assembler framework: turn instruction text into machine code through a common API.
+- [iaito](<https://github.com/radareorg/iaito>) — Official Qt GUI for the radare2 reverse-engineering framework, aiming for simplicity and command/feature/keybinding parity.
+- [edb-debugger](<https://github.com/eteran/edb-debugger>) — Qt graphical debugger for AArch32, x86 and x86-64, inspired by OllyDbg; Linux is the only officially supported platform for now.
+- [Project IceStorm](<https://github.com/YosysHQ/icestorm>) — Documents the Lattice iCE40 FPGA configuration bitstream format and supplies simple tools for analysing and creating bitstreams.
+- [Remill](<https://github.com/lifting-bits/remill>) — Static binary-translation library that lifts AArch64, SPARC, x86 and amd64 machine code into LLVM bitcode.
+- [Microsoft Detours](<https://github.com/microsoft/Detours>) — Library for monitoring and instrumenting Windows API calls by intercepting functions; distributed in source form; not for Store apps.
 
 ### Games & game engines
 
@@ -156,6 +163,11 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [XC2 Recomp](<https://github.com/AksharDP/xc2-recomp>) — Static recomp of Xenoblade Chronicles 2 (Switch) to native Windows/Linux x86-64 with Vulkan; fork of XCX Recomp; BYO dump.
 - [Alien Resurrection: Recompiled](<https://github.com/DiegoDeDios/AlienReRecomp>) — Native macOS/Windows/Linux port of Alien Resurrection (PS1 USA) via static MIPS recomp; modern renderer; BYO USA disc.
 - [srw64-recomp](<https://github.com/dyzz/srw64-recomp>) — Unofficial native recomp of Super Robot Wars 64 (N64 JP Rev 0) for desktop, Deck, Android and Switch; translations and widescreen; BYO ROM.
+- [Recompia](<https://github.com/Dittobyte/Recompia>) — Static recomp of Pokémon Pokopia (Switch 2) to native Windows/Linux with Vulkan; launcher builds from the owner's dump; BYO legally obtained 2.0.1a dump.
+- [fefw-recomp](<https://github.com/Goldoire/fefw-recomp>) — Static recomp of Fire Emblem: Fortune's Weave (Switch 2) to native Windows (Linux/Proton) with Vulkan; launcher builds from the dump; BYO dump (update 131072).
+- [mkw-recomp](<https://github.com/adriadam10/mkw-recomp>) — Static recomp of Mario Kart World (Switch 2, 1.0.0) to native Linux/Windows; AArch64 translated to C, NVN2 on Vulkan; early; BYO dump.
+- [GT3 Revisited](<https://github.com/matt-pulsipher/GT3-revisited>) — Independent reimplementation of the Gran Turismo 3 A-Spec (PS2) engine for modern platforms; reads a disc image at runtime; BYO disc.
+- [smm2recomp](<https://github.com/smm2recomp/smm2recomp>) — Static recomp of Super Mario Maker 2 (v3.0.3) to a native port for Windows, Linux, macOS, iOS and Android; BYO legally obtained 3.0.3 dump.
 
 ### Desktop & productivity apps
 
