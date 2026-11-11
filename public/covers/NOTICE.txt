@@ -447,3 +447,38 @@ https://raw.githubusercontent.com/radareorg/iaito/a4badc5fd4b201c83349aaca7a78cc
 edb-debugger
 https://github.com/eteran/edb-debugger/blob/b8640ebd2f7f32839f6cbb53c7faf4374c329acd/README.md
 https://raw.githubusercontent.com/wiki/eteran/edb-debugger/img/edb_interface-2019.png
+
+GPT project-fitting covers (2026-11-11)
+Replaced eight local-svg-editorial-v1 letter templates from the Issues #206–#217 batch with project-specific Codex Images art. No trademarks/logos/watermarks. Model: gpt-image-2. Provider quality in the generation receipts was medium for six images and low for remill and microsoft-detours; the reviewed files are the ones shipped.
+
+recompia
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a static recompiler that turns a user-supplied console dump into a native desktop program; tabletop island diorama connected to a drafting plan by light threads. Original art, no characters or trademarks.
+
+fefw-recomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a static recompiler of a strategy-tactics title to native desktop; abstract wooden blocks on a peach stone grid with metal rods reconstructing the same lattice. Original art, no emblems or characters.
+
+gt3-revisited
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for an independent racing-engine reimplementation that reads a user-supplied disc image at runtime; unmarked silver prototype on a coastal circuit with a disc and chassis sketches. Original art, no trademarks.
+
+volatility3
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a Python memory-forensics framework that extracts traces from RAM samples; a translucent memory module lit like a specimen. Original art, no vendor logos or readable addresses.
+
+keystone
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a multi-architecture assembler framework; letterpress sorts locking into machined bars before mixed-material keystones. Original art, no readable assembly or compiler marks.
+
+project-icestorm
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for tools that document and generate Lattice iCE40 FPGA bitstreams; frost crystals growing along fabric and LUT islands on a die, with a copper probe. Original art, no vendor silkscreen.
+
+remill
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a static binary-translation library that lifts machine code to LLVM bitcode; heavy instruction blocks rising as glass intermediate-representation nodes. Original art, no compiler trademarks.
+
+microsoft-detours
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a Windows API intercept-and-instrument library; a sand-colored colonnade whose brass handrail detours through a side instrument bay. Original art, no system UI or vendor marks.
