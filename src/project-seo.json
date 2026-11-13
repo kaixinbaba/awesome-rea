@@ -348,5 +348,77 @@
       "title": "Microsoft Detours: Windows API Hooking Library",
       "subtitle": "Windows API hooking and instrumentation library"
     }
+  },
+  "ps2recomp": {
+    "en": {
+      "title": "PS2Recomp: PlayStation 2 Static Recompiler",
+      "subtitle": "Static recompiler and host runtime for PS2 ELFs"
+    }
+  },
+  "banjorecomp": {
+    "en": {
+      "title": "BanjoRecomp: Banjo-Kazooie N64 Native Port",
+      "subtitle": "Banjo-Kazooie (US 1.0) static recompilation port"
+    }
+  },
+  "pylingual": {
+    "en": {
+      "title": "pylingual: Python Bytecode Decompiler",
+      "subtitle": "CPython bytecode decompiler for Python 3.6+"
+    }
+  },
+  "dk64-recompiled": {
+    "en": {
+      "title": "Donkey Kong 64 Recompiled: N64 Native Port",
+      "subtitle": "Donkey Kong 64 (US) static recompilation port"
+    }
+  },
+  "kuna": {
+    "en": {
+      "title": "Kuna: Agent-First Rust Decompiler",
+      "subtitle": "Agent-oriented decompiler originally ported from Ghidra"
+    }
+  },
+  "binary-refinery": {
+    "en": {
+      "title": "Binary Refinery: CLI Malware Triage Units",
+      "subtitle": "Composable command-line units for binary transformation"
+    }
+  },
+  "hollows-hunter": {
+    "en": {
+      "title": "Hollows Hunter: Multi-Process PE-sieve Scanner",
+      "subtitle": "Windows scanner that runs PE-sieve across many processes"
+    }
+  },
+  "vivisect": {
+    "en": {
+      "title": "Vivisect: Python Disassembler and Debugger",
+      "subtitle": "Pure-Python disassembler, analysis and debugger framework"
+    }
+  },
+  "capev2": {
+    "en": {
+      "title": "CAPE Sandbox: Malware Config and Payload Extraction",
+      "subtitle": "Malware sandbox for unpacking and configuration extraction"
+    }
+  },
+  "angr-management": {
+    "en": {
+      "title": "angr-management: Official GUI for angr",
+      "subtitle": "Official graphical interface for the angr platform"
+    }
+  },
+  "krakatau": {
+    "en": {
+      "title": "Krakatau: Java Bytecode Assembler and Decompiler",
+      "subtitle": "Java bytecode assembler, disassembler and decompiler"
+    }
+  },
+  "cfr": {
+    "en": {
+      "title": "CFR: Java Decompiler for Modern Class Files",
+      "subtitle": "Java decompiler written in Java 6 for modern class files"
+    }
   }
 }

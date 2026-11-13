@@ -1654,5 +1654,109 @@
     "model": "gpt-image-2",
     "generatedAt": "2026-11-11T10:51:39.000Z",
     "checked": "2026-11-11"
+  },
+  "banjorecomp": {
+    "src": "/covers/banjorecomp-ca1cfb9fffe1.webp",
+    "width": 960,
+    "height": 408,
+    "source": "https://raw.githubusercontent.com/BanjoRecomp/BanjoRecomp/dbd52154bc1e00e56867b1fac94a8f907052f41b/assets/Logo.svg",
+    "readme": "https://github.com/BanjoRecomp/BanjoRecomp/blob/dbd52154bc1e00e56867b1fac94a8f907052f41b/README.md",
+    "checked": "2026-11-13"
+  },
+  "pylingual": {
+    "src": "/covers/pylingual-75a6387659e5.webp",
+    "width": 918,
+    "height": 720,
+    "source": "https://raw.githubusercontent.com/syssec-utd/pylingual/11a1516d84a6c2aa71ec23fbd11e4b99dc8c4a86/demo.gif",
+    "readme": "https://github.com/syssec-utd/pylingual/blob/11a1516d84a6c2aa71ec23fbd11e4b99dc8c4a86/README.md",
+    "checked": "2026-11-13"
+  },
+  "dk64-recompiled": {
+    "src": "/covers/dk64-recompiled-612927646440.webp",
+    "width": 960,
+    "height": 561,
+    "source": "https://raw.githubusercontent.com/Rainchus/Donkey-Kong-64-Recompiled/f77cc642e22ee376956271ee54dfdaf8fce768a6/assets/Logo.png",
+    "readme": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled/blob/f77cc642e22ee376956271ee54dfdaf8fce768a6/README.md",
+    "checked": "2026-11-13"
+  },
+  "kuna": {
+    "src": "/covers/kuna-53c60e943f3c.webp",
+    "width": 960,
+    "height": 453,
+    "source": "https://raw.githubusercontent.com/Noelo-Lab/kuna/6ba793768fe55d738fc5298b2b0f5559a159c4d4/assets/kuna_ghidra.png",
+    "readme": "https://github.com/Noelo-Lab/kuna/blob/6ba793768fe55d738fc5298b2b0f5559a159c4d4/README.md",
+    "checked": "2026-11-13"
+  },
+  "binary-refinery": {
+    "src": "/covers/binary-refinery-fb9da9bd624d.webp",
+    "width": 633,
+    "height": 356,
+    "source": "https://repository-images.githubusercontent.com/228019736/1f1a6b63-a732-45ea-b9c8-2266e1581f05",
+    "readme": "https://github.com/binref/refinery/blob/c06db515f8fc8350d0d384b9c2cb07116462aa88/README.md",
+    "checked": "2026-11-13"
+  },
+  "hollows-hunter": {
+    "src": "/covers/hollows-hunter-d19c45b7a78a.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/hasherezade/hollows_hunter/cd694375bbc810e9b0faa93530568953118278ce/logo/logo2_128.png",
+    "readme": "https://github.com/hasherezade/hollows_hunter/blob/cd694375bbc810e9b0faa93530568953118278ce/README.md",
+    "checked": "2026-11-13"
+  },
+  "capev2": {
+    "src": "/covers/capev2-4e918ba0fb74.webp",
+    "width": 960,
+    "height": 688,
+    "source": "https://github.com/kevoreilly/CAPEv2/assets/22219888/090ce3fb-9dc8-4316-bc20-469c6fff725a",
+    "readme": "https://github.com/kevoreilly/CAPEv2/blob/64e24084933d80d856783e9a910501e29c136eb7/README.md",
+    "checked": "2026-11-13"
+  },
+  "angr-management": {
+    "src": "/covers/angr-management-2c1ccbd35bea.webp",
+    "width": 960,
+    "height": 587,
+    "source": "https://raw.githubusercontent.com/angr/angr-management/a56c84dd3e39786662203f8a886ae352fb51c60a/screenshots/disassembly.png",
+    "readme": "https://github.com/angr/angr-management/blob/a56c84dd3e39786662203f8a886ae352fb51c60a/README.md",
+    "checked": "2026-11-13"
+  },
+  "ps2recomp": {
+    "sourceType": "generated",
+    "src": "/covers/ps2recomp-6358f3a9a813.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for a PlayStation 2 static recompiler toolkit that translates Emotion Engine MIPS ELF code ahead of time into C++ and a host runtime, with a separate IOP path. A mint-teal engineering workbench: a translucent MIPS-like processor die and a smaller I/O coprocessor tile shedding instruction ribbons that re-weave into neat C++ source folios and a native desktop window. No game artwork, no characters, no Sony or PlayStation marks, no letter-tile monograms, no pure gradient, no readable text, no logos, no watermarks. Original detailed art with texture, shadows and highlights.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-13T03:23:11.001Z",
+    "checked": "2026-11-13"
+  },
+  "vivisect": {
+    "sourceType": "generated",
+    "src": "/covers/vivisect-026779166aee.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for Vivisect, a pure-Python reverse-engineering framework that combines a disassembler, static analysis, optional symbolic execution and a debugger. A sand-colored laboratory desk where a dark hex-and-assembly optical pane, a branching symbolic thread of light, and a paused debug probe sit together like precision instruments, quiet and tactile. Original detailed art, no readable text, no logos, no watermarks, no letter-tile monograms, no pure gradient.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-13T03:23:11.001Z",
+    "checked": "2026-11-13"
+  },
+  "krakatau": {
+    "sourceType": "generated",
+    "src": "/covers/krakatau-9f2997b9f7cf.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for Krakatau, a Java bytecode assembler, disassembler and decompiler whose current line is a Rust rewrite. A lavender workbench: a cracked porcelain class-file tablet opening into readable assembly script on one side and reconstructed source pages on the other, with a small reassembly kiln joining them back into a class file, suggesting work on tangled obfuscated code. Original detailed art, no readable text, no logos, no watermarks, no official Java mascot, no letter-tile monograms, no pure gradient.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-13T03:23:11.001Z",
+    "checked": "2026-11-13"
+  },
+  "cfr": {
+    "sourceType": "generated",
+    "src": "/covers/cfr-a8d479f98132.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for CFR, a Java decompiler written in Java 6 that turns modern class files and jars back into Java source. A warm sand workshop where contemporary sealed jars and class-file wafers feed a compact older brass loom that weaves them into tidy source quires, suggesting modern language features handled on a deliberately old runtime. Original detailed art, no readable text, no logos, no watermarks, no official Java mascot, no letter-tile monograms, no pure gradient.",
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-13T03:23:11.001Z",
+    "checked": "2026-11-13"
   }
 }
