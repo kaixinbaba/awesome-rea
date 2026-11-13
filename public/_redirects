@@ -1,7 +1,11 @@
 # Exact typo URLs from Search Console (fullwidth closing parenthesis + "via").
 # Keep these rules exact. Do not add a catch-all here; a catch-all would also
 # rewrite the custom domain and collide with the pages.dev Bulk Redirect.
+# Cloudflare Pages matches percent-encoded paths case-sensitively, so both
+# upper and lower hex forms are listed.
 /zh/projects/brawl/）via /zh/projects/brawl/ 308
 /zh/projects/brawl/%EF%BC%89via /zh/projects/brawl/ 308
+/zh/projects/brawl/%ef%bc%89via /zh/projects/brawl/ 308
 /zh/projects/ac-decomp/）via /zh/projects/ac-decomp/ 308
 /zh/projects/ac-decomp/%EF%BC%89via /zh/projects/ac-decomp/ 308
+/zh/projects/ac-decomp/%ef%bc%89via /zh/projects/ac-decomp/ 308

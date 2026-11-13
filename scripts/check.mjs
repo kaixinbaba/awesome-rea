@@ -140,8 +140,10 @@ const redirectMap = new Map(redirectLines.map(l => { const [from, to, status] = 
 for (const [from, to] of [
   ['/zh/projects/brawl/）via', '/zh/projects/brawl/'],
   ['/zh/projects/brawl/%EF%BC%89via', '/zh/projects/brawl/'],
+  ['/zh/projects/brawl/%ef%bc%89via', '/zh/projects/brawl/'],
   ['/zh/projects/ac-decomp/）via', '/zh/projects/ac-decomp/'],
   ['/zh/projects/ac-decomp/%EF%BC%89via', '/zh/projects/ac-decomp/'],
+  ['/zh/projects/ac-decomp/%ef%bc%89via', '/zh/projects/ac-decomp/'],
 ]) {
   assert.equal(redirectMap.get(from)?.to, to, `missing exact redirect for ${from}`);
   assert.equal(redirectMap.get(from)?.status, '308', `${from} must be a cacheable 308`);
