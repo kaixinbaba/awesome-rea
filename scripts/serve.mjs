@@ -4,10 +4,18 @@ import { resolve, extname, sep } from 'node:path';
 const root = resolve('dist');
 const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.png': 'image/png', '.txt': 'text/plain', '.xml': 'application/xml' };
 const headers = (await readFile('dist/_headers','utf8')).split('\n').filter(l=>l.startsWith('  ')).map(l=>{const n=l.indexOf(':');return [l.slice(2,n),l.slice(n+1).trim()];});
+const redirects = (await readFile('dist/_redirects', 'utf8')).split('\n').map(l => l.trim()).filter(l => l && !l.startsWith('#')).map(l => { const [from, to, status] = l.split(/\s+/); return { from, to, status: Number(status || 302) }; });
 const server=createServer(async (req,res)=>{
   try {
     let path;
-    try { path = decodeURIComponent(new URL(req.url,'http://localhost').pathname); } catch { res.writeHead(400).end(); return; }
+    const rawPath = new URL(req.url,'http://localhost').pathname;
+    try { path = decodeURIComponent(rawPath); } catch { res.writeHead(400).end(); return; }
+    const redirect = redirects.find(rule => {
+      let decodedFrom = rule.from;
+      try { decodedFrom = decodeURIComponent(rule.from); } catch {}
+      return rule.from === rawPath || rule.from === path || decodedFrom === path;
+    });
+    if (redirect) { res.writeHead(redirect.status, { Location: redirect.to, 'Cache-Control': 'no-store' }); res.end(); return; }
     let file=resolve(root,`.${path}`);
     if (!file.startsWith(root+sep) && file!==root) {res.writeHead(403).end();return;}
     let status=200;

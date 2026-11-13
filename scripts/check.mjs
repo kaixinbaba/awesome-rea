@@ -134,4 +134,16 @@ const expectedLocs = Object.keys(locales).flatMap(locale => {
 assert.deepEqual([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]), expectedLocs);
 assert.equal((sitemap.match(/hreflang="/g) || []).length, expectedLocs.length * 3);
 assert((await readFile('dist/robots.txt', 'utf8')).includes(`Sitemap: ${origin}/sitemap.xml`));
-console.log(`PASS: ${data.length} entries in both locales, detail+category pages, local assets, translation coverage, hreflang, JSON-LD/CSP and sitemap (${expectedLocs.length} locs)`);
+const redirectLines = (await readFile('dist/_redirects', 'utf8')).split('\n').map(l => l.trim()).filter(l => l && !l.startsWith('#'));
+assert(!redirectLines.some(l => l.split(/\s+/)[0].includes('*')), 'dist/_redirects must stay exact; no catch-all');
+const redirectMap = new Map(redirectLines.map(l => { const [from, to, status] = l.split(/\s+/); return [from, { to, status }]; }));
+for (const [from, to] of [
+  ['/zh/projects/brawl/）via', '/zh/projects/brawl/'],
+  ['/zh/projects/brawl/%EF%BC%89via', '/zh/projects/brawl/'],
+  ['/zh/projects/ac-decomp/）via', '/zh/projects/ac-decomp/'],
+  ['/zh/projects/ac-decomp/%EF%BC%89via', '/zh/projects/ac-decomp/'],
+]) {
+  assert.equal(redirectMap.get(from)?.to, to, `missing exact redirect for ${from}`);
+  assert.equal(redirectMap.get(from)?.status, '308', `${from} must be a cacheable 308`);
+}
+console.log(`PASS: ${data.length} entries in both locales, detail+category pages, local assets, translation coverage, hreflang, JSON-LD/CSP, sitemap (${expectedLocs.length} locs) and exact typo redirects`);

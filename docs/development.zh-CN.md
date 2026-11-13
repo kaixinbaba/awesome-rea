@@ -130,7 +130,7 @@ git push origin main
 
 生产域名及默认来源为 `https://awesomerea.com`，根域 CNAME 指向 `awesomerea.pages.dev`，域名绑定和 HTTPS 证书由 Cloudflare Pages 管理。构建前可设置 `SITE_URL=https://your-domain.example` 覆盖 canonical、Open Graph 和站点地图来源；构建变量不会自动绑定域名。发布后检查实际文件、响应头、页面行为及域名跳转。
 
-旧域 `awesomerea.pages.dev` 使用 Cloudflare 账号级批量重定向，301 跳转到正式域名，保留路径和查询参数，不影响预览子域。列表为 `awesome_rea_primary_domain`，规则为 `Awesome REA primary domain`。迁移账号时应保留，不能改成会同时影响正式域的通配 `_redirects` 规则。
+旧域 `awesomerea.pages.dev` 使用 Cloudflare 账号级批量重定向，301 跳转到正式域名，保留路径和查询参数，不影响预览子域。列表为 `awesome_rea_primary_domain`，规则为 `Awesome REA primary domain`。迁移账号时应保留，不能改成会同时影响正式域的通配 `_redirects` 规则。 中文项目页上多出来的 `）via` 误地址（含 `%EF%BC%89via` 编码）写在 `public/_redirects`，以 308 精确跳到对应干净中文项目页，须保持精确规则，不要改成通配。
 
 `awesomerea.com` 的 Cloudflare 实际用户监测（RUM）已关闭，以免注入统计脚本。绑定新域名时需复查；浏览器测试会拒绝意外第三方请求。
 
