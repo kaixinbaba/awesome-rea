@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-183 projects & resources · 6 categories
+195 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -33,6 +33,16 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [Project IceStorm](<https://github.com/YosysHQ/icestorm>) — Documents the Lattice iCE40 FPGA configuration bitstream format and supplies simple tools for analysing and creating bitstreams.
 - [Remill](<https://github.com/lifting-bits/remill>) — Static binary-translation library that lifts AArch64, SPARC, x86 and amd64 machine code into LLVM bitcode.
 - [Microsoft Detours](<https://github.com/microsoft/Detours>) — Library for monitoring and instrumenting Windows API calls by intercepting functions; distributed in source form; not for Store apps.
+- [PS2Recomp](<https://github.com/ran-j/PS2Recomp>) — Toolkit that statically recompiles PlayStation 2 ELF binaries into C++ and runs them on a host runtime; no Sony material shipped.
+- [pylingual](<https://github.com/syssec-utd/pylingual>) — CPython bytecode decompiler for Python 3.6+ from UT Dallas SysSec Lab, with a hosted web service and a local CLI.
+- [Kuna](<https://github.com/Noelo-Lab/kuna>) — Agent-oriented Rust decompiler originally ported from Ghidra, with a CLI, browser build, Ghidra backend and an agent skill.
+- [Binary Refinery](<https://github.com/binref/refinery>) — Composable Python command-line units that transform binary data for malware triage, designed to be piped together.
+- [Hollows Hunter](<https://github.com/hasherezade/hollows_hunter>) — Windows CLI memory scanner that runs the PE-sieve engine across many processes, or the whole system, and dumps implants.
+- [Vivisect](<https://github.com/vivisect/vivisect>) — Pure-Python reverse-engineering framework combining a disassembler, static analysis, optional symbolic execution and a debugger.
+- [CAPE Sandbox (CAPEv2)](<https://github.com/kevoreilly/CAPEv2>) — Malware sandbox derived from Cuckoo v1 that unpacks payloads and extracts configs in isolated Windows guests.
+- [angr-management](<https://github.com/angr/angr-management>) — Official cross-platform graphical UI for the angr binary analysis platform, with disassembly and decompilation views.
+- [Krakatau](<https://github.com/Storyyeller/Krakatau>) — Java bytecode assembler, disassembler and decompiler; v2 (krak2) is a Rust rewrite, and the v2 decompiler is still in progress.
+- [CFR](<https://github.com/leibnitz27/cfr>) — Java decompiler for modern class files and jars, written in Java 6 so it can run on older JVMs.
 
 ### Games & game engines
 
@@ -168,6 +178,8 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [mkw-recomp](<https://github.com/adriadam10/mkw-recomp>) — Static recomp of Mario Kart World (Switch 2, 1.0.0) to native Linux/Windows; AArch64 translated to C, NVN2 on Vulkan; early; BYO dump.
 - [GT3 Revisited](<https://github.com/matt-pulsipher/GT3-revisited>) — Independent reimplementation of the Gran Turismo 3 A-Spec (PS2) engine for modern platforms; reads a disc image at runtime; BYO disc.
 - [smm2recomp](<https://github.com/smm2recomp/smm2recomp>) — Static recomp of Super Mario Maker 2 (v3.0.3) to a native port for Windows, Linux, macOS, iOS and Android; BYO legally obtained 3.0.3 dump.
+- [BanjoRecomp](<https://github.com/BanjoRecomp/BanjoRecomp>) — Native Windows, Linux and macOS port of Banjo-Kazooie (N64, US 1.0) via N64: Recompiled and RT64; assets not shipped, US 1.0 ROM required.
+- [Donkey Kong 64 Recompiled](<https://github.com/Rainchus/Donkey-Kong-64-Recompiled>) — Native Windows and Linux port of Donkey Kong 64 (N64, US) via N64: Recompiled and RT64; assets not shipped, US ROM required.
 
 ### Desktop & productivity apps
 

@@ -549,3 +549,58 @@ Editorial 16:9 cover for a native port of a matching decompilation, optionally s
 the-darkness-recomp
 generated · model=gpt-image-2 · no upstream image
 Editorial 16:9 cover for a static recompiler to Windows x64 with audio, saves, and achievements; a lavender night alley under sodium light, an unmarked disc set in a glass frame beside a phonograph and a locked copper box. Original art, no faces or limbs.
+
+banjorecomp
+https://github.com/BanjoRecomp/BanjoRecomp/blob/dbd52154bc1e00e56867b1fac94a8f907052f41b/README.md
+https://raw.githubusercontent.com/BanjoRecomp/BanjoRecomp/dbd52154bc1e00e56867b1fac94a8f907052f41b/assets/Logo.svg
+
+pylingual
+https://github.com/syssec-utd/pylingual/blob/11a1516d84a6c2aa71ec23fbd11e4b99dc8c4a86/README.md
+https://raw.githubusercontent.com/syssec-utd/pylingual/11a1516d84a6c2aa71ec23fbd11e4b99dc8c4a86/demo.gif
+still frame of demo.gif (frame 105; frame 0 is an empty window)
+
+dk64-recompiled
+https://github.com/Rainchus/Donkey-Kong-64-Recompiled/blob/f77cc642e22ee376956271ee54dfdaf8fce768a6/README.md
+https://raw.githubusercontent.com/Rainchus/Donkey-Kong-64-Recompiled/f77cc642e22ee376956271ee54dfdaf8fce768a6/assets/Logo.png
+
+kuna
+https://github.com/Noelo-Lab/kuna/blob/6ba793768fe55d738fc5298b2b0f5559a159c4d4/README.md
+https://raw.githubusercontent.com/Noelo-Lab/kuna/6ba793768fe55d738fc5298b2b0f5559a159c4d4/assets/kuna_ghidra.png
+
+binary-refinery
+https://github.com/binref/refinery/blob/c06db515f8fc8350d0d384b9c2cb07116462aa88/README.md
+https://repository-images.githubusercontent.com/228019736/1f1a6b63-a732-45ea-b9c8-2266e1581f05
+custom GitHub Open Graph image (pixel-art refinery)
+
+hollows-hunter
+https://github.com/hasherezade/hollows_hunter/blob/cd694375bbc810e9b0faa93530568953118278ce/README.md
+https://raw.githubusercontent.com/hasherezade/hollows_hunter/cd694375bbc810e9b0faa93530568953118278ce/logo/logo2_128.png
+official 128px logo padded onto 960x540 paper canvas
+
+capev2
+https://github.com/kevoreilly/CAPEv2/blob/64e24084933d80d856783e9a910501e29c136eb7/README.md
+https://github.com/kevoreilly/CAPEv2/assets/22219888/090ce3fb-9dc8-4316-bc20-469c6fff725a
+README Automated Unpacking screenshot
+
+angr-management
+https://github.com/angr/angr-management/blob/a56c84dd3e39786662203f8a886ae352fb51c60a/README.md
+https://raw.githubusercontent.com/angr/angr-management/a56c84dd3e39786662203f8a886ae352fb51c60a/screenshots/disassembly.png
+
+GPT project-fitting covers (2026-11-13)
+Original art matched to each project's subject. No trademarks/logos/watermarks. Model: gpt-image-2. Issues #233–#244: generated only where no usable upstream README/OG image existed.
+
+ps2recomp
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a PlayStation 2 static recompiler toolkit: Emotion Engine-like die and IOP tile reweaving instruction ribbons into C++ folios and a native window. Original art, no Sony marks.
+
+vivisect
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a pure-Python disassembler, static analysis, symbolic execution and debugger framework; hex plate, branching light thread, and a debug probe on a sand desk. Original art, no letter tiles.
+
+krakatau
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a Java bytecode assembler, disassembler and decompiler (Rust rewrite krak2): cracked class-file tablet, reassembly kiln, and source pages. Original art, no official Java mascot.
+
+cfr
+generated · model=gpt-image-2 · no upstream image
+Editorial 16:9 cover for a Java decompiler written in Java 6 for modern class files and jars: sealed jars feeding an older brass loom that weaves source quires. Original art, no official Java mascot.

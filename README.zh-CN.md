@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-183 个项目与资源 · 6 个分类
+195 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -33,6 +33,16 @@
 - [Project IceStorm](<https://github.com/YosysHQ/icestorm>) — 记录 Lattice iCE40 FPGA 配置比特流格式，并提供分析与生成比特流的简单工具。
 - [Remill](<https://github.com/lifting-bits/remill>) — 将 AArch64、SPARC、x86 与 amd64 机器码提升为 LLVM 位代码的静态二进制翻译库。
 - [Microsoft Detours](<https://github.com/microsoft/Detours>) — 通过拦截函数来监视和检测 Windows API 调用的库；以源码形式发布；不适用于 Store 应用。
+- [PS2Recomp](<https://github.com/ran-j/PS2Recomp>) — 将 PlayStation 2 ELF 静态重编译为 C++ 并在宿主运行时执行的工具包；不含索尼材料。
+- [pylingual](<https://github.com/syssec-utd/pylingual>) — UT Dallas SysSec 实验室的 CPython 字节码反编译器，支持 Python 3.6+，提供托管服务与本地命令行。
+- [Kuna](<https://github.com/Noelo-Lab/kuna>) — 源自 Ghidra 的面向智能体的 Rust 反编译器，提供命令行、浏览器构建、Ghidra 后端和智能体技能。
+- [Binary Refinery](<https://github.com/binref/refinery>) — 可组合的 Python 命令行单元，用于变换二进制数据以做恶意软件分诊，设计为可管道串联。
+- [Hollows Hunter](<https://github.com/hasherezade/hollows_hunter>) — Windows 命令行内存扫描器，用 PE-sieve 引擎扫描多个进程或整个系统，并转储植入物。
+- [Vivisect](<https://github.com/vivisect/vivisect>) — 纯 Python 逆向工程框架，结合反汇编器、静态分析、可选符号执行和调试器。
+- [CAPE Sandbox (CAPEv2)](<https://github.com/kevoreilly/CAPEv2>) — 源自 Cuckoo v1 的恶意软件沙箱，在隔离的 Windows 客户机中脱壳载荷并提取配置。
+- [angr-management](<https://github.com/angr/angr-management>) — angr 二进制分析平台的官方跨平台图形界面，提供反汇编和反编译视图。
+- [Krakatau](<https://github.com/Storyyeller/Krakatau>) — Java 字节码汇编、反汇编与反编译工具；v2（krak2）为 Rust 重写，v2 反编译器仍在开发中。
+- [CFR](<https://github.com/leibnitz27/cfr>) — 面向现代 class 文件和 jar 的 Java 反编译器，用 Java 6 写成，可在较旧的 JVM 上运行。
 
 ### 游戏与游戏引擎
 
@@ -168,6 +178,8 @@
 - [mkw-recomp](<https://github.com/adriadam10/mkw-recomp>) — 将《马里奥赛车 世界》（Switch 2，1.0.0）静态重编译为 Linux/Windows 原生程序；AArch64 先译为 C，NVN2 建在 Vulkan 上；早期；需自备 dump。
 - [GT3 Revisited](<https://github.com/matt-pulsipher/GT3-revisited>) — 独立重实现 PS2《GT 赛车 3 A-Spec》引擎，面向现代平台；运行时读取光盘镜像；需自备光盘。
 - [smm2recomp](<https://github.com/smm2recomp/smm2recomp>) — 将《超级马里奥制作大师 2》（v3.0.3）静态重编译为 Windows、Linux、macOS、iOS 与 Android 原生移植；需自备合法取得的 3.0.3 dump。
+- [BanjoRecomp](<https://github.com/BanjoRecomp/BanjoRecomp>) — 《班卓熊大冒险》（N64 美版 1.0）经 N64: Recompiled 与 RT64 原生移植至 Windows/Linux/macOS；不含资源，需自备美版 1.0 ROM。
+- [Donkey Kong 64 Recompiled](<https://github.com/Rainchus/Donkey-Kong-64-Recompiled>) — 《大金刚 64》（N64 美版）经 N64: Recompiled 与 RT64 原生移植至 Windows/Linux；不含资源，需自备美版 ROM。
 
 ### 桌面与效率应用
 
