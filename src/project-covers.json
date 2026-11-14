@@ -1758,5 +1758,47 @@
     "model": "gpt-image-2",
     "generatedAt": "2026-11-13T03:23:11.001Z",
     "checked": "2026-11-13"
+  },
+  "redriver2": {
+    "src": "/covers/redriver2-4eb9ac8fc68d.webp",
+    "width": 640,
+    "height": 375,
+    "source": "https://i.ibb.co/2q1pp06/red2.png",
+    "readme": "https://github.com/OpenDriver2/REDRIVER2/blob/b2d8857426f815007486def9bd23f9a6007a2c64/README.md",
+    "checked": "2026-11-14"
+  },
+  "sdlpal": {
+    "src": "/covers/sdlpal-3c56d9dd85be.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/sdlpal/sdlpal/170accc3e9bd69c22eaffe27f4ac2288980b2869/Icon.png",
+    "readme": "https://github.com/sdlpal/sdlpal/blob/170accc3e9bd69c22eaffe27f4ac2288980b2869/docs/README.md",
+    "checked": "2026-11-14"
+  },
+  "minish-cap-3ds": {
+    "src": "/covers/minish-cap-3ds-252225b7fa9a.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/EstebanPdN/zelda-tmc-3ds/ae254722ac39fab63383a945cf1845de580a6566/docs/images/showcase-rounded.webp",
+    "readme": "https://github.com/EstebanPdN/zelda-tmc-3ds/blob/ae254722ac39fab63383a945cf1845de580a6566/README.md",
+    "checked": "2026-11-14"
+  },
+  "hermes-decomp": {
+    "src": "/covers/hermes-decomp-154065712cf8.webp",
+    "width": 960,
+    "height": 608,
+    "source": "https://raw.githubusercontent.com/SymbioticSec/hermes-decomp/ad4c924720848a26136a56688b70339fe9ea7aba/decompile.png",
+    "readme": "https://github.com/SymbioticSec/hermes-decomp/blob/ad4c924720848a26136a56688b70339fe9ea7aba/README.md",
+    "checked": "2026-11-14"
+  },
+  "ac6recomp": {
+    "sourceType": "generated",
+    "src": "/covers/ac6recomp-86ad251ccbf7.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for AC6Recomp, an unofficial native Windows port of Ace Combat 6: Fires of Liberation that statically recompiles Xbox 360 PowerPC game code to x86-64. A peach-and-steel late-afternoon sky over a sunlit sea: a sleek unmarked fighter jet banks above a distant warship silhouette, while on a nearby workbench a translucent console-era processor tile sheds PowerPC instruction ribbons that re-weave into a native desktop viewport, suggesting static recompilation to a PC host. Original detailed art with texture, shadows and highlights. No readable text, no logos, no watermarks, no Bandai Namco or Ace Combat trademarks, no Xbox or Microsoft marks, no letter-tile monograms, no pure gradient.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-14T02:53:47.863Z",
+    "checked": "2026-11-14"
   }
 }

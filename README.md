@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-195 projects & resources · 6 categories
+200 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -43,6 +43,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [angr-management](<https://github.com/angr/angr-management>) — Official cross-platform graphical UI for the angr binary analysis platform, with disassembly and decompilation views.
 - [Krakatau](<https://github.com/Storyyeller/Krakatau>) — Java bytecode assembler, disassembler and decompiler; v2 (krak2) is a Rust rewrite, and the v2 decompiler is still in progress.
 - [CFR](<https://github.com/leibnitz27/cfr>) — Java decompiler for modern class files and jars, written in Java 6 so it can run on older JVMs.
+- [hermes-decomp](<https://github.com/SymbioticSec/hermes-decomp>) — Rust decompiler and toolkit for Hermes bytecode (HBC 40–99), used by React Native; can disassemble, decompile and patch .hbc files.
 
 ### Games & game engines
 
@@ -180,6 +181,10 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [smm2recomp](<https://github.com/smm2recomp/smm2recomp>) — Static recomp of Super Mario Maker 2 (v3.0.3) to a native port for Windows, Linux, macOS, iOS and Android; BYO legally obtained 3.0.3 dump.
 - [BanjoRecomp](<https://github.com/BanjoRecomp/BanjoRecomp>) — Native Windows, Linux and macOS port of Banjo-Kazooie (N64, US 1.0) via N64: Recompiled and RT64; assets not shipped, US 1.0 ROM required.
 - [Donkey Kong 64 Recompiled](<https://github.com/Rainchus/Donkey-Kong-64-Recompiled>) — Native Windows and Linux port of Donkey Kong 64 (N64, US) via N64: Recompiled and RT64; assets not shipped, US ROM required.
+- [REDRIVER2](<https://github.com/OpenDriver2/REDRIVER2>) — Native Windows and Linux port of Driver 2, reverse-engineered from PlayStation MIPS to C; game data not shipped.
+- [SDLPAL](<https://github.com/sdlpal/sdlpal>) — SDL reimplementation of the classic Chinese RPG Legend of Sword and Fairy (PAL); original game data is not shipped.
+- [The Minish Cap 3DS](<https://github.com/EstebanPdN/zelda-tmc-3ds>) — Native Nintendo 3DS dual-screen port of The Minish Cap, based on the tmc decompilation; no ROM or Nintendo assets shipped.
+- [AC6Recomp](<https://github.com/sal063/AC6_recomp>) — Unofficial native Windows port of Ace Combat 6 via Xbox 360 static recomp to x86-64; game data not shipped, US copy required.
 
 ### Desktop & productivity apps
 
