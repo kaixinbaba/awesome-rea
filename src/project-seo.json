@@ -420,5 +420,35 @@
       "title": "CFR: Java Decompiler for Modern Class Files",
       "subtitle": "Java decompiler written in Java 6 for modern class files"
     }
+  },
+  "redriver2": {
+    "en": {
+      "title": "REDRIVER2: Driver 2 PlayStation Reverse-Engineering Port",
+      "subtitle": "Native Windows and Linux port of Driver 2, translated from MIPS to C"
+    }
+  },
+  "sdlpal": {
+    "en": {
+      "title": "SDLPAL: Legend of Sword and Fairy Reimplementation",
+      "subtitle": "SDL reimplementation of the classic Chinese RPG also known as PAL"
+    }
+  },
+  "minish-cap-3ds": {
+    "en": {
+      "title": "The Minish Cap 3DS: Dual-Screen Native Port",
+      "subtitle": "Nintendo 3DS dual-screen port of The Minish Cap based on the tmc decompilation"
+    }
+  },
+  "hermes-decomp": {
+    "en": {
+      "title": "hermes-decomp: Hermes Bytecode Decompiler",
+      "subtitle": "Rust decompiler for React Native Hermes bytecode (HBC 40–99)"
+    }
+  },
+  "ac6recomp": {
+    "en": {
+      "title": "AC6Recomp: Ace Combat 6 Xbox 360 Static Recomp",
+      "subtitle": "Unofficial native Windows port of Ace Combat 6 via static recompilation"
+    }
   }
 }

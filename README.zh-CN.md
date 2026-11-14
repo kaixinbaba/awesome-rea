@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-195 个项目与资源 · 6 个分类
+200 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -43,6 +43,7 @@
 - [angr-management](<https://github.com/angr/angr-management>) — angr 二进制分析平台的官方跨平台图形界面，提供反汇编和反编译视图。
 - [Krakatau](<https://github.com/Storyyeller/Krakatau>) — Java 字节码汇编、反汇编与反编译工具；v2（krak2）为 Rust 重写，v2 反编译器仍在开发中。
 - [CFR](<https://github.com/leibnitz27/cfr>) — 面向现代 class 文件和 jar 的 Java 反编译器，用 Java 6 写成，可在较旧的 JVM 上运行。
+- [hermes-decomp](<https://github.com/SymbioticSec/hermes-decomp>) — 面向 React Native 的 Rust Hermes 字节码反编译工具包（HBC 40–99），可反汇编、反编译并修补 .hbc 文件。
 
 ### 游戏与游戏引擎
 
@@ -180,6 +181,10 @@
 - [smm2recomp](<https://github.com/smm2recomp/smm2recomp>) — 将《超级马里奥制作大师 2》（v3.0.3）静态重编译为 Windows、Linux、macOS、iOS 与 Android 原生移植；需自备合法取得的 3.0.3 dump。
 - [BanjoRecomp](<https://github.com/BanjoRecomp/BanjoRecomp>) — 《班卓熊大冒险》（N64 美版 1.0）经 N64: Recompiled 与 RT64 原生移植至 Windows/Linux/macOS；不含资源，需自备美版 1.0 ROM。
 - [Donkey Kong 64 Recompiled](<https://github.com/Rainchus/Donkey-Kong-64-Recompiled>) — 《大金刚 64》（N64 美版）经 N64: Recompiled 与 RT64 原生移植至 Windows/Linux；不含资源，需自备美版 ROM。
+- [REDRIVER2](<https://github.com/OpenDriver2/REDRIVER2>) — 将《Driver 2》从 PlayStation MIPS 逆向到 C 的 Windows/Linux 原生移植；不含游戏数据。
+- [SDLPAL](<https://github.com/sdlpal/sdlpal>) — 以 SDL 重实现经典中文 RPG《仙剑奇侠传》（PAL）；不含原作游戏数据。
+- [The Minish Cap 3DS](<https://github.com/EstebanPdN/zelda-tmc-3ds>) — 基于 tmc 反编译的《缩小帽》任天堂 3DS 双屏原生移植；不含 ROM 或任天堂资源。
+- [AC6Recomp](<https://github.com/sal063/AC6_recomp>) — 经 Xbox 360 静态重编译到 x86-64 的《皇牌空战 6》非官方 Windows 原生移植；不含游戏数据，需自备美版拷贝。
 
 ### 桌面与效率应用
 
