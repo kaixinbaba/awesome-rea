@@ -631,3 +631,28 @@ Original art matched to each project's subject. No trademarks/logos/watermarks. 
 ac6recomp
 generated · model=cursor-generate-image · no upstream image
 Editorial 16:9 cover for an unofficial native Windows port of Ace Combat 6 via Xbox 360 PowerPC static recompilation to x86-64: unmarked fighter jet over a sunlit sea, with a translucent processor tile reweaving instruction ribbons into a native desktop viewport. Original art, no official marks.
+
+downpourrecomp
+https://github.com/LittleBitUA/DownpourRecomp/blob/a183ff0b21f5e504526102754a04f2a9534a97b7/README.md
+https://raw.githubusercontent.com/LittleBitUA/DownpourRecomp/a183ff0b21f5e504526102754a04f2a9534a97b7/docs/screenshots/murphy-closeup.png
+README hero screenshot murphy-closeup.png (native-port gameplay close-up; preferred over v1-preview-silent-hill-sign.png which has a debug overlay)
+
+gb-recompiled
+https://github.com/arcanite24/gb-recompiled/blob/9150f87d82fa98abcb6ea22329170463f9702eb8/README.md
+https://raw.githubusercontent.com/arcanite24/gb-recompiled/9150f87d82fa98abcb6ea22329170463f9702eb8/dino.png
+README dino.png (Game Boy game running in a generated GB Recompiled window; preferred over the Crystal Recompiled challenge-mode companion shot)
+
+GPT project-fitting covers (2026-11-15)
+Original art matched to each project's subject. No trademarks/logos/watermarks. Model: cursor-generate-image. Issues #261–#265: generated only where no usable upstream README/OG image existed.
+
+dino-recomp
+generated · model=cursor-generate-image · no upstream image
+Editorial 16:9 cover for a native Windows/Linux port of the unreleased December 2000 N64 prototype Dinosaur Planet via static recompilation: misty prehistoric jungle planet with ruins, a volcano and original dinosaur wildlife, plus a processor tile reweaving instruction ribbons into a native desktop viewport. Original art, no official marks.
+
+goemon64recomp
+generated · model=cursor-generate-image · no upstream image
+Editorial 16:9 cover for an unofficial native PC port of Mystical Ninja Starring Goemon via N64 static recompilation: Edo-period castle town at dusk, a stylized original ninja-adventurer with a pipe on a rooftop, plus a processor tile reweaving instruction ribbons into a native desktop viewport. Original art, no official marks. docs/deck_gyro_1.jpg is a Steam Deck settings UI and was not used.
+
+simpsons-game-recomp
+generated · model=cursor-generate-image · no upstream image
+Editorial 16:9 cover for a native port of The Simpsons Game (Xbox 360, 2007) via static recompilation: late-afternoon suburban street with twin cooling towers on the horizon and a blank billboard, plus a processor tile reweaving instruction ribbons into a native desktop viewport. Original art, no official marks or character likenesses.

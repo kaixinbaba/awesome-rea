@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-200 projects & resources · 6 categories
+205 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -44,6 +44,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [Krakatau](<https://github.com/Storyyeller/Krakatau>) — Java bytecode assembler, disassembler and decompiler; v2 (krak2) is a Rust rewrite, and the v2 decompiler is still in progress.
 - [CFR](<https://github.com/leibnitz27/cfr>) — Java decompiler for modern class files and jars, written in Java 6 so it can run on older JVMs.
 - [hermes-decomp](<https://github.com/SymbioticSec/hermes-decomp>) — Rust decompiler and toolkit for Hermes bytecode (HBC 40–99), used by React Native; can disassemble, decompile and patch .hbc files.
+- [GB Recompiled](<https://github.com/arcanite24/gb-recompiled>) — Experimental static recompiler that turns Game Boy and Game Boy Color ROMs into portable C projects with an SDL2 runtime; no ROMs shipped.
 
 ### Games & game engines
 
@@ -185,6 +186,10 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [SDLPAL](<https://github.com/sdlpal/sdlpal>) — SDL reimplementation of the classic Chinese RPG Legend of Sword and Fairy (PAL); original game data is not shipped.
 - [The Minish Cap 3DS](<https://github.com/EstebanPdN/zelda-tmc-3ds>) — Native Nintendo 3DS dual-screen port of The Minish Cap, based on the tmc decompilation; no ROM or Nintendo assets shipped.
 - [AC6Recomp](<https://github.com/sal063/AC6_recomp>) — Unofficial native Windows port of Ace Combat 6 via Xbox 360 static recomp to x86-64; game data not shipped, US copy required.
+- [DownpourRecomp](<https://github.com/LittleBitUA/DownpourRecomp>) — Unofficial native Windows port of Silent Hill: Downpour via Xbox 360 static recomp to x86-64; game data not shipped, USA or EUR copy required.
+- [Dinosaur Planet Recompiled](<https://github.com/DinosaurPlanetRecomp/dino-recomp>) — Native Windows/Linux port of the December 2000 Dinosaur Planet N64 prototype via N64: Recompiled and RT64; assets not shipped, that prototype ROM required.
+- [Goemon64Recomp](<https://github.com/klorfmorf/Goemon64Recomp>) — Unofficial native Windows, Linux and macOS port of Mystical Ninja Starring Goemon (N64, US) via N64: Recompiled and RT64; assets not shipped, US ROM required.
+- [The Simpsons Game Recompiled](<https://github.com/YesterMester/TheSimpsonsGameRecomp>) — Native Linux, Steam Deck and Windows port of The Simpsons Game (Xbox 360, 2007) via static recomp, plus an Android preview; own copy required.
 
 ### Desktop & productivity apps
 
