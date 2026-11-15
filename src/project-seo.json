@@ -450,5 +450,35 @@
       "title": "AC6Recomp: Ace Combat 6 Xbox 360 Static Recomp",
       "subtitle": "Unofficial native Windows port of Ace Combat 6 via static recompilation"
     }
+  },
+  "downpourrecomp": {
+    "en": {
+      "title": "DownpourRecomp: Silent Hill Downpour Xbox 360 Static Recomp",
+      "subtitle": "Unofficial native Windows port of Silent Hill: Downpour via static recompilation"
+    }
+  },
+  "gb-recompiled": {
+    "en": {
+      "title": "GB Recompiled: Game Boy / GBC Static Recompiler",
+      "subtitle": "Experimental static recompiler that turns GB/GBC ROMs into portable C projects"
+    }
+  },
+  "dino-recomp": {
+    "en": {
+      "title": "Dinosaur Planet Recompiled: N64 Prototype Static Recomp",
+      "subtitle": "Native Windows/Linux port of the December 2000 Dinosaur Planet prototype"
+    }
+  },
+  "goemon64recomp": {
+    "en": {
+      "title": "Goemon64Recomp: Mystical Ninja N64 Static Recomp",
+      "subtitle": "Unofficial native PC port of Mystical Ninja Starring Goemon via static recompilation"
+    }
+  },
+  "simpsons-game-recomp": {
+    "en": {
+      "title": "The Simpsons Game Recompiled: Xbox 360 Static Recomp",
+      "subtitle": "Native port of The Simpsons Game (2007) via Xbox 360 static recompilation"
+    }
   }
 }

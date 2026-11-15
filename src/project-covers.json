@@ -1800,5 +1800,51 @@
     "model": "cursor-generate-image",
     "generatedAt": "2026-11-14T02:53:47.863Z",
     "checked": "2026-11-14"
+  },
+  "downpourrecomp": {
+    "src": "/covers/downpourrecomp-5c7977d1f7a9.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/LittleBitUA/DownpourRecomp/a183ff0b21f5e504526102754a04f2a9534a97b7/docs/screenshots/murphy-closeup.png",
+    "readme": "https://github.com/LittleBitUA/DownpourRecomp/blob/a183ff0b21f5e504526102754a04f2a9534a97b7/README.md",
+    "checked": "2026-11-15"
+  },
+  "gb-recompiled": {
+    "src": "/covers/gb-recompiled-abef53bccff1.webp",
+    "width": 505,
+    "height": 489,
+    "source": "https://raw.githubusercontent.com/arcanite24/gb-recompiled/9150f87d82fa98abcb6ea22329170463f9702eb8/dino.png",
+    "readme": "https://github.com/arcanite24/gb-recompiled/blob/9150f87d82fa98abcb6ea22329170463f9702eb8/README.md",
+    "checked": "2026-11-15"
+  },
+  "dino-recomp": {
+    "sourceType": "generated",
+    "src": "/covers/dino-recomp-16b6dac5a7d5.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cinematic cover art for a native Windows and Linux port of an unreleased late-1990s three-dimensional jungle-planet adventure, made by static recompilation of console machine code. A misty prehistoric jungle world at golden hour: mossy cliffs, overgrown stone ruins, a river below, and a distant volcano under warm clouds, with original unmarked dinosaur wildlife in the mid-distance (invented creature designs only). In the foreground, a weathered wooden workbench holds a translucent console-era processor tile that sheds fine instruction ribbons re-weaving into a glowing native desktop viewport, suggesting static recompilation to a PC host. Original highly detailed painted art with texture, atmospheric fog, shadows and highlights. No readable text, no letters, no logos, no watermarks, no trademarks, no official character likenesses, no letter-tile monograms, no pure gradient, no stock-photo look.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-15T05:00:52.480Z",
+    "checked": "2026-11-15"
+  },
+  "goemon64recomp": {
+    "sourceType": "generated",
+    "src": "/covers/goemon64recomp-fcd75c0e3907.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cinematic cover art for Goemon64Recomp, an unofficial native PC port of the Nintendo 64 game Mystical Ninja Starring Goemon, made by static recompilation. A lively Edo-period Japanese castle town at dusk: paper lanterns, timber houses, and a red arched bridge over a canal, with a stylized original ninja-adventurer standing on a tiled rooftop, wild hair and a large iron pipe, original costume design not copied from any official character. In the foreground, a weathered workbench holds a translucent console-era processor tile that sheds fine MIPS instruction ribbons re-weaving into a glowing native desktop viewport, suggesting static recompilation to a PC host. Original highly detailed painted art with texture, warm lantern light, shadows and highlights. No readable text, no letters, no logos, no watermarks, no Konami trademarks, no official character likenesses, no letter-tile monograms, no pure gradient, no stock-photo look.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-15T05:00:52.480Z",
+    "checked": "2026-11-15"
+  },
+  "simpsons-game-recomp": {
+    "sourceType": "generated",
+    "src": "/covers/simpsons-game-recomp-ec0e9cdc64f7.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cinematic cover art for a native PC port of a 2007 console satirical-comedy action game set in a cartoon American suburb, made by statically recompiling PowerPC game code to x86-64. Late-afternoon light on a slightly exaggerated suburban street of modest wooden houses, a white picket fence, telephone poles, a blank weathered billboard, and on the horizon a nuclear power plant with twin cooling towers. The street is empty of people, so there are no character likenesses. In the foreground, a weathered wooden workbench holds a translucent console-era processor tile that sheds fine instruction ribbons re-weaving into a glowing native desktop viewport, suggesting static recompilation to a PC host. Original highly detailed painted art with warm light, texture, shadows and highlights, a slightly satirical cartoon-realism look. No readable text, no letters, no logos, no watermarks, no trademarks, no official characters, no letter-tile monograms, no pure gradient, no stock-photo look.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-15T05:00:52.480Z",
+    "checked": "2026-11-15"
   }
 }

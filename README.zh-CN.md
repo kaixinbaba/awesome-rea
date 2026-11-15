@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-200 个项目与资源 · 6 个分类
+205 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -44,6 +44,7 @@
 - [Krakatau](<https://github.com/Storyyeller/Krakatau>) — Java 字节码汇编、反汇编与反编译工具；v2（krak2）为 Rust 重写，v2 反编译器仍在开发中。
 - [CFR](<https://github.com/leibnitz27/cfr>) — 面向现代 class 文件和 jar 的 Java 反编译器，用 Java 6 写成，可在较旧的 JVM 上运行。
 - [hermes-decomp](<https://github.com/SymbioticSec/hermes-decomp>) — 面向 React Native 的 Rust Hermes 字节码反编译工具包（HBC 40–99），可反汇编、反编译并修补 .hbc 文件。
+- [GB Recompiled](<https://github.com/arcanite24/gb-recompiled>) — 实验性静态重编译器，将 Game Boy 和 Game Boy Color ROM 转为带 SDL2 运行时的可移植 C 工程；仓内不含 ROM。
 
 ### 游戏与游戏引擎
 
@@ -185,6 +186,10 @@
 - [SDLPAL](<https://github.com/sdlpal/sdlpal>) — 以 SDL 重实现经典中文 RPG《仙剑奇侠传》（PAL）；不含原作游戏数据。
 - [The Minish Cap 3DS](<https://github.com/EstebanPdN/zelda-tmc-3ds>) — 基于 tmc 反编译的《缩小帽》任天堂 3DS 双屏原生移植；不含 ROM 或任天堂资源。
 - [AC6Recomp](<https://github.com/sal063/AC6_recomp>) — 经 Xbox 360 静态重编译到 x86-64 的《皇牌空战 6》非官方 Windows 原生移植；不含游戏数据，需自备美版拷贝。
+- [DownpourRecomp](<https://github.com/LittleBitUA/DownpourRecomp>) — 经 Xbox 360 静态重编译到 x86-64 的《寂静岭：暴雨》非官方 Windows 原生移植；不含游戏数据，需自备美版或欧版拷贝。
+- [Dinosaur Planet Recompiled](<https://github.com/DinosaurPlanetRecomp/dino-recomp>) — 经 N64: Recompiled 与 RT64 将 2000 年 12 月《恐龙星球》N64 原型原生移植至 Windows/Linux；不含资源，需自备该原型 ROM。
+- [Goemon64Recomp](<https://github.com/klorfmorf/Goemon64Recomp>) — 经 N64: Recompiled 与 RT64 将《神秘忍者：五右卫门主演》（N64 美版）非官方原生移植至 Windows、Linux 和 macOS；不含资源，需自备美版 ROM。
+- [The Simpsons Game Recompiled](<https://github.com/YesterMester/TheSimpsonsGameRecomp>) — 经静态重编译将《辛普森一家》游戏（Xbox 360，2007）原生移植至 Linux、Steam Deck 和 Windows，另有 Android 预览；不含游戏数据，需自备拷贝。
 
 ### 桌面与效率应用
 
