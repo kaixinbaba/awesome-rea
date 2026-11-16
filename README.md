@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-205 projects & resources · 6 categories
+212 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -45,6 +45,13 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [CFR](<https://github.com/leibnitz27/cfr>) — Java decompiler for modern class files and jars, written in Java 6 so it can run on older JVMs.
 - [hermes-decomp](<https://github.com/SymbioticSec/hermes-decomp>) — Rust decompiler and toolkit for Hermes bytecode (HBC 40–99), used by React Native; can disassemble, decompile and patch .hbc files.
 - [GB Recompiled](<https://github.com/arcanite24/gb-recompiled>) — Experimental static recompiler that turns Game Boy and Game Boy Color ROMs into portable C projects with an SDL2 runtime; no ROMs shipped.
+- [BARF](<https://github.com/programa-stic/barf-project>) — Python binary-analysis framework: load ELF/PE, disassemble x86 and ARM, lift to REIL, recover CFGs, and check gadgets with SMT solvers.
+- [decompyle3](<https://github.com/rocky/python-decompile3>) — Python decompiler, reworked from uncompyle6, that turns Python 3.7 and 3.8 bytecode back into equivalent source; older bytecode stays with uncompyle6.
+- [dumpulator](<https://github.com/mrexodia/dumpulator>) — Python library that emulates user-mode code from 64- and 32-bit Windows minidumps with Unicorn, so analysts can call functions and recover decrypted strings.
+- [Kam1n0](<https://github.com/McGill-DMaS/Kam1n0-Community>) — Server platform that indexes disassembled binaries and searches them for cloned assembly functions, with an optional IDA Pro plug-in.
+- [PLASMA](<https://github.com/plasma-disassembler/plasma>) — Interactive terminal disassembler for x86/x86-64 with partial ARM and MIPS support, showing functions as indented colored pseudo-code.
+- [readpe](<https://github.com/mentebinaria/readpe>) — Command-line toolkit, formerly named pev, for analyzing Windows PE files, with a bundled C parser called libpe.
+- [XPEViewer](<https://github.com/horsicq/XPEViewer>) — PE file viewer and editor for Windows, Linux and macOS, with a Qt GUI for inspecting headers, sections, disassembly and related views.
 
 ### Games & game engines
 

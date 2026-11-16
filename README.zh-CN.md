@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-205 个项目与资源 · 6 个分类
+212 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -45,6 +45,13 @@
 - [CFR](<https://github.com/leibnitz27/cfr>) — 面向现代 class 文件和 jar 的 Java 反编译器，用 Java 6 写成，可在较旧的 JVM 上运行。
 - [hermes-decomp](<https://github.com/SymbioticSec/hermes-decomp>) — 面向 React Native 的 Rust Hermes 字节码反编译工具包（HBC 40–99），可反汇编、反编译并修补 .hbc 文件。
 - [GB Recompiled](<https://github.com/arcanite24/gb-recompiled>) — 实验性静态重编译器，将 Game Boy 和 Game Boy Color ROM 转为带 SDL2 运行时的可移植 C 工程；仓内不含 ROM。
+- [BARF](<https://github.com/programa-stic/barf-project>) — Python 二进制分析框架：加载 ELF/PE，反汇编 x86 与 ARM，提升到 REIL，恢复控制流图，并用 SMT 求解器检查 gadgets。
+- [decompyle3](<https://github.com/rocky/python-decompile3>) — 从 uncompyle6 重做的 Python 反编译器，可将 3.7 和 3.8 字节码还原为等价源码；更早字节码仍用 uncompyle6。
+- [dumpulator](<https://github.com/mrexodia/dumpulator>) — 用 Unicorn 从 64 位和 32 位 Windows 小转储模拟用户态代码的 Python 库，可调用函数并恢复解密字符串。
+- [Kam1n0](<https://github.com/McGill-DMaS/Kam1n0-Community>) — 用于为反汇编二进制建立索引并搜索克隆汇编函数的服务端平台，可选配合 IDA Pro 插件。
+- [PLASMA](<https://github.com/plasma-disassembler/plasma>) — 面向 x86/x86-64 的交互式终端反汇编器，部分支持 ARM 与 MIPS，可将函数显示为带缩进的着色伪代码。
+- [readpe](<https://github.com/mentebinaria/readpe>) — 用于分析 Windows PE 文件的命令行工具包，曾用名 pev，内置名为 libpe 的 C 解析器。
+- [XPEViewer](<https://github.com/horsicq/XPEViewer>) — 用于 Windows、Linux 和 macOS 的 PE 文件查看器与编辑器，提供用于检查头、节区、反汇编及相关视图的 Qt 图形界面。
 
 ### 游戏与游戏引擎
 
