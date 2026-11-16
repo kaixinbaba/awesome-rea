@@ -656,3 +656,54 @@ Editorial 16:9 cover for an unofficial native PC port of Mystical Ninja Starring
 simpsons-game-recomp
 generated · model=cursor-generate-image · no upstream image
 Editorial 16:9 cover for a native port of The Simpsons Game (Xbox 360, 2007) via static recompilation: late-afternoon suburban street with twin cooling towers on the horizon and a blank billboard, plus a processor tile reweaving instruction ribbons into a native desktop viewport. Original art, no official marks or character likenesses.
+
+kam1n0
+https://github.com/McGill-DMaS/Kam1n0-Community/blob/1c3c309acc8f5e50c6617f858aa3b5b84c121b26/README.md
+https://raw.githubusercontent.com/McGill-DMaS/Kam1n0-Community/1c3c309acc8f5e50c6617f858aa3b5b84c121b26/documentation/others/asm-clone.png
+
+plasma-disassembler
+https://github.com/plasma-disassembler/plasma/blob/ec7df9b2b9b356dd5d8caf01b7e68c0ab5a1ef42/README.md
+https://raw.githubusercontent.com/plasma-disassembler/plasma/ec7df9b2b9b356dd5d8caf01b7e68c0ab5a1ef42/images/visual.png
+
+readpe
+https://github.com/mentebinaria/readpe/blob/967ab57f7cfbebf340a8f85744a1d095029cfbfe/README.md
+https://raw.githubusercontent.com/mentebinaria/readpe/967ab57f7cfbebf340a8f85744a1d095029cfbfe/doc/pev-icon.png
+
+xpeviewer
+https://github.com/horsicq/XPEViewer/blob/37cd0e4fff8d98e87c3abb91b663a06f9cd7c4fc/README.md
+https://raw.githubusercontent.com/horsicq/XPEViewer/37cd0e4fff8d98e87c3abb91b663a06f9cd7c4fc/docs/1.png
+
+GPT project-fitting covers (2026-11-16)
+Original art matched to each project's subject. No trademarks/logos/watermarks. Model: cursor-generate-image. Issues #315–#321: generated only where no usable upstream README/official/custom OG project image existed.
+
+barf
+generated · model=cursor-generate-image · no usable project image (README has only a Travis badge; in-repo images are tutorial/example CFG graphs of sample functions, not a project identity image; GitHub og:image is an auto-generated opengraph.githubassets.com card)
+Editorial 16:9 cover for BARF, a multiplatform binary analysis / reverse-engineering framework: ELF and PE binaries on a workshop bench, instruction streams lifting into a shared intermediate-language graph between x86- and ARM-style processor tiles, with constraint filaments feeding a solver slate. Original art, no official marks.
+
+decompyle3
+generated · model=cursor-generate-image · no usable project image (README.rst has no project images; the git tree has none; GitHub og:image is an auto-generated opengraph.githubassets.com card)
+Editorial 16:9 cover for decompyle3, a Python 3.7–3.8 bytecode decompiler: a cracked bytecode capsule spilling instruction tokens that are parsed into a syntax tree and typeset back into a source manuscript. Original art, no official marks.
+
+dumpulator
+generated · model=cursor-generate-image · custom GitHub repository social image exists but is a generic Freepik-style stock illustration (computer, document, magnifying glass, ladybug) and is not recognizable as this project; README has no project image and the git tree has none; official/custom OG therefore not ingested
+Editorial 16:9 cover for dumpulator, a Python library that emulates Windows memory dumps: a frozen minidump crystal in a brass emulator cradle, with instruction ribbons replaying from captured memory and frost-like decrypted strings at the edge of the frame. Original art, no official marks.
+
+kam1n0
+https://github.com/McGill-DMaS/Kam1n0-Community/blob/1c3c309acc8f5e50c6617f858aa3b5b84c121b26/README.md
+https://raw.githubusercontent.com/McGill-DMaS/Kam1n0-Community/1c3c309acc8f5e50c6617f858aa3b5b84c121b26/documentation/others/asm-clone.png
+README diagram documentation/others/asm-clone.png (assembly clone-search diagram; preferred over the small Saturn-mark logo documentation/others/kam1n0.png)
+
+plasma-disassembler
+https://github.com/plasma-disassembler/plasma/blob/ec7df9b2b9b356dd5d8caf01b7e68c0ab5a1ef42/README.md
+https://raw.githubusercontent.com/plasma-disassembler/plasma/ec7df9b2b9b356dd5d8caf01b7e68c0ab5a1ef42/images/visual.png
+README UI screenshot images/visual.png (visual-mode indented colored pseudo-code; preferred over images/invcond.png; images/qt_memory.png is a 999×100 decorative bar and was not used)
+
+readpe
+https://github.com/mentebinaria/readpe/blob/967ab57f7cfbebf340a8f85744a1d095029cfbfe/README.md
+https://raw.githubusercontent.com/mentebinaria/readpe/967ab57f7cfbebf340a8f85744a1d095029cfbfe/doc/pev-icon.png
+Upstream project icon doc/pev-icon.png (128×128). Flattened onto the site paper tone and letterboxed to 960×540 so the cover meets the 400px minimum width; the icon itself was not replaced or generated.
+
+xpeviewer
+https://github.com/horsicq/XPEViewer/blob/37cd0e4fff8d98e87c3abb91b663a06f9cd7c4fc/README.md
+https://raw.githubusercontent.com/horsicq/XPEViewer/37cd0e4fff8d98e87c3abb91b663a06f9cd7c4fc/docs/1.png
+Upstream UI screenshot docs/1.png (also used on the official ntinfo.biz project page). Preferred over the mascot. docs/3.png is byte-identical to the custom GitHub repository social image and was not used.

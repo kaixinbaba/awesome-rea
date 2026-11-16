@@ -1846,5 +1846,67 @@
     "model": "cursor-generate-image",
     "generatedAt": "2026-11-15T05:00:52.480Z",
     "checked": "2026-11-15"
+  },
+  "barf": {
+    "sourceType": "generated",
+    "src": "/covers/barf-4732b6f8f414.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cinematic cover art for BARF, a multiplatform open-source binary analysis and reverse-engineering framework. A dim reverse-engineering workshop: an ELF executable and a Windows PE binary rest on a steel bench, their machine-instruction streams lifting off the pages and merging into a shared glowing intermediate-language graph that hovers between an x86-style processor tile and an ARM-style processor tile, becoming architecture-agnostic. Beside the graph, thin constraint filaments feed into a quiet theorem-solver slate. Highly detailed original painted art with cool metal highlights, soft volumetric light, texture and shadows. No readable text, no letters, no logos, no watermarks, no trademarks, no letter-tile monograms, no pure gradient, no stock-photo look.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-16T08:06:54.464Z",
+    "checked": "2026-11-16"
+  },
+  "decompyle3": {
+    "sourceType": "generated",
+    "src": "/covers/decompyle3-b2034e798837.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cinematic cover art for decompyle3, a Python 3.7 to 3.8 bytecode decompiler. On a walnut desk, a cracked bytecode capsule spills a stream of low-level instruction tokens that are parsed into a branching syntax tree and then typeset back into a clean handwritten source manuscript, suggesting bytecode returning to equivalent Python source. Cool teal and warm amber light, highly detailed original painted art with texture, shadows and highlights. No readable text, no letters, no logos, no watermarks, no trademarks, no official Python logo, no letter-tile monograms, no pure gradient, no stock-photo look.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-16T08:06:54.464Z",
+    "checked": "2026-11-16"
+  },
+  "dumpulator": {
+    "sourceType": "generated",
+    "src": "/covers/dumpulator-257b0216245d.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cinematic cover art for dumpulator, a Python library that emulates user-mode code from Windows memory dumps. A frozen minidump crystal of a paused Windows user-mode process sits in a brass emulator cradle; only the system-call gate is animated, and instruction ribbons replay from the captured memory, with decrypted strings condensing like frost at the far edge of the frame. Highly detailed original painted art with cold blue memory-map light, metal texture, shadows and highlights. No readable text, no letters, no logos, no watermarks, no trademarks, no Microsoft or Windows logos, no letter-tile monograms, no pure gradient, no stock-photo look, no generic cartoon virus or ladybug stock illustration.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-16T08:06:54.464Z",
+    "checked": "2026-11-16"
+  },
+  "kam1n0": {
+    "src": "/covers/kam1n0-af85a4e461fa.webp",
+    "width": 780,
+    "height": 693,
+    "source": "https://raw.githubusercontent.com/McGill-DMaS/Kam1n0-Community/1c3c309acc8f5e50c6617f858aa3b5b84c121b26/documentation/others/asm-clone.png",
+    "readme": "https://github.com/McGill-DMaS/Kam1n0-Community/blob/1c3c309acc8f5e50c6617f858aa3b5b84c121b26/README.md",
+    "checked": "2026-11-16"
+  },
+  "plasma-disassembler": {
+    "src": "/covers/plasma-disassembler-8cade98c3a0f.webp",
+    "width": 960,
+    "height": 534,
+    "source": "https://raw.githubusercontent.com/plasma-disassembler/plasma/ec7df9b2b9b356dd5d8caf01b7e68c0ab5a1ef42/images/visual.png",
+    "readme": "https://github.com/plasma-disassembler/plasma/blob/ec7df9b2b9b356dd5d8caf01b7e68c0ab5a1ef42/README.md",
+    "checked": "2026-11-16"
+  },
+  "readpe": {
+    "src": "/covers/readpe-495a0de31967.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/mentebinaria/readpe/967ab57f7cfbebf340a8f85744a1d095029cfbfe/doc/pev-icon.png",
+    "readme": "https://github.com/mentebinaria/readpe/blob/967ab57f7cfbebf340a8f85744a1d095029cfbfe/README.md",
+    "checked": "2026-11-16"
+  },
+  "xpeviewer": {
+    "src": "/covers/xpeviewer-c6a588bf9e12.webp",
+    "width": 960,
+    "height": 638,
+    "source": "https://raw.githubusercontent.com/horsicq/XPEViewer/37cd0e4fff8d98e87c3abb91b663a06f9cd7c4fc/docs/1.png",
+    "readme": "https://github.com/horsicq/XPEViewer/blob/37cd0e4fff8d98e87c3abb91b663a06f9cd7c4fc/README.md",
+    "checked": "2026-11-16"
   }
 }

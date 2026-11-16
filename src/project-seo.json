@@ -480,5 +480,47 @@
       "title": "The Simpsons Game Recompiled: Xbox 360 Static Recomp",
       "subtitle": "Native port of The Simpsons Game (2007) via Xbox 360 static recompilation"
     }
+  },
+  "barf": {
+    "en": {
+      "title": "BARF: Multiplatform Binary Analysis Framework",
+      "subtitle": "Python framework for ELF/PE analysis, REIL lifting and SMT checks"
+    }
+  },
+  "decompyle3": {
+    "en": {
+      "title": "decompyle3: Python 3.7–3.8 Bytecode Decompiler",
+      "subtitle": "Reworked from uncompyle6 for Python 3.7 and 3.8 bytecode"
+    }
+  },
+  "dumpulator": {
+    "en": {
+      "title": "dumpulator: Windows Memory-Dump Emulator",
+      "subtitle": "Python library that emulates user-mode code from Windows minidumps"
+    }
+  },
+  "kam1n0": {
+    "en": {
+      "title": "Kam1n0: Assembly Clone-Search Platform",
+      "subtitle": "Server that indexes binaries and searches for cloned assembly"
+    }
+  },
+  "plasma-disassembler": {
+    "en": {
+      "title": "PLASMA: Interactive Disassembler with Pseudo-code",
+      "subtitle": "Terminal disassembler with indented colored pseudo-code"
+    }
+  },
+  "readpe": {
+    "en": {
+      "title": "readpe: Command-line Windows PE Analysis Toolkit",
+      "subtitle": "Multiplatform PE toolkit formerly named pev, with bundled libpe"
+    }
+  },
+  "xpeviewer": {
+    "en": {
+      "title": "XPEViewer: PE File Viewer and Editor",
+      "subtitle": "PE viewer/editor for Windows, Linux and macOS"
+    }
   }
 }
