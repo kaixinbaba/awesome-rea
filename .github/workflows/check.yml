@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   pull_request:
+    # ready_for_review: the agent-autoloop delivery flow only accepts a Check that ran after the PR left draft.
+    types: [opened, synchronize, reopened, ready_for_review]
 permissions:
   contents: read
 concurrency:

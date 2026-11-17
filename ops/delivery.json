@@ -1,0 +1,21 @@
+{
+  "repo": "kaixinbaba/awesome-rea",
+  "internal": [
+    "docs/**/*.md"
+  ],
+  "admin_merge": [],
+  "check": {
+    "workflow": "check.yml",
+    "job": "check"
+  },
+  "review": {
+    "points": "AGENTS.md",
+    "status": "agent-review",
+    "xhigh": [],
+    "command": [
+      "/usr/bin/python3",
+      "/Users/xunjunjie/.agent-autoloop/work/native-review/pi_review.py",
+      "{input}"
+    ]
+  }
+}
