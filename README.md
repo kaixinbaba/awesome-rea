@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-212 projects & resources · 6 categories
+217 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -52,6 +52,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [PLASMA](<https://github.com/plasma-disassembler/plasma>) — Interactive terminal disassembler for x86/x86-64 with partial ARM and MIPS support, showing functions as indented colored pseudo-code.
 - [readpe](<https://github.com/mentebinaria/readpe>) — Command-line toolkit, formerly named pev, for analyzing Windows PE files, with a bundled C parser called libpe.
 - [XPEViewer](<https://github.com/horsicq/XPEViewer>) — PE file viewer and editor for Windows, Linux and macOS, with a Qt GUI for inspecting headers, sections, disassembly and related views.
+- [flutterdec](<https://github.com/caverav/flutterdec>) — Static CLI decompiler for Flutter Android APKs or libapp.so; recovers Dart-like pseudocode, ARM64 disassembly, IR, diffs and reports, offline.
 
 ### Games & game engines
 
@@ -197,6 +198,10 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [Dinosaur Planet Recompiled](<https://github.com/DinosaurPlanetRecomp/dino-recomp>) — Native Windows/Linux port of the December 2000 Dinosaur Planet N64 prototype via N64: Recompiled and RT64; assets not shipped, that prototype ROM required.
 - [Goemon64Recomp](<https://github.com/klorfmorf/Goemon64Recomp>) — Unofficial native Windows, Linux and macOS port of Mystical Ninja Starring Goemon (N64, US) via N64: Recompiled and RT64; assets not shipped, US ROM required.
 - [The Simpsons Game Recompiled](<https://github.com/YesterMester/TheSimpsonsGameRecomp>) — Native Linux, Steam Deck and Windows port of The Simpsons Game (Xbox 360, 2007) via static recomp, plus an Android preview; own copy required.
+- [DKC1Recomp](<https://github.com/elliotttate/DKC1Recomp>) — Native Windows, macOS and optional iOS port of Donkey Kong Country (SNES USA v1.0) by static recompilation; not an emulator; ROM not included.
+- [DPRecomp](<https://github.com/LittleBitUA/DPRecomp>) — Native Windows port of Deadly Premonition (Xbox 360) by static recompilation, with 60 FPS, mouse look and FSR 3; not an emulator; you supply the disc.
+- [Mega Man X4 Recompiled](<https://github.com/mstan/MegaManX4Recomp>) — Native Windows/Linux port of Mega Man X4 (PS1, USA) via static recompilation, with optional co-op and netplay; not an emulator; you supply the disc.
+- [Cricket 07 Browser](<https://github.com/Dhaiwat10/cricket07-browser>) — Static recompilation of EA Sports Cricket 07 (2006, PC) so it can run in a browser tab or as a native Mac app; not an emulator; you bring your own copy.
 
 ### Desktop & productivity apps
 
