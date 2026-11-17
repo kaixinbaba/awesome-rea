@@ -8,6 +8,17 @@
 - 收录范围、来源要求和不收录的情形以 [CONTRIBUTING.zh-CN.md](CONTRIBUTING.zh-CN.md) 和开发文档「政策敏感条目」为准。
 - 提交信息用英文，沿用 `feat:` / `fix:` 前缀；PR 按 `.github/pull_request_template.md` 填写。
 
+## 协作与上线流程
+
+所有人和 Agent 都走 Issue → worktree → PR → 本人上线确认 → 中台合并 → main 自动部署，没有本地直上路线。
+
+- 先有 Issue，在独立 worktree 的 `agent/issue-编号` 分支开发，PR 指向 `main`，正文写 `Fixes #编号`。
+- 默认路线：Issue 加 `agent` 标签，中台出计划，荀总确认计划卡后开发。计划确认只授权开发与受限只读审查，不授权上线。
+- 本地交互路线：荀总与本地 Agent 一起开发时也遵守上述 Issue/worktree 约束；开 PR 后加 `deliver-attended` 标签，由中台审查、跑 Check、发上线卡。
+- 上线须荀总在绑定当前成果的上线卡点击“同意上线”，由中台合并后自动部署；聊天里说“上线”只是请求走流程，不替代这次确认。
+- 不推 main、不在本地合并 main、不 force push、不自行合并 PR，也不在本机部署；本地 main 只用于拉取和创建 worktree。
+- Agent 只通过 Issue、PR 和评论交接，不改他人的工作区或分支。
+
 ## 怎么验证
 
 ```sh
@@ -23,7 +34,7 @@ npm run test:browser
 
 ## 部署
 
-`push main` 由 `.github/workflows/check.yml` 自动构建、发布到 Cloudflare Pages 并核对线上提交。不在本机运行 `wrangler pages deploy`，不改 Secrets、Variables、域名或重定向规则，除非 Issue 明确要求且计划已获批准。
+中台按上述流程合并后，`main` 的更新触发 `.github/workflows/check.yml` 自动构建、发布到 Cloudflare Pages 并核对线上提交。Wrangler 仅用于 CI 内部发布，不在本机运行 `wrangler deploy` 或 `wrangler pages deploy`。不擅改 Secrets、Variables、域名或重定向规则；变更它们须有明确的 Issue 范围和单独授权。
 
 ## 审查要点
 

@@ -114,19 +114,23 @@ TEST_URL=https://awesomerea.com TEST_OUTPUT=test-results/production npm run test
 
 ## 部署
 
-**`push main` 自动上线。** GitHub Actions 校验并构建该提交，运行完全 mock 的统计测试和本地浏览器回归，将验收通过的 `dist/` 交给发布任务，自动部署到既有项目 `awesomerea`。PR 只检查，不取得发布凭据；生产发布串行执行，防止旧任务覆盖新版本。浏览器检查使用固定摘要的官方 Playwright 镜像；升级 Playwright 锁文件时同步镜像版本，保证浏览器及字体环境可复现。
+**所有人和 Agent 都经 Issue → worktree → PR → 本人上线确认 → 中台合并 → main 自动部署。** 先有 Issue，在独立 worktree 的 `agent/issue-编号` 分支开发，PR 指向 `main`，正文写 `Fixes #编号`。
 
-提交已核对的改动后执行：
+| 路线 | 开发与交付 |
+| --- | --- |
+| 默认路线 | Issue 加 `agent` 标签 → 中台出计划 → 荀总确认计划卡 → 开发与自测 → PR 与受限只读审查 |
+| 本地交互路线 | 荀总与本地 Agent 同样先有 Issue/worktree → 开 PR 后加 `deliver-attended` 标签 → 中台审查、跑 Check、发上线卡 |
+| 共同上线门槛 | 当前成果通过原生审查及指定 Check → 荀总在绑定当前成果的上线卡点击“同意上线” → 中台合并 → main 自动部署 |
 
-```sh
-git push origin main
-```
+计划确认只授权开发与受限只读审查，不授权上线。聊天里说“上线”只是请求走流程，不能替代当前成果卡的确认。不推 main、不在本地合并 main、不 force push、不自行合并 PR，也不在本机执行部署命令；本地 main 只用于拉取和创建 worktree。Agent 只通过 Issue、PR 和评论交接，不改他人的工作区或分支。
 
-等待 [Check and deploy website 流水线](https://github.com/kaixinbaba/awesome-rea/actions/workflows/check.yml) 成功。最后一步核对 Cloudflare 生产提交等于该次流水线 SHA、公开文件逐字节匹配验收产物，并复查安全头、双语 404 与旧域 301。仅 push 成功或上传成功不等于验收完成。回滚也通过经核对的 `main` 撤销提交发布。
+中台合并后，`main` 更新触发 GitHub Actions：校验并构建该提交，运行完全 mock 的统计测试和本地浏览器回归，将验收通过的 `dist/` 交给发布任务，自动部署到既有项目 `awesomerea`。PR 只检查，不取得发布凭据；生产发布串行执行，防止旧任务覆盖新版本。浏览器检查使用固定摘要的官方 Playwright 镜像；升级 Playwright 锁文件时同步镜像版本，保证浏览器及字体环境可复现。
+
+等待 [Check and deploy website 流水线](https://github.com/kaixinbaba/awesome-rea/actions/workflows/check.yml) 成功。最后一步核对 Cloudflare 生产提交等于该次流水线 SHA、公开文件逐字节匹配验收产物，并复查安全头、双语 404 与旧域 301。本地测试、Preview 或仅推送成功不等于 GitHub CI 成功，更不等于上线验收。回滚也走同一流程：为撤销变更建 Issue/worktree/PR，经荀总确认当前回滚成果卡后由中台合并，再自动部署；不在本机直接回退 main 或上传产物。
 
 仓库配置：Actions Secret `CLOUDFLARE_API_TOKEN`（专用、限定本账号的 Pages Edit 凭据）及 Variable `CLOUDFLARE_ACCOUNT_ID`。真实凭据不得写入 Git、文档、本地报告或聊天。首次专用凭据于 2027-10-13 到期，需提前在 Cloudflare 续建并替换 Actions Secret；检查任务不会取得该凭据。
 
-既有 Pages 项目仍显示 Direct Upload，因为 Cloudflare 不允许将其原地改成原生 Git 集成；GitHub Actions 提供 `push main` 自动发布，无需重建项目或迁域名。Wrangler 4.135.0 仅是 CI 内部发布步骤，**不再作为本机常规上线命令**。只发布 `dist/`，不上传仓库、私有记录、环境文件或测试产物，不加 `--force`。
+既有 Pages 项目仍显示 Direct Upload，因为 Cloudflare 不允许将其原地改成原生 Git 集成；GitHub Actions 提供 `push main` 自动发布，无需重建项目或迁域名。Wrangler 4.135.0 仅是 CI 内部发布步骤，**不得在本机运行 `wrangler deploy` 或 `wrangler pages deploy`**。CI 只发布 `dist/`，不上传仓库、私有记录、环境文件或测试产物，不加 `--force`。
 
 生产域名及默认来源为 `https://awesomerea.com`，根域 CNAME 指向 `awesomerea.pages.dev`，域名绑定和 HTTPS 证书由 Cloudflare Pages 管理。构建前可设置 `SITE_URL=https://your-domain.example` 覆盖 canonical、Open Graph 和站点地图来源；构建变量不会自动绑定域名。发布后检查实际文件、响应头、页面行为及域名跳转。
 
