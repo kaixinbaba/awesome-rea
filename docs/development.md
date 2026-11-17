@@ -108,19 +108,23 @@ The suite checks both languages in Chromium/WebKit, 320–1440px layouts, each p
 
 ## Deployment
 
-**Push `main` to release.** GitHub Actions validates/builds the commit, runs mock-only analytics and local browser checks, transfers the tested `dist/` artifact to the release job, then automatically publishes to the existing Cloudflare Pages project `awesomerea`. Pull requests run checks only, without publishing credentials. Production releases are serialized so an older run cannot overwrite a newer one. Browser checks use the digest-pinned official Playwright image; update its version alongside the Playwright lockfile to keep browser binaries and fonts reproducible.
+**Everyone, human or Agent, follows Issue → worktree → PR → owner's release approval → automation hub merge → automatic main deployment.** Start with an Issue, develop in an isolated worktree on `agent/issue-<number>`, and open a PR targeting `main` with `Fixes #<number>` in its body.
 
-After committing the reviewed changes:
+| Route | Development and delivery |
+| --- | --- |
+| Default | Label the Issue `agent` → the automation hub prepares a plan → Xun approves the plan card → development and self-tests → PR and restricted read-only review |
+| Local interactive | Xun and a local Agent also start with an Issue/worktree → open a PR and add `deliver-attended` → the hub reviews, runs Check and sends the release card |
+| Shared release gate | Current work passes native review and the designated Check → Xun clicks “同意上线” (approve release) on the card bound to that work → the automation hub merges → main deploys automatically |
 
-```sh
-git push origin main
-```
+Plan approval authorizes only development and restricted read-only review, not a release. Saying “release” in chat only requests this flow; it does not replace approval on the current work's card. Do not push main, merge main locally, force push, merge PRs yourself or run deployment commands locally. Local main is only for pulling and creating worktrees. Agents hand off only through Issues, PRs and comments; never modify another contributor's worktree or branch.
 
-Wait for the [Check and deploy website workflow](https://github.com/kaixinbaba/awesome-rea/actions/workflows/check.yml) to succeed. The final step verifies the Cloudflare production commit matches the workflow SHA, all public files match the tested artifact, and security headers, bilingual 404s and the old-host 301 remain correct. A push or upload alone is not release acceptance. Revert through a reviewed `main` commit to roll back.
+After the hub merges, the `main` update triggers GitHub Actions to validate/build the commit, run mock-only analytics and local browser checks, transfer the tested `dist/` artifact to the release job, then automatically publish to the existing Cloudflare Pages project `awesomerea`. Pull requests run checks only, without publishing credentials. Production releases are serialized so an older run cannot overwrite a newer one. Browser checks use the digest-pinned official Playwright image; update its version alongside the Playwright lockfile to keep browser binaries and fonts reproducible.
+
+Wait for the [Check and deploy website workflow](https://github.com/kaixinbaba/awesome-rea/actions/workflows/check.yml) to succeed. The final step verifies the Cloudflare production commit matches the workflow SHA, all public files match the tested artifact, and security headers, bilingual 404s and the old-host 301 remain correct. Local tests, Preview or a successful push do not mean GitHub CI passed, let alone release acceptance. Rollbacks follow the same flow: create an Issue/worktree/PR for the revert, obtain Xun's approval on the current rollback card, then let the hub merge and trigger automatic deployment. Do not revert main locally or upload artifacts from your machine.
 
 Repository configuration: Actions secret `CLOUDFLARE_API_TOKEN` (dedicated account-scoped Pages Edit credential) and variable `CLOUDFLARE_ACCOUNT_ID`. Never store credential values in Git, documentation, local reports or chat. The initial dedicated token expires on 2027-10-13; renew in Cloudflare and replace the Actions secret before expiry. Validation jobs never receive the token.
 
-The Pages project retains Direct Upload mode because Cloudflare cannot convert that existing project to native Git integration. GitHub Actions supplies the Git-triggered release; no new Pages project or domain migration is needed. Wrangler 4.135.0 is an internal CI step, **not the normal local release command**. Publish only `dist/`, never the repository, private notes, environment files or test artifacts. Do not add a `--force` flag.
+The Pages project retains Direct Upload mode because Cloudflare cannot convert that existing project to native Git integration. GitHub Actions supplies the Git-triggered release; no new Pages project or domain migration is needed. Wrangler 4.135.0 is an internal CI step; **never run `wrangler deploy` or `wrangler pages deploy` locally**. CI publishes only `dist/`, never the repository, private notes, environment files or test artifacts. Do not add a `--force` flag.
 
 The production domain and default site origin are `https://awesomerea.com`. Its apex CNAME points to `awesomerea.pages.dev`; Cloudflare Pages owns the custom-domain binding and HTTPS certificate. Set `SITE_URL=https://your-domain.example` before building to override canonical, Open Graph and sitemap origins. A build setting alone does not bind a domain. Verify deployed files, response headers, real page behavior and any hostname redirects after publishing.
 
