@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-212 个项目与资源 · 6 个分类
+217 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -52,6 +52,7 @@
 - [PLASMA](<https://github.com/plasma-disassembler/plasma>) — 面向 x86/x86-64 的交互式终端反汇编器，部分支持 ARM 与 MIPS，可将函数显示为带缩进的着色伪代码。
 - [readpe](<https://github.com/mentebinaria/readpe>) — 用于分析 Windows PE 文件的命令行工具包，曾用名 pev，内置名为 libpe 的 C 解析器。
 - [XPEViewer](<https://github.com/horsicq/XPEViewer>) — 用于 Windows、Linux 和 macOS 的 PE 文件查看器与编辑器，提供用于检查头、节区、反汇编及相关视图的 Qt 图形界面。
+- [flutterdec](<https://github.com/caverav/flutterdec>) — 面向 Flutter Android 的静态命令行反编译器：对 APK 或 libapp.so 离线恢复类 Dart 伪代码、ARM64 反汇编、中间表示、差异和报告。
 
 ### 游戏与游戏引擎
 
@@ -197,6 +198,10 @@
 - [Dinosaur Planet Recompiled](<https://github.com/DinosaurPlanetRecomp/dino-recomp>) — 经 N64: Recompiled 与 RT64 将 2000 年 12 月《恐龙星球》N64 原型原生移植至 Windows/Linux；不含资源，需自备该原型 ROM。
 - [Goemon64Recomp](<https://github.com/klorfmorf/Goemon64Recomp>) — 经 N64: Recompiled 与 RT64 将《神秘忍者：五右卫门主演》（N64 美版）非官方原生移植至 Windows、Linux 和 macOS；不含资源，需自备美版 ROM。
 - [The Simpsons Game Recompiled](<https://github.com/YesterMester/TheSimpsonsGameRecomp>) — 经静态重编译将《辛普森一家》游戏（Xbox 360，2007）原生移植至 Linux、Steam Deck 和 Windows，另有 Android 预览；不含游戏数据，需自备拷贝。
+- [DKC1Recomp](<https://github.com/elliotttate/DKC1Recomp>) — 将《超级大金刚》（超任美版 v1.0）静态重编译为 Windows、macOS 与可选 iOS 原生移植；非模拟器；不含 ROM。
+- [DPRecomp](<https://github.com/LittleBitUA/DPRecomp>) — 将《致命预感》（Xbox 360）静态重编译为 Windows 原生移植，含 60 FPS、鼠标视角与 FSR 3；非模拟器；需自备光盘。
+- [Mega Man X4 Recompiled](<https://github.com/mstan/MegaManX4Recomp>) — 将《洛克人 X4》（PS1 美版）静态重编译为 Windows/Linux 原生移植，可选双人合作与联机；非模拟器；需自备光盘。
+- [Cricket 07 Browser](<https://github.com/Dhaiwat10/cricket07-browser>) — 将《EA Sports Cricket 07》（2006，PC）静态重编译，可在浏览器标签页或原生 Mac 应用中运行；非模拟器；需自备游戏。
 
 ### 桌面与效率应用
 

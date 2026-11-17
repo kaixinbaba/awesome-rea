@@ -1908,5 +1908,49 @@
     "source": "https://raw.githubusercontent.com/horsicq/XPEViewer/37cd0e4fff8d98e87c3abb91b663a06f9cd7c4fc/docs/1.png",
     "readme": "https://github.com/horsicq/XPEViewer/blob/37cd0e4fff8d98e87c3abb91b663a06f9cd7c4fc/README.md",
     "checked": "2026-11-16"
+  },
+  "dprecomp": {
+    "src": "/covers/dprecomp-1c5333dbf038.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/LittleBitUA/DPRecomp/e0624129c06b9437aa0278b58f2f3eb954192aec/docs/screenshots/york.jpg",
+    "readme": "https://github.com/LittleBitUA/DPRecomp/blob/e0624129c06b9437aa0278b58f2f3eb954192aec/README.md",
+    "checked": "2026-11-17"
+  },
+  "megamanx4recomp": {
+    "src": "/covers/megamanx4recomp-aff898e84c9f.webp",
+    "width": 960,
+    "height": 720,
+    "source": "https://raw.githubusercontent.com/mstan/MegaManX4Recomp/28563053b2bd48bc93f7d751d8bef83fa3da3eba/docs/images/coop-jungle.png",
+    "readme": "https://github.com/mstan/MegaManX4Recomp/blob/28563053b2bd48bc93f7d751d8bef83fa3da3eba/README.md",
+    "checked": "2026-11-17"
+  },
+  "flutterdec": {
+    "src": "/covers/flutterdec-7e17095110de.webp",
+    "width": 740,
+    "height": 418,
+    "source": "https://raw.githubusercontent.com/caverav/flutterdec/ee90aa56678a977c5ff97704830c2519e8507399/docs/assets/readme/zedsecure-minwidth-pseudocode.svg",
+    "readme": "https://github.com/caverav/flutterdec/blob/ee90aa56678a977c5ff97704830c2519e8507399/README.md",
+    "checked": "2026-11-17"
+  },
+  "dkc1recomp": {
+    "sourceType": "generated",
+    "src": "/covers/dkc1recomp-b1279e1e6aea.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 painted cover of a 1990s 16-bit side-scrolling jungle platformer video game, not a wildlife photo and not a letter monogram. Dense tropical canopy, hanging vines, wooden barrels used as cannons, a rickety mine-cart rail, a bright waterfall, and banana bunches. Two cartoony brown jungle apes dash along a dirt path: the taller muscular ape wears a slim red tie, and the smaller smiling ape wears a little red hat. Chunky pixel-inspired painted forms, warm late-afternoon light, deep greens, browns and tropical gold, like a 16-bit platformer screenshot turned into original concept art. Highly detailed original painted art with texture and shadows. No readable text, no letters, no logos, no watermarks, no seals, no letter tiles, no pure gradient, no stock-photo look.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-17T02:53:53.343Z",
+    "checked": "2026-11-17"
+  },
+  "cricket07-browser": {
+    "sourceType": "generated",
+    "src": "/covers/cricket07-browser-4ec246cceb3e.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cinematic cover art of a mid-2000s PC cricket sports video game match, clearly in the style of a 2006 EA-era cricket video game, not a photograph and not a generic modern cricket stock photo. Rendered as 2006-era real-time sports game graphics: slightly plasticky athlete faces and kits, softer mid-2000s textures, modest polygon counts, a bright broadcast-style camera just behind the popping crease, slight CRT softness, oversaturated grass and sky. A batsman in cream whites mid-cover-drive at the crease, a bowler in a colored limited-overs kit in delivery stride, stumps and bails behind the batsman, a red cricket ball in the air, packed stadium with advertising hoardings as unreadable color blocks. Not photoreal 2020s CGI, not a live-action photo, not a documentary still. Highly detailed original painted art with the look of a mid-2000s sports video-game screenshot. No readable text, no letters, no logos, no watermarks, no wordmarks, no official team crests, no letter-tile monograms, no pure gradient.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-17T02:53:53.343Z",
+    "checked": "2026-11-17"
   }
 }

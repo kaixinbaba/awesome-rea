@@ -707,3 +707,29 @@ xpeviewer
 https://github.com/horsicq/XPEViewer/blob/37cd0e4fff8d98e87c3abb91b663a06f9cd7c4fc/README.md
 https://raw.githubusercontent.com/horsicq/XPEViewer/37cd0e4fff8d98e87c3abb91b663a06f9cd7c4fc/docs/1.png
 Upstream UI screenshot docs/1.png (also used on the official ntinfo.biz project page). Preferred over the mascot. docs/3.png is byte-identical to the custom GitHub repository social image and was not used.
+
+dprecomp
+https://github.com/LittleBitUA/DPRecomp/blob/e0624129c06b9437aa0278b58f2f3eb954192aec/README.md
+https://raw.githubusercontent.com/LittleBitUA/DPRecomp/e0624129c06b9437aa0278b58f2f3eb954192aec/docs/screenshots/york.jpg
+README game screenshot docs/screenshots/york.jpg (York in the rain). Preferred over docs/logo.png wordmark and menu UI shots.
+
+megamanx4recomp
+https://github.com/mstan/MegaManX4Recomp/blob/28563053b2bd48bc93f7d751d8bef83fa3da3eba/README.md
+https://raw.githubusercontent.com/mstan/MegaManX4Recomp/28563053b2bd48bc93f7d751d8bef83fa3da3eba/docs/images/coop-jungle.png
+README game screenshot docs/images/coop-jungle.png (Jungle waterfall, X and Zero in frame; 320×240). Integer-scaled 3× nearest-neighbor to 960×720 so the cover meets the 400px minimum width; the screenshot itself was not replaced or generated. Preferred over docs/images/netplay.png and docs/images/coop-options.png launcher UI. Alternatives docs/images/double.png / iris.png / split-x.png were not used.
+
+flutterdec
+https://github.com/caverav/flutterdec/blob/ee90aa56678a977c5ff97704830c2519e8507399/README.md
+https://raw.githubusercontent.com/caverav/flutterdec/ee90aa56678a977c5ff97704830c2519e8507399/docs/assets/readme/zedsecure-minwidth-pseudocode.svg
+README case-output figure docs/assets/readme/zedsecure-minwidth-pseudocode.svg (Dart-like pseudocode / IR from this decompiler), rasterized to the site cover format. Official SVG needed a single XML escape of a literal << in the sample code so the renderer could parse it; the diagram itself was not redrawn. The wordmark banner docs/assets/flutterdec-banner.png was not used.
+
+GPT project-fitting covers (2026-11-17)
+Original art matched to each project's subject. No trademarks/logos/watermarks. Model: cursor-generate-image. Issues #323–#327: generated only where no usable upstream README/official/custom OG project image existed.
+
+dkc1recomp
+generated · model=cursor-generate-image · no usable project image (repo has only macOS/iOS app icons, which were not used; no game screenshots; GitHub og:image is an auto-generated opengraph.githubassets.com card)
+Editorial 16:9 painted cover of a 1990s 16-bit jungle platformer: two cartoon apes (taller one with a red tie, smaller one with a red cap) running past barrel cannons, a mine-cart rail, a waterfall and bananas.
+
+cricket07-browser
+generated · model=cursor-generate-image · no usable project image (git tree has no project images; GitHub og:image is an auto-generated opengraph.githubassets.com card)
+Editorial 16:9 cover of a mid-2000s cricket sports video-game match: cream-kit batsman and colored-kit bowler on a sunlit pitch, in 2006-era game graphics rather than a photograph.

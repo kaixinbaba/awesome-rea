@@ -522,5 +522,35 @@
       "title": "XPEViewer: PE File Viewer and Editor",
       "subtitle": "PE viewer/editor for Windows, Linux and macOS"
     }
+  },
+  "dkc1recomp": {
+    "en": {
+      "title": "DKC1Recomp: Donkey Kong Country (SNES) Native Port",
+      "subtitle": "SNES Donkey Kong Country static recompilation for desktop and iOS"
+    }
+  },
+  "dprecomp": {
+    "en": {
+      "title": "DPRecomp: Deadly Premonition Native PC Port",
+      "subtitle": "Xbox 360 Deadly Premonition static recompilation for Windows"
+    }
+  },
+  "megamanx4recomp": {
+    "en": {
+      "title": "Mega Man X4 Recompiled: Native Windows and Linux Port",
+      "subtitle": "PS1 Mega Man X4 static recompilation with optional co-op"
+    }
+  },
+  "flutterdec": {
+    "en": {
+      "title": "flutterdec: Flutter Android AOT Decompiler",
+      "subtitle": "Offline CLI decompiler for Flutter Android libapp.so and APKs"
+    }
+  },
+  "cricket07-browser": {
+    "en": {
+      "title": "Cricket 07 Browser: EA Sports Cricket 07 in a Tab",
+      "subtitle": "2006 PC Cricket 07 statically recompiled to WebAssembly"
+    }
   }
 }
