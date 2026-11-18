@@ -1952,5 +1952,115 @@
     "model": "cursor-generate-image",
     "generatedAt": "2026-11-17T02:53:53.343Z",
     "checked": "2026-11-17"
+  },
+  "th06": {
+    "sourceType": "generated",
+    "src": "/covers/th06-d2d80149d38a.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 painted cover clearly recognizable as Touhou Project Embodiment of Scarlet Devil style danmaku bullet-hell gameplay, not a letter tile and not a photoreal photo. Classic 2002-era 2D Japanese bullet hell shmup look: a small player reimu-like shrine maiden silhouette near the bottom of a vertical playfield, dense red and pink curved bullet curtains and card-shaped danmaku filling the sky, a scarlet mansion silhouette and crescent moon in the background, cherry petals, deep indigo night sky, warm scarlet accents. Chunky early-2000s PC shmup pixel-inspired painted forms, not anime key art of a single face close-up, not a progress bar, not a placeholder character bust. Highly detailed original painted art with texture and shadows. No readable text, no letters, no logos, no watermarks, no seals, no letter tiles, no pure gradient, no stock-photo look.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-18T09:58:43.669Z",
+    "checked": "2026-11-18"
+  },
+  "wakaru": {
+    "src": "/covers/wakaru-030244466f26.webp",
+    "width": 960,
+    "height": 608,
+    "source": "https://raw.githubusercontent.com/pionxzh/wakaru/1094ad31b032810464499e58821faa566aa243a7/docs-site/public/screenshots/playground.png",
+    "readme": "https://github.com/pionxzh/wakaru/blob/1094ad31b032810464499e58821faa566aa243a7/README.md",
+    "checked": "2026-11-18"
+  },
+  "redscript": {
+    "sourceType": "generated",
+    "src": "/covers/redscript-a2f0b027a024.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for a Cyberpunk 2077 REDscript compiler and decompiler tooling project, not a letter tile. Dark neon night-city tech workspace: a floating holographic IDE window showing stylized redscript source on the left and decompiled bytecode tokens on the right, connected by glowing compile arrows, chrome desk, rain-streaked megacity windows with magenta and cyan neon reflections, circuit traces and hex-grid overlays. Looks like a reverse-engineering / modding toolchain for a cyberpunk game engine, not a random skyline photo. Highly detailed original painted art with texture. No readable product names, no CD Projekt logos, no Cyberpunk wordmark, no letters as monogram tiles, no pure gradient, no watermarks.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-18T09:58:43.669Z",
+    "checked": "2026-11-18"
+  },
+  "libreshockwave": {
+    "src": "/covers/libreshockwave-7bd58a849dd1.webp",
+    "width": 960,
+    "height": 611,
+    "source": "https://github.com/user-attachments/assets/f378546f-eeec-43f8-8ecc-f62dd88e96f2",
+    "readme": "https://github.com/LibreShockwave/LibreShockwave/blob/4bc93bf622f498a0296aed5a34d6d28abaa307b2/README.md",
+    "checked": "2026-11-18"
+  },
+  "openshao": {
+    "sourceType": "generated",
+    "src": "/covers/openshao-99d2cbd0bc81.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Low-fidelity mid-2000s Xbox game screenshot style of Mortal Kombat Shaolin Monks co-op combat. Soft blurry 480p console look, low polygon counts, muddy textures, bloom-heavy HDR of that era, slight interlacing. Third-person camera behind two bald shaolin monks in orange and blue sleeveless gis fighting in a green stone Chinese temple with dragon statues. Looks like a paused frame from a 2005 beat-em-up, deliberately NOT sharp photoreal modern CGI and NOT a cinematic render. Chunkier characters, simpler faces. No text, no logos, no letter tiles, no watermarks, no pure gradient.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-18T09:58:43.669Z",
+    "checked": "2026-11-18"
+  },
+  "google-smali": {
+    "sourceType": "generated",
+    "src": "/covers/google-smali-4d5a678e0b11.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an Android DEX assembler and disassembler toolkit (smali/baksmali). Dark technical workspace showing Android Dalvik DEX bytecode being transformed: left pane of dense hex dump of a .dex file, center conversion arrows, right pane of readable smali-like assembly mnemonics with registers v0 v1 and invoke-virtual style opcodes as abstract shapes not exact trademarks. Subtle green terminal glow, APK/zip layer silhouette in background, circuit board motif. Clearly a DEX assemble/disassemble reverse-engineering tool, not a letter tile. Highly detailed original painted art. No readable brand logos, no Google logo, no Android robot trademark mascot, no letter-tile monograms, no pure gradient, no watermarks.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-18T09:58:43.669Z",
+    "checked": "2026-11-18"
+  },
+  "flowdroid": {
+    "sourceType": "generated",
+    "src": "/covers/flowdroid-eccd231a8d6b.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for FlowDroid Android Java static taint and data-flow analysis tool. Dark analyst workspace with a schematic Android APK silhouette on the left, colored taint-flow arrows weaving through a control-flow / call-graph of nodes labeled as abstract method boxes, sinks and sources highlighted in amber and teal, Java class hierarchy faint in the background, Soot-like IR feel without copying logos. Looks like a static data-flow security analysis visualization, not a letter tile. Highly detailed original painted art. No readable product names, no Google Android robot mascot trademark, no letter-tile monograms, no pure gradient, no watermarks.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-18T09:58:43.669Z",
+    "checked": "2026-11-18"
+  },
+  "pyelftools": {
+    "sourceType": "generated",
+    "src": "/covers/pyelftools-c32450ce22ff.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for pyelftools, a pure-Python ELF and DWARF parsing library. Dark technical diagram: cross-section of an ELF executable with labeled abstract section headers like .text .data .symtab as color blocks, DWARF debug info tree unfolding as nested nodes and arrows, Python snake motif only as subtle abstract curves not a trademark logo, hex dumps fading into structured parse trees. Clearly an ELF/DWARF binary introspection library. Highly detailed original painted art. No readable trademarks, no Python official logo, no letter-tile monograms, no pure gradient, no watermarks.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-18T09:58:43.669Z",
+    "checked": "2026-11-18"
+  },
+  "reclass-net": {
+    "src": "/covers/reclass-net-681f9d6fad07.webp",
+    "width": 960,
+    "height": 657,
+    "source": "https://user-images.githubusercontent.com/34756141/50301244-cc212900-0454-11e9-8fea-341a25cb6cc1.png",
+    "readme": "https://github.com/ReClassNET/ReClass.NET/blob/a02fcb9bd669c8f81facd3ee9ad57cdcbf2cc0e1/README.md",
+    "checked": "2026-11-18"
+  },
+  "r2ghidra": {
+    "src": "/covers/r2ghidra-0c181767c43b.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/radareorg/r2ghidra/a23c34ac6a5d2ae9bb4b48db6fd8c0f8e09d2164/dist/images/logo.png",
+    "readme": "https://github.com/radareorg/r2ghidra/blob/a23c34ac6a5d2ae9bb4b48db6fd8c0f8e09d2164/README.md",
+    "checked": "2026-11-18"
+  },
+  "inspectrum": {
+    "src": "/covers/inspectrum-2957bdc0bd44.webp",
+    "width": 960,
+    "height": 542,
+    "source": "https://raw.githubusercontent.com/miek/inspectrum/82f5779ee3b82fc2b4d6d1360d9106392a71d4ab/screenshot.jpg",
+    "readme": "https://github.com/miek/inspectrum/blob/82f5779ee3b82fc2b4d6d1360d9106392a71d4ab/README.md",
+    "checked": "2026-11-18"
+  },
+  "scylla": {
+    "sourceType": "generated",
+    "src": "/covers/scylla-00ea193710d5.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for Scylla PE imports reconstructor and process-dump repair tool, NOT ScyllaHide. Dark Windows reverse-engineering workspace showing a damaged PE dump on the left with broken import table rows, glowing reconstruction arrows in the center, and a repaired Import Address Table grid on the right with DLL names and thunks as abstract readable rows. Process memory map silhouette, x86/x64 PE structure motif, forensic repair feel. Clearly an IAT reconstructor for dumped PE files. Highly detailed original painted art. No letter tiles, no sea-monster mascot logo, no watermarks, no pure gradient, no ScyllaHide reference.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-18T09:58:43.669Z",
+    "checked": "2026-11-18"
   }
 }
