@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-217 个项目与资源 · 6 个分类
+229 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -53,6 +53,16 @@
 - [readpe](<https://github.com/mentebinaria/readpe>) — 用于分析 Windows PE 文件的命令行工具包，曾用名 pev，内置名为 libpe 的 C 解析器。
 - [XPEViewer](<https://github.com/horsicq/XPEViewer>) — 用于 Windows、Linux 和 macOS 的 PE 文件查看器与编辑器，提供用于检查头、节区、反汇编及相关视图的 Qt 图形界面。
 - [flutterdec](<https://github.com/caverav/flutterdec>) — 面向 Flutter Android 的静态命令行反编译器：对 APK 或 libapp.so 离线恢复类 Dart 伪代码、ARM64 反汇编、中间表示、差异和报告。
+- [wakaru](<https://github.com/pionxzh/wakaru>) — JavaScript 反编译器：拆开现代前端打包，并把压缩/转译代码还原成更可读的语法。
+- [REDscript](<https://github.com/jac3km4/redscript>) — 《赛博朋克 2077》REDscript 的编译/反编译工具链（含 scc 替代）；不含游戏文件。
+- [LibreShockwave](<https://github.com/LibreShockwave/LibreShockwave>) — 开源 C++20 SDK、Lingo 反编译器、桌面调试器与浏览器播放器，用于 Director/Shockwave 文件。
+- [smali/baksmali（Google 分支）](<https://github.com/google/smali>) — Google 维护的 smali/baksmali 分支：汇编/反汇编 Android DEX，支持注解与调试信息。
+- [FlowDroid](<https://github.com/secure-software-engineering/FlowDroid>) — 面向 Android 应用与 Java 程序的静态数据流/污点分析（FlowDroid）。
+- [pyelftools](<https://github.com/eliben/pyelftools>) — 纯 Python 的 ELF 与 DWARF 解析库，无外部依赖。
+- [ReClass.NET](<https://github.com/ReClassNET/ReClass.NET>) — ReClass 的 .NET 移植：重建正在运行的 x86/x64 进程中的类与数据结构。
+- [r2ghidra](<https://github.com/radareorg/r2ghidra>) — radare2 的原生 Ghidra 反编译集成（pdg/pdga）；自包含，无需完整安装 Ghidra。
+- [inspectrum](<https://github.com/miek/inspectrum>) — 分析软件无线电接收机捕获信号的工具（频谱图、曲线、游标、导出）。
+- [Scylla](<https://github.com/NtQuery/Scylla>) — 面向已转储 PE 进程的 x64/x86 导入表重建（IAT 修复）。与 ScyllaHide 不同。
 
 ### 游戏与游戏引擎
 
@@ -202,6 +212,8 @@
 - [DPRecomp](<https://github.com/LittleBitUA/DPRecomp>) — 将《致命预感》（Xbox 360）静态重编译为 Windows 原生移植，含 60 FPS、鼠标视角与 FSR 3；非模拟器；需自备光盘。
 - [Mega Man X4 Recompiled](<https://github.com/mstan/MegaManX4Recomp>) — 将《洛克人 X4》（PS1 美版）静态重编译为 Windows/Linux 原生移植，可选双人合作与联机；非模拟器；需自备光盘。
 - [Cricket 07 Browser](<https://github.com/Dhaiwat10/cricket07-browser>) — 将《EA Sports Cricket 07》（2006，PC）静态重编译，可在浏览器标签页或原生 Mac 应用中运行；非模拟器；需自备游戏。
+- [th06](<https://github.com/GensokyoClub/th06>) — 《东方红魔乡》1.02h 的匹配 C++ 反编译（reccmp）；需自备原版可执行文件，不重新分发。
+- [OpenShao](<https://github.com/OAleex/OpenShao>) — 《真人快打：少林武僧》（Xbox）静态重编译的原生 Windows/Linux 移植；不含游戏本体。
 
 ### 桌面与效率应用
 

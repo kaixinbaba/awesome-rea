@@ -733,3 +733,55 @@ Editorial 16:9 painted cover of a 1990s 16-bit jungle platformer: two cartoon ap
 cricket07-browser
 generated · model=cursor-generate-image · no usable project image (git tree has no project images; GitHub og:image is an auto-generated opengraph.githubassets.com card)
 Editorial 16:9 cover of a mid-2000s cricket sports video-game match: cream-kit batsman and colored-kit bowler on a sunlit pitch, in 2006-era game graphics rather than a photograph.
+
+Upstream / README / official UI screenshots (2026-11-18)
+Issues #339–#350: ingested only where a usable upstream project image existed.
+
+wakaru
+https://github.com/pionxzh/wakaru/blob/1094ad31b032810464499e58821faa566aa243a7/README.md
+https://raw.githubusercontent.com/pionxzh/wakaru/1094ad31b032810464499e58821faa566aa243a7/docs-site/public/screenshots/playground.png
+README playground UI screenshot docs-site/public/screenshots/playground.png (preferred over website/public/og.png wordmark and repo icon).
+
+libreshockwave
+https://github.com/LibreShockwave/LibreShockwave/blob/4bc93bf622f498a0296aed5a34d6d28abaa307b2/README.md
+https://github.com/user-attachments/assets/f378546f-eeec-43f8-8ecc-f62dd88e96f2
+README-linked debugger UI screenshot from GitHub user-attachments (f378546f-eeec-43f8-8ecc-f62dd88e96f2). Do not generate.
+
+reclass-net
+https://github.com/ReClassNET/ReClass.NET/blob/a02fcb9bd669c8f81facd3ee9ad57cdcbf2cc0e1/README.md
+https://user-images.githubusercontent.com/34756141/50301244-cc212900-0454-11e9-8fea-341a25cb6cc1.png
+Official-repo Issue #80 UI screenshot (user-images). README abload.de screenshots (main4hsbj.jpg etc.) returned HTTP 410 Gone as of 2026-11-18; this GitHub-hosted ReClass.NET UI shot is the current equivalent ingest. Do not generate.
+
+r2ghidra
+https://github.com/radareorg/r2ghidra/blob/a23c34ac6a5d2ae9bb4b48db6fd8c0f8e09d2164/README.md
+https://raw.githubusercontent.com/radareorg/r2ghidra/a23c34ac6a5d2ae9bb4b48db6fd8c0f8e09d2164/dist/images/logo.png
+Upstream project logo dist/images/logo.png. Flattened onto the site paper tone and letterboxed to 960×540 so the cover meets the 400px minimum width; the logo itself was not replaced or generated.
+
+inspectrum
+https://github.com/miek/inspectrum/blob/82f5779ee3b82fc2b4d6d1360d9106392a71d4ab/README.md
+https://raw.githubusercontent.com/miek/inspectrum/82f5779ee3b82fc2b4d6d1360d9106392a71d4ab/screenshot.jpg
+README UI screenshot screenshot.jpg.
+
+GPT project-fitting covers (2026-11-18)
+Original art matched to each project's subject. No trademarks/logos/watermarks. Model: cursor-generate-image. Issues #339–#350: generated only where no usable upstream README/official/custom OG project image existed.
+
+th06
+generated · model=cursor-generate-image · no usable project image (resources/progress.svg is a progress bar; resources/placeholder.png is a 256px character close-up; neither is a project UI/game screenshot)
+
+redscript
+generated · model=cursor-generate-image · no usable project image (README 200px small logo only; no UI screenshot; GitHub og:image is auto-generated)
+
+openshao
+generated · model=cursor-generate-image · no usable project image (docs/images/openshao.png is a ring logo; no game screenshot)
+
+google-smali
+generated · model=cursor-generate-image · no usable project image
+
+flowdroid
+generated · model=cursor-generate-image · no usable project image
+
+pyelftools
+generated · model=cursor-generate-image · no usable project image
+
+scylla
+generated · model=cursor-generate-image · no usable project image (distinct from ScyllaHide)

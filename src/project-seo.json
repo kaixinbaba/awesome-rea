@@ -552,5 +552,77 @@
       "title": "Cricket 07 Browser: EA Sports Cricket 07 in a Tab",
       "subtitle": "2006 PC Cricket 07 statically recompiled to WebAssembly"
     }
+  },
+  "th06": {
+    "en": {
+      "title": "th06: Touhou 6 Matching Decompilation",
+      "subtitle": "Embodiment of Scarlet Devil 1.02h reconstructed in C++"
+    }
+  },
+  "wakaru": {
+    "en": {
+      "title": "wakaru: JavaScript Decompiler for Modern Bundles",
+      "subtitle": "Unpack webpack/esbuild/Metro and restore readable JS"
+    }
+  },
+  "redscript": {
+    "en": {
+      "title": "REDscript: Cyberpunk 2077 Script Compiler & Decompiler",
+      "subtitle": "Compile, lint, and decompile REDengine .redscripts"
+    }
+  },
+  "libreshockwave": {
+    "en": {
+      "title": "LibreShockwave: Open Shockwave SDK & Player",
+      "subtitle": "Parse, decompile, debug, and play Director movies"
+    }
+  },
+  "openshao": {
+    "en": {
+      "title": "OpenShao: Shaolin Monks Static Recomp Port",
+      "subtitle": "Native PC port of Mortal Kombat: Shaolin Monks (Xbox)"
+    }
+  },
+  "google-smali": {
+    "en": {
+      "title": "smali/baksmali (Google): DEX Assembler/Disassembler",
+      "subtitle": "Assemble and disassemble Android Dalvik DEX"
+    }
+  },
+  "flowdroid": {
+    "en": {
+      "title": "FlowDroid: Android/Java Static Taint Analysis",
+      "subtitle": "Track data flows from sources to sinks in APKs"
+    }
+  },
+  "pyelftools": {
+    "en": {
+      "title": "pyelftools: Pure-Python ELF and DWARF Parser",
+      "subtitle": "Inspect ELF executables and DWARF debug info"
+    }
+  },
+  "reclass-net": {
+    "en": {
+      "title": "ReClass.NET: Memory Structure Editor",
+      "subtitle": "Rebuild classes from live x86/x64 process memory"
+    }
+  },
+  "r2ghidra": {
+    "en": {
+      "title": "r2ghidra: Ghidra Decompiler for radare2",
+      "subtitle": "Native pdg/pdga decompilation inside radare2"
+    }
+  },
+  "inspectrum": {
+    "en": {
+      "title": "inspectrum: SDR Signal Analyser",
+      "subtitle": "Spectrogram and plots for captured radio signals"
+    }
+  },
+  "scylla": {
+    "en": {
+      "title": "Scylla: PE Imports Reconstructor",
+      "subtitle": "Rebuild IATs of dumped x86/x64 PE processes"
+    }
   }
 }

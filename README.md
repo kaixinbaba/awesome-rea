@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-217 projects & resources · 6 categories
+229 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -53,6 +53,16 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [readpe](<https://github.com/mentebinaria/readpe>) — Command-line toolkit, formerly named pev, for analyzing Windows PE files, with a bundled C parser called libpe.
 - [XPEViewer](<https://github.com/horsicq/XPEViewer>) — PE file viewer and editor for Windows, Linux and macOS, with a Qt GUI for inspecting headers, sections, disassembly and related views.
 - [flutterdec](<https://github.com/caverav/flutterdec>) — Static CLI decompiler for Flutter Android APKs or libapp.so; recovers Dart-like pseudocode, ARM64 disassembly, IR, diffs and reports, offline.
+- [wakaru](<https://github.com/pionxzh/wakaru>) — JavaScript decompiler that unpacks modern frontend bundles and restores readable syntax from minified or transpiled code.
+- [REDscript](<https://github.com/jac3km4/redscript>) — Compiler, decompiler, and toolchain for Cyberpunk 2077 REDscript, including an scc drop-in; game files not included.
+- [LibreShockwave](<https://github.com/LibreShockwave/LibreShockwave>) — Open-source C++20 SDK, Lingo decompiler, desktop debugger, and browser player for Director/Shockwave files.
+- [smali/baksmali (Google fork)](<https://github.com/google/smali>) — Google-maintained smali/baksmali fork: assemble and disassemble Android DEX with annotations and debug info.
+- [FlowDroid](<https://github.com/secure-software-engineering/FlowDroid>) — Static data-flow / taint analysis for Android apps and Java programs (FlowDroid).
+- [pyelftools](<https://github.com/eliben/pyelftools>) — Pure-Python library for parsing ELF executables and DWARF debugging information, with no external dependencies.
+- [ReClass.NET](<https://github.com/ReClassNET/ReClass.NET>) — .NET port of ReClass for reconstructing classes and data structures of running x86/x64 processes.
+- [r2ghidra](<https://github.com/radareorg/r2ghidra>) — Native Ghidra decompiler integration for radare2 (pdg/pdga); self-contained, no full Ghidra install required.
+- [inspectrum](<https://github.com/miek/inspectrum>) — Tool for analysing captured signals from software-defined radio receivers (spectrogram, plots, cursors, export).
+- [Scylla](<https://github.com/NtQuery/Scylla>) — x64/x86 imports reconstruction for dumped PE processes (IAT repair). Distinct from ScyllaHide.
 
 ### Games & game engines
 
@@ -202,6 +212,8 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [DPRecomp](<https://github.com/LittleBitUA/DPRecomp>) — Native Windows port of Deadly Premonition (Xbox 360) by static recompilation, with 60 FPS, mouse look and FSR 3; not an emulator; you supply the disc.
 - [Mega Man X4 Recompiled](<https://github.com/mstan/MegaManX4Recomp>) — Native Windows/Linux port of Mega Man X4 (PS1, USA) via static recompilation, with optional co-op and netplay; not an emulator; you supply the disc.
 - [Cricket 07 Browser](<https://github.com/Dhaiwat10/cricket07-browser>) — Static recompilation of EA Sports Cricket 07 (2006, PC) so it can run in a browser tab or as a native Mac app; not an emulator; you bring your own copy.
+- [th06](<https://github.com/GensokyoClub/th06>) — Matching C++ decompilation of Touhou 6 Embodiment of Scarlet Devil 1.02h with reccmp; original executable required; not redistributed.
+- [OpenShao](<https://github.com/OAleex/OpenShao>) — Native Windows/Linux port of Mortal Kombat: Shaolin Monks (Xbox) by static recompilation; game not included.
 
 ### Desktop & productivity apps
 
