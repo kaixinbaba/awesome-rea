@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-229 个项目与资源 · 6 个分类
+241 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -63,6 +63,14 @@
 - [r2ghidra](<https://github.com/radareorg/r2ghidra>) — radare2 的原生 Ghidra 反编译集成（pdg/pdga）；自包含，无需完整安装 Ghidra。
 - [inspectrum](<https://github.com/miek/inspectrum>) — 分析软件无线电接收机捕获信号的工具（频谱图、曲线、游标、导出）。
 - [Scylla](<https://github.com/NtQuery/Scylla>) — 面向已转储 PE 进程的 x64/x86 导入表重建（IAT 修复）。与 ScyllaHide 不同。
+- [UELib](<https://github.com/EliotVU/Unreal-Library>) — 用于读取 Unreal 包并将 UnrealScript 字节码反编译回源码的 .NET 库（Eliot.UELib）。
+- [Cuckoo3](<https://github.com/cert-ee/cuckoo3>) — Python 3 自动化恶意软件分析沙箱（CERT-EE）；在虚拟机中运行样本并报告行为。
+- [Dwarf](<https://github.com/iGio90/Dwarf>) — 基于 PyQt5 与 Frida 的全功能多架构/多系统调试器，含附加 UI 与跟踪辅助。
+- [GDB dashboard](<https://github.com/cyrus-and/gdb-dashboard>) — 用独立 .gdbinit 与 Python API 实现的模块化终端 GDB 可视化界面。
+- [House](<https://github.com/nccgroup/house>) — 基于 Frida 的运行时移动分析工具包，带 Web GUI，用于动态 hook 与跟踪。
+- [Soot](<https://github.com/soot-oss/soot>) — 提供 Baf、Jimple、Shimple、Grimp 中间表示的 Java 优化与程序分析框架。
+- [udis86](<https://github.com/vmt/udis86>) — 面向 x86/x86-64 的 C 反汇编库（libudis86）与 udcli，支持 INTEL/AT&T 输出。
+- [wasmdec](<https://github.com/wwwg/wasmdec>) — 将 WebAssembly 二进制转换为 C 的反编译器，并附在线演示链接。
 
 ### 游戏与游戏引擎
 
@@ -214,6 +222,10 @@
 - [Cricket 07 Browser](<https://github.com/Dhaiwat10/cricket07-browser>) — 将《EA Sports Cricket 07》（2006，PC）静态重编译，可在浏览器标签页或原生 Mac 应用中运行；非模拟器；需自备游戏。
 - [th06](<https://github.com/GensokyoClub/th06>) — 《东方红魔乡》1.02h 的匹配 C++ 反编译（reccmp）；需自备原版可执行文件，不重新分发。
 - [OpenShao](<https://github.com/OAleex/OpenShao>) — 《真人快打：少林武僧》（Xbox）静态重编译的原生 Windows/Linux 移植；不含游戏本体。
+- [PGR4-ReGPU](<https://github.com/zer0ducksgiven/PGR4-ReGPU>) — 经 XenonRecomp + ReGPU Direct3D 12 的《Project Gotham Racing 4》（Xbox 360）原生 Windows 移植；不附带游戏。
+- [WarioRecomp](<https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC>) — 经 WiiCompiled 静态重编译的《Wario Land: Shake It!》（Wii）非官方原生 Windows/Linux 移植；不附带游戏。
+- [ShadowRecomp](<https://github.com/FoxWorkshop/ShadowRecomp>) — 经静态重编译的《Shadow the Hedgehog》（Xbox）非官方原生 Windows/Linux 移植；不附带游戏。
+- [Ace Combat 5 Static recompilation](<https://github.com/sal063/Ace-Combat-5-Static-recompilation>) — 经静态重编译并用 Vulkan 渲染的《Ace Combat 5》（PS2）原生 Windows 移植；与 AC6Recomp 不同；不附带游戏。
 
 ### 桌面与效率应用
 

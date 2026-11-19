@@ -785,3 +785,55 @@ generated · model=cursor-generate-image · no usable project image
 
 scylla
 generated · model=cursor-generate-image · no usable project image (distinct from ScyllaHide)
+
+Upstream / README / official UI screenshots (2026-11-19)
+Issues #352–#363: ingested only where a usable upstream project image existed.
+
+wariorecomp
+https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/5974bf059d58f946c704c7589b27cb44ef0c10f1/README.md
+https://raw.githubusercontent.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/5974bf059d58f946c704c7589b27cb44ef0c10f1/screenshots/game-1.png
+README game screenshot screenshots/game-1.png (preferred over launcher.png, local-assets/launcher_banner.jpg, and wario.ico fan art).
+
+cuckoo3
+https://github.com/cert-ee/cuckoo3/blob/86be764b78d08979b15aa0b61f76ee7d67c4c17b/README.md
+https://raw.githubusercontent.com/cert-ee/cuckoo3/86be764b78d08979b15aa0b61f76ee7d67c4c17b/INSTALL/logos/cuckoo3-github-readme-logo.png
+Upstream project logo INSTALL/logos/cuckoo3-github-readme-logo.png. Letterboxed onto paper 960×540 so the cover meets the 400px minimum width; the logo itself was not replaced or generated.
+
+dwarf-debugger
+https://github.com/iGio90/Dwarf/blob/fd859aeeb9fd14d97db1d95a194eb632ae109a46/README.md
+https://raw.githubusercontent.com/iGio90/Dwarf/fd859aeeb9fd14d97db1d95a194eb632ae109a46/dwarf_debugger/assets/dwarf.png
+Upstream project logo dwarf_debugger/assets/dwarf.png. Letterboxed onto paper 960×540 so the cover meets the 400px minimum width; the logo itself was not replaced or generated.
+
+gdb-dashboard
+https://github.com/cyrus-and/gdb-dashboard/blob/7b9b1260a8b3e9dd57b6cbf302bdfba71cec4014/README.md
+https://raw.githubusercontent.com/wiki/cyrus-and/gdb-dashboard/Screenshot.png
+Upstream README/wiki UI screenshot Screenshot.png (terminal modular GDB interface). Tall screenshot letterboxed to 960×540; not generated.
+
+house
+https://github.com/nccgroup/house/blob/c3641e300d9c40568cd57dce1884f1a96c4c7849/README.md
+https://raw.githubusercontent.com/nccgroup/house/c3641e300d9c40568cd57dce1884f1a96c4c7849/gifs/monitor.png
+Upstream README UI still gifs/monitor.png (Web GUI monitor view). Do not generate.
+
+GPT project-fitting covers (2026-11-19)
+Original art matched to each project's subject. No trademarks/logos/watermarks. Model: cursor-generate-image. Issues #352–#363: generated only where no usable upstream README/official/custom OG project image existed.
+
+pgr4-regpu
+generated · model=cursor-generate-image · no usable project image (assets/icon.png is a 256px icon; not a game screenshot)
+
+shadowrecomp
+generated · model=cursor-generate-image · no usable project image (README head image is ShadowRecompResources logo; docs/assets are installer/controller art, not game screenshots)
+
+uelib
+generated · model=cursor-generate-image · no usable project image (README badges only; this listing is the library itself, not UE Explorer GUI)
+
+ace-combat-5-static-recompilation
+generated · model=cursor-generate-image · no usable project image (no project screenshots in repo)
+
+soot
+generated · model=cursor-generate-image · no usable project image (README CI badges / sponsor logos only)
+
+udis86
+generated · model=cursor-generate-image · no usable project image
+
+wasmdec
+generated · model=cursor-generate-image · no usable project image

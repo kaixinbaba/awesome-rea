@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-229 projects & resources · 6 categories
+241 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -63,6 +63,14 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [r2ghidra](<https://github.com/radareorg/r2ghidra>) — Native Ghidra decompiler integration for radare2 (pdg/pdga); self-contained, no full Ghidra install required.
 - [inspectrum](<https://github.com/miek/inspectrum>) — Tool for analysing captured signals from software-defined radio receivers (spectrogram, plots, cursors, export).
 - [Scylla](<https://github.com/NtQuery/Scylla>) — x64/x86 imports reconstruction for dumped PE processes (IAT repair). Distinct from ScyllaHide.
+- [UELib](<https://github.com/EliotVU/Unreal-Library>) — .NET library (Eliot.UELib) to read Unreal packages and decompile UnrealScript bytecode toward source.
+- [Cuckoo3](<https://github.com/cert-ee/cuckoo3>) — Python 3 automated malware analysis sandbox (CERT-EE); runs samples in VMs and reports behavior.
+- [Dwarf](<https://github.com/iGio90/Dwarf>) — Full-featured multi-arch/OS debugger built on PyQt5 and Frida, with attach UI and tracing helpers.
+- [GDB dashboard](<https://github.com/cyrus-and/gdb-dashboard>) — Modular visual interface for GDB in the terminal, implemented as a standalone .gdbinit with the Python API.
+- [House](<https://github.com/nccgroup/house>) — Frida-powered runtime mobile analysis toolkit with a Web GUI for dynamic hooking and tracing.
+- [Soot](<https://github.com/soot-oss/soot>) — Java optimization and program-analysis framework with Baf, Jimple, Shimple, and Grimp intermediate representations.
+- [udis86](<https://github.com/vmt/udis86>) — C disassembler library (libudis86) and udcli for x86/x86-64, with INTEL/AT&T output.
+- [wasmdec](<https://github.com/wwwg/wasmdec>) — Decompiler that converts WebAssembly binaries to C, with a linked online demo.
 
 ### Games & game engines
 
@@ -214,6 +222,10 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [Cricket 07 Browser](<https://github.com/Dhaiwat10/cricket07-browser>) — Static recompilation of EA Sports Cricket 07 (2006, PC) so it can run in a browser tab or as a native Mac app; not an emulator; you bring your own copy.
 - [th06](<https://github.com/GensokyoClub/th06>) — Matching C++ decompilation of Touhou 6 Embodiment of Scarlet Devil 1.02h with reccmp; original executable required; not redistributed.
 - [OpenShao](<https://github.com/OAleex/OpenShao>) — Native Windows/Linux port of Mortal Kombat: Shaolin Monks (Xbox) by static recompilation; game not included.
+- [PGR4-ReGPU](<https://github.com/zer0ducksgiven/PGR4-ReGPU>) — Native Windows port of Project Gotham Racing 4 (Xbox 360) via XenonRecomp + ReGPU Direct3D 12; game not included.
+- [WarioRecomp](<https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC>) — Unofficial native Windows/Linux port of Wario Land: Shake It! (Wii) by static recompilation with WiiCompiled; game not included.
+- [ShadowRecomp](<https://github.com/FoxWorkshop/ShadowRecomp>) — Unofficial native Windows/Linux port of Shadow the Hedgehog (Xbox) by static recompilation; game not included.
+- [Ace Combat 5 Static recompilation](<https://github.com/sal063/Ace-Combat-5-Static-recompilation>) — Native Windows port of Ace Combat 5 (PS2) by static recompilation with Vulkan rendering; distinct from AC6Recomp; game not included.
 
 ### Desktop & productivity apps
 

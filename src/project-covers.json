@@ -2062,5 +2062,115 @@
     "model": "cursor-generate-image",
     "generatedAt": "2026-11-18T09:58:43.669Z",
     "checked": "2026-11-18"
+  },
+  "pgr4-regpu": {
+    "sourceType": "generated",
+    "src": "/covers/pgr4-regpu-19a216edd33f.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Deliberately low-fidelity 2007 Xbox 360 game screenshot of Project Gotham Racing 4. Soft blurry 720p console capture look with compression artifacts, muddy textures, heavy bloom, aliasing on edges. Rear chase-cam of a fantasy sports car on a wet nighttime city circuit with orange street lamps reflecting on asphalt. Looks like a real paused frame from Project Gotham Racing 4 on Xbox 360, chunky mid-2000s racing game graphics, NOT photoreal, NOT Unreal Engine 5, NOT a cinematic car commercial, NOT a real photograph. No text, no Microsoft logos, no letter tiles, no watermarks, no pure gradient.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-19T07:57:44.637Z",
+    "checked": "2026-11-19"
+  },
+  "wariorecomp": {
+    "src": "/covers/wariorecomp-8d48f4694e6a.webp",
+    "width": 903,
+    "height": 558,
+    "source": "https://raw.githubusercontent.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/5974bf059d58f946c704c7589b27cb44ef0c10f1/screenshots/game-1.png",
+    "readme": "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/5974bf059d58f946c704c7589b27cb44ef0c10f1/README.md",
+    "checked": "2026-11-19"
+  },
+  "shadowrecomp": {
+    "sourceType": "generated",
+    "src": "/covers/shadowrecomp-9202c5ec6bb5.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Low-fidelity mid-2000s Xbox game screenshot style of Shadow the Hedgehog. Soft blurry 480p console look, low polygon counts, muddy textures, bloom-heavy HDR of that era, slight interlacing and jagged edges. Third-person camera behind Shadow with black-and-red quills and air shoes skating through a dark industrial Westopolis-like city street at night with green Chaos energy trail, abandoned cars, power lines. Looks like a paused frame from the 2005 Shadow the Hedgehog Xbox game, deliberately NOT sharp photoreal modern CGI, NOT Sonic Frontiers style, NOT a cinematic render. No text, no SEGA logos, no letter tiles, no watermarks, no pure gradient.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-19T07:57:44.637Z",
+    "checked": "2026-11-19"
+  },
+  "uelib": {
+    "sourceType": "generated",
+    "src": "/covers/uelib-42b823c27ba2.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for an Unreal package reader and UnrealScript decompiler library, not a letter tile. Dark technical workspace with floating schematic windows: Unreal package binary hex on the left, abstract class tree and decompiled UnrealScript-like pseudocode panes on the right, connected by parse arrows, subtle generic package-file silhouette without any Epic or Unreal logos, cool blue-teal and amber IDE glow on a steel desk. Looks like reverse-engineering tooling for Unreal packages and UnrealScript. Highly detailed original painted art. Absolutely no Unreal Engine U logo, no Epic Games marks, no readable product names, no letter-tile monograms, no pure gradient, no watermarks.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-19T07:57:44.637Z",
+    "checked": "2026-11-19"
+  },
+  "ace-combat-5-static-recompilation": {
+    "sourceType": "generated",
+    "src": "/covers/ace-combat-5-static-recompilation-6cea65ae439f.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Low-fidelity mid-2000s PlayStation 2 game screenshot style of Ace Combat 5 The Unsung War aerial combat. Soft blurry 480p console look, low polygon counts, muddy textures, bloom-heavy HDR of that era. Cockpit-chase view of a gray fighter jet banking over ocean clouds with missile trails and distant enemy aircraft silhouettes, warm sunset sky. Looks like a paused frame from Ace Combat 5 on PS2, deliberately NOT sharp photoreal modern CGI and NOT a cinematic render. No text, no Bandai Namco logos, no letter tiles, no watermarks, no pure gradient.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-19T07:57:44.637Z",
+    "checked": "2026-11-19"
+  },
+  "cuckoo3": {
+    "src": "/covers/cuckoo3-4aef96db6bc1.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/cert-ee/cuckoo3/86be764b78d08979b15aa0b61f76ee7d67c4c17b/INSTALL/logos/cuckoo3-github-readme-logo.png",
+    "readme": "https://github.com/cert-ee/cuckoo3/blob/86be764b78d08979b15aa0b61f76ee7d67c4c17b/README.md",
+    "checked": "2026-11-19"
+  },
+  "dwarf-debugger": {
+    "src": "/covers/dwarf-debugger-7c1cfdc6aba6.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/iGio90/Dwarf/fd859aeeb9fd14d97db1d95a194eb632ae109a46/dwarf_debugger/assets/dwarf.png",
+    "readme": "https://github.com/iGio90/Dwarf/blob/fd859aeeb9fd14d97db1d95a194eb632ae109a46/README.md",
+    "checked": "2026-11-19"
+  },
+  "gdb-dashboard": {
+    "src": "/covers/gdb-dashboard-daad7fb99a4d.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/wiki/cyrus-and/gdb-dashboard/Screenshot.png",
+    "readme": "https://github.com/cyrus-and/gdb-dashboard/blob/7b9b1260a8b3e9dd57b6cbf302bdfba71cec4014/README.md",
+    "checked": "2026-11-19"
+  },
+  "house": {
+    "src": "/covers/house-111859119a0c.webp",
+    "width": 960,
+    "height": 388,
+    "source": "https://raw.githubusercontent.com/nccgroup/house/c3641e300d9c40568cd57dce1884f1a96c4c7849/gifs/monitor.png",
+    "readme": "https://github.com/nccgroup/house/blob/c3641e300d9c40568cd57dce1884f1a96c4c7849/README.md",
+    "checked": "2026-11-19"
+  },
+  "soot": {
+    "sourceType": "generated",
+    "src": "/covers/soot-2f5fb56c3fdb.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for the Soot Java optimization and program-analysis framework with Jimple IR, not a letter tile. Dark analyst workspace: floating panes of Java bytecode transforming into three-address Jimple-like intermediate statements, a soft control-flow graph of basic-block nodes with edges, call-graph arcs in amber and teal, chalk-board IR feel without copying any product logos. Looks like a Java static analysis / compiler IR research tool visualization. Highly detailed original painted art with texture. No readable Soot logos, no Oracle Java trademark duke, no letter-tile monograms, no pure gradient, no watermarks.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-19T07:57:44.637Z",
+    "checked": "2026-11-19"
+  },
+  "udis86": {
+    "sourceType": "generated",
+    "src": "/covers/udis86-e017c832ae11.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for the udis86 disassembler library for x86 and x86-64, not a letter tile. Dark technical workspace: left pane dense machine-code hex bytes of an x86-64 function, center conversion arrows, right pane readable assembly mnemonics as abstract opcode shapes (mov/call/jmp style glyphs not exact trademark fonts), subtle CPU silicon die motif and register file glow in copper and mint. Clearly an x86/x86-64 disassembler library, not a letter tile. Highly detailed original painted art. No readable product names, no Intel or AMD logos, no letter-tile monograms, no pure gradient, no watermarks.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-19T07:57:44.637Z",
+    "checked": "2026-11-19"
+  },
+  "wasmdec": {
+    "sourceType": "generated",
+    "src": "/covers/wasmdec-d32c92f2446d.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for wasmdec a WebAssembly to C decompiler tool, not a letter tile. Dark technical workspace with NO readable words and NO titles: left pane abstract WebAssembly binary modules shown as stack-machine opcode blocks and hex ribbons, center glowing decompile arrows, right pane C-like pseudocode braces and function silhouettes as shapes only, subtle abstract hexagon motif that is NOT the official WebAssembly logo, cool cyan and violet glow. Looks like a WebAssembly-to-C decompiler. Highly detailed original painted art. Absolutely no readable text, no product names, no logos, no letter-tile monograms, no pure gradient, no watermarks.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-19T07:57:44.637Z",
+    "checked": "2026-11-19"
   }
 }

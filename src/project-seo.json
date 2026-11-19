@@ -624,5 +624,77 @@
       "title": "Scylla: PE Imports Reconstructor",
       "subtitle": "Rebuild IATs of dumped x86/x64 PE processes"
     }
+  },
+  "pgr4-regpu": {
+    "en": {
+      "title": "PGR4-ReGPU: Project Gotham Racing 4 Native Port",
+      "subtitle": "Xbox 360 static recomp with ReGPU Direct3D 12"
+    }
+  },
+  "wariorecomp": {
+    "en": {
+      "title": "WarioRecomp: Wario Land Shake It! Native Port",
+      "subtitle": "Wii static recompilation with WiiCompiled"
+    }
+  },
+  "shadowrecomp": {
+    "en": {
+      "title": "ShadowRecomp: Shadow the Hedgehog Native Port",
+      "subtitle": "Xbox static recompilation with XboxRecomp2"
+    }
+  },
+  "uelib": {
+    "en": {
+      "title": "UELib: Unreal Package Reader & UnrealScript Decompiler",
+      "subtitle": "Read .upk/.udk and reconstruct UnrealScript"
+    }
+  },
+  "ace-combat-5-static-recompilation": {
+    "en": {
+      "title": "Ace Combat 5 Static Recompilation",
+      "subtitle": "PS2 Ace Combat 5 native Windows port with Vulkan"
+    }
+  },
+  "cuckoo3": {
+    "en": {
+      "title": "Cuckoo3: Automated Malware Analysis Sandbox",
+      "subtitle": "CERT-EE Python 3 sandbox for files and links"
+    }
+  },
+  "dwarf-debugger": {
+    "en": {
+      "title": "Dwarf: Multi-arch Debugger on PyQt5 and Frida",
+      "subtitle": "Attach, trace, and inspect Android/iOS/local targets"
+    }
+  },
+  "gdb-dashboard": {
+    "en": {
+      "title": "GDB dashboard: Modular Terminal UI for GDB",
+      "subtitle": "Standalone .gdbinit visual interface in Python"
+    }
+  },
+  "house": {
+    "en": {
+      "title": "House: Frida Mobile Analysis Web GUI",
+      "subtitle": "Runtime hooking and tracing for Android apps"
+    }
+  },
+  "soot": {
+    "en": {
+      "title": "Soot: Java Optimization and Analysis Framework",
+      "subtitle": "Jimple IR, CFG, and bytecode transformations"
+    }
+  },
+  "udis86": {
+    "en": {
+      "title": "udis86: x86 and x86-64 Disassembler Library",
+      "subtitle": "libudis86 decode API and udcli CLI"
+    }
+  },
+  "wasmdec": {
+    "en": {
+      "title": "wasmdec: WebAssembly to C Decompiler",
+      "subtitle": "Translate Wasm binaries into readable C"
+    }
   }
 }
