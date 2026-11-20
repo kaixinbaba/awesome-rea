@@ -14,7 +14,9 @@
     "xhigh": [],
     "command": [
       "/usr/bin/python3",
-      "/Users/xunjunjie/.agent-autoloop/work/native-review/pi_review.py",
+      "-B",
+      "/Users/xunjunjie/.agent-autoloop/work/adapter/launch.py",
+      "review",
       "{input}"
     ]
   }
