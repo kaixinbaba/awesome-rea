@@ -13,7 +13,7 @@ An independent, unofficial directory. Sources reviewed, software not independent
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-241 projects & resources · 6 categories
+253 projects & resources · 6 categories
 
 ### Developer & security tools
 
@@ -71,6 +71,14 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [Soot](<https://github.com/soot-oss/soot>) — Java optimization and program-analysis framework with Baf, Jimple, Shimple, and Grimp intermediate representations.
 - [udis86](<https://github.com/vmt/udis86>) — C disassembler library (libudis86) and udcli for x86/x86-64, with INTEL/AT&T output.
 - [wasmdec](<https://github.com/wwwg/wasmdec>) — Decompiler that converts WebAssembly binaries to C, with a linked online demo.
+- [decomp.anything](<https://github.com/giveen/decomp.anything>) — Independent MIT continuation of discontinued decomp.wtf: a local matching-decompilation workbench with an optional REA console.
+- [Helios](<https://github.com/helios-decompiler/standalone-app>) — All-in-one Java reverse engineering GUI that opens class files in multiple decompilers and disassemblers, with hex and text views for other files.
+- [Ouroboros](<https://github.com/Hexorg/Ouroboros>) — Research-friendly Rust decompiler that recovers high-level structure with symbolic execution and constraint tracking, plus an egui GUI for PE binaries.
+- [Quark Engine](<https://github.com/ev-flow/quark-engine>) — Open-source Android malware scoring and analysis engine that runs rule-based APK analysis and writes a summary report.
+- [box-js](<https://github.com/CapacitorSet/box-js>) — Sandbox that emulates a Windows JScript environment to study JavaScript malware and write out logs, contacted URLs, and other IOCs.
+- [Brida](<https://github.com/federicodotta/Brida>) — Burp Suite extension that bridges Burp and Frida so an analyst can call an app's own methods while inspecting traffic to its back-end.
+- [dnlib](<https://github.com/0xd4d/dnlib>) — C# library for reading and writing .NET assemblies and modules, including method bodies, published on NuGet.
+- [JD-GUI](<https://github.com/java-decompiler/jd-gui>) — Standalone graphical utility that displays Java source reconstructed from class files, with tree navigation and search.
 
 ### Games & game engines
 
@@ -226,6 +234,10 @@ An independent, unofficial directory. Sources reviewed, software not independent
 - [WarioRecomp](<https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC>) — Unofficial native Windows/Linux port of Wario Land: Shake It! (Wii) by static recompilation with WiiCompiled; game not included.
 - [ShadowRecomp](<https://github.com/FoxWorkshop/ShadowRecomp>) — Unofficial native Windows/Linux port of Shadow the Hedgehog (Xbox) by static recompilation; game not included.
 - [Ace Combat 5 Static recompilation](<https://github.com/sal063/Ace-Combat-5-Static-recompilation>) — Native Windows port of Ace Combat 5 (PS2) by static recompilation with Vulkan rendering; distinct from AC6Recomp; game not included.
+- [SkiesOfArcadiaLegends-Recomp](<https://github.com/ogdanimal/SkiesOfArcadiaLegends-Recomp>) — Unofficial native Windows, Linux, macOS and Android port of Skies of Arcadia Legends (GameCube) by static recompilation; does not include the game.
+- [Snap64Recomp](<https://github.com/JackandBeans/Snap64Recomp>) — Unofficial native port of the US Nintendo 64 release of Pokémon Snap, statically recompiled with N64: Recompiled and drawn with RT64; does not include the game.
+- [DQ8Recomp](<https://github.com/Sinan-Karakaya/DQ8-Recompiled>) — Experimental unofficial native port of Dragon Quest VIII (PS2) by statically recompiling MIPS code with PS2Recomp; does not include the game or a BIOS.
+- [Midtown Madness 3 PC Native](<https://github.com/lakshya16157/midtown-madness-3-PC-Native>) — Unofficial native Windows and Linux port of Midtown Madness 3 (Xbox, 2003) by static recompilation, with Direct3D 11 and Vulkan; does not include the game.
 
 ### Desktop & productivity apps
 

@@ -2172,5 +2172,111 @@
     "model": "cursor-generate-image",
     "generatedAt": "2026-11-19T07:57:44.637Z",
     "checked": "2026-11-19"
+  },
+  "skies-of-arcadia-legends-recomp": {
+    "sourceType": "generated",
+    "src": "/covers/skies-of-arcadia-legends-recomp-96051387d89f.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Low-fidelity early-2000s GameCube game screenshot style of Skies of Arcadia Legends. Soft blurry 480p console capture look, low polygon counts, muddy textures, mild aliasing and bloom. Exploration view of a distinctive wooden sky-pirate airship with blue hull plating and white-and-blue sails (like the Delphinus) sailing through a vast bright sky among floating rock islands with greenery and waterfalls, endless sea of clouds below, warm sunlight. A young brown-haired sky pirate with a blue bandana and goggles stands at the ship's wheel in a brown vest, looking forward. Classic early-2000s 3D Japanese RPG look. Must be recognizable as Skies of Arcadia Legends, not a generic steampunk flyer and not Final Fantasy. Deliberately NOT photoreal, NOT modern cinematic CGI, NOT Unreal Engine 5. No readable text, no SEGA logos, no letter tiles, no watermarks, no pure gradient.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-20T15:07:21Z",
+    "checked": "2026-11-20"
+  },
+  "snap64recomp": {
+    "src": "/covers/snap64recomp-0b05a3f72c7d.webp",
+    "width": 960,
+    "height": 720,
+    "source": "https://raw.githubusercontent.com/JackandBeans/Snap64Recomp/922906e366aeafb12d53b7dadf8b75b72366c083/docs/screenshots/04-beach.png",
+    "readme": "https://github.com/JackandBeans/Snap64Recomp/blob/922906e366aeafb12d53b7dadf8b75b72366c083/README.md",
+    "checked": "2026-11-20"
+  },
+  "dq8recomp": {
+    "sourceType": "generated",
+    "src": "/covers/dq8recomp-cbcacc6f096c.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Low-fidelity mid-2000s PlayStation 2 game screenshot style of Dragon Quest VIII Journey of the Cursed King. Soft blurry 480p console look, cel-shaded 3D like Level-5 PS2 era, visible polygon edges, painterly Akira Toriyama character designs, not photoreal. Overworld traveling shot on a dirt path through rolling bright green hills under a vivid blue sky with a distant fairy-tale castle. Party of recognizable characters: a silent young hero with short spiky dark-blue hair, a red neckerchief and simple traveler tunic leading the way; a burly bald bandit with a chin beard and heavy axe (Yangus) walking behind; a small cursed toad-like king wearing a tiny gold crown riding a modest wooden wagon (King Trode). A classic round blue smiling slime sits by the roadside. Looks like a paused frame from Dragon Quest VIII on PS2. Deliberately NOT sharp modern CGI, NOT Dragon Quest XI photoreal HD-2D, NOT a cinematic render. No readable text, no Square Enix or Level-5 logos, no letter tiles, no watermarks, no pure gradient.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-20T15:07:26Z",
+    "checked": "2026-11-20"
+  },
+  "midtown-madness-3-pc-native": {
+    "sourceType": "generated",
+    "src": "/covers/midtown-madness-3-pc-native-fd4488b3937c.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Deliberately low-fidelity 2003 original Xbox game screenshot of Midtown Madness 3, chunky early-Xbox arcade racer look. Soft blurry 480p capture, muddy low-resolution textures, heavy aliasing, visible texels, low polygon car models, short draw distance, mild fog, compression blocks. Rear chase-cam of a chunky early-2000s arcade sports car racing down a Paris boulevard with a simplified blocky Eiffel Tower in the distance, boxy taxis and traffic, low-detail Haussmann building facades, sparse low-poly pedestrians. Looks like a real paused frame from Midtown Madness 3 on the original Xbox, NOT a photograph, NOT photoreal CGI, NOT Forza Horizon, NOT Gran Turismo, NOT GTA IV or GTA V, NOT Unreal Engine 5, NOT a car commercial. No readable text, no Microsoft or Xbox logos, no letter tiles, no watermarks, no pure gradient.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-20T15:08:12Z",
+    "checked": "2026-11-20"
+  },
+  "decomp-anything": {
+    "src": "/covers/decomp-anything-794e98eb9f56.webp",
+    "width": 960,
+    "height": 498,
+    "source": "https://raw.githubusercontent.com/giveen/decomp.anything/a37f31b9d77cfa800963e4fcdb66f4201a2adc37/.github/assets/demo.webp",
+    "readme": "https://github.com/giveen/decomp.anything/blob/a37f31b9d77cfa800963e4fcdb66f4201a2adc37/README.md",
+    "checked": "2026-11-20"
+  },
+  "helios-decompiler": {
+    "src": "/covers/helios-decompiler-54e7eb434932.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/helios-decompiler/standalone-app/e5578fb4ad34873d2c557bcfba0f74d5c7f125d2/src/main/resources/res/helios.png",
+    "readme": "https://github.com/helios-decompiler/standalone-app/blob/e5578fb4ad34873d2c557bcfba0f74d5c7f125d2/README.md",
+    "checked": "2026-11-20"
+  },
+  "ouroboros-decompiler": {
+    "src": "/covers/ouroboros-decompiler-b62c6dd97d3d.webp",
+    "width": 960,
+    "height": 555,
+    "source": "https://raw.githubusercontent.com/Hexorg/Ouroboros/729c5b64bb3d651b98a6f6ed6d1a5e644217d5ad/assets/screenshot.png",
+    "readme": "https://github.com/Hexorg/Ouroboros/blob/729c5b64bb3d651b98a6f6ed6d1a5e644217d5ad/README.md",
+    "checked": "2026-11-20"
+  },
+  "quark-engine": {
+    "src": "/covers/quark-engine-f9047eecedf7.webp",
+    "width": 960,
+    "height": 540,
+    "source": "https://raw.githubusercontent.com/ev-flow/quark-engine/b317d4c12e5598c1a35925d7498fe6cb8947619f/docs/source/quark-logo.png",
+    "readme": "https://github.com/ev-flow/quark-engine/blob/b317d4c12e5598c1a35925d7498fe6cb8947619f/README.md",
+    "checked": "2026-11-20"
+  },
+  "box-js": {
+    "sourceType": "generated",
+    "src": "/covers/box-js-5ddb808c219e.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for box-js, a sandbox for studying JavaScript malware, not a letter tile. Dark security-analyst workspace with NO readable words and NO titles: a sandboxed window of abstract JavaScript-like code as syntax-colored shapes and curly-brace silhouettes, isolated inside a translucent isolation box, arrows leading to extracted IOC artifacts shown as unlabeled URL chain glyphs, disk-stream file icons, and registry-key silhouettes, a muted Windows JScript host window in the background without any Microsoft logo, cool amber and teal glow on a steel desk. Looks like a JavaScript malware analysis sandbox. Highly detailed original painted art with texture. Absolutely no readable text, no product names, no logos, no letter-tile monograms, no pure gradient, no watermarks.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-20T15:07:32Z",
+    "checked": "2026-11-20"
+  },
+  "brida": {
+    "src": "/covers/brida-f04bb98c3c82.webp",
+    "width": 960,
+    "height": 685,
+    "source": "https://raw.githubusercontent.com/federicodotta/Brida/f3350346c10713a0bb558b9bc018a0c0e250479d/images/BridaScreen1.PNG",
+    "readme": "https://github.com/federicodotta/Brida/blob/f3350346c10713a0bb558b9bc018a0c0e250479d/README.md",
+    "checked": "2026-11-20"
+  },
+  "dnlib": {
+    "sourceType": "generated",
+    "src": "/covers/dnlib-51f2f191302c.webp",
+    "width": 960,
+    "height": 540,
+    "prompt": "Editorial 16:9 cover for dnlib, a library for reading and writing .NET assemblies and modules, not a letter tile. Dark technical workspace with NO readable words and NO titles: a PE-like assembly file silhouette opened into floating schematic panes showing metadata tables as abstract grid cells, IL method-body instruction ribbons as colored bars, and write-back arrows assembling the module again, cool blue and violet IDE glow, subtle generic assembly-file motif without any Microsoft or Visual Studio logos. Looks like a .NET assembly read/write library visualization. Highly detailed original painted art with texture. Absolutely no readable text, no product names, no Microsoft marks, no letter-tile monograms, no pure gradient, no watermarks.",
+    "model": "cursor-generate-image",
+    "generatedAt": "2026-11-20T15:07:36Z",
+    "checked": "2026-11-20"
+  },
+  "jd-gui": {
+    "src": "/covers/jd-gui-e0392e066289.webp",
+    "width": 632,
+    "height": 401,
+    "source": "https://raw.githubusercontent.com/java-decompiler/jd-gui/b3c1ced04e571fc316648d114ff0c8121e051d8f/src/website/img/jd-gui.png",
+    "readme": "https://github.com/java-decompiler/jd-gui/blob/b3c1ced04e571fc316648d114ff0c8121e051d8f/README.md",
+    "checked": "2026-11-20"
   }
 }

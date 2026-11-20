@@ -696,5 +696,77 @@
       "title": "wasmdec: WebAssembly to C Decompiler",
       "subtitle": "Translate Wasm binaries into readable C"
     }
+  },
+  "skies-of-arcadia-legends-recomp": {
+    "en": {
+      "title": "SkiesOfArcadiaLegends-Recomp: Native Port",
+      "subtitle": "GameCube static recompilation to Windows, Linux, macOS and Android"
+    }
+  },
+  "snap64recomp": {
+    "en": {
+      "title": "Snap64Recomp: Pokémon Snap Native Port",
+      "subtitle": "N64 static recompilation with N64: Recompiled and RT64"
+    }
+  },
+  "dq8recomp": {
+    "en": {
+      "title": "DQ8Recomp: Dragon Quest VIII Native Port",
+      "subtitle": "PS2 static recompilation with PS2Recomp"
+    }
+  },
+  "midtown-madness-3-pc-native": {
+    "en": {
+      "title": "Midtown Madness 3 PC Native: Xbox Racing Port",
+      "subtitle": "Static recompilation with Direct3D 11 and Vulkan"
+    }
+  },
+  "decomp-anything": {
+    "en": {
+      "title": "decomp.anything: Matching-Decompilation Workbench",
+      "subtitle": "Independent decomp.wtf continuation with an optional REA console"
+    }
+  },
+  "helios-decompiler": {
+    "en": {
+      "title": "Helios: All-in-one Java Reverse Engineering GUI",
+      "subtitle": "Multiple decompilers, disassemblers, and hex views"
+    }
+  },
+  "ouroboros-decompiler": {
+    "en": {
+      "title": "Ouroboros: Symbolic-Execution Decompiler",
+      "subtitle": "Recover high-level structure from PE binaries in Rust"
+    }
+  },
+  "quark-engine": {
+    "en": {
+      "title": "Quark Engine: Android Malware Scoring Engine",
+      "subtitle": "Rule-based APK analysis with summary reports"
+    }
+  },
+  "box-js": {
+    "en": {
+      "title": "box-js: JavaScript Malware Sandbox",
+      "subtitle": "Emulate Windows JScript and collect IOCs"
+    }
+  },
+  "brida": {
+    "en": {
+      "title": "Brida: Burp Suite and Frida Bridge",
+      "subtitle": "Call an app's own methods while inspecting its traffic"
+    }
+  },
+  "dnlib": {
+    "en": {
+      "title": "dnlib: .NET Assembly Reader/Writer Library",
+      "subtitle": "Read and write .NET modules, including method bodies"
+    }
+  },
+  "jd-gui": {
+    "en": {
+      "title": "JD-GUI: Standalone Java Decompiler GUI",
+      "subtitle": "Browse source reconstructed from class files"
+    }
   }
 }
