@@ -13,7 +13,7 @@
 <!-- catalog:start -->
 <!-- Generated from src/projects.json and src/locales by npm run readme. -->
 
-241 个项目与资源 · 6 个分类
+253 个项目与资源 · 6 个分类
 
 ### 开发与安全工具
 
@@ -71,6 +71,14 @@
 - [Soot](<https://github.com/soot-oss/soot>) — 提供 Baf、Jimple、Shimple、Grimp 中间表示的 Java 优化与程序分析框架。
 - [udis86](<https://github.com/vmt/udis86>) — 面向 x86/x86-64 的 C 反汇编库（libudis86）与 udcli，支持 INTEL/AT&T 输出。
 - [wasmdec](<https://github.com/wwwg/wasmdec>) — 将 WebAssembly 二进制转换为 C 的反编译器，并附在线演示链接。
+- [decomp.anything](<https://github.com/giveen/decomp.anything>) — 本地匹配式反编译工作台（已停更 decomp.wtf 的独立 MIT 续作）；若无原编译可匹配，也可选通过 REA 打开二进制。
+- [Helios](<https://github.com/helios-decompiler/standalone-app>) — 一体化 Java 逆向图形界面，可用多种反编译器与反汇编器打开 class 文件，并对其它文件提供十六进制与文本视图。
+- [Ouroboros](<https://github.com/Hexorg/Ouroboros>) — 面向研究的 Rust 反编译器，用符号执行与约束跟踪恢复高层结构，并提供用于 PE 二进制的 egui 界面。
+- [Quark Engine](<https://github.com/ev-flow/quark-engine>) — 开源 Android 恶意软件评分与分析引擎，按规则分析 APK 并写出摘要报告。
+- [box-js](<https://github.com/CapacitorSet/box-js>) — 通过模拟 Windows JScript 环境来研究 JavaScript 恶意代码的沙箱，并写出日志、访问过的 URL 与其它 IOC。
+- [Brida](<https://github.com/federicodotta/Brida>) — Burp Suite 扩展，在 Burp 与 Frida 之间架桥，让分析人员在查看应用与后端流量时可调用应用自身方法。
+- [dnlib](<https://github.com/0xd4d/dnlib>) — 用 C# 编写的 .NET 程序集/模块读写库，包含方法体支持，并发布在 NuGet 上。
+- [JD-GUI](<https://github.com/java-decompiler/jd-gui>) — 独立图形工具，用于显示从 class 文件重建的 Java 源码，并提供树形导航与搜索。
 
 ### 游戏与游戏引擎
 
@@ -226,6 +234,10 @@
 - [WarioRecomp](<https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC>) — 经 WiiCompiled 静态重编译的《Wario Land: Shake It!》（Wii）非官方原生 Windows/Linux 移植；不附带游戏。
 - [ShadowRecomp](<https://github.com/FoxWorkshop/ShadowRecomp>) — 经静态重编译的《Shadow the Hedgehog》（Xbox）非官方原生 Windows/Linux 移植；不附带游戏。
 - [Ace Combat 5 Static recompilation](<https://github.com/sal063/Ace-Combat-5-Static-recompilation>) — 经静态重编译并用 Vulkan 渲染的《Ace Combat 5》（PS2）原生 Windows 移植；与 AC6Recomp 不同；不附带游戏。
+- [SkiesOfArcadiaLegends-Recomp](<https://github.com/ogdanimal/SkiesOfArcadiaLegends-Recomp>) — 《Skies of Arcadia Legends》（GameCube）的非官方 Windows、Linux、macOS 与 Android 原生移植，经静态重编译完成；不附带游戏。
+- [Snap64Recomp](<https://github.com/JackandBeans/Snap64Recomp>) — 《Pokémon Snap》（N64 美版）的非官方原生移植，用 N64: Recompiled 静态重编译、RT64 绘制；不附带游戏。
+- [DQ8Recomp](<https://github.com/Sinan-Karakaya/DQ8-Recompiled>) — 用 PS2Recomp 静态重编译《Dragon Quest VIII》（PS2）的实验性非官方原生移植；不附带游戏或 BIOS。
+- [Midtown Madness 3 PC Native](<https://github.com/lakshya16157/midtown-madness-3-PC-Native>) — 经静态重编译的《Midtown Madness 3》（Xbox，2003）非官方 Windows/Linux 原生移植，带 Direct3D 11 与 Vulkan；不附带游戏。
 
 ### 桌面与效率应用
 

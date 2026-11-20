@@ -837,3 +837,57 @@ generated · model=cursor-generate-image · no usable project image
 
 wasmdec
 generated · model=cursor-generate-image · no usable project image
+
+
+snap64recomp
+https://github.com/JackandBeans/Snap64Recomp/blob/922906e366aeafb12d53b7dadf8b75b72366c083/README.md
+https://raw.githubusercontent.com/JackandBeans/Snap64Recomp/922906e366aeafb12d53b7dadf8b75b72366c083/docs/screenshots/04-beach.png
+Upstream game screenshot docs/screenshots/04-beach.png. Do not generate.
+
+decomp-anything
+https://github.com/giveen/decomp.anything/blob/a37f31b9d77cfa800963e4fcdb66f4201a2adc37/README.md
+https://raw.githubusercontent.com/giveen/decomp.anything/a37f31b9d77cfa800963e4fcdb66f4201a2adc37/.github/assets/demo.webp
+Upstream workbench demo .github/assets/demo.webp (still frame from the animated WebP). Do not generate.
+
+helios-decompiler
+https://github.com/helios-decompiler/standalone-app/blob/e5578fb4ad34873d2c557bcfba0f74d5c7f125d2/README.md
+https://raw.githubusercontent.com/helios-decompiler/standalone-app/e5578fb4ad34873d2c557bcfba0f74d5c7f125d2/src/main/resources/res/helios.png
+Upstream project logo src/main/resources/res/helios.png. Letterboxed/upscaled onto paper 960×540 so the cover meets the 400px minimum width; the logo itself was not replaced or generated.
+
+ouroboros-decompiler
+https://github.com/Hexorg/Ouroboros/blob/729c5b64bb3d651b98a6f6ed6d1a5e644217d5ad/README.md
+https://raw.githubusercontent.com/Hexorg/Ouroboros/729c5b64bb3d651b98a6f6ed6d1a5e644217d5ad/assets/screenshot.png
+Upstream UI screenshot assets/screenshot.png. Do not generate.
+
+quark-engine
+https://github.com/ev-flow/quark-engine/blob/b317d4c12e5598c1a35925d7498fe6cb8947619f/README.md
+https://raw.githubusercontent.com/ev-flow/quark-engine/b317d4c12e5598c1a35925d7498fe6cb8947619f/docs/source/quark-logo.png
+Upstream project logo docs/source/quark-logo.png. Letterboxed onto paper 960×540; the logo itself was not replaced or generated.
+
+brida
+https://github.com/federicodotta/Brida/blob/f3350346c10713a0bb558b9bc018a0c0e250479d/README.md
+https://raw.githubusercontent.com/federicodotta/Brida/f3350346c10713a0bb558b9bc018a0c0e250479d/images/BridaScreen1.PNG
+Upstream UI screenshot images/BridaScreen1.PNG (preferred over BridaLogo.png). Do not generate.
+
+jd-gui
+https://github.com/java-decompiler/jd-gui/blob/b3c1ced04e571fc316648d114ff0c8121e051d8f/README.md
+https://raw.githubusercontent.com/java-decompiler/jd-gui/b3c1ced04e571fc316648d114ff0c8121e051d8f/src/website/img/jd-gui.png
+Upstream UI screenshot src/website/img/jd-gui.png. Do not generate.
+
+GPT project-fitting covers (2026-11-20)
+Original art matched to each project's subject. No trademarks/logos/watermarks. Model: cursor-generate-image. Issues #365–#376: generated only where no usable upstream README/official/custom OG project image existed.
+
+skies-of-arcadia-legends-recomp
+generated · model=cursor-generate-image · no usable project image (repo only has logo / launcher art / Android icons; not a game screenshot)
+
+dq8recomp
+generated · model=cursor-generate-image · no usable project image (repo only has res/icon/dq8.png)
+
+midtown-madness-3-pc-native
+generated · model=cursor-generate-image · no usable project image (no project screenshots in repo)
+
+box-js
+generated · model=cursor-generate-image · no usable project image
+
+dnlib
+generated · model=cursor-generate-image · no usable project image
